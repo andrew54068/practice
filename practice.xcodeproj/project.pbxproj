@@ -304,6 +304,7 @@
 				6D43A2621FB052E800C6B0B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
