@@ -1,0 +1,560 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "TableViewController2"
+provides-nominal:
+- "C8practice20TableViewController2"
+provides-member:
+- ["C8practice20TableViewController2", ""]
+provides-dynamic-lookup:
+- "didReceiveMemoryWarning"
+- "numberOfSections"
+- "tableView"
+- "viewDidLoad"
+depends-top-level:
+- "AssignmentPrecedence"
+- "CGFloat"
+- "CastingPrecedence"
+- "IndexPath"
+- "Int"
+- !private "RocheTableViewCell"
+- !private "StringLiteralType"
+- "TableViewController2"
+- !private "UIColor"
+- !private "UIEdgeInsets"
+- !private "UINib"
+- "UITableView"
+- "UITableViewCell"
+- "UITableViewController"
+- !private "print"
+depends-member:
+- !private ["Ps9AnyObject", "UIColor"]
+- !private ["Ps9AnyObject", "UIEdgeInsets"]
+- !private ["Ps9AnyObject", "UINib"]
+- !private ["Ps9AnyObject", "backgroundColor"]
+- !private ["Ps9AnyObject", "cgColor"]
+- !private ["Ps9AnyObject", "dequeueReusableCell"]
+- !private ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- !private ["Ps9AnyObject", "green"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "layer"]
+- !private ["Ps9AnyObject", "lightGray"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "register"]
+- !private ["Ps9AnyObject", "separatorInset"]
+- !private ["Ps9AnyObject", "tableView"]
+- !private ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- !private ["CSo7CALayer", "backgroundColor"]
+- !private ["PSo15CALayerDelegate", "backgroundColor"]
+- !private ["PSo15CALayerDelegate", "dequeueReusableCell"]
+- !private ["PSo15CALayerDelegate", "layer"]
+- !private ["PSo15CALayerDelegate", "register"]
+- !private ["PSo15CALayerDelegate", "separatorInset"]
+- !private ["PSo13CAMediaTiming", "backgroundColor"]
+- !private ["Ps7CVarArg", "UIColor"]
+- !private ["Ps7CVarArg", "UIEdgeInsets"]
+- !private ["Ps7CVarArg", "UINib"]
+- !private ["Ps7CVarArg", "backgroundColor"]
+- !private ["Ps7CVarArg", "cgColor"]
+- !private ["Ps7CVarArg", "dequeueReusableCell"]
+- !private ["Ps7CVarArg", "didReceiveMemoryWarning"]
+- !private ["Ps7CVarArg", "green"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "layer"]
+- !private ["Ps7CVarArg", "lightGray"]
+- !private ["Ps7CVarArg", "print"]
+- !private ["Ps7CVarArg", "register"]
+- !private ["Ps7CVarArg", "separatorInset"]
+- !private ["Ps7CVarArg", "tableView"]
+- !private ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "UIColor"]
+- !private ["Ps28CustomDebugStringConvertible", "UIEdgeInsets"]
+- !private ["Ps28CustomDebugStringConvertible", "UINib"]
+- !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
+- !private ["Ps28CustomDebugStringConvertible", "cgColor"]
+- !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCell"]
+- !private ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps28CustomDebugStringConvertible", "green"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "layer"]
+- !private ["Ps28CustomDebugStringConvertible", "lightGray"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "register"]
+- !private ["Ps28CustomDebugStringConvertible", "separatorInset"]
+- !private ["Ps28CustomDebugStringConvertible", "tableView"]
+- !private ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "UIColor"]
+- !private ["Ps23CustomStringConvertible", "UIEdgeInsets"]
+- !private ["Ps23CustomStringConvertible", "UINib"]
+- !private ["Ps23CustomStringConvertible", "backgroundColor"]
+- !private ["Ps23CustomStringConvertible", "cgColor"]
+- !private ["Ps23CustomStringConvertible", "dequeueReusableCell"]
+- !private ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps23CustomStringConvertible", "green"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "layer"]
+- !private ["Ps23CustomStringConvertible", "lightGray"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "register"]
+- !private ["Ps23CustomStringConvertible", "separatorInset"]
+- !private ["Ps23CustomStringConvertible", "tableView"]
+- !private ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "UIColor"]
+- !private ["Ps9Equatable", "UIEdgeInsets"]
+- !private ["Ps9Equatable", "UINib"]
+- !private ["Ps9Equatable", "backgroundColor"]
+- !private ["Ps9Equatable", "cgColor"]
+- !private ["Ps9Equatable", "dequeueReusableCell"]
+- !private ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Ps9Equatable", "green"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "layer"]
+- !private ["Ps9Equatable", "lightGray"]
+- !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "register"]
+- !private ["Ps9Equatable", "separatorInset"]
+- !private ["Ps9Equatable", "tableView"]
+- !private ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "UIColor"]
+- !private ["Ps8Hashable", "UIEdgeInsets"]
+- !private ["Ps8Hashable", "UINib"]
+- !private ["Ps8Hashable", "backgroundColor"]
+- !private ["Ps8Hashable", "cgColor"]
+- !private ["Ps8Hashable", "dequeueReusableCell"]
+- !private ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps8Hashable", "green"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "layer"]
+- !private ["Ps8Hashable", "lightGray"]
+- !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "register"]
+- !private ["Ps8Hashable", "separatorInset"]
+- !private ["Ps8Hashable", "tableView"]
+- !private ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["PSo8NSCoding", "UIColor"]
+- !private ["PSo8NSCoding", "UIEdgeInsets"]
+- !private ["PSo8NSCoding", "UINib"]
+- !private ["PSo8NSCoding", "backgroundColor"]
+- !private ["PSo8NSCoding", "cgColor"]
+- !private ["PSo8NSCoding", "dequeueReusableCell"]
+- !private ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "green"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "layer"]
+- !private ["PSo8NSCoding", "lightGray"]
+- !private ["PSo8NSCoding", "print"]
+- !private ["PSo8NSCoding", "register"]
+- !private ["PSo8NSCoding", "separatorInset"]
+- !private ["PSo8NSCoding", "tableView"]
+- !private ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "cgColor"]
+- !private ["PSo9NSCopying", "green"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "lightGray"]
+- !private ["PSo26NSExtensionRequestHandling", "UIColor"]
+- !private ["PSo26NSExtensionRequestHandling", "UIEdgeInsets"]
+- !private ["PSo26NSExtensionRequestHandling", "UINib"]
+- !private ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
+- !private ["PSo26NSExtensionRequestHandling", "tableView"]
+- !private ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "CGFloat"]
+- ["CSo8NSObject", "IndexPath"]
+- ["CSo8NSObject", "Int"]
+- !private ["CSo8NSObject", "RocheTableViewCell"]
+- !private ["CSo8NSObject", "UIColor"]
+- !private ["CSo8NSObject", "UIEdgeInsets"]
+- !private ["CSo8NSObject", "UINib"]
+- ["CSo8NSObject", "UITableView"]
+- ["CSo8NSObject", "UITableViewCell"]
+- !private ["CSo8NSObject", "backgroundColor"]
+- !private ["CSo8NSObject", "cgColor"]
+- !private ["CSo8NSObject", "dequeueReusableCell"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- !private ["CSo8NSObject", "green"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "layer"]
+- !private ["CSo8NSObject", "lightGray"]
+- ["CSo8NSObject", "numberOfSections"]
+- !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "register"]
+- !private ["CSo8NSObject", "separatorInset"]
+- ["CSo8NSObject", "tableView"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
+- !private ["PSo16NSObjectProtocol", "UIEdgeInsets"]
+- !private ["PSo16NSObjectProtocol", "UINib"]
+- !private ["PSo16NSObjectProtocol", "backgroundColor"]
+- !private ["PSo16NSObjectProtocol", "cgColor"]
+- !private ["PSo16NSObjectProtocol", "dequeueReusableCell"]
+- !private ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "green"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "layer"]
+- !private ["PSo16NSObjectProtocol", "lightGray"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "register"]
+- !private ["PSo16NSObjectProtocol", "separatorInset"]
+- !private ["PSo16NSObjectProtocol", "tableView"]
+- !private ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "cgColor"]
+- !private ["PSo14NSSecureCoding", "green"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "lightGray"]
+- !private ["CSo8NSString", "init"]
+- !private ["C8practice18RocheTableViewCell", "backgroundColor"]
+- !private ["C8practice18RocheTableViewCell", "layer"]
+- !private ["C8practice18RocheTableViewCell", "separatorInset"]
+- !private ["SS", "init"]
+- ["C8practice20TableViewController2", "CGFloat"]
+- ["C8practice20TableViewController2", "IndexPath"]
+- ["C8practice20TableViewController2", "Int"]
+- !private ["C8practice20TableViewController2", "RocheTableViewCell"]
+- !private ["C8practice20TableViewController2", "UIColor"]
+- !private ["C8practice20TableViewController2", "UIEdgeInsets"]
+- !private ["C8practice20TableViewController2", "UINib"]
+- ["C8practice20TableViewController2", "UITableView"]
+- ["C8practice20TableViewController2", "UITableViewCell"]
+- ["C8practice20TableViewController2", "deinit"]
+- ["C8practice20TableViewController2", "didReceiveMemoryWarning"]
+- ["C8practice20TableViewController2", "init"]
+- ["C8practice20TableViewController2", "numberOfSections"]
+- !private ["C8practice20TableViewController2", "print"]
+- ["C8practice20TableViewController2", "tableView"]
+- ["C8practice20TableViewController2", "viewDidLoad"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
+- !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCell"]
+- !private ["PSo29UIAccessibilityIdentification", "layer"]
+- !private ["PSo29UIAccessibilityIdentification", "register"]
+- !private ["PSo29UIAccessibilityIdentification", "separatorInset"]
+- !private ["PSo12UIAppearance", "backgroundColor"]
+- !private ["PSo12UIAppearance", "dequeueReusableCell"]
+- !private ["PSo12UIAppearance", "layer"]
+- !private ["PSo12UIAppearance", "register"]
+- !private ["PSo12UIAppearance", "separatorInset"]
+- !private ["PSo21UIAppearanceContainer", "UIColor"]
+- !private ["PSo21UIAppearanceContainer", "UIEdgeInsets"]
+- !private ["PSo21UIAppearanceContainer", "UINib"]
+- !private ["PSo21UIAppearanceContainer", "backgroundColor"]
+- !private ["PSo21UIAppearanceContainer", "dequeueReusableCell"]
+- !private ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "layer"]
+- !private ["PSo21UIAppearanceContainer", "print"]
+- !private ["PSo21UIAppearanceContainer", "register"]
+- !private ["PSo21UIAppearanceContainer", "separatorInset"]
+- !private ["PSo21UIAppearanceContainer", "tableView"]
+- !private ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo7UIColor", "cgColor"]
+- !private ["CSo7UIColor", "green"]
+- !private ["CSo7UIColor", "lightGray"]
+- !private ["PSo18UIContentContainer", "UIColor"]
+- !private ["PSo18UIContentContainer", "UIEdgeInsets"]
+- !private ["PSo18UIContentContainer", "UINib"]
+- !private ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "print"]
+- !private ["PSo18UIContentContainer", "tableView"]
+- !private ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "backgroundColor"]
+- !private ["PSo17UICoordinateSpace", "dequeueReusableCell"]
+- !private ["PSo17UICoordinateSpace", "layer"]
+- !private ["PSo17UICoordinateSpace", "register"]
+- !private ["PSo17UICoordinateSpace", "separatorInset"]
+- !private ["PSo13UIDynamicItem", "backgroundColor"]
+- !private ["PSo13UIDynamicItem", "dequeueReusableCell"]
+- !private ["PSo13UIDynamicItem", "layer"]
+- !private ["PSo13UIDynamicItem", "register"]
+- !private ["PSo13UIDynamicItem", "separatorInset"]
+- !private ["VSC12UIEdgeInsets", "init"]
+- !private ["PSo18UIFocusEnvironment", "UIColor"]
+- !private ["PSo18UIFocusEnvironment", "UIEdgeInsets"]
+- !private ["PSo18UIFocusEnvironment", "UINib"]
+- !private ["PSo18UIFocusEnvironment", "backgroundColor"]
+- !private ["PSo18UIFocusEnvironment", "dequeueReusableCell"]
+- !private ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "layer"]
+- !private ["PSo18UIFocusEnvironment", "print"]
+- !private ["PSo18UIFocusEnvironment", "register"]
+- !private ["PSo18UIFocusEnvironment", "separatorInset"]
+- !private ["PSo18UIFocusEnvironment", "tableView"]
+- !private ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "backgroundColor"]
+- !private ["PSo11UIFocusItem", "dequeueReusableCell"]
+- !private ["PSo11UIFocusItem", "layer"]
+- !private ["PSo11UIFocusItem", "register"]
+- !private ["PSo11UIFocusItem", "separatorInset"]
+- !private ["PSo27UIGestureRecognizerDelegate", "backgroundColor"]
+- !private ["PSo27UIGestureRecognizerDelegate", "layer"]
+- !private ["PSo27UIGestureRecognizerDelegate", "separatorInset"]
+- !private ["CSo5UINib", "init"]
+- ["CSo11UIResponder", "CGFloat"]
+- ["CSo11UIResponder", "IndexPath"]
+- ["CSo11UIResponder", "Int"]
+- !private ["CSo11UIResponder", "RocheTableViewCell"]
+- !private ["CSo11UIResponder", "UIColor"]
+- !private ["CSo11UIResponder", "UIEdgeInsets"]
+- !private ["CSo11UIResponder", "UINib"]
+- ["CSo11UIResponder", "UITableView"]
+- ["CSo11UIResponder", "UITableViewCell"]
+- !private ["CSo11UIResponder", "backgroundColor"]
+- !private ["CSo11UIResponder", "dequeueReusableCell"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "layer"]
+- ["CSo11UIResponder", "numberOfSections"]
+- !private ["CSo11UIResponder", "print"]
+- !private ["CSo11UIResponder", "register"]
+- !private ["CSo11UIResponder", "separatorInset"]
+- ["CSo11UIResponder", "tableView"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo30UIResponderStandardEditActions", "UIColor"]
+- !private ["PSo30UIResponderStandardEditActions", "UIEdgeInsets"]
+- !private ["PSo30UIResponderStandardEditActions", "UINib"]
+- !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
+- !private ["PSo30UIResponderStandardEditActions", "dequeueReusableCell"]
+- !private ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "layer"]
+- !private ["PSo30UIResponderStandardEditActions", "print"]
+- !private ["PSo30UIResponderStandardEditActions", "register"]
+- !private ["PSo30UIResponderStandardEditActions", "separatorInset"]
+- !private ["PSo30UIResponderStandardEditActions", "tableView"]
+- !private ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["CSo12UIScrollView", "dequeueReusableCell"]
+- !private ["CSo12UIScrollView", "register"]
+- !private ["PSo20UIScrollViewDelegate", "UIColor"]
+- !private ["PSo20UIScrollViewDelegate", "UIEdgeInsets"]
+- !private ["PSo20UIScrollViewDelegate", "UINib"]
+- !private ["PSo20UIScrollViewDelegate", "didReceiveMemoryWarning"]
+- !private ["PSo20UIScrollViewDelegate", "init"]
+- !private ["PSo20UIScrollViewDelegate", "print"]
+- !private ["PSo20UIScrollViewDelegate", "tableView"]
+- !private ["PSo20UIScrollViewDelegate", "viewDidLoad"]
+- ["PSo20UIScrollViewDelegate", ""]
+- !private ["PSo16UIStateRestoring", "UIColor"]
+- !private ["PSo16UIStateRestoring", "UIEdgeInsets"]
+- !private ["PSo16UIStateRestoring", "UINib"]
+- !private ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "print"]
+- !private ["PSo16UIStateRestoring", "tableView"]
+- !private ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["CSo11UITableView", "dequeueReusableCell"]
+- !private ["CSo11UITableView", "register"]
+- !private ["CSo15UITableViewCell", "backgroundColor"]
+- !private ["CSo15UITableViewCell", "layer"]
+- !private ["CSo15UITableViewCell", "separatorInset"]
+- ["CSo21UITableViewController", "CGFloat"]
+- ["CSo21UITableViewController", "IndexPath"]
+- ["CSo21UITableViewController", "Int"]
+- !private ["CSo21UITableViewController", "RocheTableViewCell"]
+- !private ["CSo21UITableViewController", "UIColor"]
+- !private ["CSo21UITableViewController", "UIEdgeInsets"]
+- !private ["CSo21UITableViewController", "UINib"]
+- ["CSo21UITableViewController", "UITableView"]
+- ["CSo21UITableViewController", "UITableViewCell"]
+- ["CSo21UITableViewController", "didReceiveMemoryWarning"]
+- ["CSo21UITableViewController", "init"]
+- ["CSo21UITableViewController", "numberOfSections"]
+- !private ["CSo21UITableViewController", "print"]
+- ["CSo21UITableViewController", "tableView"]
+- ["CSo21UITableViewController", "viewDidLoad"]
+- ["CSo21UITableViewController", ""]
+- !private ["PSo21UITableViewDataSource", "UIColor"]
+- !private ["PSo21UITableViewDataSource", "UIEdgeInsets"]
+- !private ["PSo21UITableViewDataSource", "UINib"]
+- !private ["PSo21UITableViewDataSource", "didReceiveMemoryWarning"]
+- !private ["PSo21UITableViewDataSource", "init"]
+- !private ["PSo21UITableViewDataSource", "print"]
+- !private ["PSo21UITableViewDataSource", "tableView"]
+- !private ["PSo21UITableViewDataSource", "viewDidLoad"]
+- ["PSo21UITableViewDataSource", ""]
+- !private ["PSo19UITableViewDelegate", "UIColor"]
+- !private ["PSo19UITableViewDelegate", "UIEdgeInsets"]
+- !private ["PSo19UITableViewDelegate", "UINib"]
+- !private ["PSo19UITableViewDelegate", "didReceiveMemoryWarning"]
+- !private ["PSo19UITableViewDelegate", "init"]
+- !private ["PSo19UITableViewDelegate", "print"]
+- !private ["PSo19UITableViewDelegate", "tableView"]
+- !private ["PSo19UITableViewDelegate", "viewDidLoad"]
+- ["PSo19UITableViewDelegate", ""]
+- !private ["PSo18UITraitEnvironment", "UIColor"]
+- !private ["PSo18UITraitEnvironment", "UIEdgeInsets"]
+- !private ["PSo18UITraitEnvironment", "UINib"]
+- !private ["PSo18UITraitEnvironment", "backgroundColor"]
+- !private ["PSo18UITraitEnvironment", "dequeueReusableCell"]
+- !private ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "layer"]
+- !private ["PSo18UITraitEnvironment", "print"]
+- !private ["PSo18UITraitEnvironment", "register"]
+- !private ["PSo18UITraitEnvironment", "separatorInset"]
+- !private ["PSo18UITraitEnvironment", "tableView"]
+- !private ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "backgroundColor"]
+- !private ["CSo6UIView", "dequeueReusableCell"]
+- !private ["CSo6UIView", "layer"]
+- !private ["CSo6UIView", "register"]
+- !private ["CSo6UIView", "separatorInset"]
+- ["CSo16UIViewController", "CGFloat"]
+- ["CSo16UIViewController", "IndexPath"]
+- ["CSo16UIViewController", "Int"]
+- !private ["CSo16UIViewController", "RocheTableViewCell"]
+- !private ["CSo16UIViewController", "UIColor"]
+- !private ["CSo16UIViewController", "UIEdgeInsets"]
+- !private ["CSo16UIViewController", "UINib"]
+- ["CSo16UIViewController", "UITableView"]
+- ["CSo16UIViewController", "UITableViewCell"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "numberOfSections"]
+- !private ["CSo16UIViewController", "print"]
+- ["CSo16UIViewController", "tableView"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "backgroundColor"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "dequeueReusableCell"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "layer"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "register"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "separatorInset"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps26_ExpressibleByColorLiteral", "cgColor"]
+- !private ["Ps26_ExpressibleByColorLiteral", "green"]
+- !private ["Ps26_ExpressibleByColorLiteral", "lightGray"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "UIColor"]
+- !private ["Ps9_Hashable", "UIEdgeInsets"]
+- !private ["Ps9_Hashable", "UINib"]
+- !private ["Ps9_Hashable", "backgroundColor"]
+- !private ["Ps9_Hashable", "cgColor"]
+- !private ["Ps9_Hashable", "dequeueReusableCell"]
+- !private ["Ps9_Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps9_Hashable", "green"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "layer"]
+- !private ["Ps9_Hashable", "lightGray"]
+- !private ["Ps9_Hashable", "print"]
+- !private ["Ps9_Hashable", "register"]
+- !private ["Ps9_Hashable", "separatorInset"]
+- !private ["Ps9_Hashable", "tableView"]
+- !private ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "CSo7CALayer"
+- !private "PSo15CALayerDelegate"
+- !private "PSo13CAMediaTiming"
+- "Ps7CVarArg"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "C8practice18RocheTableViewCell"
+- !private "SS"
+- "C8practice20TableViewController2"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- !private "CSo7UIColor"
+- "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "VSC12UIEdgeInsets"
+- "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- !private "PSo27UIGestureRecognizerDelegate"
+- !private "CSo5UINib"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- !private "CSo12UIScrollView"
+- "PSo20UIScrollViewDelegate"
+- "PSo16UIStateRestoring"
+- !private "CSo11UITableView"
+- !private "CSo15UITableViewCell"
+- "CSo21UITableViewController"
+- "PSo21UITableViewDataSource"
+- "PSo19UITableViewDelegate"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps26_ExpressibleByColorLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.apinotesc"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.apinotesc"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.apinotesc"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.apinotesc"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.apinotesc"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreText.apinotesc"
+- "/Users/kidnapper/Documents/25sprout/practice/DerivedData2/practice/Build/Products/Debug-iphoneos/TabPageViewController.framework/Modules/TabPageViewController.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "4b6d7d7b8559c38082f5c5bb65524151"

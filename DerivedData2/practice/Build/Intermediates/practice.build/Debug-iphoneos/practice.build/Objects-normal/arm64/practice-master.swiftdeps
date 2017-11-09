@@ -1,0 +1,6 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "cfec0a05e04b119c9365542bba39119d"
+build_time: [563504745, 216221000]
+inputs:
+  "/Users/kidnapper/Documents/25sprout/practice/practice/ViewController.swift": [563504725, 0]
+  "/Users/kidnapper/Documents/25sprout/practice/practice/AppDelegate.swift": [563271656, 0]

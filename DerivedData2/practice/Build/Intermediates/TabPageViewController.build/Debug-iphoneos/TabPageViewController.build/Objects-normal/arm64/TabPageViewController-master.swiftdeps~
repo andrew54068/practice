@@ -1,0 +1,8 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "5454aa08aebf2393758e3bb2b2aed0b5"
+build_time: [563363246, 503496000]
+inputs:
+  "/Users/kidnapper/Documents/TabPageViewController/Sources/TabPageOption.swift": [563260637, 0]
+  "/Users/kidnapper/Documents/TabPageViewController/Sources/TabPageViewController.swift": [563260637, 0]
+  "/Users/kidnapper/Documents/TabPageViewController/Sources/TabView.swift": [563260637, 0]
+  "/Users/kidnapper/Documents/TabPageViewController/Sources/TabCollectionCell.swift": [563260637, 0]

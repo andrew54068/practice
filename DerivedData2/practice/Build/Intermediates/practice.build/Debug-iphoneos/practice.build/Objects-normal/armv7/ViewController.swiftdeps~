@@ -1,0 +1,512 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ViewController"
+provides-nominal:
+- "C8practice14ViewController"
+provides-member:
+- ["C8practice14ViewController", ""]
+provides-dynamic-lookup:
+- "viewDidAppear"
+- "viewDidLoad"
+depends-top-level:
+- !private "/"
+- !private "Array"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- !private "CGFloat"
+- !private "StringLiteralType"
+- !private "TabPageOption"
+- !private "TabPageViewController"
+- !private "UIStoryboard"
+- "UIViewController"
+- "ViewController"
+- !private "print"
+depends-member:
+- !private ["Ps16AbsoluteValuable", "init"]
+- !private ["Ps9AnyObject", "CGFloat"]
+- !private ["Ps9AnyObject", "TabPageOption"]
+- !private ["Ps9AnyObject", "TabPageViewController"]
+- !private ["Ps9AnyObject", "UIStoryboard"]
+- !private ["Ps9AnyObject", "create"]
+- !private ["Ps9AnyObject", "frame"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "instantiateViewController"]
+- !private ["Ps9AnyObject", "option"]
+- !private ["Ps9AnyObject", "present"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "tabItems"]
+- !private ["Ps9AnyObject", "view"]
+- !private ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "count"]
+- !private ["Ps23BidirectionalCollection", "count"]
+- !private ["Ps19BinaryFloatingPoint", "init"]
+- !private ["PSo15CALayerDelegate", "frame"]
+- !private ["V12CoreGraphics7CGFloat", "init"]
+- !private ["VSC6CGRect", "width"]
+- !private ["Ps7CVarArg", "CGFloat"]
+- !private ["Ps7CVarArg", "TabPageOption"]
+- !private ["Ps7CVarArg", "TabPageViewController"]
+- !private ["Ps7CVarArg", "UIStoryboard"]
+- !private ["Ps7CVarArg", "count"]
+- !private ["Ps7CVarArg", "create"]
+- !private ["Ps7CVarArg", "frame"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "instantiateViewController"]
+- !private ["Ps7CVarArg", "option"]
+- !private ["Ps7CVarArg", "present"]
+- !private ["Ps7CVarArg", "print"]
+- !private ["Ps7CVarArg", "tabItems"]
+- !private ["Ps7CVarArg", "view"]
+- !private ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Collection", "count"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "CGFloat"]
+- !private ["Ps28CustomDebugStringConvertible", "TabPageOption"]
+- !private ["Ps28CustomDebugStringConvertible", "TabPageViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "UIStoryboard"]
+- !private ["Ps28CustomDebugStringConvertible", "count"]
+- !private ["Ps28CustomDebugStringConvertible", "create"]
+- !private ["Ps28CustomDebugStringConvertible", "frame"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "instantiateViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "option"]
+- !private ["Ps28CustomDebugStringConvertible", "present"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "tabItems"]
+- !private ["Ps28CustomDebugStringConvertible", "view"]
+- !private ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- !private ["Ps28CustomDebugStringConvertible", "width"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "width"]
+- !private ["Ps17CustomReflectable", "count"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "width"]
+- !private ["Ps23CustomStringConvertible", "CGFloat"]
+- !private ["Ps23CustomStringConvertible", "TabPageOption"]
+- !private ["Ps23CustomStringConvertible", "TabPageViewController"]
+- !private ["Ps23CustomStringConvertible", "UIStoryboard"]
+- !private ["Ps23CustomStringConvertible", "count"]
+- !private ["Ps23CustomStringConvertible", "create"]
+- !private ["Ps23CustomStringConvertible", "frame"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "instantiateViewController"]
+- !private ["Ps23CustomStringConvertible", "option"]
+- !private ["Ps23CustomStringConvertible", "present"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "tabItems"]
+- !private ["Ps23CustomStringConvertible", "view"]
+- !private ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "CGFloat"]
+- !private ["Ps9Equatable", "TabPageOption"]
+- !private ["Ps9Equatable", "TabPageViewController"]
+- !private ["Ps9Equatable", "UIStoryboard"]
+- !private ["Ps9Equatable", "all"]
+- !private ["Ps9Equatable", "create"]
+- !private ["Ps9Equatable", "frame"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "instantiateViewController"]
+- !private ["Ps9Equatable", "option"]
+- !private ["Ps9Equatable", "present"]
+- !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "tabItems"]
+- !private ["Ps9Equatable", "view"]
+- !private ["Ps9Equatable", "viewDidLoad"]
+- !private ["Ps9Equatable", "width"]
+- ["Ps9Equatable", ""]
+- !private ["Ps25ExpressibleByArrayLiteral", "count"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps25ExpressibleByFloatLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps13FloatingPoint", "init"]
+- !private ["Ps8Hashable", "CGFloat"]
+- !private ["Ps8Hashable", "TabPageOption"]
+- !private ["Ps8Hashable", "TabPageViewController"]
+- !private ["Ps8Hashable", "UIStoryboard"]
+- !private ["Ps8Hashable", "all"]
+- !private ["Ps8Hashable", "create"]
+- !private ["Ps8Hashable", "frame"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "instantiateViewController"]
+- !private ["Ps8Hashable", "option"]
+- !private ["Ps8Hashable", "present"]
+- !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "tabItems"]
+- !private ["Ps8Hashable", "view"]
+- !private ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- !private ["O21TabPageViewController27HidesTopContentsOnSwipeType", "all"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "count"]
+- !private ["PSo8NSCoding", "CGFloat"]
+- !private ["PSo8NSCoding", "TabPageOption"]
+- !private ["PSo8NSCoding", "TabPageViewController"]
+- !private ["PSo8NSCoding", "UIStoryboard"]
+- !private ["PSo8NSCoding", "create"]
+- !private ["PSo8NSCoding", "frame"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "option"]
+- !private ["PSo8NSCoding", "present"]
+- !private ["PSo8NSCoding", "print"]
+- !private ["PSo8NSCoding", "tabItems"]
+- !private ["PSo8NSCoding", "view"]
+- !private ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "CGFloat"]
+- !private ["PSo26NSExtensionRequestHandling", "TabPageOption"]
+- !private ["PSo26NSExtensionRequestHandling", "TabPageViewController"]
+- !private ["PSo26NSExtensionRequestHandling", "UIStoryboard"]
+- !private ["PSo26NSExtensionRequestHandling", "create"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "option"]
+- !private ["PSo26NSExtensionRequestHandling", "present"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
+- !private ["PSo26NSExtensionRequestHandling", "tabItems"]
+- !private ["PSo26NSExtensionRequestHandling", "view"]
+- !private ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "CGFloat"]
+- !private ["CSo8NSObject", "TabPageOption"]
+- !private ["CSo8NSObject", "TabPageViewController"]
+- !private ["CSo8NSObject", "UIStoryboard"]
+- !private ["CSo8NSObject", "create"]
+- !private ["CSo8NSObject", "frame"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "instantiateViewController"]
+- !private ["CSo8NSObject", "option"]
+- !private ["CSo8NSObject", "present"]
+- !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "tabItems"]
+- !private ["CSo8NSObject", "view"]
+- ["CSo8NSObject", "viewDidAppear"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "CGFloat"]
+- !private ["PSo16NSObjectProtocol", "TabPageOption"]
+- !private ["PSo16NSObjectProtocol", "TabPageViewController"]
+- !private ["PSo16NSObjectProtocol", "UIStoryboard"]
+- !private ["PSo16NSObjectProtocol", "create"]
+- !private ["PSo16NSObjectProtocol", "frame"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "instantiateViewController"]
+- !private ["PSo16NSObjectProtocol", "option"]
+- !private ["PSo16NSObjectProtocol", "present"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "tabItems"]
+- !private ["PSo16NSObjectProtocol", "view"]
+- !private ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- !private ["Ps22RandomAccessCollection", "count"]
+- !private ["Ps26RangeReplaceableCollection", "count"]
+- !private ["Ps8Sequence", "count"]
+- !private ["Ps12SignedNumber", "init"]
+- !private ["Ps10Strideable", "init"]
+- !private ["SS", "init"]
+- !private ["V21TabPageViewController13TabPageOption", "hidesTopViewOnSwipeType"]
+- !private ["V21TabPageViewController13TabPageOption", "init"]
+- !private ["V21TabPageViewController13TabPageOption", "tabWidth"]
+- !private ["C21TabPageViewController21TabPageViewController", "create"]
+- !private ["C21TabPageViewController21TabPageViewController", "option"]
+- !private ["C21TabPageViewController21TabPageViewController", "tabItems"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "frame"]
+- !private ["PSo12UIAppearance", "frame"]
+- !private ["PSo21UIAppearanceContainer", "CGFloat"]
+- !private ["PSo21UIAppearanceContainer", "TabPageOption"]
+- !private ["PSo21UIAppearanceContainer", "TabPageViewController"]
+- !private ["PSo21UIAppearanceContainer", "UIStoryboard"]
+- !private ["PSo21UIAppearanceContainer", "create"]
+- !private ["PSo21UIAppearanceContainer", "frame"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "option"]
+- !private ["PSo21UIAppearanceContainer", "present"]
+- !private ["PSo21UIAppearanceContainer", "print"]
+- !private ["PSo21UIAppearanceContainer", "tabItems"]
+- !private ["PSo21UIAppearanceContainer", "view"]
+- !private ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "CGFloat"]
+- !private ["PSo18UIContentContainer", "TabPageOption"]
+- !private ["PSo18UIContentContainer", "TabPageViewController"]
+- !private ["PSo18UIContentContainer", "UIStoryboard"]
+- !private ["PSo18UIContentContainer", "create"]
+- !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "option"]
+- !private ["PSo18UIContentContainer", "present"]
+- !private ["PSo18UIContentContainer", "print"]
+- !private ["PSo18UIContentContainer", "tabItems"]
+- !private ["PSo18UIContentContainer", "view"]
+- !private ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "frame"]
+- !private ["PSo13UIDynamicItem", "frame"]
+- !private ["PSo18UIFocusEnvironment", "CGFloat"]
+- !private ["PSo18UIFocusEnvironment", "TabPageOption"]
+- !private ["PSo18UIFocusEnvironment", "TabPageViewController"]
+- !private ["PSo18UIFocusEnvironment", "UIStoryboard"]
+- !private ["PSo18UIFocusEnvironment", "create"]
+- !private ["PSo18UIFocusEnvironment", "frame"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "option"]
+- !private ["PSo18UIFocusEnvironment", "present"]
+- !private ["PSo18UIFocusEnvironment", "print"]
+- !private ["PSo18UIFocusEnvironment", "tabItems"]
+- !private ["PSo18UIFocusEnvironment", "view"]
+- !private ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "frame"]
+- !private ["CSo20UIPageViewController", "create"]
+- !private ["CSo20UIPageViewController", "option"]
+- !private ["CSo20UIPageViewController", "tabItems"]
+- !private ["PSo30UIPageViewControllerDataSource", "create"]
+- !private ["PSo30UIPageViewControllerDataSource", "option"]
+- !private ["PSo30UIPageViewControllerDataSource", "tabItems"]
+- !private ["PSo28UIPageViewControllerDelegate", "create"]
+- !private ["PSo28UIPageViewControllerDelegate", "option"]
+- !private ["PSo28UIPageViewControllerDelegate", "tabItems"]
+- ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "CGFloat"]
+- !private ["CSo11UIResponder", "TabPageOption"]
+- !private ["CSo11UIResponder", "TabPageViewController"]
+- !private ["CSo11UIResponder", "UIStoryboard"]
+- !private ["CSo11UIResponder", "create"]
+- !private ["CSo11UIResponder", "frame"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "option"]
+- !private ["CSo11UIResponder", "present"]
+- !private ["CSo11UIResponder", "print"]
+- !private ["CSo11UIResponder", "tabItems"]
+- !private ["CSo11UIResponder", "view"]
+- ["CSo11UIResponder", "viewDidAppear"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo30UIResponderStandardEditActions", "CGFloat"]
+- !private ["PSo30UIResponderStandardEditActions", "TabPageOption"]
+- !private ["PSo30UIResponderStandardEditActions", "TabPageViewController"]
+- !private ["PSo30UIResponderStandardEditActions", "UIStoryboard"]
+- !private ["PSo30UIResponderStandardEditActions", "create"]
+- !private ["PSo30UIResponderStandardEditActions", "frame"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "option"]
+- !private ["PSo30UIResponderStandardEditActions", "present"]
+- !private ["PSo30UIResponderStandardEditActions", "print"]
+- !private ["PSo30UIResponderStandardEditActions", "tabItems"]
+- !private ["PSo30UIResponderStandardEditActions", "view"]
+- !private ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo20UIScrollViewDelegate", "create"]
+- !private ["PSo20UIScrollViewDelegate", "option"]
+- !private ["PSo20UIScrollViewDelegate", "tabItems"]
+- !private ["PSo16UIStateRestoring", "CGFloat"]
+- !private ["PSo16UIStateRestoring", "TabPageOption"]
+- !private ["PSo16UIStateRestoring", "TabPageViewController"]
+- !private ["PSo16UIStateRestoring", "UIStoryboard"]
+- !private ["PSo16UIStateRestoring", "create"]
+- !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "option"]
+- !private ["PSo16UIStateRestoring", "present"]
+- !private ["PSo16UIStateRestoring", "print"]
+- !private ["PSo16UIStateRestoring", "tabItems"]
+- !private ["PSo16UIStateRestoring", "view"]
+- !private ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["CSo12UIStoryboard", "init"]
+- !private ["CSo12UIStoryboard", "instantiateViewController"]
+- !private ["PSo18UITraitEnvironment", "CGFloat"]
+- !private ["PSo18UITraitEnvironment", "TabPageOption"]
+- !private ["PSo18UITraitEnvironment", "TabPageViewController"]
+- !private ["PSo18UITraitEnvironment", "UIStoryboard"]
+- !private ["PSo18UITraitEnvironment", "create"]
+- !private ["PSo18UITraitEnvironment", "frame"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "option"]
+- !private ["PSo18UITraitEnvironment", "present"]
+- !private ["PSo18UITraitEnvironment", "print"]
+- !private ["PSo18UITraitEnvironment", "tabItems"]
+- !private ["PSo18UITraitEnvironment", "view"]
+- !private ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "frame"]
+- ["CSo16UIViewController", "Bool"]
+- !private ["CSo16UIViewController", "CGFloat"]
+- !private ["CSo16UIViewController", "TabPageOption"]
+- !private ["CSo16UIViewController", "TabPageViewController"]
+- !private ["CSo16UIViewController", "UIStoryboard"]
+- !private ["CSo16UIViewController", "create"]
+- ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "option"]
+- !private ["CSo16UIViewController", "present"]
+- !private ["CSo16UIViewController", "print"]
+- !private ["CSo16UIViewController", "tabItems"]
+- !private ["CSo16UIViewController", "view"]
+- ["CSo16UIViewController", "viewDidAppear"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- ["C8practice14ViewController", "Bool"]
+- !private ["C8practice14ViewController", "CGFloat"]
+- !private ["C8practice14ViewController", "TabPageOption"]
+- !private ["C8practice14ViewController", "TabPageViewController"]
+- !private ["C8practice14ViewController", "UIStoryboard"]
+- ["C8practice14ViewController", "deinit"]
+- ["C8practice14ViewController", "init"]
+- !private ["C8practice14ViewController", "present"]
+- !private ["C8practice14ViewController", "print"]
+- !private ["C8practice14ViewController", "view"]
+- ["C8practice14ViewController", "viewDidAppear"]
+- ["C8practice14ViewController", "viewDidLoad"]
+- !private ["Ps14_ArrayProtocol", "count"]
+- !private ["Ps23_BidirectionalIndexable", "count"]
+- !private ["Ps15_CVarArgAligned", "init"]
+- !private ["Ps22_CVarArgPassedAsDouble", "init"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "frame"]
+- !private ["Ps24_DestructorSafeContainer", "count"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "CGFloat"]
+- !private ["Ps9_Hashable", "TabPageOption"]
+- !private ["Ps9_Hashable", "TabPageViewController"]
+- !private ["Ps9_Hashable", "UIStoryboard"]
+- !private ["Ps9_Hashable", "all"]
+- !private ["Ps9_Hashable", "create"]
+- !private ["Ps9_Hashable", "frame"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "instantiateViewController"]
+- !private ["Ps9_Hashable", "option"]
+- !private ["Ps9_Hashable", "present"]
+- !private ["Ps9_Hashable", "print"]
+- !private ["Ps9_Hashable", "tabItems"]
+- !private ["Ps9_Hashable", "view"]
+- !private ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps10_Indexable", "count"]
+- !private ["Ps14_IndexableBase", "count"]
+- !private ["Ps17_MutableIndexable", "count"]
+- !private ["Ps21_ObjectiveCBridgeable", "count"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "width"]
+- !private ["Ps22_RandomAccessIndexable", "count"]
+- !private ["Ps26_RangeReplaceableIndexable", "count"]
+- !private ["Ps11_Strideable", "init"]
+depends-nominal:
+- !private "Ps16AbsoluteValuable"
+- "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23BidirectionalCollection"
+- !private "Ps19BinaryFloatingPoint"
+- !private "PSo15CALayerDelegate"
+- !private "V12CoreGraphics7CGFloat"
+- !private "VSC6CGRect"
+- "Ps7CVarArg"
+- !private "Ps10Collection"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps25ExpressibleByFloatLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "Ps13FloatingPoint"
+- "Ps8Hashable"
+- !private "O21TabPageViewController27HidesTopContentsOnSwipeType"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps8Sequence"
+- !private "Ps12SignedNumber"
+- !private "Ps10Strideable"
+- !private "SS"
+- !private "V21TabPageViewController13TabPageOption"
+- !private "C21TabPageViewController21TabPageViewController"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- !private "CSo20UIPageViewController"
+- !private "PSo30UIPageViewControllerDataSource"
+- !private "PSo28UIPageViewControllerDelegate"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- !private "PSo20UIScrollViewDelegate"
+- "PSo16UIStateRestoring"
+- !private "CSo12UIStoryboard"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- "C8practice14ViewController"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps23_BidirectionalIndexable"
+- !private "Ps15_CVarArgAligned"
+- !private "Ps22_CVarArgPassedAsDouble"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps10_Indexable"
+- !private "Ps14_IndexableBase"
+- !private "Ps17_MutableIndexable"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessIndexable"
+- !private "Ps26_RangeReplaceableIndexable"
+- !private "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.apinotesc"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.apinotesc"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Metal.apinotesc"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.apinotesc"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.apinotesc"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.apinotesc"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreText.apinotesc"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Users/kidnapper/Documents/25sprout/practice/DerivedData2/practice/Build/Products/Debug-iphoneos/TabPageViewController.framework/Modules/TabPageViewController.swiftmodule/arm.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
+interface-hash: "6d268a3fe02f9bb0016b39371e951b30"
