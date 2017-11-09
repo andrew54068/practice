@@ -133,8 +133,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
-@import CoreGraphics;
 @import Foundation;
+@import CoreGraphics;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -154,16 +154,47 @@ SWIFT_CLASS("_TtC8practice11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UICollectionView;
+@class UICollectionViewCell;
+@class UICollectionViewLayout;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC8practice24CollectionViewController")
+@interface CollectionViewController : UICollectionViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithCollectionViewLayout:(UICollectionViewLayout * _Nonnull)layout OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC8practice23RocheCollectionViewCell")
+@interface RocheCollectionViewCell : UICollectionViewCell
+- (void)awakeFromNib;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIImageView;
 @class UILabel;
-@class NSCoder;
+@class UIImage;
+@class NSMutableAttributedString;
 
 SWIFT_CLASS("_TtC8practice18RocheTableViewCell")
 @interface RocheTableViewCell : UITableViewCell
 @property (nonatomic, strong) IBOutlet UIImageView * _Null_unspecified image1;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified author;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified date;
-@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified tittle;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified title;
+@property (nonatomic, strong) UIImage * _Nullable thumbnailImage;
+@property (nonatomic, strong) UIImage * _Nullable unreadIndication;
+@property (nonatomic, strong) NSMutableAttributedString * _Null_unspecified attributedString;
+@property (nonatomic) BOOL hadRead;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 @property (nonatomic) CGRect frame;
@@ -171,15 +202,16 @@ SWIFT_CLASS("_TtC8practice18RocheTableViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIImage;
 @class UITableView;
-@class NSBundle;
 
 SWIFT_CLASS("_TtC8practice19TableViewController")
 @interface TableViewController : UITableViewController
-@property (nonatomic, copy) NSString * _Nonnull titleContent;
-@property (nonatomic, copy) NSString * _Nonnull subtittleContent;
 @property (nonatomic, strong) UIImage * _Nullable thumbnailImage;
+@property (nonatomic, copy) NSString * _Nonnull titleContent;
+@property (nonatomic, copy) NSString * _Nonnull subtitleContent;
+@property (nonatomic, strong) NSMutableAttributedString * _Null_unspecified attributedString;
+@property (nonatomic, strong) UIImage * _Nullable unreadIndication;
+@property (nonatomic) NSInteger count;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
@@ -189,6 +221,7 @@ SWIFT_CLASS("_TtC8practice19TableViewController")
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)tableView:(UITableView * _Nonnull)tableView didDeselectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

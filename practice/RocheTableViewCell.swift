@@ -11,25 +11,29 @@ import UIKit
 class RocheTableViewCell: UITableViewCell {
 
     @IBOutlet var image1: UIImageView!
-    
     @IBOutlet var author: UILabel!
-    
     @IBOutlet var date: UILabel!
+    @IBOutlet var title: UILabel!
     
-    @IBOutlet var tittle: UILabel!
     
-    var titleContent: String = ""
-    var subtittleContent: String = ""
     var thumbnailImage: UIImage? = UIImage(named: "patient")
     var unreadIndication: UIImage? = UIImage(named: "blue_dot")
+    var attributedString: NSMutableAttributedString!
+    
+    
     
     
     var hadRead:Bool = false {
-        didSet (newValue){
+        willSet(newValue){
             if newValue{
-                self.
+                attributedString = nil
+                self.title.attributedText = attributedString
             }else{
-                
+                let unreadDotAttachment = NSTextAttachment()
+                unreadDotAttachment.image = UIImage(cgImage: unreadIndication!.cgImage!, scale: 1, orientation: .up)
+                let attrStringWithImage = NSAttributedString(attachment: unreadDotAttachment)
+                attributedString = attrStringWithImage as! NSMutableAttributedString
+                self.title.attributedText = attributedString
             }
         }
     }
@@ -39,20 +43,32 @@ class RocheTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         print("awake from nib test message")
-        tittle.numberOfLines = 0
+        title.numberOfLines = 0
         self.backgroundColor = UIColor.white
         image1.clipsToBounds = true
         
-        let unreadDotAttachment = NSTextAttachment()
-        var attributedString: NSMutableAttributedString!
-        unreadDotAttachment.image = UIImage(cgImage: image.cgImage!, scale: 1, orientation: .up)
-        let attrStringWithImage = NSAttributedString(attachment: unreadDotAttachment)
-        attributedString.append(attrStringWithImage)
-        attributedString.append(attributedString1)
-        self.tittle.attributedText = attributedString
         
+        
+        
+        
+        //if load thumbnail image are loaded
+//        if unreadIndication != nil{
+//            unreadDotAttachment.image = UIImage(cgImage: unreadIndication!.cgImage!, scale: 1, orientation: .up)
+//            
+//        //otherwise show placeholder image
+//        }else{
+//            
+//        }
+        let unreadDotAttachment = NSTextAttachment()
+        unreadDotAttachment.image = UIImage(cgImage: unreadIndication!.cgImage!, scale: 1.5, orientation: .up)
+        let attrStringWithImage = NSAttributedString(attachment: unreadDotAttachment)
+        attributedString = attrStringWithImage as! NSMutableAttributedString
+        self.title.attributedText = attributedString
+
         
     }
+    
+//    func appendAttributedString(string: NSMutableAttributedString) -> NSMutableAttributedString
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

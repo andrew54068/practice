@@ -48,7 +48,13 @@ class ViewController: UIViewController {
         let tc = TabPageViewController.create()
         let vc1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "vc1")
         let vc2 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "vc2")
-        tc.tabItems = [(vc1, "First"), (vc2, "Second")]
+        let vc3 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "vc3")
+        
+        let logo = UIImage(named: "Roche_logo")
+        let logoView = UIImageView(image: logo)
+        navigationItem.titleView = logoView
+        
+        tc.tabItems = [(vc1, "First"), (vc2, "Second"), (vc3, "Third")]
         var option = TabPageOption()
         option.tabWidth = view.frame.width / CGFloat(tc.tabItems.count)
         option.hidesTopViewOnSwipeType = .all

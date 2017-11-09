@@ -14,8 +14,12 @@ class TableViewController: UITableViewController {
     
 //    @IBOutlet var tableView: UITableView!
 //    var hight: CGFloat = 40
-    
-    
+    var thumbnailImage: UIImage?
+    var titleContent: String = ""
+    var subtitleContent: String = ""
+    var attributedString: NSMutableAttributedString!
+    var unreadIndication: UIImage? = UIImage(named: "blue_dot")
+    var count:Int = 0
     
     
     
@@ -27,14 +31,20 @@ class TableViewController: UITableViewController {
         tableView.register(nib
             , forCellReuseIdentifier: "cell")
         print("here1")
+        
+        let logo = UIImage(named: "Roche_logo")
+        let logoView = UIImageView(image: logo)
+        navigationItem.titleView = logoView
 //        tableView.backgroundColor = UIColor.red
 //        tableView.rowHeight = 40
 //        tableView.cellLayoutMarginsFollowReadableWidth = false
 //        tableView.separatorStyle = .singleLine
-        tableView.contentInset = UIEdgeInsetsMake(98, 0, 0, 0)
+        tableView.contentInset = UIEdgeInsetsMake(4, 0, 0, 0)
         tableView.separatorInset = UIEdgeInsets.zero
         tableView.estimatedRowHeight = 318
-        tableView.scrollIndicatorInsets = UIEdgeInsets(top: 109, left: 0, bottom: 0, right: 0)
+        tableView.scrollIndicatorInsets = UIEdgeInsets(top: 45, left: 0, bottom: 0, right: 0)
+//        let top = NSLayoutConstraint(item: self, attribute: .top, relatedBy: .equal, toItem: topLayoutGuide, attribute: .bottom, multiplier: 0, constant: 89)
+//        self.tableView.addConstraint(top)
         
         
 //        tableView.rowHeight = UITableViewAutomaticDimension
@@ -77,30 +87,53 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! RocheTableViewCell
         
-        
+        if count > 1{
+            cell.hadRead = true
+        }
         
         let attrs1 = [NSFontAttributeName: UIFont.systemFont(ofSize: 16, weight: UIFontWeightBold), NSForegroundColorAttributeName: UIColor.black]
         let attrs2 = [NSFontAttributeName: UIFont.systemFont(ofSize: 13), NSForegroundColorAttributeName: UIColor.gray]
         let attributedString1 = NSMutableAttributedString(string: "\(titleContent)", attributes: attrs1)
-        let attributedString2 = NSMutableAttributedString(string: "\(subtittleContent)", attributes: attrs2)
+        let attributedString2 = NSMutableAttributedString(string: "\(subtitleContent)", attributes: attrs2)
         let line_feed = NSMutableAttributedString(string: "\n")
-        attributedString1.append(line_feed)
-        attributedString1.append(attributedString2)
-        cell.tittle.attributedText = attributedString1
-        cell.tittle.numberOfLines = 4
-        
-        if let image = thumbnailImage{
-            let unreadDotAttachment = NSTextAttachment()
-            var attributedString: NSMutableAttributedString!
-            unreadDotAttachment.image = UIImage(cgImage: image.cgImage!, scale: 1, orientation: .up)
-            let attrStringWithImage = NSAttributedString(attachment: unreadDotAttachment)
-            attributedString.append(attrStringWithImage)
-            attributedString.append(attributedString1)
-            cell.tittle.attributedText = attributedString
-            
-        }else{
-            cell.tittle.attributedText = attributedString1
+        if subtitleContent != ""{
+            attributedString1.append(line_feed)
         }
+        attributedString1.append(attributedString2)
+        
+//        let unreadDotAttachment = NSTextAttachment()
+//        unreadDotAttachment.image = UIImage(cgImage: unreadIndication!.cgImage!, scale: 1, orientation: .up)
+//        let attrStringWithImage = NSAttributedString(attachment: unreadDotAttachment)
+//        attributedString = attrStringWithImage as! NSMutableAttributedString
+//        attributedString.append(attributedString1)
+//        print("cell local attri = \(attributedString!)")
+        
+        if cell.attributedString == nil{
+            cell.attributedString = attributedString1
+            print("cell attri = nil : \(cell.attributedString!)")
+        }else{
+            cell.attributedString.append(attributedString1)
+            print("cell attri != nil : \(cell.attributedString!)")
+        }
+//        print(cell.attributedString!)
+        cell.title.attributedText = cell.attributedString!
+        cell.title.numberOfLines = 4
+        cell.title.lineBreakMode = .byCharWrapping
+        
+        if thumbnailImage != nil{
+            cell.image1.image = thumbnailImage!
+        }
+
+        
+        
+//        if let image = thumbnailImage{
+//
+//            
+//        }else{
+//            cell.tittle.attributedText = attributedString1
+//        }
+        
+        
 //        cell.frame = CGRect(x: 0, y: 0, width: tableView.frame.width-30, height: cell.frame.height)
 
         print("123")
@@ -115,9 +148,14 @@ class TableViewController: UITableViewController {
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         titleContent = "A future in mind - rising to the challenge in Alzheimer's"
-        subtittleContent = "Doretha Burrell-nickname “Dee” by children at the school where she once worked as administrative, Doretha Burrell-nickname “Dee” by children at the school where she once worked as administrative"
+        subtitleContent = "Doretha Burrell-nickname “Dee” by children at the school where she once worked as administrative, Doretha Burrell-nickname “Dee” by children at the school where she once worked as administrative"
+        thumbnailImage = UIImage(named: "patient")
         
+        count += 1
         tableView.reloadData()
+    }
+    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        
     }
     
     

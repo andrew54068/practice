@@ -10,15 +10,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/XeNs9e3AvHSBIcgrFPvtOo+bVI=
+		G3Swav6LC7h7XLA7rDwUaIBFGW4=
 		</data>
-		<key>Modules/TabPageViewController.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/TabPageViewController.swiftmodule/i386.swiftdoc</key>
 		<data>
-		60uSMeWMRXOY8USxwCtOgvlKo+Y=
+		YjaUfSuZQqm2nvdLhwCdbexqo+o=
 		</data>
-		<key>Modules/TabPageViewController.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/TabPageViewController.swiftmodule/i386.swiftmodule</key>
 		<data>
-		sktK4i3SfztZe79KkMJIW0cp9fk=
+		Jt5s/ow4VdzO1oJF9y3GwTQZSXc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>TabView.nib</key>
 		<data>
-		afMAv2UwARiQbZeNTEFhsez04jE=
+		ZgJo9VQhozfGiyAbB47jEKKIPqg=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -54,26 +54,26 @@
 			GwQ8ug1qAXi6KpeC4avjSA+WRWPXBAX4Hiqpu2PZoBI=
 			</data>
 		</dict>
-		<key>Modules/TabPageViewController.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/TabPageViewController.swiftmodule/i386.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			60uSMeWMRXOY8USxwCtOgvlKo+Y=
+			YjaUfSuZQqm2nvdLhwCdbexqo+o=
 			</data>
 			<key>hash2</key>
 			<data>
-			OrHjuIdOCU8Y1RC5OlDKNqwYzCJ3b8rdh5nv8qcCzLw=
+			eRUVbn9ZODJbCVZnlnyxsaz1KtXUFZZfl2NLtt2HLY4=
 			</data>
 		</dict>
-		<key>Modules/TabPageViewController.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/TabPageViewController.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sktK4i3SfztZe79KkMJIW0cp9fk=
+			Jt5s/ow4VdzO1oJF9y3GwTQZSXc=
 			</data>
 			<key>hash2</key>
 			<data>
-			m0d4K4YgHP2JOe424u+bIWaYI47rLMEu5u8TX9Cl674=
+			NFd3sPKNLpltwjYhbuthrr4S6h5Yc4zVv9bAL11fEh4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -124,11 +124,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			afMAv2UwARiQbZeNTEFhsez04jE=
+			ZgJo9VQhozfGiyAbB47jEKKIPqg=
 			</data>
 			<key>hash2</key>
 			<data>
-			kawGOTPPwV9qevi7GxB9ntkWk4iaKCSkhQJbNrI8Yow=
+			KR0U9Mfg1NiNSlJ0yygKLe05mf1dpEy9HteGYD/YyJc=
 			</data>
 		</dict>
 	</dict>
