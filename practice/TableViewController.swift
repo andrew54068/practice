@@ -118,7 +118,7 @@ class TableViewController: UITableViewController {
 //        print(cell.attributedString!)
         cell.title.attributedText = cell.attributedString!
         cell.title.numberOfLines = 4
-        cell.title.lineBreakMode = .byCharWrapping
+        cell.title.lineBreakMode = .byTruncatingTail
         
         if thumbnailImage != nil{
             cell.image1.image = thumbnailImage!

@@ -12,13 +12,13 @@
 		<data>
 		G3Swav6LC7h7XLA7rDwUaIBFGW4=
 		</data>
-		<key>Modules/TabPageViewController.swiftmodule/i386.swiftdoc</key>
+		<key>Modules/TabPageViewController.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		YjaUfSuZQqm2nvdLhwCdbexqo+o=
+		60uSMeWMRXOY8USxwCtOgvlKo+Y=
 		</data>
-		<key>Modules/TabPageViewController.swiftmodule/i386.swiftmodule</key>
+		<key>Modules/TabPageViewController.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		Jt5s/ow4VdzO1oJF9y3GwTQZSXc=
+		hUB4lSLB5MylBEMcsDJbxFY3/Hs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -54,26 +54,26 @@
 			GwQ8ug1qAXi6KpeC4avjSA+WRWPXBAX4Hiqpu2PZoBI=
 			</data>
 		</dict>
-		<key>Modules/TabPageViewController.swiftmodule/i386.swiftdoc</key>
+		<key>Modules/TabPageViewController.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YjaUfSuZQqm2nvdLhwCdbexqo+o=
+			60uSMeWMRXOY8USxwCtOgvlKo+Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			eRUVbn9ZODJbCVZnlnyxsaz1KtXUFZZfl2NLtt2HLY4=
+			OrHjuIdOCU8Y1RC5OlDKNqwYzCJ3b8rdh5nv8qcCzLw=
 			</data>
 		</dict>
-		<key>Modules/TabPageViewController.swiftmodule/i386.swiftmodule</key>
+		<key>Modules/TabPageViewController.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Jt5s/ow4VdzO1oJF9y3GwTQZSXc=
+			hUB4lSLB5MylBEMcsDJbxFY3/Hs=
 			</data>
 			<key>hash2</key>
 			<data>
-			NFd3sPKNLpltwjYhbuthrr4S6h5Yc4zVv9bAL11fEh4=
+			JG5W0Kl2dAZok1W9/AjesMJ6M5MLFl4zD90MrzN8poY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -54,11 +54,11 @@ class ViewController: UIViewController {
         let logoView = UIImageView(image: logo)
         navigationItem.titleView = logoView
         
-        tc.tabItems = [(vc1, "First"), (vc2, "Second"), (vc3, "Third")]
-        var option = TabPageOption()
-        option.tabWidth = view.frame.width / CGFloat(tc.tabItems.count)
-        option.hidesTopViewOnSwipeType = .all
-        tc.option = option
+//        tc.tabItems = [(vc1, "First", ), (vc2, "Second"), (vc3, "Third")]
+//        var option = TabPageOption()
+//        option.tabWidth = view.frame.width / CGFloat(tc.tabItems.count)
+//        option.hidesTopViewOnSwipeType = .all
+//        tc.option = option
 //        tc.view.frame = CGRect(x: 20, y: 44, width: tc.view.frame.width, height: tc.view.frame.height - 44)
 //        tc.viewWillLayoutSubviews()
 //        tc.view.setNeedsLayout()
