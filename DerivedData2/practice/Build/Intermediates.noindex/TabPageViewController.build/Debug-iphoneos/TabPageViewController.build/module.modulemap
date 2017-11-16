@@ -1,4 +1,0 @@
-framework module TabPageViewController {
-    header "TabPageViewController-Swift.h"
-    requires objc
-}

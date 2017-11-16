@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import TabPageViewController
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,27 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        let tc = TabPageViewController.create()
-//        tc.isInfinity = true
-        let vc1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "vc1")
-        let vc2 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "vc2")
-        let vc3 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "vc3")
-        let vc4 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "vc4")
-        
-        tc.tabItems = [(vc1, "我現在要測"), (vc2, "測試一個超級無敵宇宙長的section"), (vc3, "我現無敵宇宙長的section"), (vc4, "1234567890-123456我是")]
-        
-        var option = TabPageOption()
-        option.hidesTopViewOnSwipeType = .all
-        tc.option = option
-//        present(tc, animated: false, completion: nil)
-        
         
 //        let layout = TabPageViewController
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        window?.rootViewController = UINavigationController(rootViewController: tc)
+        let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mainVC")
+        window?.rootViewController = UINavigationController(rootViewController: mainVC)
+//
+        UINavigationBar.appearance().barTintColor = UIColor.green
         
-        UINavigationBar.appearance().barTintColor = UIColor.white
         
 //        let logo = UIImage(named: "Roche_logo")
 //        let logoView = UIImageView(image: logo)

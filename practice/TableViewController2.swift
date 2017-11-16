@@ -20,7 +20,7 @@ class TableViewController2: UITableViewController {
 //    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(UINib(nibName: "RocheTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
+        tableView.register(UINib(nibName: "RocheTableViewCell", bundle: nil), forCellReuseIdentifier: "RTVCell")
         
         print("here2")
     }
@@ -49,7 +49,7 @@ class TableViewController2: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! RocheTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "RTVCell", for: indexPath) as! RocheTableViewCell
         
         cell.layer.backgroundColor = UIColor.lightGray.cgColor
         cell.backgroundColor = UIColor.green

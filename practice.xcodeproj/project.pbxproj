@@ -7,20 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6D0AE38D1FB0731400D56D08 /* RocheTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0AE38B1FB0731400D56D08 /* RocheTableViewCell.swift */; };
-		6D0AE38E1FB0731400D56D08 /* RocheTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D0AE38C1FB0731400D56D08 /* RocheTableViewCell.xib */; };
+		6D0AE38D1FB0731400D56D08 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0AE38B1FB0731400D56D08 /* TableViewCell.swift */; };
+		6D0AE38E1FB0731400D56D08 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D0AE38C1FB0731400D56D08 /* TableViewCell.xib */; };
 		6D0AE39C1FB1484300D56D08 /* TabPageViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0AE39B1FB1484300D56D08 /* TabPageViewController.framework */; };
 		6D0AE39D1FB1484300D56D08 /* TabPageViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0AE39B1FB1484300D56D08 /* TabPageViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6D0BCCA81FB157E700702643 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0BCCA71FB157E700702643 /* TableViewController.swift */; };
+		6D0BCCA81FB157E700702643 /* TableViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0BCCA71FB157E700702643 /* TableViewController1.swift */; };
 		6D0BCCAD1FB1581200702643 /* TableViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0BCCAC1FB1581200702643 /* TableViewController2.swift */; };
-		6D28C28F1FB40EDB00E6E80E /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D28C28E1FB40EDB00E6E80E /* CollectionViewController.swift */; };
-		6D28C2971FB40F4300E6E80E /* RocheCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D28C2951FB40F4300E6E80E /* RocheCollectionViewCell.swift */; };
-		6D28C2981FB40F4300E6E80E /* RocheCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D28C2961FB40F4300E6E80E /* RocheCollectionViewCell.xib */; };
+		6D17278A1FBBD76400B3A2EE /* SquareCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D1727891FBBD76400B3A2EE /* SquareCategoryCell.xib */; };
+		6D17278F1FBBEA1100B3A2EE /* RectangleCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D17278E1FBBEA1100B3A2EE /* RectangleCategoryCell.xib */; };
+		6D1727911FBBF7F000B3A2EE /* RectangleCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1727901FBBF7F000B3A2EE /* RectangleCategoryCell.swift */; };
+		6D1727941FBBFBF700B3A2EE /* RectangleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1727921FBBFBF700B3A2EE /* RectangleCollectionViewCell.swift */; };
+		6D1727951FBBFBF700B3A2EE /* RectangleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D1727931FBBFBF700B3A2EE /* RectangleCollectionViewCell.xib */; };
+		6D1727971FBC034900B3A2EE /* TableViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1727961FBC034900B3A2EE /* TableViewController3.swift */; };
+		6D1727991FBC035500B3A2EE /* TableViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1727981FBC035500B3A2EE /* TableViewController4.swift */; };
+		6D17279B1FBC036200B3A2EE /* TableViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D17279A1FBC036200B3A2EE /* TableViewController5.swift */; };
+		6D28C28F1FB40EDB00E6E80E /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D28C28E1FB40EDB00E6E80E /* mainViewController.swift */; };
+		6D28C2971FB40F4300E6E80E /* SquareCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D28C2951FB40F4300E6E80E /* SquareCollectionViewCell.swift */; };
+		6D28C2981FB40F4300E6E80E /* SquareCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D28C2961FB40F4300E6E80E /* SquareCollectionViewCell.xib */; };
 		6D43A2521FB052E800C6B0B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D43A2511FB052E800C6B0B8 /* AppDelegate.swift */; };
-		6D43A2541FB052E800C6B0B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D43A2531FB052E800C6B0B8 /* ViewController.swift */; };
+		6D43A2541FB052E800C6B0B8 /* TabPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D43A2531FB052E800C6B0B8 /* TabPageViewController.swift */; };
 		6D43A2571FB052E800C6B0B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D43A2551FB052E800C6B0B8 /* Main.storyboard */; };
 		6D43A2591FB052E800C6B0B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D43A2581FB052E800C6B0B8 /* Assets.xcassets */; };
 		6D43A25C1FB052E800C6B0B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D43A25A1FB052E800C6B0B8 /* LaunchScreen.storyboard */; };
+		6D8783E01FBA054800891525 /* SquareCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8783DF1FBA054800891525 /* SquareCategoryCell.swift */; };
+		6DCC91C21FBC2942006E4D4C /* RectangleCategoryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCC91C11FBC2942006E4D4C /* RectangleCategoryCollectionView.swift */; };
+		6DE701D41FBAD0F40053D315 /* SquareCategoryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE701D31FBAD0F40053D315 /* SquareCategoryCollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,22 +73,33 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6D0AE38B1FB0731400D56D08 /* RocheTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RocheTableViewCell.swift; sourceTree = "<group>"; };
-		6D0AE38C1FB0731400D56D08 /* RocheTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RocheTableViewCell.xib; sourceTree = "<group>"; };
+		6D0AE38B1FB0731400D56D08 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		6D0AE38C1FB0731400D56D08 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		6D0AE38F1FB1432A00D56D08 /* TabPageViewController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TabPageViewController.xcodeproj; path = ../../TabPageViewController/TabPageViewController.xcodeproj; sourceTree = "<group>"; };
 		6D0AE39B1FB1484300D56D08 /* TabPageViewController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TabPageViewController.framework; sourceTree = "<group>"; };
-		6D0BCCA71FB157E700702643 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		6D0BCCA71FB157E700702643 /* TableViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController1.swift; sourceTree = "<group>"; };
 		6D0BCCAC1FB1581200702643 /* TableViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController2.swift; sourceTree = "<group>"; };
-		6D28C28E1FB40EDB00E6E80E /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
-		6D28C2951FB40F4300E6E80E /* RocheCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RocheCollectionViewCell.swift; sourceTree = "<group>"; };
-		6D28C2961FB40F4300E6E80E /* RocheCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RocheCollectionViewCell.xib; sourceTree = "<group>"; };
+		6D1727891FBBD76400B3A2EE /* SquareCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SquareCategoryCell.xib; sourceTree = "<group>"; };
+		6D17278E1FBBEA1100B3A2EE /* RectangleCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RectangleCategoryCell.xib; sourceTree = "<group>"; };
+		6D1727901FBBF7F000B3A2EE /* RectangleCategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangleCategoryCell.swift; sourceTree = "<group>"; };
+		6D1727921FBBFBF700B3A2EE /* RectangleCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangleCollectionViewCell.swift; sourceTree = "<group>"; };
+		6D1727931FBBFBF700B3A2EE /* RectangleCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RectangleCollectionViewCell.xib; sourceTree = "<group>"; };
+		6D1727961FBC034900B3A2EE /* TableViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController3.swift; sourceTree = "<group>"; };
+		6D1727981FBC035500B3A2EE /* TableViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController4.swift; sourceTree = "<group>"; };
+		6D17279A1FBC036200B3A2EE /* TableViewController5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController5.swift; sourceTree = "<group>"; };
+		6D28C28E1FB40EDB00E6E80E /* mainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
+		6D28C2951FB40F4300E6E80E /* SquareCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareCollectionViewCell.swift; sourceTree = "<group>"; };
+		6D28C2961FB40F4300E6E80E /* SquareCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SquareCollectionViewCell.xib; sourceTree = "<group>"; };
 		6D43A24E1FB052E800C6B0B8 /* practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D43A2511FB052E800C6B0B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6D43A2531FB052E800C6B0B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6D43A2531FB052E800C6B0B8 /* TabPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPageViewController.swift; sourceTree = "<group>"; };
 		6D43A2561FB052E800C6B0B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6D43A2581FB052E800C6B0B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D43A25B1FB052E800C6B0B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D43A25D1FB052E800C6B0B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D8783DF1FBA054800891525 /* SquareCategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareCategoryCell.swift; sourceTree = "<group>"; };
+		6DCC91C11FBC2942006E4D4C /* RectangleCategoryCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangleCategoryCollectionView.swift; sourceTree = "<group>"; };
+		6DE701D31FBAD0F40053D315 /* SquareCategoryCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareCategoryCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +127,13 @@
 		6D28C2931FB40EEE00E6E80E /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				6D43A2531FB052E800C6B0B8 /* ViewController.swift */,
-				6D0BCCA71FB157E700702643 /* TableViewController.swift */,
+				6D28C28E1FB40EDB00E6E80E /* mainViewController.swift */,
+				6D43A2531FB052E800C6B0B8 /* TabPageViewController.swift */,
+				6D0BCCA71FB157E700702643 /* TableViewController1.swift */,
 				6D0BCCAC1FB1581200702643 /* TableViewController2.swift */,
-				6D28C28E1FB40EDB00E6E80E /* CollectionViewController.swift */,
+				6D1727961FBC034900B3A2EE /* TableViewController3.swift */,
+				6D1727981FBC035500B3A2EE /* TableViewController4.swift */,
+				6D17279A1FBC036200B3A2EE /* TableViewController5.swift */,
 			);
 			name = VC;
 			sourceTree = "<group>";
@@ -116,10 +141,18 @@
 		6D28C2941FB40F0900E6E80E /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				6D0AE38B1FB0731400D56D08 /* RocheTableViewCell.swift */,
-				6D0AE38C1FB0731400D56D08 /* RocheTableViewCell.xib */,
-				6D28C2951FB40F4300E6E80E /* RocheCollectionViewCell.swift */,
-				6D28C2961FB40F4300E6E80E /* RocheCollectionViewCell.xib */,
+				6D0AE38B1FB0731400D56D08 /* TableViewCell.swift */,
+				6D0AE38C1FB0731400D56D08 /* TableViewCell.xib */,
+				6D28C2951FB40F4300E6E80E /* SquareCollectionViewCell.swift */,
+				6D28C2961FB40F4300E6E80E /* SquareCollectionViewCell.xib */,
+				6D1727921FBBFBF700B3A2EE /* RectangleCollectionViewCell.swift */,
+				6D1727931FBBFBF700B3A2EE /* RectangleCollectionViewCell.xib */,
+				6D8783DF1FBA054800891525 /* SquareCategoryCell.swift */,
+				6D1727891FBBD76400B3A2EE /* SquareCategoryCell.xib */,
+				6D1727901FBBF7F000B3A2EE /* RectangleCategoryCell.swift */,
+				6D17278E1FBBEA1100B3A2EE /* RectangleCategoryCell.xib */,
+				6DE701D31FBAD0F40053D315 /* SquareCategoryCollectionView.swift */,
+				6DCC91C11FBC2942006E4D4C /* RectangleCategoryCollectionView.swift */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -249,9 +282,12 @@
 			files = (
 				6D43A25C1FB052E800C6B0B8 /* LaunchScreen.storyboard in Resources */,
 				6D43A2591FB052E800C6B0B8 /* Assets.xcassets in Resources */,
+				6D17278A1FBBD76400B3A2EE /* SquareCategoryCell.xib in Resources */,
 				6D43A2571FB052E800C6B0B8 /* Main.storyboard in Resources */,
-				6D28C2981FB40F4300E6E80E /* RocheCollectionViewCell.xib in Resources */,
-				6D0AE38E1FB0731400D56D08 /* RocheTableViewCell.xib in Resources */,
+				6D28C2981FB40F4300E6E80E /* SquareCollectionViewCell.xib in Resources */,
+				6D17278F1FBBEA1100B3A2EE /* RectangleCategoryCell.xib in Resources */,
+				6D0AE38E1FB0731400D56D08 /* TableViewCell.xib in Resources */,
+				6D1727951FBBFBF700B3A2EE /* RectangleCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,13 +298,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D28C28F1FB40EDB00E6E80E /* CollectionViewController.swift in Sources */,
-				6D28C2971FB40F4300E6E80E /* RocheCollectionViewCell.swift in Sources */,
+				6D28C28F1FB40EDB00E6E80E /* mainViewController.swift in Sources */,
+				6D8783E01FBA054800891525 /* SquareCategoryCell.swift in Sources */,
+				6D1727911FBBF7F000B3A2EE /* RectangleCategoryCell.swift in Sources */,
+				6D28C2971FB40F4300E6E80E /* SquareCollectionViewCell.swift in Sources */,
 				6D0BCCAD1FB1581200702643 /* TableViewController2.swift in Sources */,
-				6D43A2541FB052E800C6B0B8 /* ViewController.swift in Sources */,
+				6D43A2541FB052E800C6B0B8 /* TabPageViewController.swift in Sources */,
+				6D1727941FBBFBF700B3A2EE /* RectangleCollectionViewCell.swift in Sources */,
+				6D1727991FBC035500B3A2EE /* TableViewController4.swift in Sources */,
+				6D1727971FBC034900B3A2EE /* TableViewController3.swift in Sources */,
 				6D43A2521FB052E800C6B0B8 /* AppDelegate.swift in Sources */,
-				6D0AE38D1FB0731400D56D08 /* RocheTableViewCell.swift in Sources */,
-				6D0BCCA81FB157E700702643 /* TableViewController.swift in Sources */,
+				6D0AE38D1FB0731400D56D08 /* TableViewCell.swift in Sources */,
+				6DCC91C21FBC2942006E4D4C /* RectangleCategoryCollectionView.swift in Sources */,
+				6D17279B1FBC036200B3A2EE /* TableViewController5.swift in Sources */,
+				6DE701D41FBAD0F40053D315 /* SquareCategoryCollectionView.swift in Sources */,
+				6D0BCCA81FB157E700702643 /* TableViewController1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

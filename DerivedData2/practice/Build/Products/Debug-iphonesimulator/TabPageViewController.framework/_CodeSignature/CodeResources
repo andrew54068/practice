@@ -10,7 +10,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		G3Swav6LC7h7XLA7rDwUaIBFGW4=
+		/XeNs9e3AvHSBIcgrFPvtOo+bVI=
 		</data>
 		<key>Modules/TabPageViewController.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/TabPageViewController.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		hUB4lSLB5MylBEMcsDJbxFY3/Hs=
+		NIijAowj+zQYV2RXxyMIYbbHaXA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>TabCollectionCell.nib</key>
 		<data>
-		ZrL0VKkD6tEAJXdeuy8Cw9AFPOc=
+		0O3qbhjN4Glh6YCG9cnfT1+uOxU=
 		</data>
 		<key>TabPageViewController.storyboardc/Info.plist</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>TabPageViewController.storyboardc/UIPageViewController-qCo-69-EHJ.nib</key>
 		<data>
-		n4y/fOva8YVsf01FjsqWINMsxqM=
+		ADyov4vKOysTMPLUGMPDslGlT9w=
 		</data>
 		<key>TabView.nib</key>
 		<data>
-		ZgJo9VQhozfGiyAbB47jEKKIPqg=
+		cAEU3h0b7NYO4L7Aqcp9iBj7qAY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -69,11 +69,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hUB4lSLB5MylBEMcsDJbxFY3/Hs=
+			NIijAowj+zQYV2RXxyMIYbbHaXA=
 			</data>
 			<key>hash2</key>
 			<data>
-			JG5W0Kl2dAZok1W9/AjesMJ6M5MLFl4zD90MrzN8poY=
+			BjFonayeasgDHgKgJb3FLa78J7gX+sjpZo3maI3ndOk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -91,11 +91,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZrL0VKkD6tEAJXdeuy8Cw9AFPOc=
+			0O3qbhjN4Glh6YCG9cnfT1+uOxU=
 			</data>
 			<key>hash2</key>
 			<data>
-			4YOFHbCDa1vHiAWWQloRfQQ1pxZpZn3VkjuPJYv3N/c=
+			NL2KY3FVDUlmr3584brqR2l49YWW8IuFlEPna4+QlYI=
 			</data>
 		</dict>
 		<key>TabPageViewController.storyboardc/Info.plist</key>
@@ -113,22 +113,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			n4y/fOva8YVsf01FjsqWINMsxqM=
+			ADyov4vKOysTMPLUGMPDslGlT9w=
 			</data>
 			<key>hash2</key>
 			<data>
-			YAHjYOkMrzdspKWyS2NggZbhIltUwadQj+55ugLpOdY=
+			ooRPIWcXIzedZj59yzHFZnBYx+57xJmnUzE4mdHLoGs=
 			</data>
 		</dict>
 		<key>TabView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZgJo9VQhozfGiyAbB47jEKKIPqg=
+			cAEU3h0b7NYO4L7Aqcp9iBj7qAY=
 			</data>
 			<key>hash2</key>
 			<data>
-			KR0U9Mfg1NiNSlJ0yygKLe05mf1dpEy9HteGYD/YyJc=
+			dRqzbbA5EiHMJoMXgC2/ALGb1EJiNnMOeuedPPL4i1g=
 			</data>
 		</dict>
 	</dict>

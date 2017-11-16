@@ -14,7 +14,6 @@ provides-dynamic-lookup:
 - "hadRead"
 - "image1"
 - "setSelected"
-- "thumbnailImage"
 - "title"
 - "unreadIndication"
 depends-top-level:
@@ -269,7 +268,6 @@ depends-member:
 - !private ["CSo8NSObject", "numberOfLines"]
 - !private ["CSo8NSObject", "print"]
 - ["CSo8NSObject", "setSelected"]
-- ["CSo8NSObject", "thumbnailImage"]
 - ["CSo8NSObject", "title"]
 - ["CSo8NSObject", "unreadIndication"]
 - !private ["CSo8NSObject", "white"]
@@ -324,7 +322,6 @@ depends-member:
 - ["C8practice18RocheTableViewCell", "init"]
 - !private ["C8practice18RocheTableViewCell", "print"]
 - ["C8practice18RocheTableViewCell", "setSelected"]
-- ["C8practice18RocheTableViewCell", "thumbnailImage"]
 - ["C8practice18RocheTableViewCell", "title"]
 - ["C8practice18RocheTableViewCell", "unreadIndication"]
 - ["SS", "init"]
@@ -504,7 +501,6 @@ depends-member:
 - !private ["CSo11UIResponder", "numberOfLines"]
 - !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "setSelected"]
-- ["CSo11UIResponder", "thumbnailImage"]
 - ["CSo11UIResponder", "title"]
 - ["CSo11UIResponder", "unreadIndication"]
 - !private ["PSo30UIResponderStandardEditActions", "NSAttributedString"]
@@ -545,7 +541,6 @@ depends-member:
 - ["CSo15UITableViewCell", "init"]
 - !private ["CSo15UITableViewCell", "print"]
 - ["CSo15UITableViewCell", "setSelected"]
-- ["CSo15UITableViewCell", "thumbnailImage"]
 - ["CSo15UITableViewCell", "title"]
 - ["CSo15UITableViewCell", "unreadIndication"]
 - ["CSo15UITableViewCell", ""]
@@ -590,7 +585,6 @@ depends-member:
 - !private ["CSo6UIView", "numberOfLines"]
 - !private ["CSo6UIView", "print"]
 - ["CSo6UIView", "setSelected"]
-- ["CSo6UIView", "thumbnailImage"]
 - ["CSo6UIView", "title"]
 - ["CSo6UIView", "unreadIndication"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "NSAttributedString"]
@@ -736,4 +730,4 @@ depends-external:
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "75ff260dd27270a841763cc615ef6763"
+interface-hash: "fe3585a5a2e6e4a9bdc649ed8c51fbbb"

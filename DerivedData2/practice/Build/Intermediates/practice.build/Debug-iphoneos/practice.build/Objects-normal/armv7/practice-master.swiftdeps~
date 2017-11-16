@@ -1,9 +1,0 @@
-version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
-options: "8336f9968cec2c90563292bbf5655272"
-build_time: [563363717, 920720000]
-inputs:
-  "/Users/kidnapper/Documents/25sprout/practice/practice/TableViewController2.swift": [563362290, 0]
-  "/Users/kidnapper/Documents/25sprout/practice/practice/ViewController.swift": [563343740, 0]
-  "/Users/kidnapper/Documents/25sprout/practice/practice/AppDelegate.swift": [563271656, 0]
-  "/Users/kidnapper/Documents/25sprout/practice/practice/RocheTableViewCell.swift": [563362229, 0]
-  "/Users/kidnapper/Documents/25sprout/practice/practice/TableViewController.swift": [563362229, 0]
