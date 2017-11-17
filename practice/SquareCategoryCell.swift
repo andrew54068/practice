@@ -7,16 +7,16 @@
 //
 import UIKit
 
-protocol buttonClicked: class {
-    func seeAllButtonClicked()
-}
+//protocol buttonClicked: class {
+//    func seeAllButtonClicked()
+//}
 
 class SquareCategoryCell: UICollectionViewCell, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
-    weak var delegate: buttonClicked?
+//    weak var delegate: buttonClicked?
     private let cellId = "SCVCell"
-    var titleContent: String = "12345678"
-    var subtitleContent: String = "87654321"
+    var titleContent: String = ""
+    var subtitleContent: String = ""
     var attributedString: NSMutableAttributedString!
     var count:Int = 0
     
@@ -27,74 +27,82 @@ class SquareCategoryCell: UICollectionViewCell, UICollectionViewDelegate, UIColl
     
     @IBAction func seeAllClicked(_ sender: Any){
         print("%%%%%%")
-        delegate?.seeAllButtonClicked()
+//        delegate?.seeAllButtonClicked()
     }
     
-//    override func awakeFromNib() {
-//        super.awakeFromNib()
-//    }
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-
-//        content.delegate = self as? UICollectionViewDelegate
-//        content.dataSource = self
+    override func awakeFromNib() {
+        super.awakeFromNib()
         setupViews()
     }
-    required init?(coder aDecoder: NSCoder) {
-//        super.init(coder: aDecoder)
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    let contentCV: UICollectionView = {
-        let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
-        let RCCV1 = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        RCCV1.backgroundColor = UIColor.brown
-        RCCV1.translatesAutoresizingMaskIntoConstraints = false
-        return RCCV1 
-    }()
     
     func setupViews(){
         
-        addSubview(contentCV)
+        let nib = UINib(nibName: "SquareCollectionViewCell", bundle: nil)
         
-        contentCV.delegate = self
-        contentCV.dataSource = self
-        let RCVC1 = UINib(nibName: "SquareCollectionViewCell", bundle: nil)
-        contentCV.register(RCVC1, forCellWithReuseIdentifier: cellId)
+        content.delegate = self
+        content.dataSource = self
         
-        let top = NSLayoutConstraint(item: contentCV, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top, multiplier: 1, constant: 0)
-        let left = NSLayoutConstraint(item: contentCV, attribute: .left, relatedBy: .equal, toItem: self, attribute: .left, multiplier: 1, constant: 0)
-        let right = NSLayoutConstraint(item: contentCV, attribute: .right, relatedBy: .equal, toItem: self, attribute: .right, multiplier: 1, constant: 0)
-        let bottom = NSLayoutConstraint(item: contentCV, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom, multiplier: 1, constant: 0)
-//        top.isActive = true
-//        left.isActive = true
-//        right.isActive = true
-//        bottom.isActive = true
-        self.addConstraints([top, left, right, bottom])
-        
+        content.register(nib, forCellWithReuseIdentifier: cellId)
     }
     
+    
+    //MARK: CollectionView dataSource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! SquareCollectionViewCell
-        cell.thumbnail.image = UIImage(named: "thumbnail_tab")
-        cell.time.text = "2 hours ago"
-        cell.backgroundColor = UIColor.cyan
         
+        let attrs1 = [NSFontAttributeName: UIFont.systemFont(ofSize: 15, weight: UIFontWeightBold), NSForegroundColorAttributeName: UIColor.black]
+        let attrs2 = [NSFontAttributeName: UIFont.systemFont(ofSize: 13), NSForegroundColorAttributeName: UIColor.gray]
+        let attributedString1 = NSMutableAttributedString(string: "\(titleContent)", attributes: attrs1)
+        let attributedString2 = NSMutableAttributedString(string: "\(subtitleContent)", attributes: attrs2)
+        let line_feed = NSMutableAttributedString(string: "\n")
+        if subtitleContent != ""{
+            attributedString1.append(line_feed)
+        }
+        attributedString1.append(attributedString2)
+        if count > 1{
+            cell.hadRead = true
+        }
+        
+        cell.thumbnail.image = UIImage(named: "img_smallcard")
+        cell.patient.text = "Patients"
+        cell.time.text = "2 hours ago"
+        cell.title.numberOfLines = 4
+        cell.title.lineBreakMode = .byTruncatingTail
+        if cell.hadRead{
+            cell.attributedString = attributedString1
+        }else{
+            cell.attributedString.append(attributedString1)
+        }
+        cell.title.attributedText = cell.attributedString!
+        // Configure the cell
+        
+        //        print("cell.title = \(String(describing: cell.title.attributedText!))")
+ 
         return cell
     }
+    
+    
+    //MARK: CollectionView delegate
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("actually here and indexPath = \(indexPath.item)")
+        titleContent = " A future in mind - rising to the challenge in Alzheimer's"
+        subtitleContent = "Doretha Burrell-nickname “Dee” by children at the school where she once worked as administrative, Doretha Burrell-nickname “Dee” by children at the school where she once worked as administrative"
+        count += 1
+        collectionView.reloadData()
+    }
+    
+    //MARK: CollectionView delegateFlowLayout
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 15, bottom: 28, right: 15)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 165, height: 193)
     }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("actually here and indexPath = \(indexPath.item)")
-    }
-    
 }
 
 

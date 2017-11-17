@@ -1,3 +1,4 @@
+/*
 //
 //  RocheCategoryCollectionView.swift
 //  practice
@@ -115,3 +116,4 @@ class SquareCategoryCollectionView: UICollectionView, UICollectionViewDataSource
 //        return Bundle.main.loadNibNamed(String(describing: T.self), owner: nil, options: nil)![0] as! T
 //    }
 //}
+*/

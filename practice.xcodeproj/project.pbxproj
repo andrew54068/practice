@@ -151,8 +151,6 @@
 				6D1727891FBBD76400B3A2EE /* SquareCategoryCell.xib */,
 				6D1727901FBBF7F000B3A2EE /* BannerCategoryCell.swift */,
 				6D17278E1FBBEA1100B3A2EE /* BannerCategoryCell.xib */,
-				6DE701D31FBAD0F40053D315 /* SquareCategoryCollectionView.swift */,
-				6DCC91C11FBC2942006E4D4C /* BannerCategoryCollectionView.swift */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -178,6 +176,7 @@
 		6D43A2501FB052E800C6B0B8 /* practice */ = {
 			isa = PBXGroup;
 			children = (
+				6D624EBE1FBF00E5000FB318 /* shouldBeenDelete */,
 				6D28C2941FB40F0900E6E80E /* Cell */,
 				6D28C2931FB40EEE00E6E80E /* VC */,
 				6D43A2511FB052E800C6B0B8 /* AppDelegate.swift */,
@@ -187,6 +186,15 @@
 				6D43A25D1FB052E800C6B0B8 /* Info.plist */,
 			);
 			path = practice;
+			sourceTree = "<group>";
+		};
+		6D624EBE1FBF00E5000FB318 /* shouldBeenDelete */ = {
+			isa = PBXGroup;
+			children = (
+				6DE701D31FBAD0F40053D315 /* SquareCategoryCollectionView.swift */,
+				6DCC91C11FBC2942006E4D4C /* BannerCategoryCollectionView.swift */,
+			);
+			name = shouldBeenDelete;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

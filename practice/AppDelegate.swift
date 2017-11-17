@@ -23,6 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mainVC")
         window?.rootViewController = UINavigationController(rootViewController: mainVC)
 //
+        let bounds = window?.rootViewController?.navigationController?.navigationBar.bounds
+        window?.rootViewController?.navigationController?.navigationBar.frame = CGRect(x: 0, y: 0, width: (bounds?.width)!, height: 64)
         UINavigationBar.appearance().barTintColor = UIColor.green
         
         
