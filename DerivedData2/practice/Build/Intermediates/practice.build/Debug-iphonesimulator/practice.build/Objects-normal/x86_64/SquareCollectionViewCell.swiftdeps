@@ -1,10 +1,10 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "RocheCollectionViewCell1"
+- "SquareCollectionViewCell"
 provides-nominal:
-- "C8practice24RocheCollectionViewCell1"
+- "C8practice24SquareCollectionViewCell"
 provides-member:
-- ["C8practice24RocheCollectionViewCell1", ""]
+- ["C8practice24SquareCollectionViewCell", ""]
 provides-dynamic-lookup:
 - "attributedString"
 - "awakeFromNib"
@@ -24,7 +24,7 @@ depends-top-level:
 - "NSCoder"
 - "NSMutableAttributedString"
 - !private "NSTextAttachment"
-- "RocheCollectionViewCell1"
+- "SquareCollectionViewCell"
 - "StringLiteralType"
 - "UICollectionViewCell"
 - "UIImage"
@@ -197,26 +197,26 @@ depends-member:
 - !private ["PSo25NSTextAttachmentContainer", "image"]
 - !private ["PSo25NSTextAttachmentContainer", "init"]
 - !private ["Ps16RawRepresentable", "up"]
-- ["C8practice24RocheCollectionViewCell1", "Bool"]
-- ["C8practice24RocheCollectionViewCell1", "CGRect"]
-- !private ["C8practice24RocheCollectionViewCell1", "NSAttributedString"]
-- ["C8practice24RocheCollectionViewCell1", "NSCoder"]
-- ["C8practice24RocheCollectionViewCell1", "NSMutableAttributedString"]
-- !private ["C8practice24RocheCollectionViewCell1", "NSTextAttachment"]
-- ["C8practice24RocheCollectionViewCell1", "UIImage"]
-- ["C8practice24RocheCollectionViewCell1", "UIImageView"]
-- ["C8practice24RocheCollectionViewCell1", "UILabel"]
-- ["C8practice24RocheCollectionViewCell1", "attributedString"]
-- ["C8practice24RocheCollectionViewCell1", "awakeFromNib"]
-- ["C8practice24RocheCollectionViewCell1", "deinit"]
-- ["C8practice24RocheCollectionViewCell1", "hadRead"]
-- ["C8practice24RocheCollectionViewCell1", "init"]
-- ["C8practice24RocheCollectionViewCell1", "patient"]
-- ["C8practice24RocheCollectionViewCell1", "thumbnail"]
-- ["C8practice24RocheCollectionViewCell1", "time"]
-- ["C8practice24RocheCollectionViewCell1", "title"]
-- !private ["C8practice24RocheCollectionViewCell1", "translatesAutoresizingMaskIntoConstraints"]
-- ["C8practice24RocheCollectionViewCell1", "unreadIndication"]
+- ["C8practice24SquareCollectionViewCell", "Bool"]
+- ["C8practice24SquareCollectionViewCell", "CGRect"]
+- !private ["C8practice24SquareCollectionViewCell", "NSAttributedString"]
+- ["C8practice24SquareCollectionViewCell", "NSCoder"]
+- ["C8practice24SquareCollectionViewCell", "NSMutableAttributedString"]
+- !private ["C8practice24SquareCollectionViewCell", "NSTextAttachment"]
+- ["C8practice24SquareCollectionViewCell", "UIImage"]
+- ["C8practice24SquareCollectionViewCell", "UIImageView"]
+- ["C8practice24SquareCollectionViewCell", "UILabel"]
+- ["C8practice24SquareCollectionViewCell", "attributedString"]
+- ["C8practice24SquareCollectionViewCell", "awakeFromNib"]
+- ["C8practice24SquareCollectionViewCell", "deinit"]
+- ["C8practice24SquareCollectionViewCell", "hadRead"]
+- ["C8practice24SquareCollectionViewCell", "init"]
+- ["C8practice24SquareCollectionViewCell", "patient"]
+- ["C8practice24SquareCollectionViewCell", "thumbnail"]
+- ["C8practice24SquareCollectionViewCell", "time"]
+- ["C8practice24SquareCollectionViewCell", "title"]
+- !private ["C8practice24SquareCollectionViewCell", "translatesAutoresizingMaskIntoConstraints"]
+- ["C8practice24SquareCollectionViewCell", "unreadIndication"]
 - ["SS", "init"]
 - ["Ps16TextOutputStream", "init"]
 - ["Ps20TextOutputStreamable", "init"]
@@ -470,7 +470,7 @@ depends-nominal:
 - !private "CSo16NSTextAttachment"
 - !private "PSo25NSTextAttachmentContainer"
 - !private "Ps16RawRepresentable"
-- "C8practice24RocheCollectionViewCell1"
+- "C8practice24SquareCollectionViewCell"
 - "SS"
 - "Ps16TextOutputStream"
 - "Ps20TextOutputStreamable"
@@ -521,4 +521,4 @@ depends-external:
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "fc8106bc48ca5915867a8e49ba9af073"
+interface-hash: "059f379e84a19913adae467daabb7889"

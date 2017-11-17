@@ -37,10 +37,10 @@
             </objects>
             <point key="canvasLocation" x="1330" y="772"/>
         </scene>
-        <!--Table View Controller1-->
+        <!--Congress UpdateVC-->
         <scene sceneID="zh0-yS-9hu">
             <objects>
-                <tableViewController storyboardIdentifier="vc1" automaticallyAdjustsScrollViewInsets="NO" id="Yfe-hD-ciy" customClass="TableViewController1" customModule="practice" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="CongressUpdate_VC" automaticallyAdjustsScrollViewInsets="NO" id="Yfe-hD-ciy" customClass="CongressUpdate_VC" customModule="practice" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="7Bb-xG-ZPm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,10 +57,10 @@
             </objects>
             <point key="canvasLocation" x="343" y="1476"/>
         </scene>
-        <!--Table View Controller2-->
+        <!--Expert CommentaryVC-->
         <scene sceneID="dgC-hD-TeA">
             <objects>
-                <tableViewController storyboardIdentifier="vc2" id="XXf-7t-oAC" customClass="TableViewController2" customModule="practice" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="vc2" id="XXf-7t-oAC" customClass="ExpertCommentary_VC" customModule="practice" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="v0P-uN-lJw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,10 +75,10 @@
             </objects>
             <point key="canvasLocation" x="1049" y="1476"/>
         </scene>
-        <!--Table View Controller3-->
+        <!--EventVC-->
         <scene sceneID="AFW-Cd-CJo">
             <objects>
-                <tableViewController storyboardIdentifier="vc3" id="yq0-GD-aK0" customClass="TableViewController3" customModule="practice" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="vc3" id="yq0-GD-aK0" customClass="Event_VC" customModule="practice" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="eIh-Av-bX6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -111,24 +111,14 @@
             </objects>
             <point key="canvasLocation" x="2100" y="771"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Trail Fact SheetVC-->
         <scene sceneID="akZ-Di-sRm">
             <objects>
-                <tableViewController storyboardIdentifier="vc4" id="2wb-sK-0zy" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="vc4" id="2wb-sK-0zy" customClass="TrailFactSheet_VC" customModule="practice" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="JLu-Pg-9Yl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Pau-6M-gdE">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pau-6M-gdE" id="4dZ-L5-qa0">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="2wb-sK-0zy" id="LkX-yw-1LR"/>
                             <outlet property="delegate" destination="2wb-sK-0zy" id="kvx-7e-Zi4"/>
@@ -139,24 +129,14 @@
             </objects>
             <point key="canvasLocation" x="2442" y="1476"/>
         </scene>
-        <!--Table View Controller-->
+        <!--BookmarkVC-->
         <scene sceneID="aDG-9X-QlP">
             <objects>
-                <tableViewController storyboardIdentifier="vc5" id="tc7-Yf-R9X" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="vc5" id="tc7-Yf-R9X" customClass="Bookmark_VC" customModule="practice" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="nnX-1B-lSp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="1d1-YA-wat">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1d1-YA-wat" id="ce2-IP-u7I">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="tc7-Yf-R9X" id="CZV-jS-AqZ"/>
                             <outlet property="delegate" destination="tc7-Yf-R9X" id="zN6-VZ-fwg"/>

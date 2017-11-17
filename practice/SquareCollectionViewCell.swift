@@ -9,7 +9,7 @@
 import UIKit
 import TabPageViewController
 
-class RocheCollectionViewCell1: UICollectionViewCell {
+class SquareCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet var thumbnail: UIImageView!
     @IBOutlet var patient: UILabel!

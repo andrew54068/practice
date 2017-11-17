@@ -8,12 +8,9 @@
 
 import UIKit
 
-class RocheCategoryCollectionView1: UICollectionView, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
+class SquareCategoryCollectionView: UICollectionView, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
     
-    
-    
-
-    private let cellId = "RCVCell1"
+    private let cellId = "SCVCell"
     var titleContent: String = ""
     var subtitleContent: String = ""
     var attributedString: NSMutableAttributedString!
@@ -39,16 +36,16 @@ class RocheCategoryCollectionView1: UICollectionView, UICollectionViewDataSource
     func setUpView(){
         self.translatesAutoresizingMaskIntoConstraints = false
 //        layout.scrollDirection = .horizontal
-        self.delegate = self
-        self.dataSource = self
-        let nib = UINib(nibName: "RocheCollectionViewCell1", bundle: nil)
+//        self.delegate = self
+//        self.dataSource = self
+        let nib = UINib(nibName: "SquareCollectionViewCell", bundle: nil)
         self.register(nib, forCellWithReuseIdentifier: cellId)
         
         
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! RocheCollectionViewCell1
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! SquareCollectionViewCell
         
         let attrs1 = [NSFontAttributeName: UIFont.systemFont(ofSize: 15, weight: UIFontWeightBold), NSForegroundColorAttributeName: UIColor.black]
         let attrs2 = [NSFontAttributeName: UIFont.systemFont(ofSize: 13), NSForegroundColorAttributeName: UIColor.gray]

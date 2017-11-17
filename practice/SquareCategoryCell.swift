@@ -11,17 +11,17 @@ protocol buttonClicked: class {
     func seeAllButtonClicked()
 }
 
-class RocheCategoryCell1: UICollectionViewCell, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+class SquareCategoryCell: UICollectionViewCell, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
     weak var delegate: buttonClicked?
-    private let cellId = "RCVCell1"
+    private let cellId = "SCVCell"
     var titleContent: String = "12345678"
     var subtitleContent: String = "87654321"
     var attributedString: NSMutableAttributedString!
     var count:Int = 0
     
     
-    @IBOutlet var content: RocheCategoryCollectionView1!
+    @IBOutlet var content: UICollectionView!
     @IBOutlet var title: UILabel!
     @IBOutlet var seeAllButton: UIButton!
     
@@ -48,10 +48,10 @@ class RocheCategoryCell1: UICollectionViewCell, UICollectionViewDelegate, UIColl
     let contentCV: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-        let RCCV1 = RocheCategoryCollectionView1(frame: .zero, collectionViewLayout: layout)
-        RCCV1.backgroundColor = UIColor.blue
+        let RCCV1 = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        RCCV1.backgroundColor = UIColor.brown
         RCCV1.translatesAutoresizingMaskIntoConstraints = false
-        return RCCV1 as UICollectionView
+        return RCCV1 
     }()
     
     func setupViews(){
@@ -60,13 +60,17 @@ class RocheCategoryCell1: UICollectionViewCell, UICollectionViewDelegate, UIColl
         
         contentCV.delegate = self
         contentCV.dataSource = self
-        let RCVC1 = UINib(nibName: "RocheCollectionViewCell1", bundle: nil)
+        let RCVC1 = UINib(nibName: "SquareCollectionViewCell", bundle: nil)
         contentCV.register(RCVC1, forCellWithReuseIdentifier: cellId)
         
         let top = NSLayoutConstraint(item: contentCV, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top, multiplier: 1, constant: 0)
         let left = NSLayoutConstraint(item: contentCV, attribute: .left, relatedBy: .equal, toItem: self, attribute: .left, multiplier: 1, constant: 0)
         let right = NSLayoutConstraint(item: contentCV, attribute: .right, relatedBy: .equal, toItem: self, attribute: .right, multiplier: 1, constant: 0)
         let bottom = NSLayoutConstraint(item: contentCV, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom, multiplier: 1, constant: 0)
+//        top.isActive = true
+//        left.isActive = true
+//        right.isActive = true
+//        bottom.isActive = true
         self.addConstraints([top, left, right, bottom])
         
     }
@@ -76,7 +80,7 @@ class RocheCategoryCell1: UICollectionViewCell, UICollectionViewDelegate, UIColl
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! RocheCollectionViewCell1
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! SquareCollectionViewCell
         cell.thumbnail.image = UIImage(named: "thumbnail_tab")
         cell.time.text = "2 hours ago"
         cell.backgroundColor = UIColor.cyan
@@ -85,6 +89,10 @@ class RocheCategoryCell1: UICollectionViewCell, UICollectionViewDelegate, UIColl
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 165, height: 193)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("actually here and indexPath = \(indexPath.item)")
     }
     
 }

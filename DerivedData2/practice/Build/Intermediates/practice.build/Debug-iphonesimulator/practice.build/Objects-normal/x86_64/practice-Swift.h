@@ -154,65 +154,22 @@ SWIFT_CLASS("_TtC8practice11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSMutableAttributedString;
-@class RocheCategoryCollectionView1;
-@class UILabel;
-@class UIButton;
+@class BannerCategoryCollectionView;
 @class NSCoder;
-@class UICollectionView;
-@class UICollectionViewLayout;
 
-SWIFT_CLASS("_TtC8practice18RocheCategoryCell1")
-@interface RocheCategoryCell1 : UICollectionViewCell <UICollectionViewDelegate, UIScrollViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
-@property (nonatomic, copy) NSString * _Nonnull titleContent;
-@property (nonatomic, copy) NSString * _Nonnull subtitleContent;
-@property (nonatomic, strong) NSMutableAttributedString * _Null_unspecified attributedString;
-@property (nonatomic) NSInteger count;
-@property (nonatomic, strong) IBOutlet RocheCategoryCollectionView1 * _Null_unspecified content;
-@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified title;
-@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified seeAllButton;
-- (IBAction)seeAllClicked:(id _Nonnull)sender;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@property (nonatomic, readonly, strong) UICollectionView * _Nonnull contentCV;
-- (void)setupViews;
-- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-@end
-
-@class RocheCategoryCollectionView2;
-
-SWIFT_CLASS("_TtC8practice18RocheCategoryCell2")
-@interface RocheCategoryCell2 : UICollectionViewCell
-@property (nonatomic, strong) IBOutlet RocheCategoryCollectionView2 * _Null_unspecified content;
+SWIFT_CLASS("_TtC8practice18BannerCategoryCell")
+@interface BannerCategoryCell : UICollectionViewCell
+@property (nonatomic, strong) IBOutlet BannerCategoryCollectionView * _Null_unspecified content;
 - (void)awakeFromNib;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC8practice28RocheCategoryCollectionView1")
-@interface RocheCategoryCollectionView1 : UICollectionView <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UIScrollViewDelegate>
-@property (nonatomic, copy) NSString * _Nonnull titleContent;
-@property (nonatomic, copy) NSString * _Nonnull subtitleContent;
-@property (nonatomic, strong) NSMutableAttributedString * _Null_unspecified attributedString;
-@property (nonatomic) NSInteger count;
-- (void)awakeFromNib;
-- (void)setUpView;
-- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (UIEdgeInsets)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout insetForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout * _Nonnull)layout OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class UICollectionViewFlowLayout;
+@class UICollectionViewLayout;
 
-SWIFT_CLASS("_TtC8practice28RocheCategoryCollectionView2")
-@interface RocheCategoryCollectionView2 : UICollectionView <UICollectionViewDelegate, UIScrollViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+SWIFT_CLASS("_TtC8practice28BannerCategoryCollectionView")
+@interface BannerCategoryCollectionView : UICollectionView <UICollectionViewDelegate, UIScrollViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 @property (nonatomic, readonly, strong) UICollectionViewFlowLayout * _Nonnull layout;
 - (nonnull instancetype)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout * _Nonnull)layout OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -224,26 +181,11 @@ SWIFT_CLASS("_TtC8practice28RocheCategoryCollectionView2")
 - (UIEdgeInsets)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout insetForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 @end
 
-@class UIImageView;
-@class UIImage;
+@class UIButton;
+@class UILabel;
 
-SWIFT_CLASS("_TtC8practice24RocheCollectionViewCell1")
-@interface RocheCollectionViewCell1 : UICollectionViewCell
-@property (nonatomic, strong) IBOutlet UIImageView * _Null_unspecified thumbnail;
-@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified patient;
-@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified time;
-@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified title;
-@property (nonatomic, strong) UIImage * _Nullable unreadIndication;
-@property (nonatomic, strong) NSMutableAttributedString * _Null_unspecified attributedString;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@property (nonatomic) BOOL hadRead;
-- (void)awakeFromNib;
-@end
-
-
-SWIFT_CLASS("_TtC8practice24RocheCollectionViewCell2")
-@interface RocheCollectionViewCell2 : UICollectionViewCell
+SWIFT_CLASS("_TtC8practice24BannerCollectionViewCell")
+@interface BannerCollectionViewCell : UICollectionViewCell
 @property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified rectangleButtom;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified rectangleLabel;
 - (void)awakeFromNib;
@@ -251,28 +193,26 @@ SWIFT_CLASS("_TtC8practice24RocheCollectionViewCell2")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
-SWIFT_CLASS("_TtC8practice18RocheTableViewCell")
-@interface RocheTableViewCell : UITableViewCell
-@property (nonatomic, strong) IBOutlet UIImageView * _Null_unspecified image1;
-@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified author;
-@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified date;
-@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified title;
-@property (nonatomic, strong) UIImage * _Nullable unreadIndication;
-@property (nonatomic, strong) NSMutableAttributedString * _Null_unspecified attributedString;
-@property (nonatomic) BOOL hadRead;
-- (void)awakeFromNib;
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
-@property (nonatomic) CGRect frame;
-- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
 @class UITableView;
 @class NSBundle;
 
-SWIFT_CLASS("_TtC8practice20TableViewController1")
-@interface TableViewController1 : UITableViewController
+SWIFT_CLASS("_TtC8practice11Bookmark_VC")
+@interface Bookmark_VC : UITableViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIImage;
+@class NSMutableAttributedString;
+@class UITableViewCell;
+
+SWIFT_CLASS("_TtC8practice17CongressUpdate_VC")
+@interface CongressUpdate_VC : UITableViewController
 @property (nonatomic, strong) UIImage * _Nullable thumbnailImage;
 @property (nonatomic, copy) NSString * _Nonnull titleContent;
 @property (nonatomic, copy) NSString * _Nonnull subtitleContent;
@@ -295,8 +235,8 @@ SWIFT_CLASS("_TtC8practice20TableViewController1")
 @end
 
 
-SWIFT_CLASS("_TtC8practice20TableViewController2")
-@interface TableViewController2 : UITableViewController
+SWIFT_CLASS("_TtC8practice8Event_VC")
+@interface Event_VC : UITableViewController
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
@@ -309,8 +249,8 @@ SWIFT_CLASS("_TtC8practice20TableViewController2")
 @end
 
 
-SWIFT_CLASS("_TtC8practice20TableViewController3")
-@interface TableViewController3 : UITableViewController
+SWIFT_CLASS("_TtC8practice19ExpertCommentary_VC")
+@interface ExpertCommentary_VC : UITableViewController
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
@@ -321,35 +261,95 @@ SWIFT_CLASS("_TtC8practice20TableViewController3")
 @end
 
 
-SWIFT_CLASS("_TtC8practice20TableViewController4")
-@interface TableViewController4 : UITableViewController
-- (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
-- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
-- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+SWIFT_CLASS("_TtC8practice18SquareCategoryCell")
+@interface SquareCategoryCell : UICollectionViewCell <UICollectionViewDelegate, UIScrollViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
+@property (nonatomic, copy) NSString * _Nonnull titleContent;
+@property (nonatomic, copy) NSString * _Nonnull subtitleContent;
+@property (nonatomic, strong) NSMutableAttributedString * _Null_unspecified attributedString;
+@property (nonatomic) NSInteger count;
+@property (nonatomic, strong) IBOutlet UICollectionView * _Null_unspecified content;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified title;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified seeAllButton;
+- (IBAction)seeAllClicked:(id _Nonnull)sender;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly, strong) UICollectionView * _Nonnull contentCV;
+- (void)setupViews;
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 @end
 
 
-SWIFT_CLASS("_TtC8practice20TableViewController5")
-@interface TableViewController5 : UITableViewController
-- (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
-- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
-- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+SWIFT_CLASS("_TtC8practice28SquareCategoryCollectionView")
+@interface SquareCategoryCollectionView : UICollectionView <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UIScrollViewDelegate>
+@property (nonatomic, copy) NSString * _Nonnull titleContent;
+@property (nonatomic, copy) NSString * _Nonnull subtitleContent;
+@property (nonatomic, strong) NSMutableAttributedString * _Null_unspecified attributedString;
+@property (nonatomic) NSInteger count;
+- (void)awakeFromNib;
+- (void)setUpView;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (UIEdgeInsets)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout insetForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout * _Nonnull)layout OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIImageView;
 
-SWIFT_CLASS("_TtC8practice14ViewController")
-@interface ViewController : UIViewController
+SWIFT_CLASS("_TtC8practice24SquareCollectionViewCell")
+@interface SquareCollectionViewCell : UICollectionViewCell
+@property (nonatomic, strong) IBOutlet UIImageView * _Null_unspecified thumbnail;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified patient;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified time;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified title;
+@property (nonatomic, strong) UIImage * _Nullable unreadIndication;
+@property (nonatomic, strong) NSMutableAttributedString * _Null_unspecified attributedString;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic) BOOL hadRead;
+- (void)awakeFromNib;
+@end
+
+
+SWIFT_CLASS("_TtC8practice10TabPage_VC")
+@interface TabPage_VC : UIViewController
 - (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)showTabPageVC;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC8practice13TableViewCell")
+@interface TableViewCell : UITableViewCell
+@property (nonatomic, strong) IBOutlet UIImageView * _Null_unspecified image1;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified author;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified date;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified title;
+@property (nonatomic, strong) UIImage * _Nullable unreadIndication;
+@property (nonatomic, strong) NSMutableAttributedString * _Null_unspecified attributedString;
+@property (nonatomic) BOOL hadRead;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+@property (nonatomic) CGRect frame;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC8practice17TrailFactSheet_VC")
+@interface TrailFactSheet_VC : UITableViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

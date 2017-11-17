@@ -23,7 +23,7 @@ depends-top-level:
 - "IndexPath"
 - "Int"
 - "NSMutableAttributedString"
-- !private "RocheCategoryCell1"
+- !private "SquareCategoryCell"
 - "String"
 - "StringLiteralType"
 - "UICollectionView"
@@ -37,7 +37,7 @@ depends-top-level:
 - !private "print"
 depends-member:
 - !private ["Ps9AnyObject", "CGSize"]
-- !private ["Ps9AnyObject", "RocheCategoryCell1"]
+- !private ["Ps9AnyObject", "SquareCategoryCell"]
 - !private ["Ps9AnyObject", "UINib"]
 - !private ["Ps9AnyObject", "cellId1"]
 - !private ["Ps9AnyObject", "cellId2"]
@@ -56,6 +56,8 @@ depends-member:
 - !private ["Ps9AnyObject", "view"]
 - !private ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
+- !private ["Ps23BidirectionalCollection", "item"]
+- !private ["Ps23BidirectionalCollection", "row"]
 - !private ["PSo15CALayerDelegate", "dataSource"]
 - !private ["PSo15CALayerDelegate", "delegate"]
 - !private ["PSo15CALayerDelegate", "dequeueReusableCell"]
@@ -65,7 +67,7 @@ depends-member:
 - !private ["VSC6CGRect", "width"]
 - !private ["VSC6CGSize", "init"]
 - !private ["Ps7CVarArg", "CGSize"]
-- !private ["Ps7CVarArg", "RocheCategoryCell1"]
+- !private ["Ps7CVarArg", "SquareCategoryCell"]
 - !private ["Ps7CVarArg", "UINib"]
 - !private ["Ps7CVarArg", "cellId1"]
 - !private ["Ps7CVarArg", "cellId2"]
@@ -84,9 +86,13 @@ depends-member:
 - !private ["Ps7CVarArg", "view"]
 - !private ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", ""]
+- !private ["Ps10Collection", "item"]
+- !private ["Ps10Collection", "row"]
 - ["Ps10Comparable", "init"]
+- !private ["Ps10Comparable", "item"]
+- !private ["Ps10Comparable", "row"]
 - !private ["Ps28CustomDebugStringConvertible", "CGSize"]
-- !private ["Ps28CustomDebugStringConvertible", "RocheCategoryCell1"]
+- !private ["Ps28CustomDebugStringConvertible", "SquareCategoryCell"]
 - !private ["Ps28CustomDebugStringConvertible", "UINib"]
 - !private ["Ps28CustomDebugStringConvertible", "cellId1"]
 - !private ["Ps28CustomDebugStringConvertible", "cellId2"]
@@ -97,9 +103,11 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "frame"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "isUserInteractionEnabled"]
+- !private ["Ps28CustomDebugStringConvertible", "item"]
 - !private ["Ps28CustomDebugStringConvertible", "performSegue"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "register"]
+- !private ["Ps28CustomDebugStringConvertible", "row"]
 - ["Ps28CustomDebugStringConvertible", "seeAllButtonClicked"]
 - !private ["Ps28CustomDebugStringConvertible", "segueId"]
 - !private ["Ps28CustomDebugStringConvertible", "view"]
@@ -109,9 +117,11 @@ depends-member:
 - ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "width"]
 - ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "item"]
+- !private ["Ps17CustomReflectable", "row"]
 - !private ["Ps17CustomReflectable", "width"]
 - !private ["Ps23CustomStringConvertible", "CGSize"]
-- !private ["Ps23CustomStringConvertible", "RocheCategoryCell1"]
+- !private ["Ps23CustomStringConvertible", "SquareCategoryCell"]
 - !private ["Ps23CustomStringConvertible", "UINib"]
 - !private ["Ps23CustomStringConvertible", "cellId1"]
 - !private ["Ps23CustomStringConvertible", "cellId2"]
@@ -122,16 +132,18 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "frame"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "isUserInteractionEnabled"]
+- !private ["Ps23CustomStringConvertible", "item"]
 - !private ["Ps23CustomStringConvertible", "performSegue"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "register"]
+- !private ["Ps23CustomStringConvertible", "row"]
 - ["Ps23CustomStringConvertible", "seeAllButtonClicked"]
 - !private ["Ps23CustomStringConvertible", "segueId"]
 - !private ["Ps23CustomStringConvertible", "view"]
 - !private ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Ps9Equatable", "CGSize"]
-- !private ["Ps9Equatable", "RocheCategoryCell1"]
+- !private ["Ps9Equatable", "SquareCategoryCell"]
 - !private ["Ps9Equatable", "UINib"]
 - !private ["Ps9Equatable", "cellId1"]
 - !private ["Ps9Equatable", "cellId2"]
@@ -142,20 +154,24 @@ depends-member:
 - !private ["Ps9Equatable", "frame"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "isUserInteractionEnabled"]
+- !private ["Ps9Equatable", "item"]
 - !private ["Ps9Equatable", "performSegue"]
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "register"]
+- !private ["Ps9Equatable", "row"]
 - ["Ps9Equatable", "seeAllButtonClicked"]
 - !private ["Ps9Equatable", "segueId"]
 - !private ["Ps9Equatable", "view"]
 - !private ["Ps9Equatable", "viewDidLoad"]
 - !private ["Ps9Equatable", "width"]
 - ["Ps9Equatable", ""]
+- !private ["Ps25ExpressibleByArrayLiteral", "item"]
+- !private ["Ps25ExpressibleByArrayLiteral", "row"]
 - ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - ["Ps26ExpressibleByStringLiteral", "init"]
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Ps8Hashable", "CGSize"]
-- !private ["Ps8Hashable", "RocheCategoryCell1"]
+- !private ["Ps8Hashable", "SquareCategoryCell"]
 - !private ["Ps8Hashable", "UINib"]
 - !private ["Ps8Hashable", "cellId1"]
 - !private ["Ps8Hashable", "cellId2"]
@@ -166,18 +182,24 @@ depends-member:
 - !private ["Ps8Hashable", "frame"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "isUserInteractionEnabled"]
+- !private ["Ps8Hashable", "item"]
 - !private ["Ps8Hashable", "performSegue"]
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "register"]
+- !private ["Ps8Hashable", "row"]
 - ["Ps8Hashable", "seeAllButtonClicked"]
 - !private ["Ps8Hashable", "segueId"]
 - !private ["Ps8Hashable", "view"]
 - !private ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
+- !private ["V10Foundation9IndexPath", "item"]
+- !private ["V10Foundation9IndexPath", "row"]
 - ["Ps25LosslessStringConvertible", "init"]
 - ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "item"]
+- !private ["Ps17MutableCollection", "row"]
 - !private ["PSo8NSCoding", "CGSize"]
-- !private ["PSo8NSCoding", "RocheCategoryCell1"]
+- !private ["PSo8NSCoding", "SquareCategoryCell"]
 - !private ["PSo8NSCoding", "UINib"]
 - !private ["PSo8NSCoding", "cellId1"]
 - !private ["PSo8NSCoding", "cellId2"]
@@ -198,7 +220,7 @@ depends-member:
 - ["PSo8NSCoding", ""]
 - ["PSo9NSCopying", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "CGSize"]
-- !private ["PSo26NSExtensionRequestHandling", "RocheCategoryCell1"]
+- !private ["PSo26NSExtensionRequestHandling", "SquareCategoryCell"]
 - !private ["PSo26NSExtensionRequestHandling", "UINib"]
 - !private ["PSo26NSExtensionRequestHandling", "cellId1"]
 - !private ["PSo26NSExtensionRequestHandling", "cellId2"]
@@ -217,7 +239,7 @@ depends-member:
 - ["CSo8NSObject", "IndexPath"]
 - ["CSo8NSObject", "Int"]
 - ["CSo8NSObject", "NSMutableAttributedString"]
-- !private ["CSo8NSObject", "RocheCategoryCell1"]
+- !private ["CSo8NSObject", "SquareCategoryCell"]
 - ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UICollectionView"]
 - ["CSo8NSObject", "UICollectionViewCell"]
@@ -247,7 +269,7 @@ depends-member:
 - !private ["CSo8NSObject", "view"]
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "CGSize"]
-- !private ["PSo16NSObjectProtocol", "RocheCategoryCell1"]
+- !private ["PSo16NSObjectProtocol", "SquareCategoryCell"]
 - !private ["PSo16NSObjectProtocol", "UINib"]
 - !private ["PSo16NSObjectProtocol", "cellId1"]
 - !private ["PSo16NSObjectProtocol", "cellId2"]
@@ -268,8 +290,13 @@ depends-member:
 - ["PSo16NSObjectProtocol", ""]
 - ["PSo14NSSecureCoding", "init"]
 - ["CSo8NSString", "init"]
-- !private ["C8practice18RocheCategoryCell1", "deinit"]
-- !private ["C8practice18RocheCategoryCell1", "delegate"]
+- !private ["Ps22RandomAccessCollection", "item"]
+- !private ["Ps22RandomAccessCollection", "row"]
+- !private ["P10Foundation20ReferenceConvertible", "item"]
+- !private ["P10Foundation20ReferenceConvertible", "row"]
+- !private ["Ps8Sequence", "item"]
+- !private ["Ps8Sequence", "row"]
+- !private ["C8practice18SquareCategoryCell", "deinit"]
 - ["SS", "init"]
 - ["Ps16TextOutputStream", "init"]
 - ["Ps20TextOutputStreamable", "init"]
@@ -286,7 +313,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "isUserInteractionEnabled"]
 - !private ["PSo12UIAppearance", "register"]
 - !private ["PSo21UIAppearanceContainer", "CGSize"]
-- !private ["PSo21UIAppearanceContainer", "RocheCategoryCell1"]
+- !private ["PSo21UIAppearanceContainer", "SquareCategoryCell"]
 - !private ["PSo21UIAppearanceContainer", "UINib"]
 - !private ["PSo21UIAppearanceContainer", "cellId1"]
 - !private ["PSo21UIAppearanceContainer", "cellId2"]
@@ -305,19 +332,17 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "view"]
 - !private ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
-- !private ["CSo24UICollectionReusableView", "delegate"]
 - !private ["CSo16UICollectionView", "dataSource"]
 - !private ["CSo16UICollectionView", "delegate"]
 - !private ["CSo16UICollectionView", "dequeueReusableCell"]
 - !private ["CSo16UICollectionView", "isUserInteractionEnabled"]
 - !private ["CSo16UICollectionView", "register"]
-- !private ["CSo20UICollectionViewCell", "delegate"]
 - ["CSo26UICollectionViewController", "CGFloat"]
 - ["CSo26UICollectionViewController", "CGSize"]
 - ["CSo26UICollectionViewController", "IndexPath"]
 - ["CSo26UICollectionViewController", "Int"]
 - ["CSo26UICollectionViewController", "NSMutableAttributedString"]
-- !private ["CSo26UICollectionViewController", "RocheCategoryCell1"]
+- !private ["CSo26UICollectionViewController", "SquareCategoryCell"]
 - ["CSo26UICollectionViewController", "String"]
 - ["CSo26UICollectionViewController", "UICollectionView"]
 - ["CSo26UICollectionViewController", "UICollectionViewCell"]
@@ -342,12 +367,11 @@ depends-member:
 - ["CSo26UICollectionViewController", "viewDidLoad"]
 - ["CSo26UICollectionViewController", ""]
 - !private ["PSo26UICollectionViewDataSource", "CGSize"]
-- !private ["PSo26UICollectionViewDataSource", "RocheCategoryCell1"]
+- !private ["PSo26UICollectionViewDataSource", "SquareCategoryCell"]
 - !private ["PSo26UICollectionViewDataSource", "UINib"]
 - !private ["PSo26UICollectionViewDataSource", "cellId1"]
 - !private ["PSo26UICollectionViewDataSource", "cellId2"]
 - ["PSo26UICollectionViewDataSource", "collectionView"]
-- !private ["PSo26UICollectionViewDataSource", "delegate"]
 - !private ["PSo26UICollectionViewDataSource", "init"]
 - !private ["PSo26UICollectionViewDataSource", "performSegue"]
 - !private ["PSo26UICollectionViewDataSource", "print"]
@@ -357,12 +381,11 @@ depends-member:
 - !private ["PSo26UICollectionViewDataSource", "viewDidLoad"]
 - ["PSo26UICollectionViewDataSource", ""]
 - !private ["PSo24UICollectionViewDelegate", "CGSize"]
-- !private ["PSo24UICollectionViewDelegate", "RocheCategoryCell1"]
+- !private ["PSo24UICollectionViewDelegate", "SquareCategoryCell"]
 - !private ["PSo24UICollectionViewDelegate", "UINib"]
 - !private ["PSo24UICollectionViewDelegate", "cellId1"]
 - !private ["PSo24UICollectionViewDelegate", "cellId2"]
 - ["PSo24UICollectionViewDelegate", "collectionView"]
-- !private ["PSo24UICollectionViewDelegate", "delegate"]
 - !private ["PSo24UICollectionViewDelegate", "init"]
 - !private ["PSo24UICollectionViewDelegate", "performSegue"]
 - !private ["PSo24UICollectionViewDelegate", "print"]
@@ -372,12 +395,11 @@ depends-member:
 - !private ["PSo24UICollectionViewDelegate", "viewDidLoad"]
 - ["PSo24UICollectionViewDelegate", ""]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "CGSize"]
-- !private ["PSo34UICollectionViewDelegateFlowLayout", "RocheCategoryCell1"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "SquareCategoryCell"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "UINib"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "cellId1"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "cellId2"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "collectionView"]
-- !private ["PSo34UICollectionViewDelegateFlowLayout", "delegate"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "performSegue"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "print"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "seeAllButtonClicked"]
@@ -385,7 +407,7 @@ depends-member:
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "view"]
 - ["PSo34UICollectionViewDelegateFlowLayout", ""]
 - !private ["PSo18UIContentContainer", "CGSize"]
-- !private ["PSo18UIContentContainer", "RocheCategoryCell1"]
+- !private ["PSo18UIContentContainer", "SquareCategoryCell"]
 - !private ["PSo18UIContentContainer", "UINib"]
 - !private ["PSo18UIContentContainer", "cellId1"]
 - !private ["PSo18UIContentContainer", "cellId2"]
@@ -411,7 +433,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "isUserInteractionEnabled"]
 - !private ["PSo13UIDynamicItem", "register"]
 - !private ["PSo18UIFocusEnvironment", "CGSize"]
-- !private ["PSo18UIFocusEnvironment", "RocheCategoryCell1"]
+- !private ["PSo18UIFocusEnvironment", "SquareCategoryCell"]
 - !private ["PSo18UIFocusEnvironment", "UINib"]
 - !private ["PSo18UIFocusEnvironment", "cellId1"]
 - !private ["PSo18UIFocusEnvironment", "cellId2"]
@@ -442,7 +464,7 @@ depends-member:
 - ["CSo11UIResponder", "IndexPath"]
 - ["CSo11UIResponder", "Int"]
 - ["CSo11UIResponder", "NSMutableAttributedString"]
-- !private ["CSo11UIResponder", "RocheCategoryCell1"]
+- !private ["CSo11UIResponder", "SquareCategoryCell"]
 - ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UICollectionView"]
 - ["CSo11UIResponder", "UICollectionViewCell"]
@@ -472,7 +494,7 @@ depends-member:
 - !private ["CSo11UIResponder", "view"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["PSo30UIResponderStandardEditActions", "CGSize"]
-- !private ["PSo30UIResponderStandardEditActions", "RocheCategoryCell1"]
+- !private ["PSo30UIResponderStandardEditActions", "SquareCategoryCell"]
 - !private ["PSo30UIResponderStandardEditActions", "UINib"]
 - !private ["PSo30UIResponderStandardEditActions", "cellId1"]
 - !private ["PSo30UIResponderStandardEditActions", "cellId2"]
@@ -497,12 +519,11 @@ depends-member:
 - !private ["CSo12UIScrollView", "isUserInteractionEnabled"]
 - !private ["CSo12UIScrollView", "register"]
 - !private ["PSo20UIScrollViewDelegate", "CGSize"]
-- !private ["PSo20UIScrollViewDelegate", "RocheCategoryCell1"]
+- !private ["PSo20UIScrollViewDelegate", "SquareCategoryCell"]
 - !private ["PSo20UIScrollViewDelegate", "UINib"]
 - !private ["PSo20UIScrollViewDelegate", "cellId1"]
 - !private ["PSo20UIScrollViewDelegate", "cellId2"]
 - ["PSo20UIScrollViewDelegate", "collectionView"]
-- !private ["PSo20UIScrollViewDelegate", "delegate"]
 - !private ["PSo20UIScrollViewDelegate", "init"]
 - !private ["PSo20UIScrollViewDelegate", "performSegue"]
 - !private ["PSo20UIScrollViewDelegate", "print"]
@@ -512,7 +533,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "viewDidLoad"]
 - ["PSo20UIScrollViewDelegate", ""]
 - !private ["PSo16UIStateRestoring", "CGSize"]
-- !private ["PSo16UIStateRestoring", "RocheCategoryCell1"]
+- !private ["PSo16UIStateRestoring", "SquareCategoryCell"]
 - !private ["PSo16UIStateRestoring", "UINib"]
 - !private ["PSo16UIStateRestoring", "cellId1"]
 - !private ["PSo16UIStateRestoring", "cellId2"]
@@ -526,7 +547,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["PSo18UITraitEnvironment", "CGSize"]
-- !private ["PSo18UITraitEnvironment", "RocheCategoryCell1"]
+- !private ["PSo18UITraitEnvironment", "SquareCategoryCell"]
 - !private ["PSo18UITraitEnvironment", "UINib"]
 - !private ["PSo18UITraitEnvironment", "cellId1"]
 - !private ["PSo18UITraitEnvironment", "cellId2"]
@@ -556,7 +577,7 @@ depends-member:
 - ["CSo16UIViewController", "IndexPath"]
 - ["CSo16UIViewController", "Int"]
 - ["CSo16UIViewController", "NSMutableAttributedString"]
-- !private ["CSo16UIViewController", "RocheCategoryCell1"]
+- !private ["CSo16UIViewController", "SquareCategoryCell"]
 - ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "UICollectionView"]
 - ["CSo16UIViewController", "UICollectionViewCell"]
@@ -579,6 +600,8 @@ depends-member:
 - ["CSo16UIViewController", "titleContent"]
 - !private ["CSo16UIViewController", "view"]
 - ["CSo16UIViewController", "viewDidLoad"]
+- !private ["Ps23_BidirectionalIndexable", "item"]
+- !private ["Ps23_BidirectionalIndexable", "row"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "dataSource"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "delegate"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "dequeueReusableCell"]
@@ -592,7 +615,7 @@ depends-member:
 - ["Ps33_ExpressibleByStringInterpolation", "init"]
 - ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "CGSize"]
-- !private ["Ps9_Hashable", "RocheCategoryCell1"]
+- !private ["Ps9_Hashable", "SquareCategoryCell"]
 - !private ["Ps9_Hashable", "UINib"]
 - !private ["Ps9_Hashable", "cellId1"]
 - !private ["Ps9_Hashable", "cellId2"]
@@ -603,18 +626,30 @@ depends-member:
 - !private ["Ps9_Hashable", "frame"]
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "isUserInteractionEnabled"]
+- !private ["Ps9_Hashable", "item"]
 - !private ["Ps9_Hashable", "performSegue"]
 - !private ["Ps9_Hashable", "print"]
 - !private ["Ps9_Hashable", "register"]
+- !private ["Ps9_Hashable", "row"]
 - ["Ps9_Hashable", "seeAllButtonClicked"]
 - !private ["Ps9_Hashable", "segueId"]
 - !private ["Ps9_Hashable", "view"]
 - !private ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", ""]
+- !private ["Ps10_Indexable", "item"]
+- !private ["Ps10_Indexable", "row"]
+- !private ["Ps14_IndexableBase", "item"]
+- !private ["Ps14_IndexableBase", "row"]
+- !private ["Ps17_MutableIndexable", "item"]
+- !private ["Ps17_MutableIndexable", "row"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "item"]
+- !private ["Ps21_ObjectiveCBridgeable", "row"]
 - !private ["Ps21_ObjectiveCBridgeable", "width"]
+- !private ["Ps22_RandomAccessIndexable", "item"]
+- !private ["Ps22_RandomAccessIndexable", "row"]
 - !private ["P8practice13buttonClicked", "CGSize"]
-- !private ["P8practice13buttonClicked", "RocheCategoryCell1"]
+- !private ["P8practice13buttonClicked", "SquareCategoryCell"]
 - !private ["P8practice13buttonClicked", "UINib"]
 - !private ["P8practice13buttonClicked", "cellId1"]
 - !private ["P8practice13buttonClicked", "cellId2"]
@@ -630,7 +665,7 @@ depends-member:
 - ["C8practice18mainViewController", "IndexPath"]
 - ["C8practice18mainViewController", "Int"]
 - ["C8practice18mainViewController", "NSMutableAttributedString"]
-- !private ["C8practice18mainViewController", "RocheCategoryCell1"]
+- !private ["C8practice18mainViewController", "SquareCategoryCell"]
 - ["C8practice18mainViewController", "String"]
 - ["C8practice18mainViewController", "UICollectionView"]
 - ["C8practice18mainViewController", "UICollectionViewCell"]
@@ -656,22 +691,27 @@ depends-member:
 - ["C8practice18mainViewController", "viewDidLoad"]
 depends-nominal:
 - "Ps9AnyObject"
+- !private "Ps23BidirectionalCollection"
 - !private "PSo15CALayerDelegate"
 - !private "VSC6CGRect"
 - !private "VSC6CGSize"
 - "Ps7CVarArg"
+- !private "Ps10Collection"
 - "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps29CustomPlaygroundQuickLookable"
 - "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
 - "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"
 - "Ps8Hashable"
+- !private "V10Foundation9IndexPath"
 - "Ps25LosslessStringConvertible"
 - "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
 - "PSo8NSCoding"
 - "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
@@ -680,16 +720,17 @@ depends-nominal:
 - "PSo16NSObjectProtocol"
 - "PSo14NSSecureCoding"
 - "CSo8NSString"
-- !private "C8practice18RocheCategoryCell1"
+- !private "Ps22RandomAccessCollection"
+- !private "P10Foundation20ReferenceConvertible"
+- !private "Ps8Sequence"
+- !private "C8practice18SquareCategoryCell"
 - "SS"
 - "Ps16TextOutputStream"
 - "Ps20TextOutputStreamable"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
-- !private "CSo24UICollectionReusableView"
 - !private "CSo16UICollectionView"
-- !private "CSo20UICollectionViewCell"
 - "CSo26UICollectionViewController"
 - "PSo26UICollectionViewDataSource"
 - "PSo24UICollectionViewDelegate"
@@ -708,6 +749,7 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
+- !private "Ps23_BidirectionalIndexable"
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
 - "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - "Ps34_ExpressibleByBuiltinStringLiteral"
@@ -716,7 +758,11 @@ depends-nominal:
 - "Ps33_ExpressibleByStringInterpolation"
 - "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
+- !private "Ps10_Indexable"
+- !private "Ps14_IndexableBase"
+- !private "Ps17_MutableIndexable"
 - "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessIndexable"
 - "P8practice13buttonClicked"
 - "C8practice18mainViewController"
 depends-dynamic-lookup:

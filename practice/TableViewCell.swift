@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RocheTableViewCell: UITableViewCell {
+class TableViewCell: UITableViewCell {
 
     @IBOutlet var image1: UIImageView!
     @IBOutlet var author: UILabel!

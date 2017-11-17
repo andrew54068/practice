@@ -59,7 +59,7 @@ class mainViewController: UICollectionViewController, UICollectionViewDelegateFl
         collectionView!.register(nib2, forCellWithReuseIdentifier: cellId2)
         collectionView!.isUserInteractionEnabled = true
         
-        collectionView!.register(RocheCategoryCell1.self, forCellWithReuseIdentifier: cellId1)
+        collectionView!.register(SquareCategoryCell.self, forCellWithReuseIdentifier: cellId1)
     }
 
     /*
@@ -88,11 +88,13 @@ class mainViewController: UICollectionViewController, UICollectionViewDelegateFl
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 //        if indexPath.row < numberOfRowBeforeSqueezedRectangle{
-            let cell1 = collectionView.dequeueReusableCell(withReuseIdentifier: cellId1, for: indexPath) as! RocheCategoryCell1
+            let cell1 = collectionView.dequeueReusableCell(withReuseIdentifier: cellId1, for: indexPath) as! SquareCategoryCell
             //?? as as!
+        print("indexPath.row = \(indexPath.row)")
+        print("indexPath.item = \(indexPath.item)")
             
 //            cell1.title.text = "123"
-            cell1.delegate = self
+//            cell1.delegate = self
 //            cell1.seeAllButton.addTarget(self, action: "seeAllButtonClicked", for: .touchUpInside)
 //            collectionView.register(RocheCategoryCollectionView1.self, forCellWithReuseIdentifier: collectionView1)
             
