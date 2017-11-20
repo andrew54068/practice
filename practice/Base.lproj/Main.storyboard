@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17A405" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ljz-Nd-L2z">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17A405" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kJf-ol-woQ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,7 +13,7 @@
         <scene sceneID="ybN-Vs-ddF">
             <objects>
                 <collectionViewController storyboardIdentifier="mainVC" id="Ljz-Nd-L2z" customClass="mainViewController" customModule="practice" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="lP2-YI-J79">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="lP2-YI-J79">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -29,13 +29,19 @@
                             <outlet property="delegate" destination="Ljz-Nd-L2z" id="uWW-sX-L9M"/>
                         </connections>
                     </collectionView>
+                    <navigationItem key="navigationItem" id="teD-H4-CCb"/>
                     <connections>
-                        <segue destination="eqc-p2-hJW" kind="show" identifier="seeAll" id="LBZ-UP-Xrg"/>
+                        <outlet property="navigationBar" destination="Aiz-MJ-4A1" id="B3w-oG-8ep"/>
+                        <segue destination="eqc-p2-hJW" kind="showDetail" identifier="seeAll" action="showViewController:sender:" id="LBZ-UP-Xrg"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IZC-Mq-UAL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationBar contentMode="scaleToFill" id="Aiz-MJ-4A1" customClass="NavigationBar" customModule="practice" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                </navigationBar>
             </objects>
-            <point key="canvasLocation" x="1330" y="772"/>
+            <point key="canvasLocation" x="1750" y="770"/>
         </scene>
         <!--Congress UpdateVC-->
         <scene sceneID="zh0-yS-9hu">
@@ -57,10 +63,38 @@
             </objects>
             <point key="canvasLocation" x="343" y="1476"/>
         </scene>
+        <!--ArticleTVC-->
+        <scene sceneID="Gkj-9E-bUL">
+            <objects>
+                <tableViewController id="kJf-ol-woQ" customClass="Article_TVC" customModule="practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="gQc-eT-smw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="HgI-ea-X9D">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HgI-ea-X9D" id="jK1-rs-hvn">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="kJf-ol-woQ" id="746-Z1-9Dp"/>
+                            <outlet property="delegate" destination="kJf-ol-woQ" id="aLy-Ru-ylV"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ruw-sH-q3v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="771" y="2249"/>
+        </scene>
         <!--Expert CommentaryVC-->
         <scene sceneID="dgC-hD-TeA">
             <objects>
-                <tableViewController storyboardIdentifier="vc2" id="XXf-7t-oAC" customClass="ExpertCommentary_VC" customModule="practice" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ExpertCommentary_VC" id="XXf-7t-oAC" customClass="ExpertCommentary_VC" customModule="practice" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="v0P-uN-lJw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -78,7 +112,7 @@
         <!--EventVC-->
         <scene sceneID="AFW-Cd-CJo">
             <objects>
-                <tableViewController storyboardIdentifier="vc3" id="yq0-GD-aK0" customClass="Event_VC" customModule="practice" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Event_VC" id="yq0-GD-aK0" customClass="Event_VC" customModule="practice" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="eIh-Av-bX6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -93,10 +127,10 @@
             </objects>
             <point key="canvasLocation" x="1750" y="1476"/>
         </scene>
-        <!--View Controller-->
+        <!--Tab PageVC-->
         <scene sceneID="I1r-VW-pr0">
             <objects>
-                <viewController storyboardIdentifier="ViewController" id="eqc-p2-hJW" customClass="ViewController" customModule="practice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="eqc-p2-hJW" customClass="TabPage_VC" customModule="practice" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="f6M-Vc-1DL"/>
                         <viewControllerLayoutGuide type="bottom" id="EPr-9y-UMv"/>
@@ -109,12 +143,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aF7-JU-LVU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2100" y="771"/>
+            <point key="canvasLocation" x="2658" y="770"/>
         </scene>
         <!--Trail Fact SheetVC-->
         <scene sceneID="akZ-Di-sRm">
             <objects>
-                <tableViewController storyboardIdentifier="vc4" id="2wb-sK-0zy" customClass="TrailFactSheet_VC" customModule="practice" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="TrailFactSheet_VC" id="2wb-sK-0zy" customClass="TrailFactSheet_VC" customModule="practice" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="JLu-Pg-9Yl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -132,7 +166,7 @@
         <!--BookmarkVC-->
         <scene sceneID="aDG-9X-QlP">
             <objects>
-                <tableViewController storyboardIdentifier="vc5" id="tc7-Yf-R9X" customClass="Bookmark_VC" customModule="practice" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Bookmark_VC" id="tc7-Yf-R9X" customClass="Bookmark_VC" customModule="practice" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="nnX-1B-lSp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -146,6 +180,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sOn-vS-kH3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3135" y="1476"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Z6A-Wq-cMX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZBL-4x-hSi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="j1x-U2-Ky5" customClass="NavigationBar" customModule="practice" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ljz-Nd-L2z" kind="relationship" relationship="rootViewController" id="K6b-4Z-aJk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yJI-Te-smy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="769" y="770"/>
         </scene>
     </scenes>
 </document>

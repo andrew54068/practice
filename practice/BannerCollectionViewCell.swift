@@ -16,6 +16,8 @@ class BannerCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        rectangleButtom.imageView?.layer.cornerRadius = 10
+        rectangleButtom.imageView?.clipsToBounds = true
     }
 
 }

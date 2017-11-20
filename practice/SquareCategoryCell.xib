@@ -46,9 +46,6 @@
                         <state key="normal" title="see all" image="icon_btn_arrow_seeall">
                             <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                         </state>
-                        <connections>
-                            <action selector="seeAllClicked:" destination="gUF-ZD-87b" eventType="touchUpInside" id="IGb-lD-wmd"/>
-                        </connections>
                     </button>
                 </subviews>
             </view>
@@ -67,7 +64,7 @@
             <size key="customSize" width="375" height="277"/>
             <connections>
                 <outlet property="content" destination="W39-l5-zMk" id="GEQ-R1-Qy5"/>
-                <outlet property="seeAllButton" destination="KH9-yH-qGn" id="5ws-yZ-6RG"/>
+                <outlet property="seeAll" destination="KH9-yH-qGn" id="kcq-uS-Y7R"/>
                 <outlet property="title" destination="YUF-Wv-4Fb" id="yM2-eP-Z8a"/>
             </connections>
             <point key="canvasLocation" x="68.5" y="360.5"/>

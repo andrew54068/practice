@@ -43,15 +43,17 @@ class TabPage_VC: UIViewController {
     
     func showTabPageVC(){
         let tc = TabPageViewController.create()
-        let vc1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "vc1")
-        let vc2 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "vc2")
-        let vc3 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "vc3")
+        let CongressUpdate = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CongressUpdate_VC")
+        let ExpertCommentary = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ExpertCommentary_VC")
+        let Event = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Event_VC")
+        let TrailFactSheet = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TrailFactSheet_VC")
+        let Bookmark = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Bookmark_VC")
         
         let logo = UIImage(named: "Roche_logo")
         let logoView = UIImageView(image: logo)
         navigationItem.titleView = logoView
         
-        tc.tabItems = [(vc1, "sdfjiweojroqjwero"), (vc2, "woejrpk393nlskjd0we;"), (vc3, "eij380mvcljlkjj;oiewjfwe;f")]
+        tc.tabItems = [(CongressUpdate, "CongressUpdate"), (ExpertCommentary, "ExpertCommentary"), (Event, "Event"), (TrailFactSheet, "TrailFactSheet"), (Bookmark, "Bookmark")]
         
         
 //        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)

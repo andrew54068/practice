@@ -14,6 +14,8 @@ class CongressUpdate_VC: UITableViewController {
     
 //    @IBOutlet var tableView: UITableView!
 //    var hight: CGFloat = 40
+    private let cellId = "RTVCell"
+    
     var thumbnailImage: UIImage?
     var titleContent: String = ""
     var subtitleContent: String = ""
@@ -27,9 +29,9 @@ class CongressUpdate_VC: UITableViewController {
         super.viewDidLoad()
         
         
-        let nib = UINib(nibName: "RocheTableViewCell", bundle: nil)
+        let nib = UINib(nibName: "TableViewCell", bundle: nil)
         tableView.register(nib
-            , forCellReuseIdentifier: "RTVCell")
+            , forCellReuseIdentifier: cellId)
         print("here1")
         
         let logo = UIImage(named: "Roche_logo")
@@ -85,7 +87,7 @@ class CongressUpdate_VC: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "RTVCell", for: indexPath) as! TableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! TableViewCell
         
         if count > 1{
             cell.hadRead = true

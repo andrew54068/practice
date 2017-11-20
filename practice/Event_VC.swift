@@ -20,7 +20,7 @@ class Event_VC: UITableViewController {
 //    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(UINib(nibName: "RocheTableViewCell", bundle: nil), forCellReuseIdentifier: "RTVCell")
+        tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "RTVCell")
         
         print("here2")
     }

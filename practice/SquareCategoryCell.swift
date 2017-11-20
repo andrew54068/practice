@@ -13,6 +13,7 @@ import UIKit
 
 class SquareCategoryCell: UICollectionViewCell, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
+    
 //    weak var delegate: buttonClicked?
     private let cellId = "SCVCell"
     var titleContent: String = ""
@@ -23,12 +24,13 @@ class SquareCategoryCell: UICollectionViewCell, UICollectionViewDelegate, UIColl
     
     @IBOutlet var content: UICollectionView!
     @IBOutlet var title: UILabel!
-    @IBOutlet var seeAllButton: UIButton!
     
-    @IBAction func seeAllClicked(_ sender: Any){
-        print("%%%%%%")
-//        delegate?.seeAllButtonClicked()
-    }
+    @IBOutlet var seeAll: UIButton!
+    
+//    @IBAction func seeAllClicked(_ sender: Any){
+//        print("%%%%%%")
+////        delegate?.seeAllButtonClicked()
+//    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

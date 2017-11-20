@@ -20,6 +20,8 @@ class mainViewController: UICollectionViewController, UICollectionViewDelegateFl
     var count:Int = 0
     var numberOfRowBeforeSqueezedRectangle:Int = 2
     
+    @IBOutlet var navigationBar: NavigationBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView?.delegate = self
@@ -27,8 +29,25 @@ class mainViewController: UICollectionViewController, UICollectionViewDelegateFl
         let SquareNib = UINib(nibName: "SquareCategoryCell", bundle: nil)
         collectionView!.register(SquareNib, forCellWithReuseIdentifier: SquareCellId)
         
-//      let BannerNib = UINib(nibName: "BannerCategoryCell", bundle: nil)
-//      collectionView!.register(BannerNib, forCellWithReuseIdentifier: BannerCellId)
+        let BannerNib = UINib(nibName: "BannerCategoryCell", bundle: nil)
+        collectionView!.register(BannerNib, forCellWithReuseIdentifier: BannerCellId)
+        
+        //wait for angie
+        /*let logo = UIImage(named: "Roche_logo")
+        let imageView = UIImageView(image:logo)
+        self.navigationItem.titleView = imageView*/
+        
+//        self.navigationItem.title = "Roche"
+//        self.navigationBar.barStyle = UIBarStyle.default
+//        self.navigationBar.tintColor = UIColor.red
+        
+        let Nav = NavigationBar()
+        self.navigationBar = Nav
+        
+    }
+    
+    func seeAll(){
+        self.performSegue(withIdentifier: "seeAll", sender: self)
     }
 
     //MARK: CollectionView dataSource
@@ -38,13 +57,16 @@ class mainViewController: UICollectionViewController, UICollectionViewDelegateFl
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-
-        let cell1 = collectionView.dequeueReusableCell(withReuseIdentifier: SquareCellId, for: indexPath) as! SquareCategoryCell
-            //?? as as!
-        print("indexPath.row = \(indexPath.row)")
-        print("indexPath.item = \(indexPath.item)")
-            
-        return cell1
+        if indexPath.item < numberOfRowBeforeSqueezedRectangle{
+            let SquareCell = collectionView.dequeueReusableCell(withReuseIdentifier: SquareCellId, for: indexPath) as! SquareCategoryCell
+                //?? as as!
+            SquareCell.seeAll.addTarget(self, action: #selector(seeAll), for: .touchUpInside)
+                
+            return SquareCell
+        }else{
+            let BannerCell = collectionView.dequeueReusableCell(withReuseIdentifier: BannerCellId, for: indexPath) as! BannerCategoryCell
+            return BannerCell
+        }
     }
     
     
@@ -63,6 +85,11 @@ class mainViewController: UICollectionViewController, UICollectionViewDelegateFl
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: self.view.frame.width, height: 253)
+        if indexPath.item < numberOfRowBeforeSqueezedRectangle{
+            return CGSize(width: self.view.frame.width, height: 253)
+        }else{
+            return CGSize(width: self.view.frame.width, height: 135)
+        }
+        
     }
 }

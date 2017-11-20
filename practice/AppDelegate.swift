@@ -18,16 +18,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
 //        let layout = TabPageViewController
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.makeKeyAndVisible()
-        let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mainVC")
-        window?.rootViewController = UINavigationController(rootViewController: mainVC)
-//
-        let bounds = window?.rootViewController?.navigationController?.navigationBar.bounds
-        window?.rootViewController?.navigationController?.navigationBar.frame = CGRect(x: 0, y: 0, width: (bounds?.width)!, height: 64)
-        UINavigationBar.appearance().barTintColor = UIColor.green
-        
-        
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        window?.makeKeyAndVisible()
+//        let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mainVC")
+//        window?.rootViewController = UINavigationController(rootViewController: mainVC)
+//        let bounds = window?.rootViewController?.navigationController?.navigationBar.bounds
+//        window?.rootViewController?.navigationController?.navigationBar.frame = CGRect(x: 0, y: 0, width: (bounds?.width)!, height: 64)
+
+
+//        let bar = NavigationBar()
+//        UINavigationBar.setItems(bar)
+//        let logo = UIImage(named: "Roche_logo")
+//        let imageView = UIImageView(image:logo)
+//        window?.rootViewController?.navigationItem.titleView = imageView
 //        let logo = UIImage(named: "Roche_logo")
 //        let logoView = UIImageView(image: logo)
         
