@@ -11,8 +11,8 @@ import UIKit
 class Article_TVC: UITableViewController {
 
     
-    private let ThumbnailCellId = "thumbnailCell"
-    private let ContentCellId = "contentCell"
+    private let ThumbnailHeaderCellId = "ThumbnailHeaderCell"
+    private let ContentCellId = "ContentCell"
     private let QuizCellId = "QuizCell"
     private let ReferenceCellId = "ReferenceCell"
     private let MayLikeCellId = "MayLikeCell"
@@ -25,8 +25,8 @@ class Article_TVC: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        let thumbnailNib = UINib(nibName: "Thumbnail_TVCell", bundle: nil)
-        tableView.register(thumbnailNib, forCellReuseIdentifier: ThumbnailCellId)
+        let ThumbnailHeaderNib = UINib(nibName: "ThumbnailHeader_TVCell", bundle: nil)
+        tableView.register(ThumbnailHeaderNib, forCellReuseIdentifier: ThumbnailHeaderCellId)
         let ContentNib = UINib(nibName: "Content_TVCell", bundle: nil)
         tableView.register(ContentNib, forCellReuseIdentifier: ContentCellId)
         let QuizNib = UINib(nibName: "Quiz_TVCell", bundle: nil)
@@ -65,22 +65,18 @@ class Article_TVC: UITableViewController {
     }
 
     //MARK: TableView dataSource
+    
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.item == 0{
-            let cell = tableView.dequeueReusableCell(withIdentifier: ThumbnailCellId, for: indexPath) as! Thumbnail_TVCell
-            // Configure the cell...
-            cell.selectionStyle = .none
-            return cell
-        }
-        else if indexPath.item == 1{
             let cell = tableView.dequeueReusableCell(withIdentifier: ContentCellId, for: indexPath) as! Content_TVCell
             return cell
         }
-        else if indexPath.item == 2{
+        else if indexPath.item == 1{
             let cell = tableView.dequeueReusableCell(withIdentifier: QuizCellId, for: indexPath) as! Quiz_TVCell
             return cell
         }
-        else if indexPath.item == 3{
+        else if indexPath.item == 2{
             let cell = tableView.dequeueReusableCell(withIdentifier: ReferenceCellId, for: indexPath) as! Reference_TVCell
             return cell
         }
@@ -89,6 +85,22 @@ class Article_TVC: UITableViewController {
             return cell
         }
     }
+    
+    //MARK: tableView delegate
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if section == 0{
+            let header = tableView.dequeueReusableCell(withIdentifier: ThumbnailHeaderCellId) as! ThumbnailHeader_TVCell
+            return header
+        }
+        else{
+            return nil
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 300
+    }
+    
     
 //    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
 //        if indexPath.item == 0{

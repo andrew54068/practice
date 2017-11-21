@@ -1,11 +1,11 @@
 version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
 options: "1fef2e63d2909a20200422b75750f4ac"
-build_time: [564491113, 782645000]
+build_time: [564551400, 256421000]
 inputs:
-  "/Users/kidnapper/Documents/25sprout/practice/practice/Thumbnail_TVCell.swift": [564464968, 0]
-  "/Users/kidnapper/Documents/25sprout/practice/practice/mainViewController.swift": [564489795, 0]
-  "/Users/kidnapper/Documents/25sprout/practice/practice/SquareCategoryCell.swift": [564489622, 0]
-  "/Users/kidnapper/Documents/25sprout/practice/practice/Article_TVC.swift": [564488107, 0]
+  "/Users/kidnapper/Documents/25sprout/practice/practice/ThumbnailHeader_TVCell.swift": [564551114, 0]
+  "/Users/kidnapper/Documents/25sprout/practice/practice/mainViewController.swift": [564491273, 0]
+  "/Users/kidnapper/Documents/25sprout/practice/practice/SquareCategoryCell.swift": [564550972, 0]
+  "/Users/kidnapper/Documents/25sprout/practice/practice/Article_TVC.swift": [564551292, 0]
   "/Users/kidnapper/Documents/25sprout/practice/practice/BannerCategoryCell.swift": [564489622, 0]
   "/Users/kidnapper/Documents/25sprout/practice/practice/SquareCollectionViewCell.swift": [564244249, 0]
   "/Users/kidnapper/Documents/25sprout/practice/practice/Event_VC.swift": [564490710, 0]
@@ -21,6 +21,6 @@ inputs:
   "/Users/kidnapper/Documents/25sprout/practice/practice/Quiz_TVCell.swift": [564488107, 0]
   "/Users/kidnapper/Documents/25sprout/practice/practice/TableViewCell.swift": [564141080, 0]
   "/Users/kidnapper/Documents/25sprout/practice/practice/BannerCategoryCollectionView.swift": [564227587, 0]
-  "/Users/kidnapper/Documents/25sprout/practice/practice/Bookmark_VC.swift": [564140978, 0]
+  "/Users/kidnapper/Documents/25sprout/practice/practice/Bookmark_VC.swift": [564550865, 0]
   "/Users/kidnapper/Documents/25sprout/practice/practice/SquareCategoryCollectionView.swift": [564230018, 0]
   "/Users/kidnapper/Documents/25sprout/practice/practice/CongressUpdate_VC.swift": [564491043, 0]

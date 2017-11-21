@@ -94,6 +94,7 @@ class SquareCategoryCell: UICollectionViewCell, UICollectionViewDelegate, UIColl
         titleContent = " A future in mind - rising to the challenge in Alzheimer's"
         subtitleContent = "Doretha Burrell-nickname “Dee” by children at the school where she once worked as administrative, Doretha Burrell-nickname “Dee” by children at the school where she once worked as administrative"
         count += 1
+        performSelector(inBackground: #selector(mainViewController.seeAll), with: nil)
         collectionView.reloadData()
     }
     
@@ -105,6 +106,7 @@ class SquareCategoryCell: UICollectionViewCell, UICollectionViewDelegate, UIColl
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 165, height: 193)
     }
+    
 }
 
 

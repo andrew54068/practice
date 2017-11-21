@@ -10,7 +10,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/XeNs9e3AvHSBIcgrFPvtOo+bVI=
+		G3Swav6LC7h7XLA7rDwUaIBFGW4=
 		</data>
 		<key>Modules/TabPageViewController.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>TabCollectionCell.nib</key>
 		<data>
-		CMqWc9sXnbKuLt0QeiUomfpgGVE=
+		EDyMUpXzOSbnoqMaUDbTdIt1Npw=
 		</data>
 		<key>TabPageViewController.storyboardc/Info.plist</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>TabPageViewController.storyboardc/UIPageViewController-qCo-69-EHJ.nib</key>
 		<data>
-		1i0GTxPdzVxjr4Y0czO4jn8dbVU=
+		5Y+ZbrcTVnZXhXBBK38d2vonciU=
 		</data>
 		<key>TabView.nib</key>
 		<data>
-		qXLzsV3vK7Etz+3Ir9PVjhmOk/A=
+		TlHjP/+gOmBp12Nj9SkQB3egOeE=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -91,11 +91,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CMqWc9sXnbKuLt0QeiUomfpgGVE=
+			EDyMUpXzOSbnoqMaUDbTdIt1Npw=
 			</data>
 			<key>hash2</key>
 			<data>
-			lZrQyEGToTKM9j4Mw3KhuJjRXhDjULrYfwIZcNInS9A=
+			Ep5W2+tLni1r5/WmeLSQf9JvPrJiLuNtIT1/sXKRQuc=
 			</data>
 		</dict>
 		<key>TabPageViewController.storyboardc/Info.plist</key>
@@ -113,22 +113,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1i0GTxPdzVxjr4Y0czO4jn8dbVU=
+			5Y+ZbrcTVnZXhXBBK38d2vonciU=
 			</data>
 			<key>hash2</key>
 			<data>
-			K6wDAGIOKo+EkpEwfYee7j3bWWczk3MWB/z+re/zb1c=
+			AOlXlsCO2nxiHuIB8ofBK133Y5iqaqsQg60I4jV1HhE=
 			</data>
 		</dict>
 		<key>TabView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qXLzsV3vK7Etz+3Ir9PVjhmOk/A=
+			TlHjP/+gOmBp12Nj9SkQB3egOeE=
 			</data>
 			<key>hash2</key>
 			<data>
-			uw1gFGMzu5yMj20NuwTgTVebtqkPOfRjQdBnT1HBSzY=
+			pYncH5dT7nH/b5KR8U0yqJ41XKrT33hY4RCbhZj6PgM=
 			</data>
 		</dict>
 	</dict>
