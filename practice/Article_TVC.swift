@@ -9,13 +9,18 @@
 import UIKit
 
 class Article_TVC: UITableViewController {
-
     
+    let titleContent = "A future in mind - rising to the challenge of Alzheimer's"
+
     private let ThumbnailHeaderCellId = "ThumbnailHeaderCell"
     private let ContentCellId = "ContentCell"
     private let QuizCellId = "QuizCell"
     private let ReferenceCellId = "ReferenceCell"
     private let MayLikeCellId = "MayLikeCell"
+    
+    @IBOutlet var ThumbnailHeaderView: UIView!
+    
+    @IBOutlet var articleTitle: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +48,8 @@ class Article_TVC: UITableViewController {
         tableView.estimatedRowHeight = 300
         
         tableView.separatorStyle = .none
+        tableView.tableHeaderView = ThumbnailHeaderView
+        articleTitle.text = title
         
     }
 
@@ -87,19 +94,19 @@ class Article_TVC: UITableViewController {
     }
     
     //MARK: tableView delegate
-    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        if section == 0{
-            let header = tableView.dequeueReusableCell(withIdentifier: ThumbnailHeaderCellId) as! ThumbnailHeader_TVCell
-            return header
-        }
-        else{
-            return nil
-        }
-    }
+//    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//        if section == 0{
+//            let header = tableView.dequeueReusableCell(withIdentifier: ThumbnailHeaderCellId) as! ThumbnailHeader_TVCell
+//            return header
+//        }
+//        else{
+//            return nil
+//        }
+//    }
     
-    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 300
-    }
+//    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+//        return 300
+//    }
     
     
 //    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

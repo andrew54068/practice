@@ -10,7 +10,7 @@ import UIKit
 
 class ThumbnailHeader_TVCell: UITableViewCell{
 
-    let title = "A future in mind - rising to the challenge of Alzheimer's"
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
