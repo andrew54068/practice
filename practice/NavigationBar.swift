@@ -10,8 +10,12 @@ import UIKit
 
 class NavigationBar: UINavigationBar{
     override func awakeFromNib() {
-        self.barStyle = UIBarStyle.black
+        
+        self.barStyle = UIBarStyle.default
         self.tintColor = UIColor.red
+        
+        
+        
     }
 }
 

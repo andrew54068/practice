@@ -15,6 +15,8 @@ class CongressUpdate_VC: UITableViewController {
 //    @IBOutlet var tableView: UITableView!
 //    var hight: CGFloat = 40
     private let cellId = "RTVCell"
+    private let selectionId = "selection"
+    private let pickerId = "pick"
     
     var thumbnailImage: UIImage?
     var titleContent: String = ""
@@ -22,7 +24,11 @@ class CongressUpdate_VC: UITableViewController {
     var attributedString: NSMutableAttributedString!
     var unreadIndication: UIImage? = UIImage(named: "unread")
     var count:Int = 0
+    var selectedFilter: Int?
+    var selectedtext: String?
     
+    var selectionView: selectionView!
+    var pickerView: pickerView!
     
     
     override func viewDidLoad() {
@@ -32,27 +38,78 @@ class CongressUpdate_VC: UITableViewController {
         let nib = UINib(nibName: "TableViewCell", bundle: nil)
         tableView.register(nib
             , forCellReuseIdentifier: cellId)
-        print("here1")
         
         let logo = UIImage(named: "Roche_logo")
         let logoView = UIImageView(image: logo)
         navigationItem.titleView = logoView
-//        tableView.backgroundColor = UIColor.red
-//        tableView.rowHeight = 40
-//        tableView.cellLayoutMarginsFollowReadableWidth = false
-//        tableView.separatorStyle = .singleLine
-        tableView.contentInset = UIEdgeInsetsMake(40, 0, 0, 0)
+
+        selectionSetup()
+        tableViewSetup()
+        pickerViewSetup()
+    }
+    
+    func tableViewSetup(){
+        tableView.contentInset = UIEdgeInsetsMake(81, 0, 0, 0)
         tableView.separatorInset = UIEdgeInsets.zero
         tableView.estimatedRowHeight = 318
-        tableView.scrollIndicatorInsets = UIEdgeInsets(top: 45, left: 0, bottom: 0, right: 0)
-//        let top = NSLayoutConstraint(item: self, attribute: .top, relatedBy: .equal, toItem: topLayoutGuide, attribute: .bottom, multiplier: 0, constant: 89)
-//        self.tableView.addConstraint(top)
+        tableView.scrollIndicatorInsets = UIEdgeInsets(top: 101, left: 0, bottom: 0, right: 0)
+        tableView.tableHeaderView = selectionView
+    }
+    
+    func selectionSetup(){
+        let selectionNib = UINib(nibName: "selectionView", bundle: nil)
+        selectionView = selectionNib.instantiate(withOwner: self, options: nil).first as! selectionView
+        selectionView.left.backgroundColor = UIColor.lightGray.withAlphaComponent(0.3)
+        selectionView.right.backgroundColor = UIColor.lightGray.withAlphaComponent(0.3)
+    }
+    
+    func pickerViewSetup(){
+        let pickerViewNib = UINib(nibName: "pickerView", bundle: nil)
+        pickerView = pickerViewNib.instantiate(withOwner: self, options: nil).first as! pickerView
         
+        let flexible = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
+        let item = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(comfirmSelection(sender:)))
+        let fix = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.fixedSpace, target: nil, action: nil)
+        fix.width = 9
+        pickerView.toolbar.setItems([flexible, item, fix], animated: true)
         
-//        tableView.rowHeight = UITableViewAutomaticDimension
-        
+        selectionView.left.tag = kindOfPickerView.congress.rawValue
+        selectionView.left.addTarget(self, action: #selector(CategoryPicked), for: .touchUpInside)
+        selectionView.right.tag = kindOfPickerView.disease.rawValue
+        selectionView.right.addTarget(self, action: #selector(CategoryPicked), for: .touchUpInside)
+    }
+    
+    func CategoryPicked(sender: UIButton){
+        let window = UIApplication.shared.keyWindow!
+        window.addSubview(unfocus)
+        unfocus.frame = CGRect(x: 0, y: 0, width: tableView.frame.width, height: tableView.frame.height)
+        unfocus.addTarget(self, action: #selector(dismissUnfocus), for: .touchUpInside)
+        pickerView.frame = CGRect(x: 0, y: window.bounds.maxY - 261, width: tableView.frame.width, height: 261)
+        unfocus.addSubview(pickerView)
+        selectedtext = showPickerView(PickerView: pickerView, selectionView: selectionView, selected: sender.tag)
         
     }
+    let unfocus:UIButton = {
+        let View = UIButton()
+        View.backgroundColor = UIColor.gray.withAlphaComponent(0.5)
+        return View
+    }()
+    
+    func comfirmSelection(sender: UIBarButtonItem){
+        dismissUnfocus(sender: sender)
+        if selectedFilter == 1{
+            selectionView.left.titleLabel?.text = selectedtext!
+        }
+        else{
+            selectionView.right.titleLabel?.text = selectedtext!
+        }
+    }
+    
+    func dismissUnfocus(sender: Any) {
+        unfocus.removeFromSuperview()
+        tableView.isScrollEnabled = true
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
@@ -70,15 +127,6 @@ class CongressUpdate_VC: UITableViewController {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-    
-
-    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-
-        print("tableView willDisplay cell")
-    }
-    
-    
-    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
@@ -125,18 +173,9 @@ class CongressUpdate_VC: UITableViewController {
         if thumbnailImage != nil{
             cell.image1.image = thumbnailImage!
         }
+        
+        cell.selectionStyle = .none
 
-        
-        
-//        if let image = thumbnailImage{
-//
-//            
-//        }else{
-//            cell.tittle.attributedText = attributedString1
-//        }
-        
-        
-//        cell.frame = CGRect(x: 0, y: 0, width: tableView.frame.width-30, height: cell.frame.height)
 
         print("123")
         return cell
@@ -149,6 +188,10 @@ class CongressUpdate_VC: UITableViewController {
         return 318
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if !tableView.isScrollEnabled{
+            pickerView.removeFromSuperview()
+            tableView.isScrollEnabled = true
+        }
         titleContent = " A future in mind - rising to the challenge in Alzheimer's"
         subtitleContent = "Doretha Burrell-nickname “Dee” by children at the school where she once worked as administrative, Doretha Burrell-nickname “Dee” by children at the school where she once worked as administrative"
         thumbnailImage = UIImage(named: "thumbnail_tab")
@@ -156,9 +199,7 @@ class CongressUpdate_VC: UITableViewController {
         count += 1
         tableView.reloadData()
     }
-    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        
-    }
+    
     
     
     

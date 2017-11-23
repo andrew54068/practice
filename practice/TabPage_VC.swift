@@ -10,13 +10,13 @@ import UIKit
 import Foundation
 import TabPageViewController
 
-protocol TabPageController: class {
-    func showTabPageVC()
-}
+//protocol TabPageController: class {
+//    func showTabPageVC()
+//}
 
-class TabPage_VC: UIViewController {
+class TabPage_VC: UIPageViewController {
     
-    var delegate: TabPageController?
+//    var delegate: TabPageController?
     
     override func viewDidAppear(_ animated: Bool) {
         

@@ -11,6 +11,8 @@ import UIKit
 class Article_TVC: UITableViewController {
     
     let titleContent = "A future in mind - rising to the challenge of Alzheimer's"
+    let timeContent = "2017.11.21"
+    let catagoryContent = "Event/Alzheimer's"
 
     private let ThumbnailHeaderCellId = "ThumbnailHeaderCell"
     private let ContentCellId = "ContentCell"
@@ -22,9 +24,16 @@ class Article_TVC: UITableViewController {
     
     @IBOutlet var articleTitle: UILabel!
     
+    @IBOutlet var time: UIButton!
+    
+    @IBOutlet var catagory: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        (UIApplication.shared.value(forKey: "statusBar") as? UIView)?.backgroundColor = UIColor.white
+        UIApplication.shared.statusBarStyle = .default
+//        (UIApplication.shared.value(forKey: "statusBar") as? UIView)?.type
+//        UIApplication.shared.statusBarView?.backgroundColor = UIColor.green
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -42,16 +51,41 @@ class Article_TVC: UITableViewController {
         tableView.register(MayLikeNib, forCellReuseIdentifier: MayLikeCellId)
         
         
+        
+        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 300
-        
+//        statusBarBackgroundView.frame = CGRect(x: 0, y: 0, width: tableView.frame.width, height: 20)
+//        statusBarBackgroundView.backgroundColor = UIColor.red
+//        view.addSubview(statusBarBackgroundView)
+//        tableView.separatorInset = UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0)
+//        tableView.setContentOffset(CGPoint(x: 0,y: 20), animated: true)
+        tableView.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0)
+        tableView.scrollIndicatorInsets = UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0)
         tableView.separatorStyle = .none
         tableView.tableHeaderView = ThumbnailHeaderView
-        articleTitle.text = title
+        contentSetup()
         
     }
+    
+    func contentSetup(){
+        articleTitle.text = titleContent
+        time.setTitle(timeContent, for: .normal)
+        time.imageView?.contentMode = .scaleAspectFit
+        time.sizeToFit()
+        catagory.setTitle(catagoryContent, for: .normal)
+        catagory.imageView?.contentMode = .scaleAspectFit
+        catagory.sizeToFit()
+        
+    }
+    
+    
+    let statusBarBackgroundView: UIView = {
+        let view = UIView()
+        return view
+    }()
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -68,7 +102,7 @@ class Article_TVC: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
+        return 4
     }
 
     //MARK: TableView dataSource
@@ -77,47 +111,51 @@ class Article_TVC: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.item == 0{
             let cell = tableView.dequeueReusableCell(withIdentifier: ContentCellId, for: indexPath) as! Content_TVCell
+            cell.selectionStyle = .none
             return cell
         }
         else if indexPath.item == 1{
             let cell = tableView.dequeueReusableCell(withIdentifier: QuizCellId, for: indexPath) as! Quiz_TVCell
+            cell.selectionStyle = .none
             return cell
         }
         else if indexPath.item == 2{
             let cell = tableView.dequeueReusableCell(withIdentifier: ReferenceCellId, for: indexPath) as! Reference_TVCell
+            cell.selectionStyle = .none
             return cell
         }
         else{
             let cell = tableView.dequeueReusableCell(withIdentifier: MayLikeCellId, for: indexPath) as! MayLike_TVCell
+            cell.selectionStyle = .none
             return cell
         }
     }
     
     //MARK: tableView delegate
-//    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        if section == 0{
-//            let header = tableView.dequeueReusableCell(withIdentifier: ThumbnailHeaderCellId) as! ThumbnailHeader_TVCell
-//            return header
-//        }
-//        else{
-//            return nil
-//        }
-//    }
     
-//    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-//        return 300
-//    }
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.item == 3{
+            //!@#$
+            return 330
+        }else {
+            tableView.estimatedRowHeight = 400
+            return tableView.estimatedRowHeight
+        }
+    }
     
+        /*override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+            if section == 0{
+                let header = tableView.dequeueReusableCell(withIdentifier: ThumbnailHeaderCellId) as! ThumbnailHeader_TVCell
+                return header
+            }
+            else{
+                return nil
+            }
+        }
     
-//    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        if indexPath.item == 0{
-//            return 300
-//        }else if indexPath.item == 4{
-//            return 272
-//        }else {
-//            
-//        }
-//    }
+        override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+            return 300
+        }*/
 
     /*
     // Override to support conditional editing of the table view.

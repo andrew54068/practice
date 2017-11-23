@@ -11,6 +11,12 @@ import UIKit
 class ThumbnailHeader_TVCell: UITableViewCell{
 
     
+    @IBAction func back(_ sender: Any) {
+    }
+    
+    @IBAction func cancel(_ sender: Any) {
+    }
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

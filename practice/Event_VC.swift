@@ -11,6 +11,7 @@ import TabPageViewController
 
 class Event_VC: UITableViewController {
 
+    private let cellId = "RTVCell"
     
 //    @IBOutlet var tableView: UITableView!
 //    override func viewDidLayoutSubviews() {
@@ -18,12 +19,84 @@ class Event_VC: UITableViewController {
 //        let navigationHeight = topLayoutGuide.length
 //        tableView
 //    }
+    
+    var selectedFilter: Int?
+    var selectedtext: String?
+    
+    var selectionView: selectionView!
+    var pickerView: pickerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "RTVCell")
+        let nib = UINib(nibName: "TableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: cellId)
         
-        print("here2")
+        selectionSetup()
+        tableViewSetup()
+        pickerViewSetup()
     }
+    
+    func tableViewSetup(){
+        tableView.contentInset = UIEdgeInsetsMake(81, 0, 0, 0)
+        tableView.separatorInset = UIEdgeInsets.zero
+        tableView.estimatedRowHeight = 318
+        tableView.scrollIndicatorInsets = UIEdgeInsets(top: 101, left: 0, bottom: 0, right: 0)
+        tableView.tableHeaderView = selectionView
+    }
+    
+    func selectionSetup(){
+        let selectionNib = UINib(nibName: "selectionView", bundle: nil)
+        selectionView = selectionNib.instantiate(withOwner: self, options: nil).first as! selectionView
+        selectionView.left.backgroundColor = UIColor.lightGray.withAlphaComponent(0.3)
+        selectionView.updateConstraint()
+        selectionView.right.isEnabled = false
+        
+    }
+    
+    func pickerViewSetup(){
+        let pickerViewNib = UINib(nibName: "pickerView", bundle: nil)
+        pickerView = pickerViewNib.instantiate(withOwner: self, options: nil).first as! pickerView
+        
+        let flexible = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
+        let item = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(comfirmSelection(sender:)))
+        let fix = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.fixedSpace, target: nil, action: nil)
+        fix.width = 9
+        pickerView.toolbar.setItems([flexible, item, fix], animated: true)
+        
+        selectionView.left.tag = kindOfPickerView.congress.rawValue
+        selectionView.left.addTarget(self, action: #selector(CategoryPicked), for: .touchUpInside)
+    }
+    
+    func CategoryPicked(sender: UIButton){
+        let window = UIApplication.shared.keyWindow!
+        window.addSubview(unfocus)
+        unfocus.frame = CGRect(x: 0, y: 0, width: tableView.frame.width, height: tableView.frame.height)
+        unfocus.addTarget(self, action: #selector(dismissUnfocus), for: .touchUpInside)
+        pickerView.frame = CGRect(x: 0, y: window.bounds.maxY - 261, width: tableView.frame.width, height: 261)
+        unfocus.addSubview(pickerView)
+        selectedtext = showPickerView(PickerView: pickerView, selectionView: selectionView, selected: sender.tag)
+        
+    }
+    let unfocus:UIButton = {
+        let View = UIButton()
+        View.backgroundColor = UIColor.gray.withAlphaComponent(0.5)
+        return View
+    }()
+    
+    func comfirmSelection(sender: UIBarButtonItem){
+        dismissUnfocus(sender: sender)
+        if selectedFilter == 1{
+            selectionView.left.titleLabel?.text = selectedtext!
+        }
+        else{
+            selectionView.right.titleLabel?.text = selectedtext!
+        }
+    }
+    
+    func dismissUnfocus(sender: Any) {
+        unfocus.removeFromSuperview()
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -49,11 +122,11 @@ class Event_VC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
-        let cell = tableView.dequeueReusableCell(withIdentifier: "RTVCell", for: indexPath) as! TableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! TableViewCell
         
-        cell.layer.backgroundColor = UIColor.lightGray.cgColor
-        cell.backgroundColor = UIColor.green
-        cell.separatorInset = UIEdgeInsets(top: 20, left: 15, bottom: 20, right: 15)
+//        cell.layer.backgroundColor = UIColor.lightGray.cgColor
+//        cell.backgroundColor = UIColor.green
+//        cell.separatorInset = UIEdgeInsets(top: 20, left: 15, bottom: 20, right: 15)
         return cell
     }
     

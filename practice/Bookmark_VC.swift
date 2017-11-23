@@ -9,20 +9,80 @@
 import UIKit
 
 class Bookmark_VC: UITableViewController {
-
+    
+    var selectedFilter: Int?
+    var selectedtext: String?
+    
+    var selectionView: selectionView!
+    var pickerView: pickerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        selectionSetup()
+        tableViewSetup()
+        pickerViewSetup()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func tableViewSetup(){
+    tableView.contentInset = UIEdgeInsetsMake(81, 0, 0, 0)
+    tableView.separatorInset = UIEdgeInsets.zero
+    tableView.estimatedRowHeight = 318
+    tableView.scrollIndicatorInsets = UIEdgeInsets(top: 101, left: 0, bottom: 0, right: 0)
+    tableView.tableHeaderView = selectionView
+    }
+    
+    func selectionSetup(){
+        let selectionNib = UINib(nibName: "selectionView", bundle: nil)
+        selectionView = selectionNib.instantiate(withOwner: self, options: nil).first as! selectionView
+        selectionView.left.backgroundColor = UIColor.lightGray.withAlphaComponent(0.3)
+        selectionView.right.backgroundColor = UIColor.lightGray.withAlphaComponent(0.3)
+    }
+    
+    func pickerViewSetup(){
+        let pickerViewNib = UINib(nibName: "pickerView", bundle: nil)
+        pickerView = pickerViewNib.instantiate(withOwner: self, options: nil).first as! pickerView
+        
+        let flexible = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
+        let item = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(comfirmSelection(sender:)))
+        let fix = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.fixedSpace, target: nil, action: nil)
+        fix.width = 9
+        pickerView.toolbar.setItems([flexible, item, fix], animated: true)
+        
+        selectionView.left.tag = kindOfPickerView.congress.rawValue
+        selectionView.left.addTarget(self, action: #selector(CategoryPicked), for: .touchUpInside)
+        selectionView.right.tag = kindOfPickerView.disease.rawValue
+        selectionView.right.addTarget(self, action: #selector(CategoryPicked), for: .touchUpInside)
+    }
+    
+    func CategoryPicked(sender: UIButton){
+        let window = UIApplication.shared.keyWindow!
+        window.addSubview(unfocus)
+        unfocus.frame = CGRect(x: 0, y: 0, width: tableView.frame.width, height: tableView.frame.height)
+        unfocus.addTarget(self, action: #selector(dismissUnfocus), for: .touchUpInside)
+        pickerView.frame = CGRect(x: 0, y: window.bounds.maxY - 261, width: tableView.frame.width, height: 261)
+        unfocus.addSubview(pickerView)
+        selectedtext = showPickerView(PickerView: pickerView, selectionView: selectionView, selected: sender.tag)
+        
+    }
+    let unfocus:UIButton = {
+        let View = UIButton()
+        View.backgroundColor = UIColor.gray.withAlphaComponent(0.5)
+        return View
+    }()
+    
+    func comfirmSelection(sender: UIBarButtonItem){
+        dismissUnfocus(sender: sender)
+        if selectedFilter == 1{
+            selectionView.left.titleLabel?.text = selectedtext!
+        }
+        else{
+            selectionView.right.titleLabel?.text = selectedtext!
+        }
+    }
+    
+    func dismissUnfocus(sender: Any) {
+        unfocus.removeFromSuperview()
     }
 
     // MARK: - Table view data source
