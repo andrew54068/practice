@@ -9,6 +9,9 @@
 import UIKit
 
 class TrailFactSheet_TVCell: UITableViewCell {
+    
+    
+    @IBOutlet var topConstraint: NSLayoutConstraint!
 
     override func awakeFromNib() {
         super.awakeFromNib()

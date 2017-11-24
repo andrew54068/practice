@@ -13,10 +13,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    let statusBarBackgroundView: UIView = {
-        let view = UIView()
-        return view
-    }()
+//    let statusBarBackgroundView: UIView = {
+//        let view = UIView()
+//        return view
+//    }()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -38,9 +38,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        window?.rootViewController?.navigationItem.titleView = imageView
 //        let logo = UIImage(named: "Roche_logo")
 //        let logoView = UIImageView(image: logo)
-        statusBarBackgroundView.frame = CGRect(x: 0, y: 0, width: (window?.frame.width)!, height: 20)
-        statusBarBackgroundView.backgroundColor = UIColor.white
-        window?.addSubview(statusBarBackgroundView)
+//        statusBarBackgroundView.frame = CGRect(x: 0, y: 0, width: (window?.frame.width)!, height: 20)
+//        statusBarBackgroundView.backgroundColor = UIColor.white
+//        window?.addSubview(statusBarBackgroundView)
         
         return true
     }

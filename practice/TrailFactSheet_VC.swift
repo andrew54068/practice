@@ -34,11 +34,14 @@ class TrailFactSheet_VC: UITableViewController {
     }
 
     func tableViewSetup(){
-        tableView.contentInset = UIEdgeInsetsMake(81, 0, 0, 0)
-        tableView.separatorInset = UIEdgeInsets.zero
         tableView.estimatedRowHeight = 140
-        tableView.scrollIndicatorInsets = UIEdgeInsets(top: 101, left: 0, bottom: 0, right: 0)
+        tableView.contentInset = UIEdgeInsetsMake(45, 0, 0, 0)
+        tableView.separatorInset = UIEdgeInsets.zero
+        tableView.scrollIndicatorInsets = UIEdgeInsets(top: 45, left: 0, bottom: 0, right: 0)
         tableView.tableHeaderView = selectionView
+        
+        //?? without this header become strange after adding navigation bar
+        view.autoresizesSubviews = false
     }
     
     func selectionSetup(){
@@ -114,13 +117,22 @@ class TrailFactSheet_VC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! TrailFactSheet_TVCell
+        
+        if indexPath.row == 0{
+            cell.topConstraint.isActive = false
+        }else{
+            cell.topConstraint.isActive = true
+        }
 
         cell.separatorInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
-        cell.backgroundColor = UIColor.cyan
+        cell.selectionStyle = .none
         return cell
     }
  
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 0{
+            return 120
+        }
         return 140
     }
 

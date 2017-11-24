@@ -28,6 +28,9 @@ class CongressUpdate_VC: UITableViewController {
     var selectedtext: String?
     
     var selectionView: selectionView!
+    
+    
+//    var selectionView: selectionView!
     var pickerView: pickerView!
     
     
@@ -38,27 +41,26 @@ class CongressUpdate_VC: UITableViewController {
         let nib = UINib(nibName: "TableViewCell", bundle: nil)
         tableView.register(nib
             , forCellReuseIdentifier: cellId)
-        
-        let logo = UIImage(named: "Roche_logo")
-        let logoView = UIImageView(image: logo)
-        navigationItem.titleView = logoView
 
-        selectionSetup()
+        selectionViewSetup()
         tableViewSetup()
         pickerViewSetup()
     }
     
     func tableViewSetup(){
-        tableView.contentInset = UIEdgeInsetsMake(81, 0, 0, 0)
+        tableView.contentInset = UIEdgeInsetsMake(45, 0, 0, 0)
         tableView.separatorInset = UIEdgeInsets.zero
-        tableView.estimatedRowHeight = 318
-        tableView.scrollIndicatorInsets = UIEdgeInsets(top: 101, left: 0, bottom: 0, right: 0)
+        tableView.scrollIndicatorInsets = UIEdgeInsets(top: 45, left: 0, bottom: 0, right: 0)
         tableView.tableHeaderView = selectionView
+        
+        //?? without this header become strange after adding navigation bar
+        view.autoresizesSubviews = false
     }
     
-    func selectionSetup(){
+    func selectionViewSetup(){
         let selectionNib = UINib(nibName: "selectionView", bundle: nil)
         selectionView = selectionNib.instantiate(withOwner: self, options: nil).first as! selectionView
+        selectionView.frame = CGRect(x: 0, y: 50, width: tableView.frame.width, height: 57)
         selectionView.left.backgroundColor = UIColor.lightGray.withAlphaComponent(0.3)
         selectionView.right.backgroundColor = UIColor.lightGray.withAlphaComponent(0.3)
     }
@@ -114,11 +116,6 @@ class CongressUpdate_VC: UITableViewController {
         super.viewWillAppear(animated)
 
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
     // MARK: - Table view data source
     
@@ -139,6 +136,12 @@ class CongressUpdate_VC: UITableViewController {
         
         if count > 1{
             cell.hadRead = true
+        }
+        
+        if indexPath.row == 0{
+            cell.topConstraint.isActive = false
+        }else{
+            cell.topConstraint.isActive = true
         }
         
         let attrs1 = [NSFontAttributeName: UIFont.systemFont(ofSize: 15, weight: UIFontWeightBold), NSForegroundColorAttributeName: UIColor.black]
@@ -184,6 +187,9 @@ class CongressUpdate_VC: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         print("active")
 //        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! RocheTableViewCell
+        if indexPath.row == 0{
+            return 298
+        }
         
         return 318
     }

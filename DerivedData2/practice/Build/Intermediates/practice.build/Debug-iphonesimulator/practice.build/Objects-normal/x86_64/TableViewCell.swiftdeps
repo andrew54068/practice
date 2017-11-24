@@ -15,6 +15,7 @@ provides-dynamic-lookup:
 - "image1"
 - "setSelected"
 - "title"
+- "topConstraint"
 - "unreadIndication"
 depends-top-level:
 - !private "+="
@@ -25,6 +26,7 @@ depends-top-level:
 - "CGRect"
 - "CastingPrecedence"
 - !private "NSAttributedString"
+- "NSLayoutConstraint"
 - "NSMutableAttributedString"
 - !private "NSTextAttachment"
 - "StringLiteralType"
@@ -246,6 +248,7 @@ depends-member:
 - ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "CGRect"]
 - !private ["CSo8NSObject", "NSAttributedString"]
+- ["CSo8NSObject", "NSLayoutConstraint"]
 - ["CSo8NSObject", "NSMutableAttributedString"]
 - !private ["CSo8NSObject", "NSTextAttachment"]
 - !private ["CSo8NSObject", "UIColor"]
@@ -269,6 +272,7 @@ depends-member:
 - !private ["CSo8NSObject", "print"]
 - ["CSo8NSObject", "setSelected"]
 - ["CSo8NSObject", "title"]
+- ["CSo8NSObject", "topConstraint"]
 - ["CSo8NSObject", "unreadIndication"]
 - !private ["CSo8NSObject", "white"]
 - !private ["PSo16NSObjectProtocol", "NSAttributedString"]
@@ -305,6 +309,7 @@ depends-member:
 - ["C8practice13TableViewCell", "Bool"]
 - ["C8practice13TableViewCell", "CGRect"]
 - !private ["C8practice13TableViewCell", "NSAttributedString"]
+- ["C8practice13TableViewCell", "NSLayoutConstraint"]
 - ["C8practice13TableViewCell", "NSMutableAttributedString"]
 - !private ["C8practice13TableViewCell", "NSTextAttachment"]
 - !private ["C8practice13TableViewCell", "UIColor"]
@@ -324,6 +329,7 @@ depends-member:
 - !private ["C8practice13TableViewCell", "print"]
 - ["C8practice13TableViewCell", "setSelected"]
 - ["C8practice13TableViewCell", "title"]
+- ["C8practice13TableViewCell", "topConstraint"]
 - ["C8practice13TableViewCell", "unreadIndication"]
 - ["Ps16TextOutputStream", "init"]
 - ["Ps20TextOutputStreamable", "init"]
@@ -481,6 +487,7 @@ depends-member:
 - ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "CGRect"]
 - !private ["CSo11UIResponder", "NSAttributedString"]
+- ["CSo11UIResponder", "NSLayoutConstraint"]
 - ["CSo11UIResponder", "NSMutableAttributedString"]
 - !private ["CSo11UIResponder", "NSTextAttachment"]
 - !private ["CSo11UIResponder", "UIColor"]
@@ -502,6 +509,7 @@ depends-member:
 - !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "setSelected"]
 - ["CSo11UIResponder", "title"]
+- ["CSo11UIResponder", "topConstraint"]
 - ["CSo11UIResponder", "unreadIndication"]
 - !private ["PSo30UIResponderStandardEditActions", "NSAttributedString"]
 - !private ["PSo30UIResponderStandardEditActions", "NSTextAttachment"]
@@ -524,6 +532,7 @@ depends-member:
 - ["CSo15UITableViewCell", "Bool"]
 - ["CSo15UITableViewCell", "CGRect"]
 - !private ["CSo15UITableViewCell", "NSAttributedString"]
+- ["CSo15UITableViewCell", "NSLayoutConstraint"]
 - ["CSo15UITableViewCell", "NSMutableAttributedString"]
 - !private ["CSo15UITableViewCell", "NSTextAttachment"]
 - !private ["CSo15UITableViewCell", "UIColor"]
@@ -542,6 +551,7 @@ depends-member:
 - !private ["CSo15UITableViewCell", "print"]
 - ["CSo15UITableViewCell", "setSelected"]
 - ["CSo15UITableViewCell", "title"]
+- ["CSo15UITableViewCell", "topConstraint"]
 - ["CSo15UITableViewCell", "unreadIndication"]
 - ["CSo15UITableViewCell", ""]
 - !private ["PSo18UITraitEnvironment", "NSAttributedString"]
@@ -565,6 +575,7 @@ depends-member:
 - ["CSo6UIView", "Bool"]
 - ["CSo6UIView", "CGRect"]
 - !private ["CSo6UIView", "NSAttributedString"]
+- ["CSo6UIView", "NSLayoutConstraint"]
 - ["CSo6UIView", "NSMutableAttributedString"]
 - !private ["CSo6UIView", "NSTextAttachment"]
 - !private ["CSo6UIView", "UIColor"]
@@ -586,6 +597,7 @@ depends-member:
 - !private ["CSo6UIView", "print"]
 - ["CSo6UIView", "setSelected"]
 - ["CSo6UIView", "title"]
+- ["CSo6UIView", "topConstraint"]
 - ["CSo6UIView", "unreadIndication"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "NSAttributedString"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "NSTextAttachment"]
@@ -730,4 +742,4 @@ depends-external:
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "aed63cdded55d6fbdf26f94551d0990d"
+interface-hash: "0f585433029c5cab311532e8451e2349"

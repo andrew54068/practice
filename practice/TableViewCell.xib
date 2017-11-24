@@ -42,6 +42,7 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="am2-EV-DEU" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailing" id="19d-lC-7Of"/>
+                    <constraint firstItem="SMI-G0-MiF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" priority="900" id="AtR-H9-ZjC"/>
                     <constraint firstItem="BC3-eM-wxx" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottom" constant="-95" id="BGp-Bd-UqZ"/>
                     <constraint firstItem="am2-EV-DEU" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottom" constant="-20" id="BOO-t7-EwG"/>
                     <constraint firstItem="SMI-G0-MiF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="ICS-mH-jwB"/>
@@ -62,6 +63,7 @@
                 <outlet property="date" destination="BC3-eM-wxx" id="aIo-a0-Swn"/>
                 <outlet property="image1" destination="SMI-G0-MiF" id="76Z-0l-y3c"/>
                 <outlet property="title" destination="am2-EV-DEU" id="wbf-8p-mLC"/>
+                <outlet property="topConstraint" destination="ICS-mH-jwB" id="qti-QP-VHp"/>
             </connections>
             <point key="canvasLocation" x="37.5" y="88.5"/>
         </tableViewCell>

@@ -37,11 +37,13 @@ class Event_VC: UITableViewController {
     }
     
     func tableViewSetup(){
-        tableView.contentInset = UIEdgeInsetsMake(81, 0, 0, 0)
+        tableView.contentInset = UIEdgeInsetsMake(45, 0, 0, 0)
         tableView.separatorInset = UIEdgeInsets.zero
-        tableView.estimatedRowHeight = 318
-        tableView.scrollIndicatorInsets = UIEdgeInsets(top: 101, left: 0, bottom: 0, right: 0)
+        tableView.scrollIndicatorInsets = UIEdgeInsets(top: 45, left: 0, bottom: 0, right: 0)
         tableView.tableHeaderView = selectionView
+        
+        //?? without this header become strange after adding navigation bar
+        view.autoresizesSubviews = false
     }
     
     func selectionSetup(){
@@ -97,12 +99,6 @@ class Event_VC: UITableViewController {
         unfocus.removeFromSuperview()
     }
 
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -111,7 +107,10 @@ class Event_VC: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 278
+        if indexPath.row == 0{
+            return 298
+        }
+        return 318
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -124,9 +123,14 @@ class Event_VC: UITableViewController {
     
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! TableViewCell
         
-//        cell.layer.backgroundColor = UIColor.lightGray.cgColor
-//        cell.backgroundColor = UIColor.green
-//        cell.separatorInset = UIEdgeInsets(top: 20, left: 15, bottom: 20, right: 15)
+        if indexPath.row == 0{
+            cell.topConstraint.isActive = false
+        }else{
+            cell.topConstraint.isActive = true
+        }
+        
+        cell.selectionStyle = .none
+        
         return cell
     }
     

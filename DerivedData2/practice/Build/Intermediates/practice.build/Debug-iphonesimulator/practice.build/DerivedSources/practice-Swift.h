@@ -141,13 +141,11 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 @class UIWindow;
-@class UIView;
 @class UIApplication;
 
 SWIFT_CLASS("_TtC8practice11AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
-@property (nonatomic, readonly, strong) UIView * _Nonnull statusBarBackgroundView;
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT;
 - (void)applicationWillResignActive:(UIApplication * _Nonnull)application;
 - (void)applicationDidEnterBackground:(UIApplication * _Nonnull)application;
@@ -157,6 +155,7 @@ SWIFT_CLASS("_TtC8practice11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIView;
 @class UILabel;
 @class UIButton;
 @class UITableView;
@@ -229,12 +228,19 @@ SWIFT_CLASS("_TtC8practice24BannerCollectionViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIImage;
+@class NSMutableAttributedString;
 @class selectionView;
 @class pickerView;
 @class UIBarButtonItem;
 
 SWIFT_CLASS("_TtC8practice11Bookmark_VC")
 @interface Bookmark_VC : UITableViewController
+@property (nonatomic, strong) UIImage * _Nullable thumbnailImage;
+@property (nonatomic, copy) NSString * _Nonnull titleContent;
+@property (nonatomic, copy) NSString * _Nonnull subtitleContent;
+@property (nonatomic, strong) NSMutableAttributedString * _Null_unspecified attributedString;
+@property (nonatomic, strong) UIImage * _Nullable unreadIndication;
 @property (nonatomic, copy) NSString * _Nullable selectedtext;
 @property (nonatomic, strong) selectionView * _Null_unspecified selectionView;
 @property (nonatomic, strong) pickerView * _Null_unspecified pickerView;
@@ -248,13 +254,13 @@ SWIFT_CLASS("_TtC8practice11Bookmark_VC")
 - (void)dismissUnfocusWithSender:(id _Nonnull)sender;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIImage;
-@class NSMutableAttributedString;
 
 SWIFT_CLASS("_TtC8practice17CongressUpdate_VC")
 @interface CongressUpdate_VC : UITableViewController
@@ -269,14 +275,13 @@ SWIFT_CLASS("_TtC8practice17CongressUpdate_VC")
 @property (nonatomic, strong) pickerView * _Null_unspecified pickerView;
 - (void)viewDidLoad;
 - (void)tableViewSetup;
-- (void)selectionSetup;
+- (void)selectionViewSetup;
 - (void)pickerViewSetup;
 - (void)CategoryPickedWithSender:(UIButton * _Nonnull)sender;
 @property (nonatomic, readonly, strong) UIButton * _Nonnull unfocus;
 - (void)comfirmSelectionWithSender:(UIBarButtonItem * _Nonnull)sender;
 - (void)dismissUnfocusWithSender:(id _Nonnull)sender;
 - (void)viewWillAppear:(BOOL)animated;
-- (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
@@ -312,7 +317,6 @@ SWIFT_CLASS("_TtC8practice8Event_VC")
 @property (nonatomic, readonly, strong) UIButton * _Nonnull unfocus;
 - (void)comfirmSelectionWithSender:(UIBarButtonItem * _Nonnull)sender;
 - (void)dismissUnfocusWithSender:(id _Nonnull)sender;
-- (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
@@ -453,6 +457,7 @@ SWIFT_CLASS("_TtC8practice10TabPage_VC")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSLayoutConstraint;
 
 SWIFT_CLASS("_TtC8practice13TableViewCell")
 @interface TableViewCell : UITableViewCell
@@ -460,6 +465,7 @@ SWIFT_CLASS("_TtC8practice13TableViewCell")
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified author;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified date;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified title;
+@property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Null_unspecified topConstraint;
 @property (nonatomic, strong) UIImage * _Nullable unreadIndication;
 @property (nonatomic, strong) NSMutableAttributedString * _Null_unspecified attributedString;
 @property (nonatomic) BOOL hadRead;
@@ -491,6 +497,7 @@ SWIFT_CLASS("_TtC8practice22ThumbnailHeader_TVCell")
 
 SWIFT_CLASS("_TtC8practice21TrailFactSheet_TVCell")
 @interface TrailFactSheet_TVCell : UITableViewCell
+@property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Null_unspecified topConstraint;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
@@ -536,6 +543,10 @@ SWIFT_CLASS("_TtC8practice18mainViewController")
 @property (nonatomic) NSInteger numberOfRowBeforeSqueezedRectangle;
 @property (nonatomic, strong) IBOutlet NavigationBar * _Null_unspecified navigationBar;
 - (void)viewDidLoad;
+- (void)setUpNavigationBar;
+- (void)handleMenu;
+- (void)handleSearch;
+- (void)handleBookmark;
 - (void)seeAll;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
@@ -570,7 +581,6 @@ SWIFT_CLASS("_TtC8practice10pickerView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSLayoutConstraint;
 
 SWIFT_CLASS("_TtC8practice13selectionView")
 @interface selectionView : UIView

@@ -29,6 +29,7 @@ class ExpertCommentary_VC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("here is second ViewController")
 
         let nib = UINib(nibName: "TableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: cellId)
@@ -39,11 +40,13 @@ class ExpertCommentary_VC: UITableViewController {
     }
     
     func tableViewSetup(){
-        tableView.contentInset = UIEdgeInsetsMake(81, 0, 0, 0)
+        tableView.contentInset = UIEdgeInsetsMake(45, 0, 0, 0)
         tableView.separatorInset = UIEdgeInsets.zero
-        tableView.estimatedRowHeight = 318
-        tableView.scrollIndicatorInsets = UIEdgeInsets(top: 101, left: 0, bottom: 0, right: 0)
+        tableView.scrollIndicatorInsets = UIEdgeInsets(top: 45, left: 0, bottom: 0, right: 0)
         tableView.tableHeaderView = selectionView
+        
+        //?? without this header become strange after adding navigation bar
+        view.autoresizesSubviews = false
     }
     
     func selectionSetup(){
@@ -120,6 +123,12 @@ class ExpertCommentary_VC: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! TableViewCell
         
+        if indexPath.row == 0{
+            cell.topConstraint.isActive = false
+        }else{
+            cell.topConstraint.isActive = true
+        }
+        
         let attrs1 = [NSFontAttributeName: UIFont.systemFont(ofSize: 15, weight: UIFontWeightBold), NSForegroundColorAttributeName: UIColor.black]
         let attrs2 = [NSFontAttributeName: UIFont.systemFont(ofSize: 13), NSForegroundColorAttributeName: UIColor.gray]
         let attributedString1 = NSMutableAttributedString(string: "\(titleContent)", attributes: attrs1)
@@ -153,7 +162,9 @@ class ExpertCommentary_VC: UITableViewController {
     }
  
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
+        if indexPath.row == 0{
+            return 298
+        }
         return 318
     }
 

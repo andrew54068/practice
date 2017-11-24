@@ -195,8 +195,6 @@
 			children = (
 				6D16BE911FC437CF00FA8530 /* TVC_extension.swift */,
 				6D28C28E1FB40EDB00E6E80E /* mainViewController.swift */,
-				6D43A2531FB052E800C6B0B8 /* TabPage_VC.swift */,
-				6D16BE841FC410BA00FA8530 /* TabPage2_VC.swift */,
 				6D0BCCA71FB157E700702643 /* CongressUpdate_VC.swift */,
 				6D1727981FBC035500B3A2EE /* ExpertCommentary_VC.swift */,
 				6D0BCCAC1FB1581200702643 /* Event_VC.swift */,
@@ -268,6 +266,8 @@
 		6D624EBE1FBF00E5000FB318 /* shouldBeDeleted */ = {
 			isa = PBXGroup;
 			children = (
+				6D43A2531FB052E800C6B0B8 /* TabPage_VC.swift */,
+				6D16BE841FC410BA00FA8530 /* TabPage2_VC.swift */,
 				6DE701D31FBAD0F40053D315 /* SquareCategoryCollectionView.swift */,
 				6DCC91C11FBC2942006E4D4C /* BannerCategoryCollectionView.swift */,
 			);

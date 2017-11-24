@@ -8,6 +8,7 @@
 //
 
 import UIKit
+import TabPageViewController
 
 class mainViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout{
     
@@ -41,13 +42,50 @@ class mainViewController: UICollectionViewController, UICollectionViewDelegateFl
 //        self.navigationBar.barStyle = UIBarStyle.default
 //        self.navigationBar.tintColor = UIColor.red
         
-        let Nav = NavigationBar()
-        self.navigationBar = Nav
+        setUpNavigationBar()
         
     }
     
+    func setUpNavigationBar(){
+        //left NavItem
+        let menuImage = UIImage(named: "icon_btn_menu_default")
+        let menu = UIBarButtonItem(image: menuImage, style: .plain, target: self, action: #selector(handleMenu))
+        navigationItem.leftBarButtonItem = menu
+        
+        
+        //right NavItem
+        let searchImage = UIImage(named: "icon_btn_search_default")
+        let search = UIBarButtonItem(image:  searchImage, style: .plain, target: self, action: #selector(handleSearch))
+        let bookmarkImage = UIImage(named: "icon_btn_bookmark_default")
+        let bookmark = UIBarButtonItem(image: bookmarkImage, style: .plain, target: self, action: #selector(handleBookmark))
+        navigationItem.rightBarButtonItems = [bookmark, search]
+    }
+    //MARK: left navigation item action
+    func handleMenu(){
+        print("show menu")
+    }
+    
+    //MARK: right navigation item action
+    func handleSearch(){
+        print("search being called")
+    }
+    
+    func handleBookmark(){
+        print("show bookmark")
+    }
+    
     func seeAll(){
-        self.performSegue(withIdentifier: "seeAll", sender: self)
+        let tc = TabPageViewController.create()
+        let CongressUpdate = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CongressUpdate_VC")
+        let ExpertCommentary = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ExpertCommentary_VC")
+        let Event = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Event_VC")
+        let TrailFactSheet = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TrailFactSheet_VC")
+        let Bookmark = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Bookmark_VC")
+        
+        tc.tabItems = [(CongressUpdate, "CongressUpdate"), (ExpertCommentary, "ExpertCommentary"), (Event, "Event"), (TrailFactSheet, "TrailFactSheet"), (Bookmark, "Bookmark")]
+        
+        self.navigationController?.pushViewController(tc, animated: true)
+//        self.performSegue(withIdentifier: "seeAll", sender: self)
     }
 
     //MARK: CollectionView dataSource

@@ -24,6 +24,7 @@ class selectionView: UIView {
     @IBOutlet var equalWidthConstraint: NSLayoutConstraint!
     
     
+    
     @IBOutlet var left: UIButton!
     
 
@@ -33,8 +34,8 @@ class selectionView: UIView {
         super.awakeFromNib()
     }
     
+    
     func updateConstraint() {
-//        self.translatesAutoresizingMaskIntoConstraints = false
         equalWidthConstraint.isActive = false
         right.isHidden = true
         DispatchQueue.main.async {

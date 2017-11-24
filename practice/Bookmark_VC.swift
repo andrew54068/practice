@@ -10,6 +10,14 @@ import UIKit
 
 class Bookmark_VC: UITableViewController {
     
+    private let cellId = "RTVCell"
+    
+    var thumbnailImage = UIImage(named: "thumbnail_tab")
+    var titleContent: String = " A future in mind - rising to the challenge in Alzheimer's"
+    var subtitleContent: String = "Doretha Burrell-nickname “Dee” by children at the school where she once worked as administrative, Doretha Burrell-nickname “Dee” by children at the school where she once worked as administrative"
+    var attributedString: NSMutableAttributedString!
+    var unreadIndication: UIImage? = UIImage(named: "unread")
+    
     var selectedFilter: Int?
     var selectedtext: String?
     
@@ -18,6 +26,10 @@ class Bookmark_VC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let nib = UINib(nibName: "TableViewCell", bundle: nil)
+        tableView.register(nib
+            , forCellReuseIdentifier: cellId)
 
         selectionSetup()
         tableViewSetup()
@@ -25,11 +37,13 @@ class Bookmark_VC: UITableViewController {
     }
     
     func tableViewSetup(){
-    tableView.contentInset = UIEdgeInsetsMake(81, 0, 0, 0)
-    tableView.separatorInset = UIEdgeInsets.zero
-    tableView.estimatedRowHeight = 318
-    tableView.scrollIndicatorInsets = UIEdgeInsets(top: 101, left: 0, bottom: 0, right: 0)
-    tableView.tableHeaderView = selectionView
+        tableView.contentInset = UIEdgeInsetsMake(45, 0, 0, 0)
+        tableView.separatorInset = UIEdgeInsets.zero
+        tableView.scrollIndicatorInsets = UIEdgeInsets(top: 45, left: 0, bottom: 0, right: 0)
+        tableView.tableHeaderView = selectionView
+        
+        //?? without this header become strange after adding navigation bar
+        view.autoresizesSubviews = false
     }
     
     func selectionSetup(){
@@ -37,6 +51,8 @@ class Bookmark_VC: UITableViewController {
         selectionView = selectionNib.instantiate(withOwner: self, options: nil).first as! selectionView
         selectionView.left.backgroundColor = UIColor.lightGray.withAlphaComponent(0.3)
         selectionView.right.backgroundColor = UIColor.lightGray.withAlphaComponent(0.3)
+        //?? without this header become strange after adding navigation bar
+        view.autoresizesSubviews = false
     }
     
     func pickerViewSetup(){
@@ -89,23 +105,63 @@ class Bookmark_VC: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 5
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! TableViewCell
+        
+        if indexPath.row == 0{
+            cell.topConstraint.isActive = false
+        }else{
+            cell.topConstraint.isActive = true
+        }
+        
+        let attrs1 = [NSFontAttributeName: UIFont.systemFont(ofSize: 15, weight: UIFontWeightBold), NSForegroundColorAttributeName: UIColor.black]
+        let attrs2 = [NSFontAttributeName: UIFont.systemFont(ofSize: 13), NSForegroundColorAttributeName: UIColor.gray]
+        let attributedString1 = NSMutableAttributedString(string: "\(titleContent)", attributes: attrs1)
+        let attributedString2 = NSMutableAttributedString(string: "\(subtitleContent)", attributes: attrs2)
+        let line_feed = NSMutableAttributedString(string: "\n")
+        if subtitleContent != ""{
+            attributedString1.append(line_feed)
+        }
+        attributedString1.append(attributedString2)
+        
+        if cell.attributedString == nil{
+            cell.attributedString = attributedString1
+            print("cell attri = nil : \(cell.attributedString!)")
+        }else{
+            cell.attributedString.append(attributedString1)
+            print("cell attri != nil : \(cell.attributedString!)")
+        }
+        cell.title.attributedText = cell.attributedString!
+        cell.title.numberOfLines = 4
+        cell.title.lineBreakMode = .byTruncatingTail
+        
+        if thumbnailImage != nil{
+            cell.image1.image = thumbnailImage!
+        }
+        
+        cell.selectionStyle = .none
+        
         // Configure the cell...
-
+        
         return cell
     }
-    */
+ 
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 0{
+            return 298
+        }
+        return 318
+    }
 
     /*
     // Override to support conditional editing of the table view.

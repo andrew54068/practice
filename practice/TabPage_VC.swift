@@ -18,9 +18,19 @@ class TabPage_VC: UIPageViewController {
     
 //    var delegate: TabPageController?
     
+//    override func loadView() {
+//        let CongressUpdate = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CongressUpdate_VC")
+//        let ExpertCommentary = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ExpertCommentary_VC")
+//        let Event = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Event_VC")
+//        let TrailFactSheet = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TrailFactSheet_VC")
+//        let Bookmark = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Bookmark_VC")
+//        self.tabItems = [(CongressUpdate, "CongressUpdate"), (ExpertCommentary, "ExpertCommentary"), (Event, "Event"), (TrailFactSheet, "TrailFactSheet"), (Bookmark, "Bookmark")]
+//    }
+    
     override func viewDidAppear(_ animated: Bool) {
         
         showTabPageVC()
+        
 //        var option = TabPageOption()
 //        option.tabWidth = view.frame.width / CGFloat(tc.tabItems.count)
 //        option.hidesTopViewOnSwipeType = .all
@@ -39,6 +49,8 @@ class TabPage_VC: UIPageViewController {
 //        tableView.dataSource = self
 //        tableView.backgroundColor = UIColor.brown
 //        tableView.separatorColor = UIColor.gray
+//        let sb = UIStoryboard(name: "TabPageViewController", bundle: Bundle(for: TabPageViewController.self))
+//        self = sb.instantiateInitialViewController() as! TabPageViewController
     }
     
     func showTabPageVC(){
@@ -49,9 +61,9 @@ class TabPage_VC: UIPageViewController {
         let TrailFactSheet = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TrailFactSheet_VC")
         let Bookmark = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Bookmark_VC")
         
-        let logo = UIImage(named: "Roche_logo")
-        let logoView = UIImageView(image: logo)
-        navigationItem.titleView = logoView
+//        let logo = UIImage(named: "Roche_logo")
+//        let logoView = UIImageView(image: logo)
+//        navigationItem.titleView = logoView
         
         tc.tabItems = [(CongressUpdate, "CongressUpdate"), (ExpertCommentary, "ExpertCommentary"), (Event, "Event"), (TrailFactSheet, "TrailFactSheet"), (Bookmark, "Bookmark")]
         

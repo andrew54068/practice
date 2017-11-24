@@ -14,6 +14,8 @@ class TableViewCell: UITableViewCell {
     @IBOutlet var author: UILabel!
     @IBOutlet var date: UILabel!
     @IBOutlet var title: UILabel!
+
+    @IBOutlet var topConstraint: NSLayoutConstraint!
     
     
 //    var thumbnailImage: UIImage? = UIImage(named: "patient")

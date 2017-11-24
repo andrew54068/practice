@@ -41,6 +41,7 @@ class Article_TVC: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         let ThumbnailHeaderNib = UINib(nibName: "ThumbnailHeader_TVCell", bundle: nil)
         tableView.register(ThumbnailHeaderNib, forCellReuseIdentifier: ThumbnailHeaderCellId)
+        
         let ContentNib = UINib(nibName: "Content_TVCell", bundle: nil)
         tableView.register(ContentNib, forCellReuseIdentifier: ContentCellId)
         let QuizNib = UINib(nibName: "Quiz_TVCell", bundle: nil)

@@ -8,8 +8,10 @@ provides-member:
 provides-dynamic-lookup:
 - "awakeFromNib"
 - "setSelected"
+- "topConstraint"
 depends-top-level:
 - "Bool"
+- "NSLayoutConstraint"
 - "TrailFactSheet_TVCell"
 - "UITableViewCell"
 depends-member:
@@ -46,18 +48,22 @@ depends-member:
 - !private ["PSo8NSCoding", "setSelected"]
 - ["PSo8NSCoding", ""]
 - ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "NSLayoutConstraint"]
 - ["CSo8NSObject", "awakeFromNib"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "setSelected"]
+- ["CSo8NSObject", "topConstraint"]
 - !private ["PSo16NSObjectProtocol", "awakeFromNib"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "setSelected"]
 - ["PSo16NSObjectProtocol", ""]
 - ["C8practice21TrailFactSheet_TVCell", "Bool"]
+- ["C8practice21TrailFactSheet_TVCell", "NSLayoutConstraint"]
 - ["C8practice21TrailFactSheet_TVCell", "awakeFromNib"]
 - ["C8practice21TrailFactSheet_TVCell", "deinit"]
 - ["C8practice21TrailFactSheet_TVCell", "init"]
 - ["C8practice21TrailFactSheet_TVCell", "setSelected"]
+- ["C8practice21TrailFactSheet_TVCell", "topConstraint"]
 - !private ["PSo29UIAccessibilityIdentification", "awakeFromNib"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "setSelected"]
@@ -91,26 +97,32 @@ depends-member:
 - !private ["PSo27UIGestureRecognizerDelegate", "setSelected"]
 - ["PSo27UIGestureRecognizerDelegate", ""]
 - ["CSo11UIResponder", "Bool"]
+- ["CSo11UIResponder", "NSLayoutConstraint"]
 - ["CSo11UIResponder", "awakeFromNib"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "setSelected"]
+- ["CSo11UIResponder", "topConstraint"]
 - !private ["PSo30UIResponderStandardEditActions", "awakeFromNib"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
 - !private ["PSo30UIResponderStandardEditActions", "setSelected"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - ["CSo15UITableViewCell", "Bool"]
+- ["CSo15UITableViewCell", "NSLayoutConstraint"]
 - ["CSo15UITableViewCell", "awakeFromNib"]
 - ["CSo15UITableViewCell", "init"]
 - ["CSo15UITableViewCell", "setSelected"]
+- ["CSo15UITableViewCell", "topConstraint"]
 - ["CSo15UITableViewCell", ""]
 - !private ["PSo18UITraitEnvironment", "awakeFromNib"]
 - !private ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "setSelected"]
 - ["PSo18UITraitEnvironment", ""]
 - ["CSo6UIView", "Bool"]
+- ["CSo6UIView", "NSLayoutConstraint"]
 - ["CSo6UIView", "awakeFromNib"]
 - ["CSo6UIView", "init"]
 - ["CSo6UIView", "setSelected"]
+- ["CSo6UIView", "topConstraint"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "awakeFromNib"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setSelected"]
@@ -165,4 +177,4 @@ depends-external:
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "a34a343f43ced6d6ad8694040eee8f03"
+interface-hash: "bacd5c9c23586ab1ee5e906548b2e792"
