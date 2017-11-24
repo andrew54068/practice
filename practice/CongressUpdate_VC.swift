@@ -25,7 +25,8 @@ class CongressUpdate_VC: UITableViewController {
     var unreadIndication: UIImage? = UIImage(named: "unread")
     var count:Int = 0
     var selectedFilter: Int?
-    var selectedtext: String?
+    var leftSelectedtext: [String] = ["All", "All"]
+    var rightSelectedtext: [String] = ["All"]
     
     var selectionView: selectionView!
     
@@ -82,13 +83,26 @@ class CongressUpdate_VC: UITableViewController {
     }
     
     func CategoryPicked(sender: UIButton){
+        
+        print("button \(sender.tag) been clicked")
+        if sender.tag == kindOfPickerView.congress.rawValue{
+            pickerView.selected = sender.tag
+            showPickerView(PickerView: pickerView, selectionView: selectionView, type: sender.tag, lastSelected: leftSelectedtext)
+            print("leftSelectedtext = \(leftSelectedtext)")
+            selectedFilter = 1
+        }else if sender.tag == kindOfPickerView.disease.rawValue{
+            pickerView.selected = sender.tag
+            showPickerView(PickerView: pickerView, selectionView: selectionView, type: sender.tag, lastSelected: rightSelectedtext)
+            print("rightSelectedtext = \(rightSelectedtext)")
+            selectedFilter = 2
+        }
+        
         let window = UIApplication.shared.keyWindow!
         window.addSubview(unfocus)
-        unfocus.frame = CGRect(x: 0, y: 0, width: tableView.frame.width, height: tableView.frame.height)
+        unfocus.frame = CGRect(x: 0, y: 0, width: tableView.frame.width, height: window.frame.height)
         unfocus.addTarget(self, action: #selector(dismissUnfocus), for: .touchUpInside)
         pickerView.frame = CGRect(x: 0, y: window.bounds.maxY - 261, width: tableView.frame.width, height: 261)
         unfocus.addSubview(pickerView)
-        selectedtext = showPickerView(PickerView: pickerView, selectionView: selectionView, selected: sender.tag)
         
     }
     let unfocus:UIButton = {
@@ -99,11 +113,18 @@ class CongressUpdate_VC: UITableViewController {
     
     func comfirmSelection(sender: UIBarButtonItem){
         dismissUnfocus(sender: sender)
-        if selectedFilter == 1{
-            selectionView.left.titleLabel?.text = selectedtext!
+        if selectedFilter == kindOfPickerView.congress.rawValue{
+            print("leftSelectedtext = \(leftSelectedtext)")
+            selectionView.left.setTitle(pickerView.result[0] + " " + pickerView.result[1], for: .normal)
+            leftSelectedtext = pickerView.result
+//            print("selectionView.left.title \(leftSelectedtext[0]) + \(leftSelectedtext[1])")
+            selectionView.left.titleLabel?.sizeToFit()
         }
         else{
-            selectionView.right.titleLabel?.text = selectedtext!
+            print("rightSelectedtext = \(rightSelectedtext)")
+            selectionView.right.setTitle(pickerView.result[0], for: .normal)
+            selectionView.right.titleLabel?.sizeToFit()
+            rightSelectedtext = pickerView.result
         }
     }
     
@@ -163,10 +184,10 @@ class CongressUpdate_VC: UITableViewController {
         
         if cell.attributedString == nil{
             cell.attributedString = attributedString1
-            print("cell attri = nil : \(cell.attributedString!)")
+//            print("cell attri = nil : \(cell.attributedString!)")
         }else{
             cell.attributedString.append(attributedString1)
-            print("cell attri != nil : \(cell.attributedString!)")
+//            print("cell attri != nil : \(cell.attributedString!)")
         }
 //        print(cell.attributedString!)
         cell.title.attributedText = cell.attributedString!
@@ -174,18 +195,18 @@ class CongressUpdate_VC: UITableViewController {
         cell.title.lineBreakMode = .byTruncatingTail
         
         if thumbnailImage != nil{
-            cell.image1.image = thumbnailImage!
+            cell.thumbnail.image = thumbnailImage!
         }
         
         cell.selectionStyle = .none
 
 
-        print("123")
+//        print("123")
         return cell
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        print("active")
+//        print("active")
 //        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! RocheTableViewCell
         if indexPath.row == 0{
             return 298

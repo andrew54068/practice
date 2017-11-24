@@ -20,13 +20,13 @@ class pickerView: UIView, UIPickerViewDataSource, UIPickerViewDelegate {
     var numberOfRow: Int = 0
     
     var selected: Int = 0
-    var result: String = ""
+    var result: [String] = ["All", "All"]
     
     
     
-    var selectionForCongress = [["one", "two", "three"],["ㄅ", "ㄆ", "ㄇ"]]
-    var selectionForDisease = ["a", "b", "c", "d"]
-    var selectionForStage = ["1", "2", "3", "4"]
+    var selectionForCongress = [["All", "one", "two", "three"],["All", "ㄅ", "ㄆ", "ㄇ"]]
+    var selectionForDisease = ["All", "a", "b", "c", "d"]
+    var selectionForStage = ["All", "1", "2", "3", "4"]
     
     @IBOutlet var toolbar: UIToolbar!
     
@@ -56,8 +56,10 @@ class pickerView: UIView, UIPickerViewDataSource, UIPickerViewDelegate {
             return selectionForCongress[component].count
         case 2:
             return selectionForDisease.count
-        default :
+        case 3:
             return selectionForStage.count
+        default :
+            return 0
         }
     }
     
@@ -74,17 +76,20 @@ class pickerView: UIView, UIPickerViewDataSource, UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         switch selected {
         case 1:
-            if component == 1{
-                result = String(result.characters.dropLast(3))
-                result.append(selectionForCongress[component][row])
+            if component == 0{
+                result[0] = selectionForCongress[component][row]
+            }else if component == 1{
+                result[1] = selectionForCongress[component][row]
             }
-            result = selectionForCongress[component][row] + " All"
         case 2:
-            result = selectionForDisease[row]
+            result = [selectionForDisease[row]]
         default :
-            result = selectionForStage[row]
+            result = [selectionForStage[row]]
         }
     }
+//    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+//        <#code#>
+//    }
     
 
 }

@@ -48,17 +48,23 @@ class mainViewController: UICollectionViewController, UICollectionViewDelegateFl
     
     func setUpNavigationBar(){
         //left NavItem
-        let menuImage = UIImage(named: "icon_btn_menu_default")
-        let menu = UIBarButtonItem(image: menuImage, style: .plain, target: self, action: #selector(handleMenu))
-        navigationItem.leftBarButtonItem = menu
+//        let menuImage = UIImage(named: "icon_btn_menu_default")
+//        let menu = UIBarButtonItem(image: menuImage, style: .plain, target: self, action: #selector(handleMenu))
+//        navigationItem.leftBarButtonItem = menu
         
         
         //right NavItem
-        let searchImage = UIImage(named: "icon_btn_search_default")
+//        let flexible = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
+        //        fix.width = -3
+        let searchImage = UIImage(named: "icon_btn_search_default")?.withRenderingMode(.alwaysOriginal)
         let search = UIBarButtonItem(image:  searchImage, style: .plain, target: self, action: #selector(handleSearch))
-        let bookmarkImage = UIImage(named: "icon_btn_bookmark_default")
+        let bookmarkImage = UIImage(named: "icon_btn_bookmark_default")?.withRenderingMode(.alwaysOriginal)
         let bookmark = UIBarButtonItem(image: bookmarkImage, style: .plain, target: self, action: #selector(handleBookmark))
-        navigationItem.rightBarButtonItems = [bookmark, search]
+        let menuImage = UIImage(named: "icon_btn_menu_default")?.withRenderingMode(.alwaysOriginal)
+        let menu = UIBarButtonItem(image: menuImage, style: .plain, target: self, action: #selector(handleMenu))
+//        let fix = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.fixedSpace, target: nil, action: nil)
+//        fix.width = -3
+        navigationItem.rightBarButtonItems = [menu, bookmark, search]
     }
     //MARK: left navigation item action
     func handleMenu(){

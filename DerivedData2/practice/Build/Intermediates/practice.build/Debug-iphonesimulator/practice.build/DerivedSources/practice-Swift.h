@@ -242,6 +242,8 @@ SWIFT_CLASS("_TtC8practice11Bookmark_VC")
 @property (nonatomic, strong) NSMutableAttributedString * _Null_unspecified attributedString;
 @property (nonatomic, strong) UIImage * _Nullable unreadIndication;
 @property (nonatomic, copy) NSString * _Nullable selectedtext;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull leftSelectedtext;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull rightSelectedtext;
 @property (nonatomic, strong) selectionView * _Null_unspecified selectionView;
 @property (nonatomic, strong) pickerView * _Null_unspecified pickerView;
 - (void)viewDidLoad;
@@ -270,7 +272,8 @@ SWIFT_CLASS("_TtC8practice17CongressUpdate_VC")
 @property (nonatomic, strong) NSMutableAttributedString * _Null_unspecified attributedString;
 @property (nonatomic, strong) UIImage * _Nullable unreadIndication;
 @property (nonatomic) NSInteger count;
-@property (nonatomic, copy) NSString * _Nullable selectedtext;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull leftSelectedtext;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull rightSelectedtext;
 @property (nonatomic, strong) selectionView * _Null_unspecified selectionView;
 @property (nonatomic, strong) pickerView * _Null_unspecified pickerView;
 - (void)viewDidLoad;
@@ -306,7 +309,7 @@ SWIFT_CLASS("_TtC8practice14Content_TVCell")
 
 SWIFT_CLASS("_TtC8practice8Event_VC")
 @interface Event_VC : UITableViewController
-@property (nonatomic, copy) NSString * _Nullable selectedtext;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull selectedtext;
 @property (nonatomic, strong) selectionView * _Null_unspecified selectionView;
 @property (nonatomic, strong) pickerView * _Null_unspecified pickerView;
 - (void)viewDidLoad;
@@ -334,7 +337,7 @@ SWIFT_CLASS("_TtC8practice19ExpertCommentary_VC")
 @property (nonatomic, copy) NSString * _Nonnull subtitleContent;
 @property (nonatomic, strong) NSMutableAttributedString * _Null_unspecified attributedString;
 @property (nonatomic, strong) UIImage * _Nullable unreadIndication;
-@property (nonatomic, copy) NSString * _Nullable selectedtext;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull selectedtext;
 @property (nonatomic, strong) selectionView * _Null_unspecified selectionView;
 @property (nonatomic, strong) pickerView * _Null_unspecified pickerView;
 - (void)viewDidLoad;
@@ -461,7 +464,7 @@ SWIFT_CLASS("_TtC8practice10TabPage_VC")
 
 SWIFT_CLASS("_TtC8practice13TableViewCell")
 @interface TableViewCell : UITableViewCell
-@property (nonatomic, strong) IBOutlet UIImageView * _Null_unspecified image1;
+@property (nonatomic, strong) IBOutlet UIImageView * _Null_unspecified thumbnail;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified author;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified date;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified title;
@@ -508,6 +511,8 @@ SWIFT_CLASS("_TtC8practice21TrailFactSheet_TVCell")
 SWIFT_CLASS("_TtC8practice17TrailFactSheet_VC")
 @interface TrailFactSheet_VC : UITableViewController
 @property (nonatomic, copy) NSString * _Nullable selectedtext;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull leftSelectedtext;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull rightSelectedtext;
 @property (nonatomic, strong) selectionView * _Null_unspecified selectionView;
 @property (nonatomic, strong) pickerView * _Null_unspecified pickerView;
 - (void)viewDidLoad;
@@ -530,7 +535,7 @@ SWIFT_CLASS("_TtC8practice17TrailFactSheet_VC")
 
 
 @interface UITableViewController (SWIFT_EXTENSION(practice))
-- (NSString * _Nonnull)showPickerViewWithPickerView:(pickerView * _Nonnull)PickerView selectionView:(selectionView * _Nonnull)selectionView selected:(NSInteger)selected SWIFT_WARN_UNUSED_RESULT;
+- (void)showPickerViewWithPickerView:(pickerView * _Nonnull)PickerView selectionView:(selectionView * _Nonnull)selectionView type:(NSInteger)type lastSelected:(NSArray<NSString *> * _Nonnull)lastSelected;
 @end
 
 
@@ -566,7 +571,7 @@ SWIFT_CLASS("_TtC8practice10pickerView")
 @interface pickerView : UIView <UIPickerViewDataSource, UIPickerViewDelegate>
 @property (nonatomic) NSInteger numberOfRow;
 @property (nonatomic) NSInteger selected;
-@property (nonatomic, copy) NSString * _Nonnull result;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull result;
 @property (nonatomic, copy) NSArray<NSArray<NSString *> *> * _Nonnull selectionForCongress;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull selectionForDisease;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull selectionForStage;

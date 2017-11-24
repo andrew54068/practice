@@ -10,7 +10,7 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
-    @IBOutlet var image1: UIImageView!
+    @IBOutlet var thumbnail: UIImageView!
     @IBOutlet var author: UILabel!
     @IBOutlet var date: UILabel!
     @IBOutlet var title: UILabel!
@@ -47,7 +47,8 @@ class TableViewCell: UITableViewCell {
         print("awake from nib test message")
         title.numberOfLines = 0
         self.backgroundColor = UIColor.white
-        image1.clipsToBounds = true
+        thumbnail.layer.cornerRadius = 10
+        thumbnail.clipsToBounds = true
         
         
         

@@ -61,7 +61,7 @@
             <connections>
                 <outlet property="author" destination="juk-0M-JoN" id="8gL-fG-6gp"/>
                 <outlet property="date" destination="BC3-eM-wxx" id="aIo-a0-Swn"/>
-                <outlet property="image1" destination="SMI-G0-MiF" id="76Z-0l-y3c"/>
+                <outlet property="thumbnail" destination="SMI-G0-MiF" id="gLg-c7-kwh"/>
                 <outlet property="title" destination="am2-EV-DEU" id="wbf-8p-mLC"/>
                 <outlet property="topConstraint" destination="ICS-mH-jwB" id="qti-QP-VHp"/>
             </connections>

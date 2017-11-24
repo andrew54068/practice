@@ -13,25 +13,34 @@ import UIKit
 
 extension UITableViewController{
     
-    func showPickerView(PickerView: pickerView, selectionView: selectionView, selected: Int) -> String{
-        
-        switch selected {
+    func showPickerView(PickerView: pickerView, selectionView: selectionView, type: Int, lastSelected: [String]){
+        tableView.isScrollEnabled = false
+        switch type {
         case kindOfPickerView.congress.rawValue:
             PickerView.selected = kindOfPickerView.congress.rawValue
+            if let lastIndex = PickerView.selectionForCongress[0].index(where: { $0 == lastSelected[0] }){
+                PickerView.pickerView.selectRow(lastIndex, inComponent: 0, animated: false)
+            }
+//            if let lastSecondIndex = PickerView.selectionForCongress[1].index(where: { $0 == lastSelected[1] }){
+//                PickerView.pickerView.selectRow(lastSecondIndex, inComponent: 1, animated: false)
+//            }
             PickerView.pickerView.reloadAllComponents()
             break
         case kindOfPickerView.disease.rawValue:
             PickerView.selected = kindOfPickerView.disease.rawValue
+            if let lastIndex = PickerView.selectionForDisease.index(where: { $0 == lastSelected[0] }){
+                PickerView.pickerView.selectRow(lastIndex, inComponent: 0, animated: false)
+            }
             PickerView.pickerView.reloadAllComponents()
             break
         default:
             PickerView.selected = kindOfPickerView.stage.rawValue
+            if let lastIndex = PickerView.selectionForStage.index(where: { $0 == lastSelected[0] }){
+                PickerView.pickerView.selectRow(lastIndex, inComponent: 0, animated: false)
+            }
             PickerView.pickerView.reloadAllComponents()
             break
         }
-        
-        tableView.isScrollEnabled = false
-        return PickerView.result
     }
 }
 

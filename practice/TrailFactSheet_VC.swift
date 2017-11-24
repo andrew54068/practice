@@ -14,6 +14,8 @@ class TrailFactSheet_VC: UITableViewController {
     
     var selectedFilter: Int?
     var selectedtext: String?
+    var leftSelectedtext: [String] = ["All", "All"]
+    var rightSelectedtext: [String] = ["All"]
     
     var selectionView: selectionView!
     var pickerView: pickerView!
@@ -74,7 +76,11 @@ class TrailFactSheet_VC: UITableViewController {
         unfocus.addTarget(self, action: #selector(dismissUnfocus), for: .touchUpInside)
         pickerView.frame = CGRect(x: 0, y: window.bounds.maxY - 261, width: tableView.frame.width, height: 261)
         unfocus.addSubview(pickerView)
-        selectedtext = showPickerView(PickerView: pickerView, selectionView: selectionView, selected: sender.tag)
+        if sender.tag == kindOfPickerView.congress.rawValue{
+            showPickerView(PickerView: pickerView, selectionView: selectionView, type: sender.tag, lastSelected: leftSelectedtext)
+        }else if sender.tag == kindOfPickerView.disease.rawValue{
+            showPickerView(PickerView: pickerView, selectionView: selectionView, type: sender.tag, lastSelected: rightSelectedtext)
+        }
         
     }
     let unfocus:UIButton = {

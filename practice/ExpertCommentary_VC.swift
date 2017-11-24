@@ -22,7 +22,7 @@ class ExpertCommentary_VC: UITableViewController {
     var unreadIndication: UIImage? = UIImage(named: "unread")
     
     var selectedFilter: Int?
-    var selectedtext: String?
+    var selectedtext: [String] = ["All"]
     
     var selectionView: selectionView!
     var pickerView: pickerView!
@@ -79,8 +79,7 @@ class ExpertCommentary_VC: UITableViewController {
         unfocus.addTarget(self, action: #selector(dismissUnfocus), for: .touchUpInside)
         pickerView.frame = CGRect(x: 0, y: window.bounds.maxY - 261, width: tableView.frame.width, height: 261)
         unfocus.addSubview(pickerView)
-        selectedtext = showPickerView(PickerView: pickerView, selectionView: selectionView, selected: sender.tag)
-        
+        showPickerView(PickerView: pickerView, selectionView: selectionView, type: sender.tag, lastSelected: selectedtext)
     }
     let unfocus:UIButton = {
         let View = UIButton()
@@ -90,12 +89,7 @@ class ExpertCommentary_VC: UITableViewController {
     
     func comfirmSelection(sender: UIBarButtonItem){
         dismissUnfocus(sender: sender)
-        if selectedFilter == 1{
-            selectionView.left.titleLabel?.text = selectedtext!
-        }
-        else{
-            selectionView.right.titleLabel?.text = selectedtext!
-        }
+        selectionView.left.titleLabel?.text = selectedtext[0]
     }
     
     func dismissUnfocus(sender: Any) {
@@ -151,7 +145,7 @@ class ExpertCommentary_VC: UITableViewController {
         cell.title.lineBreakMode = .byTruncatingTail
         
         if thumbnailImage != nil{
-            cell.image1.image = thumbnailImage!
+            cell.thumbnail.image = thumbnailImage!
         }
         
         cell.selectionStyle = .none

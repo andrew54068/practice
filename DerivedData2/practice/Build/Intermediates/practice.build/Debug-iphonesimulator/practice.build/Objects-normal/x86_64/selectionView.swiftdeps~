@@ -11,6 +11,7 @@ provides-dynamic-lookup:
 - "equalWidthConstraint"
 - "left"
 - "right"
+- "trailingConstraint"
 - "updateConstraint"
 depends-top-level:
 - "AssignmentPrecedence"
@@ -130,6 +131,7 @@ depends-member:
 - ["CSo8NSObject", "left"]
 - !private ["CSo8NSObject", "main"]
 - ["CSo8NSObject", "right"]
+- ["CSo8NSObject", "trailingConstraint"]
 - ["CSo8NSObject", "updateConstraint"]
 - !private ["PSo16NSObjectProtocol", "DispatchQueue"]
 - !private ["PSo16NSObjectProtocol", "async"]
@@ -221,6 +223,7 @@ depends-member:
 - !private ["CSo11UIResponder", "layoutIfNeeded"]
 - ["CSo11UIResponder", "left"]
 - ["CSo11UIResponder", "right"]
+- ["CSo11UIResponder", "trailingConstraint"]
 - ["CSo11UIResponder", "updateConstraint"]
 - !private ["PSo30UIResponderStandardEditActions", "DispatchQueue"]
 - !private ["PSo30UIResponderStandardEditActions", "awakeFromNib"]
@@ -251,6 +254,7 @@ depends-member:
 - !private ["CSo6UIView", "layoutIfNeeded"]
 - ["CSo6UIView", "left"]
 - ["CSo6UIView", "right"]
+- ["CSo6UIView", "trailingConstraint"]
 - ["CSo6UIView", "updateConstraint"]
 - ["CSo6UIView", ""]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "DispatchQueue"]
@@ -285,6 +289,7 @@ depends-member:
 - !private ["C8practice13selectionView", "layoutIfNeeded"]
 - ["C8practice13selectionView", "left"]
 - ["C8practice13selectionView", "right"]
+- ["C8practice13selectionView", "trailingConstraint"]
 - ["C8practice13selectionView", "updateConstraint"]
 depends-nominal:
 - "Ps9AnyObject"
@@ -336,4 +341,4 @@ depends-external:
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "af0962cb85b94294d24ed6949403cf9e"
+interface-hash: "581112a472a7e21fc479e2b636018b97"
