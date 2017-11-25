@@ -16,7 +16,7 @@ class SquareCollectionViewCell: UICollectionViewCell {
     @IBOutlet var title: UILabel!
     
     
-    var unreadIndication: UIImage? = UIImage(named: "unread")
+    var unreadIndication = UIImage(named: "unread")
     var attributedString: NSMutableAttributedString!
     
     

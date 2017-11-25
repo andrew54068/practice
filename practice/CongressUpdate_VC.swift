@@ -25,7 +25,7 @@ class CongressUpdate_VC: UITableViewController {
     var unreadIndication: UIImage? = UIImage(named: "unread")
     var count:Int = 0
     var selectedFilter: Int?
-    var leftSelectedtext: [String] = ["All", "All"]
+    var leftSelectedtext: [String] = ["two", "All"]
     var rightSelectedtext: [String] = ["All"]
     
     var selectionView: selectionView!
@@ -129,14 +129,15 @@ class CongressUpdate_VC: UITableViewController {
     }
     
     func dismissUnfocus(sender: Any) {
+        pickerView.removeFromSuperview()
         unfocus.removeFromSuperview()
         tableView.isScrollEnabled = true
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-
-    }
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//
+//    }
 
     // MARK: - Table view data source
     

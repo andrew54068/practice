@@ -51,7 +51,7 @@ depends-top-level:
 - "Int"
 - "NSCoder"
 - "NSLayoutConstraint"
-- "String"
+- "NSMutableAttributedString"
 - !private "StringLiteralType"
 - "TabCollectionCell"
 - "TabPageOption"
@@ -995,7 +995,7 @@ depends-member:
 - ["CSo8NSObject", "InteritemSpacing"]
 - ["CSo8NSObject", "NSCoder"]
 - ["CSo8NSObject", "NSLayoutConstraint"]
-- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "NSMutableAttributedString"]
 - ["CSo8NSObject", "TabCollectionCell"]
 - ["CSo8NSObject", "TabPageOption"]
 - !private ["CSo8NSObject", "TabView"]
@@ -1259,7 +1259,7 @@ depends-member:
 - !private ["C21TabPageViewController7TabView", "InteritemSpacing"]
 - ["C21TabPageViewController7TabView", "NSCoder"]
 - ["C21TabPageViewController7TabView", "NSLayoutConstraint"]
-- ["C21TabPageViewController7TabView", "String"]
+- ["C21TabPageViewController7TabView", "NSMutableAttributedString"]
 - ["C21TabPageViewController7TabView", "TabCollectionCell"]
 - ["C21TabPageViewController7TabView", "TabPageOption"]
 - !private ["C21TabPageViewController7TabView", "TabView"]
@@ -1629,7 +1629,6 @@ depends-member:
 - !private ["CSo16UICollectionView", "cellForItem"]
 - !private ["CSo16UICollectionView", "contentOffset"]
 - !private ["CSo16UICollectionView", "dequeueReusableCell"]
-- !private ["CSo16UICollectionView", "frame"]
 - !private ["CSo16UICollectionView", "isUserInteractionEnabled"]
 - !private ["CSo16UICollectionView", "register"]
 - !private ["CSo16UICollectionView", "scrollToItem"]
@@ -2236,7 +2235,7 @@ depends-member:
 - ["CSo11UIResponder", "InteritemSpacing"]
 - ["CSo11UIResponder", "NSCoder"]
 - ["CSo11UIResponder", "NSLayoutConstraint"]
-- ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "NSMutableAttributedString"]
 - ["CSo11UIResponder", "TabCollectionCell"]
 - ["CSo11UIResponder", "TabPageOption"]
 - !private ["CSo11UIResponder", "TabView"]
@@ -2425,6 +2424,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "viewForZoomingInScrollView"]
 - !private ["PSo30UIResponderStandardEditActions", "visibleCells"]
 - ["PSo30UIResponderStandardEditActions", ""]
+- !private ["CSo8UIScreen", "bounds"]
 - !private ["CSo8UIScreen", "main"]
 - !private ["CSo8UIScreen", "scale"]
 - !private ["CSo12UIScrollView", "addConstraints"]
@@ -2434,7 +2434,6 @@ depends-member:
 - !private ["CSo12UIScrollView", "contentOffset"]
 - !private ["CSo12UIScrollView", "contentSize"]
 - !private ["CSo12UIScrollView", "dequeueReusableCell"]
-- !private ["CSo12UIScrollView", "frame"]
 - !private ["CSo12UIScrollView", "isDragging"]
 - !private ["CSo12UIScrollView", "isUserInteractionEnabled"]
 - !private ["CSo12UIScrollView", "register"]
@@ -2613,7 +2612,7 @@ depends-member:
 - ["CSo6UIView", "InteritemSpacing"]
 - ["CSo6UIView", "NSCoder"]
 - ["CSo6UIView", "NSLayoutConstraint"]
-- ["CSo6UIView", "String"]
+- ["CSo6UIView", "NSMutableAttributedString"]
 - ["CSo6UIView", "TabCollectionCell"]
 - ["CSo6UIView", "TabPageOption"]
 - !private ["CSo6UIView", "TabView"]
@@ -3097,4 +3096,4 @@ depends-external:
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "93e64579708c911213b241b8b1e59815"
+interface-hash: "03c08a040b775c2a0910072ae68a3c6a"

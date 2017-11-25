@@ -135,7 +135,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import UIKit;
 @import Foundation;
 @import CoreGraphics;
-@import TabPageViewController;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -284,7 +283,6 @@ SWIFT_CLASS("_TtC8practice17CongressUpdate_VC")
 @property (nonatomic, readonly, strong) UIButton * _Nonnull unfocus;
 - (void)comfirmSelectionWithSender:(UIBarButtonItem * _Nonnull)sender;
 - (void)dismissUnfocusWithSender:(id _Nonnull)sender;
-- (void)viewWillAppear:(BOOL)animated;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
@@ -442,24 +440,6 @@ SWIFT_CLASS("_TtC8practice24SquareCollectionViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
-SWIFT_CLASS("_TtC8practice11TabPage2_VC")
-@interface TabPage2_VC : TabPageViewController
-- (void)viewDidLoad;
-- (nonnull instancetype)initWithTransitionStyle:(UIPageViewControllerTransitionStyle)style navigationOrientation:(UIPageViewControllerNavigationOrientation)navigationOrientation options:(NSDictionary<NSString *, id> * _Nullable)options OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC8practice10TabPage_VC")
-@interface TabPage_VC : UIPageViewController
-- (void)viewDidAppear:(BOOL)animated;
-- (void)viewDidLoad;
-- (void)showTabPageVC;
-- (nonnull instancetype)initWithTransitionStyle:(UIPageViewControllerTransitionStyle)style navigationOrientation:(UIPageViewControllerNavigationOrientation)navigationOrientation options:(NSDictionary<NSString *, id> * _Nullable)options OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
 @class NSLayoutConstraint;
 
 SWIFT_CLASS("_TtC8practice13TableViewCell")
@@ -543,7 +523,6 @@ SWIFT_CLASS("_TtC8practice18mainViewController")
 @interface mainViewController : UICollectionViewController <UICollectionViewDelegateFlowLayout>
 @property (nonatomic, copy) NSString * _Nonnull titleContent;
 @property (nonatomic, copy) NSString * _Nonnull subtitleContent;
-@property (nonatomic, strong) NSMutableAttributedString * _Null_unspecified attributedString;
 @property (nonatomic) NSInteger count;
 @property (nonatomic) NSInteger numberOfRowBeforeSqueezedRectangle;
 @property (nonatomic, strong) IBOutlet NavigationBar * _Null_unspecified navigationBar;

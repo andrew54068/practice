@@ -22,37 +22,37 @@ depends-top-level:
 - "TabPageOption"
 - "TernaryPrecedence"
 - "UIColor"
-- "UIFont"
 - !private "UIGraphicsBeginImageContext"
 - !private "UIGraphicsEndImageContext"
 - !private "UIGraphicsGetCurrentContext"
 - !private "UIGraphicsGetImageFromCurrentImageContext"
 - "UIImage"
 depends-member:
+- ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "cgColor"]
 - !private ["Ps9AnyObject", "fill"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "setFillColor"]
-- ["Ps9AnyObject", "systemFontSize"]
 - ["Ps9AnyObject", "white"]
 - !private ["Ps9AnyObject", "withAlphaComponent"]
+- ["Ps19BinaryFloatingPoint", "init"]
 - !private ["Ps17BitwiseOperations", "hashValue"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["CSo9CGContext", "fill"]
 - !private ["CSo9CGContext", "setFillColor"]
+- ["V12CoreGraphics7CGFloat", "init"]
 - !private ["VSC6CGRect", "init"]
 - !private ["VSC6CGRect", "size"]
 - !private ["Ps7CVarArg", "cgColor"]
 - !private ["Ps7CVarArg", "hashValue"]
 - ["Ps7CVarArg", "init"]
-- ["Ps7CVarArg", "systemFontSize"]
 - ["Ps7CVarArg", "white"]
 - !private ["Ps7CVarArg", "withAlphaComponent"]
 - !private ["Ps10Comparable", "hashValue"]
+- ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "cgColor"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "size"]
-- ["Ps28CustomDebugStringConvertible", "systemFontSize"]
 - ["Ps28CustomDebugStringConvertible", "white"]
 - !private ["Ps28CustomDebugStringConvertible", "withAlphaComponent"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
@@ -61,13 +61,12 @@ depends-member:
 - !private ["Ps29CustomPlaygroundQuickLookable", "size"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "hashValue"]
-- !private ["Ps17CustomReflectable", "init"]
+- ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "size"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "cgColor"]
 - !private ["Ps23CustomStringConvertible", "hashValue"]
 - ["Ps23CustomStringConvertible", "init"]
-- ["Ps23CustomStringConvertible", "systemFontSize"]
 - ["Ps23CustomStringConvertible", "white"]
 - !private ["Ps23CustomStringConvertible", "withAlphaComponent"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
@@ -77,19 +76,20 @@ depends-member:
 - ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "none"]
 - !private ["Ps9Equatable", "size"]
-- ["Ps9Equatable", "systemFontSize"]
 - ["Ps9Equatable", "white"]
 - !private ["Ps9Equatable", "withAlphaComponent"]
 - ["Ps9Equatable", ""]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps25ExpressibleByFloatLiteral", "init"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
+- ["Ps27ExpressibleByIntegerLiteral", "init"]
+- ["Ps13FloatingPoint", "init"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "_toAnyHashable"]
 - !private ["Ps8Hashable", "cgColor"]
 - ["Ps8Hashable", "hashValue"]
 - ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "none"]
-- ["Ps8Hashable", "systemFontSize"]
 - ["Ps8Hashable", "white"]
 - !private ["Ps8Hashable", "withAlphaComponent"]
 - ["Ps8Hashable", ""]
@@ -112,16 +112,13 @@ depends-member:
 - !private ["PSo8NSCoding", "withAlphaComponent"]
 - !private ["PSo9NSCopying", "cgColor"]
 - ["PSo9NSCopying", "init"]
-- ["PSo9NSCopying", "systemFontSize"]
 - ["PSo9NSCopying", "white"]
 - !private ["PSo9NSCopying", "withAlphaComponent"]
 - !private ["CSo8NSObject", "cgColor"]
-- ["CSo8NSObject", "systemFontSize"]
 - ["CSo8NSObject", "white"]
 - !private ["CSo8NSObject", "withAlphaComponent"]
 - !private ["PSo16NSObjectProtocol", "cgColor"]
 - ["PSo16NSObjectProtocol", "init"]
-- ["PSo16NSObjectProtocol", "systemFontSize"]
 - ["PSo16NSObjectProtocol", "white"]
 - !private ["PSo16NSObjectProtocol", "withAlphaComponent"]
 - !private ["PSo14NSSecureCoding", "cgColor"]
@@ -130,14 +127,15 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "withAlphaComponent"]
 - !private ["Ps13SignedInteger", "hashValue"]
 - !private ["Ps12SignedNumber", "hashValue"]
+- ["Ps12SignedNumber", "init"]
 - !private ["Ps10Strideable", "hashValue"]
+- ["Ps10Strideable", "init"]
 - ["V21TabPageViewController13TabPageOption", "Bool"]
 - !private ["V21TabPageViewController13TabPageOption", "CGContext"]
 - ["V21TabPageViewController13TabPageOption", "CGFloat"]
 - !private ["V21TabPageViewController13TabPageOption", "CGRect"]
 - ["V21TabPageViewController13TabPageOption", "HidesTopContentsOnSwipeType"]
 - ["V21TabPageViewController13TabPageOption", "UIColor"]
-- ["V21TabPageViewController13TabPageOption", "UIFont"]
 - !private ["V21TabPageViewController13TabPageOption", "UIGraphicsBeginImageContext"]
 - !private ["V21TabPageViewController13TabPageOption", "UIGraphicsEndImageContext"]
 - !private ["V21TabPageViewController13TabPageOption", "UIGraphicsGetCurrentContext"]
@@ -162,7 +160,8 @@ depends-member:
 - ["CSo7UIColor", "init"]
 - ["CSo7UIColor", "white"]
 - !private ["CSo7UIColor", "withAlphaComponent"]
-- ["CSo6UIFont", "systemFontSize"]
+- ["Ps15_CVarArgAligned", "init"]
+- ["Ps22_CVarArgPassedAsDouble", "init"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "hashValue"]
 - !private ["Ps26_ExpressibleByColorLiteral", "cgColor"]
@@ -175,7 +174,6 @@ depends-member:
 - ["Ps9_Hashable", "hashValue"]
 - ["Ps9_Hashable", "init"]
 - ["Ps9_Hashable", "none"]
-- ["Ps9_Hashable", "systemFontSize"]
 - ["Ps9_Hashable", "white"]
 - !private ["Ps9_Hashable", "withAlphaComponent"]
 - ["Ps9_Hashable", ""]
@@ -184,25 +182,31 @@ depends-member:
 - !private ["Ps18_IntegerArithmetic", "hashValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
-- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "size"]
 - !private ["Ps14_SignedInteger", "hashValue"]
 - !private ["Ps11_Strideable", "hashValue"]
+- ["Ps11_Strideable", "init"]
 depends-nominal:
+- "Ps16AbsoluteValuable"
 - "Ps9AnyObject"
+- "Ps19BinaryFloatingPoint"
 - !private "Ps17BitwiseOperations"
 - !private "Sb"
 - !private "CSo9CGContext"
+- "V12CoreGraphics7CGFloat"
 - !private "VSC6CGRect"
 - "Ps7CVarArg"
-- !private "Ps10Comparable"
+- "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
-- !private "Ps17CustomReflectable"
+- "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
 - !private "Ps27ExpressibleByBooleanLiteral"
-- !private "Ps27ExpressibleByIntegerLiteral"
+- "Ps25ExpressibleByFloatLiteral"
+- "Ps27ExpressibleByIntegerLiteral"
+- "Ps13FloatingPoint"
 - "Ps8Hashable"
 - "O21TabPageViewController27HidesTopContentsOnSwipeType"
 - !private "Si"
@@ -216,11 +220,12 @@ depends-nominal:
 - "PSo16NSObjectProtocol"
 - "PSo14NSSecureCoding"
 - !private "Ps13SignedInteger"
-- !private "Ps12SignedNumber"
-- !private "Ps10Strideable"
+- "Ps12SignedNumber"
+- "Ps10Strideable"
 - "V21TabPageViewController13TabPageOption"
 - "CSo7UIColor"
-- "CSo6UIFont"
+- "Ps15_CVarArgAligned"
+- "Ps22_CVarArgPassedAsDouble"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
 - "Ps26_ExpressibleByColorLiteral"
@@ -228,9 +233,9 @@ depends-nominal:
 - !private "Ps14_Incrementable"
 - !private "Ps8_Integer"
 - !private "Ps18_IntegerArithmetic"
-- !private "Ps21_ObjectiveCBridgeable"
+- "Ps21_ObjectiveCBridgeable"
 - !private "Ps14_SignedInteger"
-- !private "Ps11_Strideable"
+- "Ps11_Strideable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.apinotesc"
@@ -249,4 +254,4 @@ depends-external:
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "6831fa30d9e8c6fa53199841358c289c"
+interface-hash: "fea5c18c8bdd030990c0081bfc420b58"
