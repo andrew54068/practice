@@ -17,13 +17,9 @@ class TableViewCell: UITableViewCell {
 
     @IBOutlet var topConstraint: NSLayoutConstraint!
     
-    
 //    var thumbnailImage: UIImage? = UIImage(named: "patient")
     var unreadIndication: UIImage? = UIImage(named: "unread")
     var attributedString: NSMutableAttributedString!
-    
-    
-    
     
     var hadRead:Bool = false {
         willSet(newValue){

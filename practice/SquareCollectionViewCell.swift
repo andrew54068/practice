@@ -15,10 +15,8 @@ class SquareCollectionViewCell: UICollectionViewCell {
     @IBOutlet var time: UILabel!
     @IBOutlet var title: UILabel!
     
-    
     var unreadIndication = UIImage(named: "unread")
     var attributedString: NSMutableAttributedString!
-    
     
     var hadRead:Bool = false {
         willSet(newValue){
@@ -35,8 +33,6 @@ class SquareCollectionViewCell: UICollectionViewCell {
         }
     }
 
-    
-
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -51,7 +47,4 @@ class SquareCollectionViewCell: UICollectionViewCell {
         self.thumbnail.layer.cornerRadius = 10
         self.thumbnail.clipsToBounds = true
     }
-    
-    
-
 }

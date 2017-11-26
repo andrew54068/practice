@@ -83,8 +83,6 @@ class CongressUpdate_VC: UITableViewController {
     }
     
     func CategoryPicked(sender: UIButton){
-        
-        print("button \(sender.tag) been clicked")
         if sender.tag == kindOfPickerView.congress.rawValue{
             pickerView.selected = sender.tag
             showPickerView(PickerView: pickerView, selectionView: selectionView, type: sender.tag, lastSelected: leftSelectedtext)
@@ -117,7 +115,6 @@ class CongressUpdate_VC: UITableViewController {
             print("leftSelectedtext = \(leftSelectedtext)")
             selectionView.left.setTitle(pickerView.result[0] + " " + pickerView.result[1], for: .normal)
             leftSelectedtext = pickerView.result
-//            print("selectionView.left.title \(leftSelectedtext[0]) + \(leftSelectedtext[1])")
             selectionView.left.titleLabel?.sizeToFit()
         }
         else{

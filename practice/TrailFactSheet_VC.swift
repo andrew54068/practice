@@ -63,24 +63,31 @@ class TrailFactSheet_VC: UITableViewController {
         fix.width = 9
         pickerView.toolbar.setItems([flexible, item, fix], animated: true)
         
-        selectionView.left.tag = kindOfPickerView.congress.rawValue
+        selectionView.left.tag = kindOfPickerView.disease.rawValue
         selectionView.left.addTarget(self, action: #selector(CategoryPicked), for: .touchUpInside)
-        selectionView.right.tag = kindOfPickerView.disease.rawValue
+        selectionView.right.tag = kindOfPickerView.stage.rawValue
         selectionView.right.addTarget(self, action: #selector(CategoryPicked), for: .touchUpInside)
     }
     
     func CategoryPicked(sender: UIButton){
+        if sender.tag == kindOfPickerView.disease.rawValue{
+            pickerView.selected = sender.tag
+            showPickerView(PickerView: pickerView, selectionView: selectionView, type: sender.tag, lastSelected: leftSelectedtext)
+            print("leftSelectedtext = \(leftSelectedtext)")
+            selectedFilter = 1
+        }else if sender.tag == kindOfPickerView.stage.rawValue{
+            pickerView.selected = sender.tag
+            showPickerView(PickerView: pickerView, selectionView: selectionView, type: sender.tag, lastSelected: rightSelectedtext)
+            print("rightSelectedtext = \(rightSelectedtext)")
+            selectedFilter = 2
+        }
+        
         let window = UIApplication.shared.keyWindow!
         window.addSubview(unfocus)
-        unfocus.frame = CGRect(x: 0, y: 0, width: tableView.frame.width, height: tableView.frame.height)
+        unfocus.frame = CGRect(x: 0, y: 0, width: tableView.frame.width, height: window.frame.height)
         unfocus.addTarget(self, action: #selector(dismissUnfocus), for: .touchUpInside)
         pickerView.frame = CGRect(x: 0, y: window.bounds.maxY - 261, width: tableView.frame.width, height: 261)
         unfocus.addSubview(pickerView)
-        if sender.tag == kindOfPickerView.congress.rawValue{
-            showPickerView(PickerView: pickerView, selectionView: selectionView, type: sender.tag, lastSelected: leftSelectedtext)
-        }else if sender.tag == kindOfPickerView.disease.rawValue{
-            showPickerView(PickerView: pickerView, selectionView: selectionView, type: sender.tag, lastSelected: rightSelectedtext)
-        }
         
     }
     let unfocus:UIButton = {
@@ -91,16 +98,24 @@ class TrailFactSheet_VC: UITableViewController {
     
     func comfirmSelection(sender: UIBarButtonItem){
         dismissUnfocus(sender: sender)
-        if selectedFilter == 1{
-            selectionView.left.titleLabel?.text = selectedtext!
+        if selectedFilter == kindOfPickerView.congress.rawValue{
+            print("leftSelectedtext = \(leftSelectedtext)")
+            selectionView.left.setTitle(pickerView.result[0] + " " + pickerView.result[1], for: .normal)
+            leftSelectedtext = pickerView.result
+            selectionView.left.titleLabel?.sizeToFit()
         }
         else{
-            selectionView.right.titleLabel?.text = selectedtext!
+            print("rightSelectedtext = \(rightSelectedtext)")
+            selectionView.right.setTitle(pickerView.result[0], for: .normal)
+            selectionView.right.titleLabel?.sizeToFit()
+            rightSelectedtext = pickerView.result
         }
     }
     
     func dismissUnfocus(sender: Any) {
+        pickerView.removeFromSuperview()
         unfocus.removeFromSuperview()
+        tableView.isScrollEnabled = true
     }
 
     override func didReceiveMemoryWarning() {

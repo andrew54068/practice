@@ -68,18 +68,19 @@ class ExpertCommentary_VC: UITableViewController {
         fix.width = 9
         pickerView.toolbar.setItems([flexible, item, fix], animated: true)
         
-        selectionView.left.tag = kindOfPickerView.congress.rawValue
+        selectionView.left.tag = kindOfPickerView.disease.rawValue
         selectionView.left.addTarget(self, action: #selector(CategoryPicked), for: .touchUpInside)
     }
     
     func CategoryPicked(sender: UIButton){
+        showPickerView(PickerView: pickerView, selectionView: selectionView, type: sender.tag, lastSelected: selectedtext)
+        
         let window = UIApplication.shared.keyWindow!
         window.addSubview(unfocus)
-        unfocus.frame = CGRect(x: 0, y: 0, width: tableView.frame.width, height: tableView.frame.height)
+        unfocus.frame = CGRect(x: 0, y: 0, width: tableView.frame.width, height: window.frame.height)
         unfocus.addTarget(self, action: #selector(dismissUnfocus), for: .touchUpInside)
         pickerView.frame = CGRect(x: 0, y: window.bounds.maxY - 261, width: tableView.frame.width, height: 261)
         unfocus.addSubview(pickerView)
-        showPickerView(PickerView: pickerView, selectionView: selectionView, type: sender.tag, lastSelected: selectedtext)
     }
     let unfocus:UIButton = {
         let View = UIButton()
@@ -89,11 +90,15 @@ class ExpertCommentary_VC: UITableViewController {
     
     func comfirmSelection(sender: UIBarButtonItem){
         dismissUnfocus(sender: sender)
-        selectionView.left.titleLabel?.text = selectedtext[0]
+        selectionView.left.setTitle(pickerView.result[0], for: .normal)
+        selectedtext = pickerView.result
+        selectionView.left.titleLabel?.sizeToFit()
     }
     
     func dismissUnfocus(sender: Any) {
+        pickerView.removeFromSuperview()
         unfocus.removeFromSuperview()
+        tableView.isScrollEnabled = true
     }
 
     override func didReceiveMemoryWarning() {
