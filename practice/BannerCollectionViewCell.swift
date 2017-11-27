@@ -10,13 +10,14 @@ import UIKit
 
 class BannerCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet var rectangleButtom: UIButton!
+
+    @IBOutlet var rectangleImage: UIImageView!
     @IBOutlet var rectangleLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        rectangleButtom.imageView?.layer.cornerRadius = 10
-        rectangleButtom.imageView?.clipsToBounds = true
+        rectangleImage.layer.cornerRadius = 10
+        rectangleImage.clipsToBounds = true
     }
 }

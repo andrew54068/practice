@@ -13,6 +13,7 @@ import UIKit
 
 class SquareCategoryCell: UICollectionViewCell, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
+    var mainView: mainViewController?
     
 //    weak var delegate: buttonClicked?
     private let cellId = "SCVCell"
@@ -20,6 +21,7 @@ class SquareCategoryCell: UICollectionViewCell, UICollectionViewDelegate, UIColl
     var subtitleContent: String = ""
     var attributedString: NSMutableAttributedString!
     var count:Int = 0
+    
     
     
     @IBOutlet var content: UICollectionView!
@@ -96,6 +98,10 @@ class SquareCategoryCell: UICollectionViewCell, UICollectionViewDelegate, UIColl
         count += 1
         performSelector(inBackground: #selector(mainViewController.seeAll), with: nil)
         collectionView.reloadData()
+        
+        if count > 2{
+            mainView?.showArticle()
+        }
     }
     
     //MARK: CollectionView delegateFlowLayout

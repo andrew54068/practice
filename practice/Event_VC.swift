@@ -37,9 +37,9 @@ class Event_VC: UITableViewController {
     }
     
     func tableViewSetup(){
-        tableView.contentInset = UIEdgeInsetsMake(45, 0, 0, 0)
+        tableView.contentInset = UIEdgeInsetsMake(109, 0, 0, 0)
         tableView.separatorInset = UIEdgeInsets.zero
-        tableView.scrollIndicatorInsets = UIEdgeInsets(top: 45, left: 0, bottom: 0, right: 0)
+        tableView.scrollIndicatorInsets = UIEdgeInsets(top: 109, left: 0, bottom: 0, right: 0)
         tableView.tableHeaderView = selectionView
         
         //?? without this header become strange after adding navigation bar
@@ -126,6 +126,9 @@ class Event_VC: UITableViewController {
         }
         
         cell.selectionStyle = .none
+        
+        //disable bookmark
+        cell.bookmark.isEnabled = false
         
         return cell
     }

@@ -15,7 +15,14 @@ class TableViewCell: UITableViewCell {
     @IBOutlet var date: UILabel!
     @IBOutlet var title: UILabel!
 
+    @IBOutlet var bookmark: UIButton!
     @IBOutlet var topConstraint: NSLayoutConstraint!
+    
+    @IBAction func bookmarkClicked(_ sender: Any) {
+        let Active = UIImage(named: "icon_btn_bookmark_active")
+        bookmark.setImage(Active!, for: .normal)
+    }
+    
     
 //    var thumbnailImage: UIImage? = UIImage(named: "patient")
     var unreadIndication: UIImage? = UIImage(named: "unread")
@@ -45,10 +52,6 @@ class TableViewCell: UITableViewCell {
         self.backgroundColor = UIColor.white
         thumbnail.layer.cornerRadius = 10
         thumbnail.clipsToBounds = true
-        
-        
-        
-        
         
         //if load thumbnail image are loaded
 //        if unreadIndication != nil{
@@ -84,8 +87,6 @@ class TableViewCell: UITableViewCell {
             var frame = newFrame
             frame.origin.x += 15
             frame.size.width -= 30
-//            frame.origin.y += 20
-//            frame.size.height -= 40
             super.frame = frame
             
         }

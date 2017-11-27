@@ -39,13 +39,26 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVS-fD-pwh" userLabel="Bookmark">
+                        <rect key="frame" x="321" y="172" width="14" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="14" id="8er-gg-wlq"/>
+                            <constraint firstAttribute="height" constant="18" id="VfS-wQ-WiJ"/>
+                        </constraints>
+                        <state key="normal" image="icon_btn_bookmark_default"/>
+                        <connections>
+                            <action selector="bookmarkClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="dOE-go-eRV"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="am2-EV-DEU" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailing" id="19d-lC-7Of"/>
+                    <constraint firstItem="uVS-fD-pwh" firstAttribute="bottom" secondItem="SMI-G0-MiF" secondAttribute="bottom" constant="-10" id="ASp-20-jiI"/>
                     <constraint firstItem="SMI-G0-MiF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" priority="900" id="AtR-H9-ZjC"/>
                     <constraint firstItem="BC3-eM-wxx" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottom" constant="-95" id="BGp-Bd-UqZ"/>
                     <constraint firstItem="am2-EV-DEU" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottom" constant="-20" id="BOO-t7-EwG"/>
                     <constraint firstItem="SMI-G0-MiF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="ICS-mH-jwB"/>
+                    <constraint firstItem="uVS-fD-pwh" firstAttribute="trailing" secondItem="SMI-G0-MiF" secondAttribute="trailing" constant="-10" id="Xvh-TD-ZDO"/>
                     <constraint firstItem="juk-0M-JoN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Y7D-gF-eAQ"/>
                     <constraint firstItem="BC3-eM-wxx" firstAttribute="top" secondItem="SMI-G0-MiF" secondAttribute="bottom" constant="3" id="bfT-37-Y2z"/>
                     <constraint firstItem="am2-EV-DEU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bxn-VI-qDY"/>
@@ -60,6 +73,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="author" destination="juk-0M-JoN" id="8gL-fG-6gp"/>
+                <outlet property="bookmark" destination="uVS-fD-pwh" id="gsn-HI-fOC"/>
                 <outlet property="date" destination="BC3-eM-wxx" id="aIo-a0-Swn"/>
                 <outlet property="thumbnail" destination="SMI-G0-MiF" id="gLg-c7-kwh"/>
                 <outlet property="title" destination="am2-EV-DEU" id="wbf-8p-mLC"/>
@@ -69,6 +83,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="icon_btn_bookmark_default" width="14" height="18"/>
         <image name="no_image" width="330" height="170"/>
     </resources>
 </document>

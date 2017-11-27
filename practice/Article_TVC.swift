@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class Article_TVC: UITableViewController {
     
     let titleContent = "A future in mind - rising to the challenge of Alzheimer's"
@@ -27,6 +29,12 @@ class Article_TVC: UITableViewController {
     @IBOutlet var time: UIButton!
     
     @IBOutlet var catagory: UIButton!
+    
+    @IBAction func backToPreviousView(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+        navigationController?.isNavigationBarHidden = false
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,17 +66,11 @@ class Article_TVC: UITableViewController {
         tableView.dataSource = self
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 300
-//        statusBarBackgroundView.frame = CGRect(x: 0, y: 0, width: tableView.frame.width, height: 20)
-//        statusBarBackgroundView.backgroundColor = UIColor.red
-//        view.addSubview(statusBarBackgroundView)
-//        tableView.separatorInset = UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0)
-//        tableView.setContentOffset(CGPoint(x: 0,y: 20), animated: true)
-        tableView.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0)
-        tableView.scrollIndicatorInsets = UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0)
+
         tableView.separatorStyle = .none
         tableView.tableHeaderView = ThumbnailHeaderView
         contentSetup()
-        
+        navigationController?.isNavigationBarHidden = true
     }
     
     func contentSetup(){
@@ -81,7 +83,6 @@ class Article_TVC: UITableViewController {
         catagory.sizeToFit()
         
     }
-    
     
     let statusBarBackgroundView: UIView = {
         let view = UIView()

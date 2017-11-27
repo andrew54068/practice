@@ -59,7 +59,7 @@
         <!--ArticleTVC-->
         <scene sceneID="Gkj-9E-bUL">
             <objects>
-                <tableViewController id="kJf-ol-woQ" customClass="Article_TVC" customModule="practice" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Article_TVC" id="kJf-ol-woQ" customClass="Article_TVC" customModule="practice" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="gQc-eT-smw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,6 +113,9 @@
                                         <constraint firstAttribute="width" secondItem="k75-PO-PFH" secondAttribute="height" multiplier="1:1" id="tuH-ko-6bL"/>
                                     </constraints>
                                     <state key="normal" image="icon_btn_back_default"/>
+                                    <connections>
+                                        <action selector="backToPreviousView:" destination="kJf-ol-woQ" eventType="touchUpInside" id="sws-kd-9a8"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcD-M9-hux" userLabel="dismiss">
                                     <rect key="frame" x="333" y="10" width="30" height="30"/>
@@ -162,6 +165,11 @@
                                 <constraint firstAttribute="bottom" secondItem="bfL-6M-gZK" secondAttribute="bottom" constant="100" id="t7s-pD-LRo"/>
                                 <constraint firstItem="Ztu-Xg-cCf" firstAttribute="leading" secondItem="8tI-fO-TeH" secondAttribute="leading" constant="15" id="tnc-k1-KDf"/>
                             </constraints>
+                            <variation key="default">
+                                <mask key="subviews">
+                                    <exclude reference="mcD-M9-hux"/>
+                                </mask>
+                            </variation>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="HgI-ea-X9D">
@@ -271,9 +279,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Vls-9n-gII">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.96470588239999999" green="0.98039215690000003" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="0.0" green="0.40000000000000002" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>

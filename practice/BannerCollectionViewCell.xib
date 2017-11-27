@@ -18,12 +18,9 @@
                 <rect key="frame" x="0.0" y="0.0" width="220" height="100"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgI-1g-Itr">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thumbnail_tab" translatesAutoresizingMaskIntoConstraints="NO" id="kLv-G0-STv">
                         <rect key="frame" x="0.0" y="0.0" width="220" height="100"/>
-                        <state key="normal" image="thumbnail_tab">
-                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </state>
-                    </button>
+                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tab name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyN-hq-p9q">
                         <rect key="frame" x="78.5" y="41" width="64" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -33,19 +30,19 @@
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="jgI-1g-Itr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="OUc-4I-0kt"/>
-                <constraint firstAttribute="bottom" secondItem="jgI-1g-Itr" secondAttribute="bottom" id="QdL-fZ-Hij"/>
-                <constraint firstAttribute="trailing" secondItem="jgI-1g-Itr" secondAttribute="trailing" id="cJI-u5-y97"/>
+                <constraint firstAttribute="trailing" secondItem="kLv-G0-STv" secondAttribute="trailing" id="6Nh-mh-Cxw"/>
+                <constraint firstItem="kLv-G0-STv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="MA6-Mq-BJ4"/>
+                <constraint firstItem="kLv-G0-STv" firstAttribute="bottom" secondItem="gTV-IL-0wX" secondAttribute="bottom" id="Yik-Qw-CrE"/>
                 <constraint firstItem="gyN-hq-p9q" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="euX-YO-0jV"/>
-                <constraint firstItem="jgI-1g-Itr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="qRP-sy-QbJ"/>
+                <constraint firstItem="kLv-G0-STv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="p12-Io-bnZ"/>
                 <constraint firstItem="gyN-hq-p9q" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="sz1-SG-y2E"/>
             </constraints>
             <size key="customSize" width="206" height="215"/>
             <connections>
-                <outlet property="rectangleButtom" destination="jgI-1g-Itr" id="sEG-lJ-2BI"/>
+                <outlet property="rectangleImage" destination="kLv-G0-STv" id="oV7-8M-PL0"/>
                 <outlet property="rectangleLabel" destination="gyN-hq-p9q" id="fJp-J8-zIg"/>
             </connections>
-            <point key="canvasLocation" x="-78" y="-38.5"/>
+            <point key="canvasLocation" x="-80" y="-65"/>
         </collectionViewCell>
     </objects>
     <resources>

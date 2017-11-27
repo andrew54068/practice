@@ -46,12 +46,20 @@ class CongressUpdate_VC: UITableViewController {
         selectionViewSetup()
         tableViewSetup()
         pickerViewSetup()
+        navigationBarSetup()
+    }
+    
+    func navigationBarSetup(){
+//        let back = UIImage(named: "icon_btn_back_default")
+//        navigationController?.navigationBar.backIndicatorImage = back
+//        navigationItem.backBarButtonItem = UIBarButtonItem(title: "123", style: .plain, target: nil, action: nil)
+//        navigationItem.leftBarButtonItem = nil
     }
     
     func tableViewSetup(){
-        tableView.contentInset = UIEdgeInsetsMake(45, 0, 0, 0)
+        tableView.contentInset = UIEdgeInsetsMake(109, 0, 0, 0)
         tableView.separatorInset = UIEdgeInsets.zero
-        tableView.scrollIndicatorInsets = UIEdgeInsets(top: 45, left: 0, bottom: 0, right: 0)
+        tableView.scrollIndicatorInsets = UIEdgeInsets(top: 109, left: 0, bottom: 0, right: 0)
         tableView.tableHeaderView = selectionView
         
         //?? without this header become strange after adding navigation bar
@@ -130,11 +138,6 @@ class CongressUpdate_VC: UITableViewController {
         unfocus.removeFromSuperview()
         tableView.isScrollEnabled = true
     }
-    
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//
-//    }
 
     // MARK: - Table view data source
     
@@ -223,6 +226,15 @@ class CongressUpdate_VC: UITableViewController {
         
         count += 1
         tableView.reloadData()
+        
+        if count > 2{
+            var Article = Article_TVC()
+            
+            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+            Article = storyBoard.instantiateViewController(withIdentifier: "Article_TVC") as! Article_TVC
+            navigationController?.pushViewController(Article, animated: true)
+            
+        }
     }
     
     

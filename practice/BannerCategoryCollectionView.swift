@@ -37,7 +37,7 @@ class BannerCategoryCollectionView: UICollectionView, UICollectionViewDelegate, 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! BannerCollectionViewCell
         let image = UIImage(named: "thumbnail_tab")
-        cell.rectangleButtom.setImage(image, for: .normal)
+        cell.rectangleImage.image = image
         cell.rectangleLabel.text = "AE MANAGEMANT TOOL"
         return cell
     }

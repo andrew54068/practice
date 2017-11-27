@@ -171,6 +171,7 @@ SWIFT_CLASS("_TtC8practice11Article_TVC")
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified articleTitle;
 @property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified time;
 @property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified catagory;
+- (IBAction)backToPreviousView:(id _Nonnull)sender;
 - (void)viewDidLoad;
 - (void)contentSetup;
 @property (nonatomic, readonly, strong) UIView * _Nonnull statusBarBackgroundView;
@@ -184,12 +185,14 @@ SWIFT_CLASS("_TtC8practice11Article_TVC")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class mainViewController;
 @class BannerCategoryCollectionView;
 @class UICollectionView;
 @class UICollectionViewLayout;
 
 SWIFT_CLASS("_TtC8practice18BannerCategoryCell")
 @interface BannerCategoryCell : UICollectionViewCell <UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UIScrollViewDelegate, UICollectionViewDataSource>
+@property (nonatomic, strong) mainViewController * _Nullable mainView;
 @property (nonatomic, strong) IBOutlet BannerCategoryCollectionView * _Null_unspecified content;
 - (void)awakeFromNib;
 - (void)setUpViews;
@@ -217,10 +220,11 @@ SWIFT_CLASS("_TtC8practice28BannerCategoryCollectionView")
 - (UIEdgeInsets)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout insetForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 @end
 
+@class UIImageView;
 
 SWIFT_CLASS("_TtC8practice24BannerCollectionViewCell")
 @interface BannerCollectionViewCell : UICollectionViewCell
-@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified rectangleButtom;
+@property (nonatomic, strong) IBOutlet UIImageView * _Null_unspecified rectangleImage;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified rectangleLabel;
 - (void)awakeFromNib;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
@@ -276,6 +280,7 @@ SWIFT_CLASS("_TtC8practice17CongressUpdate_VC")
 @property (nonatomic, strong) selectionView * _Null_unspecified selectionView;
 @property (nonatomic, strong) pickerView * _Null_unspecified pickerView;
 - (void)viewDidLoad;
+- (void)navigationBarSetup;
 - (void)tableViewSetup;
 - (void)selectionViewSetup;
 - (void)pickerViewSetup;
@@ -406,6 +411,7 @@ SWIFT_CLASS("_TtC8practice16Reference_TVCell")
 
 SWIFT_CLASS("_TtC8practice18SquareCategoryCell")
 @interface SquareCategoryCell : UICollectionViewCell <UICollectionViewDelegate, UIScrollViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
+@property (nonatomic, strong) mainViewController * _Nullable mainView;
 @property (nonatomic, copy) NSString * _Nonnull titleContent;
 @property (nonatomic, copy) NSString * _Nonnull subtitleContent;
 @property (nonatomic, strong) NSMutableAttributedString * _Null_unspecified attributedString;
@@ -424,7 +430,6 @@ SWIFT_CLASS("_TtC8practice18SquareCategoryCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIImageView;
 
 SWIFT_CLASS("_TtC8practice24SquareCollectionViewCell")
 @interface SquareCollectionViewCell : UICollectionViewCell
@@ -448,7 +453,9 @@ SWIFT_CLASS("_TtC8practice13TableViewCell")
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified author;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified date;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified title;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified bookmark;
 @property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Null_unspecified topConstraint;
+- (IBAction)bookmarkClicked:(id _Nonnull)sender;
 @property (nonatomic, strong) UIImage * _Nullable unreadIndication;
 @property (nonatomic, strong) NSMutableAttributedString * _Null_unspecified attributedString;
 @property (nonatomic) BOOL hadRead;
@@ -532,6 +539,7 @@ SWIFT_CLASS("_TtC8practice18mainViewController")
 - (void)handleSearch;
 - (void)handleBookmark;
 - (void)seeAll;
+- (void)showArticle;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;

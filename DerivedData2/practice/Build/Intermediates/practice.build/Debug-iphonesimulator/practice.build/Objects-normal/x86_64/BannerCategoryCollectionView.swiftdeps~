@@ -68,7 +68,6 @@ depends-member:
 - ["Ps9AnyObject", "scrollViewWillBeginZooming"]
 - ["Ps9AnyObject", "scrollViewWillEndDragging"]
 - !private ["Ps9AnyObject", "sectionInset"]
-- !private ["Ps9AnyObject", "setImage"]
 - !private ["Ps9AnyObject", "setUpView"]
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "translatesAutoresizingMaskIntoConstraints"]
@@ -119,6 +118,7 @@ depends-member:
 - !private ["C8practice28BannerCategoryCollectionView", "translatesAutoresizingMaskIntoConstraints"]
 - ["C8practice28BannerCategoryCollectionView", "viewForZooming"]
 - ["C8practice28BannerCategoryCollectionView", "viewForZoomingInScrollView"]
+- !private ["C8practice24BannerCollectionViewCell", "deinit"]
 - !private ["C8practice24BannerCollectionViewCell", "rectangleButtom"]
 - !private ["C8practice24BannerCollectionViewCell", "rectangleLabel"]
 - !private ["PSo15CALayerDelegate", "CGSize"]
@@ -154,7 +154,6 @@ depends-member:
 - ["PSo15CALayerDelegate", "scrollViewWillBeginDragging"]
 - ["PSo15CALayerDelegate", "scrollViewWillBeginZooming"]
 - ["PSo15CALayerDelegate", "scrollViewWillEndDragging"]
-- !private ["PSo15CALayerDelegate", "setImage"]
 - !private ["PSo15CALayerDelegate", "setUpView"]
 - !private ["PSo15CALayerDelegate", "text"]
 - !private ["PSo15CALayerDelegate", "translatesAutoresizingMaskIntoConstraints"]
@@ -197,7 +196,6 @@ depends-member:
 - ["Ps7CVarArg", "scrollViewWillBeginZooming"]
 - ["Ps7CVarArg", "scrollViewWillEndDragging"]
 - !private ["Ps7CVarArg", "sectionInset"]
-- !private ["Ps7CVarArg", "setImage"]
 - !private ["Ps7CVarArg", "setUpView"]
 - !private ["Ps7CVarArg", "text"]
 - !private ["Ps7CVarArg", "translatesAutoresizingMaskIntoConstraints"]
@@ -240,7 +238,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "scrollViewWillBeginZooming"]
 - ["Ps28CustomDebugStringConvertible", "scrollViewWillEndDragging"]
 - !private ["Ps28CustomDebugStringConvertible", "sectionInset"]
-- !private ["Ps28CustomDebugStringConvertible", "setImage"]
 - !private ["Ps28CustomDebugStringConvertible", "setUpView"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "translatesAutoresizingMaskIntoConstraints"]
@@ -284,7 +281,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "scrollViewWillBeginZooming"]
 - ["Ps23CustomStringConvertible", "scrollViewWillEndDragging"]
 - !private ["Ps23CustomStringConvertible", "sectionInset"]
-- !private ["Ps23CustomStringConvertible", "setImage"]
 - !private ["Ps23CustomStringConvertible", "setUpView"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "translatesAutoresizingMaskIntoConstraints"]
@@ -308,7 +304,6 @@ depends-member:
 - ["Ps9Equatable", "indexTitlesForCollectionView"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "layout"]
-- !private ["Ps9Equatable", "normal"]
 - ["Ps9Equatable", "numberOfSections"]
 - ["Ps9Equatable", "numberOfSectionsInCollectionView"]
 - !private ["Ps9Equatable", "rectangleButtom"]
@@ -328,14 +323,12 @@ depends-member:
 - ["Ps9Equatable", "scrollViewWillBeginZooming"]
 - ["Ps9Equatable", "scrollViewWillEndDragging"]
 - !private ["Ps9Equatable", "sectionInset"]
-- !private ["Ps9Equatable", "setImage"]
 - !private ["Ps9Equatable", "setUpView"]
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "translatesAutoresizingMaskIntoConstraints"]
 - ["Ps9Equatable", "viewForZooming"]
 - ["Ps9Equatable", "viewForZoomingInScrollView"]
 - ["Ps9Equatable", ""]
-- !private ["Ps25ExpressibleByArrayLiteral", "normal"]
 - ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - ["Ps26ExpressibleByStringLiteral", "init"]
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
@@ -375,7 +368,6 @@ depends-member:
 - ["Ps8Hashable", "scrollViewWillBeginZooming"]
 - ["Ps8Hashable", "scrollViewWillEndDragging"]
 - !private ["Ps8Hashable", "sectionInset"]
-- !private ["Ps8Hashable", "setImage"]
 - !private ["Ps8Hashable", "setUpView"]
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "translatesAutoresizingMaskIntoConstraints"]
@@ -419,7 +411,6 @@ depends-member:
 - ["PSo8NSCoding", "scrollViewWillBeginZooming"]
 - ["PSo8NSCoding", "scrollViewWillEndDragging"]
 - !private ["PSo8NSCoding", "sectionInset"]
-- !private ["PSo8NSCoding", "setImage"]
 - !private ["PSo8NSCoding", "setUpView"]
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "translatesAutoresizingMaskIntoConstraints"]
@@ -472,7 +463,6 @@ depends-member:
 - ["CSo8NSObject", "scrollViewWillBeginZooming"]
 - ["CSo8NSObject", "scrollViewWillEndDragging"]
 - !private ["CSo8NSObject", "sectionInset"]
-- !private ["CSo8NSObject", "setImage"]
 - ["CSo8NSObject", "setUpView"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "translatesAutoresizingMaskIntoConstraints"]
@@ -513,7 +503,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "scrollViewWillBeginZooming"]
 - ["PSo16NSObjectProtocol", "scrollViewWillEndDragging"]
 - !private ["PSo16NSObjectProtocol", "sectionInset"]
-- !private ["PSo16NSObjectProtocol", "setImage"]
 - !private ["PSo16NSObjectProtocol", "setUpView"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "translatesAutoresizingMaskIntoConstraints"]
@@ -522,10 +511,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", ""]
 - ["PSo14NSSecureCoding", "init"]
 - ["CSo8NSString", "init"]
-- !private ["Ps9OptionSet", "normal"]
 - !private ["Ps16RawRepresentable", "horizontal"]
-- !private ["Ps16RawRepresentable", "normal"]
-- !private ["Ps10SetAlgebra", "normal"]
 - ["SS", "init"]
 - ["Ps16TextOutputStream", "init"]
 - ["Ps20TextOutputStreamable", "init"]
@@ -562,7 +548,6 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "scrollViewWillBeginDragging"]
 - ["PSo29UIAccessibilityIdentification", "scrollViewWillBeginZooming"]
 - ["PSo29UIAccessibilityIdentification", "scrollViewWillEndDragging"]
-- !private ["PSo29UIAccessibilityIdentification", "setImage"]
 - !private ["PSo29UIAccessibilityIdentification", "setUpView"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "translatesAutoresizingMaskIntoConstraints"]
@@ -602,7 +587,6 @@ depends-member:
 - ["PSo12UIAppearance", "scrollViewWillBeginDragging"]
 - ["PSo12UIAppearance", "scrollViewWillBeginZooming"]
 - ["PSo12UIAppearance", "scrollViewWillEndDragging"]
-- !private ["PSo12UIAppearance", "setImage"]
 - !private ["PSo12UIAppearance", "setUpView"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "translatesAutoresizingMaskIntoConstraints"]
@@ -642,14 +626,12 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "scrollViewWillBeginDragging"]
 - ["PSo21UIAppearanceContainer", "scrollViewWillBeginZooming"]
 - ["PSo21UIAppearanceContainer", "scrollViewWillEndDragging"]
-- !private ["PSo21UIAppearanceContainer", "setImage"]
 - !private ["PSo21UIAppearanceContainer", "setUpView"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo21UIAppearanceContainer", "viewForZooming"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
 - ["PSo21UIAppearanceContainer", ""]
-- !private ["CSo8UIButton", "setImage"]
 - !private ["CSo24UICollectionReusableView", "rectangleButtom"]
 - !private ["CSo24UICollectionReusableView", "rectangleLabel"]
 - !private ["CSo16UICollectionView", "BannerCollectionViewCell"]
@@ -809,8 +791,6 @@ depends-member:
 - !private ["CSo22UICollectionViewLayout", "sectionInset"]
 - !private ["OSC31UICollectionViewScrollDirection", "horizontal"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
-- !private ["CSo9UIControl", "setImage"]
-- !private ["VSC14UIControlState", "normal"]
 - !private ["PSo17UICoordinateSpace", "CGSize"]
 - ["PSo17UICoordinateSpace", "UICollectionViewFlowLayout"]
 - !private ["PSo17UICoordinateSpace", "UIEdgeInsets"]
@@ -844,7 +824,6 @@ depends-member:
 - ["PSo17UICoordinateSpace", "scrollViewWillBeginDragging"]
 - ["PSo17UICoordinateSpace", "scrollViewWillBeginZooming"]
 - ["PSo17UICoordinateSpace", "scrollViewWillEndDragging"]
-- !private ["PSo17UICoordinateSpace", "setImage"]
 - !private ["PSo17UICoordinateSpace", "setUpView"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "translatesAutoresizingMaskIntoConstraints"]
@@ -884,7 +863,6 @@ depends-member:
 - ["PSo13UIDynamicItem", "scrollViewWillBeginDragging"]
 - ["PSo13UIDynamicItem", "scrollViewWillBeginZooming"]
 - ["PSo13UIDynamicItem", "scrollViewWillEndDragging"]
-- !private ["PSo13UIDynamicItem", "setImage"]
 - !private ["PSo13UIDynamicItem", "setUpView"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "translatesAutoresizingMaskIntoConstraints"]
@@ -925,7 +903,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "scrollViewWillBeginDragging"]
 - ["PSo18UIFocusEnvironment", "scrollViewWillBeginZooming"]
 - ["PSo18UIFocusEnvironment", "scrollViewWillEndDragging"]
-- !private ["PSo18UIFocusEnvironment", "setImage"]
 - !private ["PSo18UIFocusEnvironment", "setUpView"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["PSo18UIFocusEnvironment", "translatesAutoresizingMaskIntoConstraints"]
@@ -965,7 +942,6 @@ depends-member:
 - ["PSo11UIFocusItem", "scrollViewWillBeginDragging"]
 - ["PSo11UIFocusItem", "scrollViewWillBeginZooming"]
 - ["PSo11UIFocusItem", "scrollViewWillEndDragging"]
-- !private ["PSo11UIFocusItem", "setImage"]
 - !private ["PSo11UIFocusItem", "setUpView"]
 - !private ["PSo11UIFocusItem", "text"]
 - !private ["PSo11UIFocusItem", "translatesAutoresizingMaskIntoConstraints"]
@@ -1017,7 +993,6 @@ depends-member:
 - ["CSo11UIResponder", "scrollViewWillBeginDragging"]
 - ["CSo11UIResponder", "scrollViewWillBeginZooming"]
 - ["CSo11UIResponder", "scrollViewWillEndDragging"]
-- !private ["CSo11UIResponder", "setImage"]
 - ["CSo11UIResponder", "setUpView"]
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "translatesAutoresizingMaskIntoConstraints"]
@@ -1056,7 +1031,6 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "scrollViewWillBeginDragging"]
 - ["PSo30UIResponderStandardEditActions", "scrollViewWillBeginZooming"]
 - ["PSo30UIResponderStandardEditActions", "scrollViewWillEndDragging"]
-- !private ["PSo30UIResponderStandardEditActions", "setImage"]
 - !private ["PSo30UIResponderStandardEditActions", "setUpView"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
 - !private ["PSo30UIResponderStandardEditActions", "translatesAutoresizingMaskIntoConstraints"]
@@ -1174,7 +1148,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "scrollViewWillBeginDragging"]
 - ["PSo18UITraitEnvironment", "scrollViewWillBeginZooming"]
 - ["PSo18UITraitEnvironment", "scrollViewWillEndDragging"]
-- !private ["PSo18UITraitEnvironment", "setImage"]
 - !private ["PSo18UITraitEnvironment", "setUpView"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "translatesAutoresizingMaskIntoConstraints"]
@@ -1223,7 +1196,6 @@ depends-member:
 - ["CSo6UIView", "scrollViewWillBeginDragging"]
 - ["CSo6UIView", "scrollViewWillBeginZooming"]
 - ["CSo6UIView", "scrollViewWillEndDragging"]
-- !private ["CSo6UIView", "setImage"]
 - ["CSo6UIView", "setUpView"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "translatesAutoresizingMaskIntoConstraints"]
@@ -1262,7 +1234,6 @@ depends-member:
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "scrollViewWillBeginDragging"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "scrollViewWillBeginZooming"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "scrollViewWillEndDragging"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setImage"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setUpView"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "translatesAutoresizingMaskIntoConstraints"]
@@ -1312,7 +1283,6 @@ depends-member:
 - ["Ps9_Hashable", "scrollViewWillBeginZooming"]
 - ["Ps9_Hashable", "scrollViewWillEndDragging"]
 - !private ["Ps9_Hashable", "sectionInset"]
-- !private ["Ps9_Hashable", "setImage"]
 - !private ["Ps9_Hashable", "setUpView"]
 - !private ["Ps9_Hashable", "text"]
 - !private ["Ps9_Hashable", "translatesAutoresizingMaskIntoConstraints"]
@@ -1333,7 +1303,6 @@ depends-nominal:
 - "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
-- !private "Ps25ExpressibleByArrayLiteral"
 - "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"
@@ -1347,16 +1316,13 @@ depends-nominal:
 - "PSo16NSObjectProtocol"
 - "PSo14NSSecureCoding"
 - "CSo8NSString"
-- !private "Ps9OptionSet"
 - !private "Ps16RawRepresentable"
-- !private "Ps10SetAlgebra"
 - "SS"
 - "Ps16TextOutputStream"
 - "Ps20TextOutputStreamable"
 - "PSo29UIAccessibilityIdentification"
 - "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
-- !private "CSo8UIButton"
 - !private "CSo24UICollectionReusableView"
 - "CSo16UICollectionView"
 - !private "CSo20UICollectionViewCell"
@@ -1367,8 +1333,6 @@ depends-nominal:
 - "CSo22UICollectionViewLayout"
 - !private "OSC31UICollectionViewScrollDirection"
 - !private "PSo30UIContentSizeCategoryAdjusting"
-- !private "CSo9UIControl"
-- !private "VSC14UIControlState"
 - "PSo17UICoordinateSpace"
 - "PSo13UIDynamicItem"
 - !private "VSC12UIEdgeInsets"

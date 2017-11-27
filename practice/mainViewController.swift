@@ -33,25 +33,23 @@ class mainViewController: UICollectionViewController, UICollectionViewDelegateFl
         let BannerNib = UINib(nibName: "BannerCategoryCell", bundle: nil)
         collectionView!.register(BannerNib, forCellWithReuseIdentifier: BannerCellId)
         
+//        let image = UIImage(named: "icon_btn_arrow_blue")
+//        
+//        navigationController?.navigationBar.backIndicatorImage = image
+//        navigationController?.navigationBar.backIndicatorTransitionMaskImage = image
+        
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        
         //wait for angie
         /*let logo = UIImage(named: "Roche_logo")
         let imageView = UIImageView(image:logo)
         self.navigationItem.titleView = imageView*/
-        
-//        self.navigationItem.title = "Roche"
-//        self.navigationBar.barStyle = UIBarStyle.default
-//        self.navigationBar.tintColor = UIColor.red
         
         setUpNavigationBar()
         
     }
     
     func setUpNavigationBar(){
-        //left NavItem
-//        let menuImage = UIImage(named: "icon_btn_menu_default")
-//        let menu = UIBarButtonItem(image: menuImage, style: .plain, target: self, action: #selector(handleMenu))
-//        navigationItem.leftBarButtonItem = menu
-        
         
         //right NavItem
 //        let flexible = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
@@ -113,6 +111,14 @@ class mainViewController: UICollectionViewController, UICollectionViewDelegateFl
         self.navigationController?.pushViewController(tc, animated: true)
 //        self.performSegue(withIdentifier: "seeAll", sender: self)
     }
+    
+    func showArticle(){
+        var Article = Article_TVC()
+        
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        Article = storyBoard.instantiateViewController(withIdentifier: "Article_TVC") as! Article_TVC
+        navigationController?.pushViewController(Article, animated: true)
+    }
 
     //MARK: CollectionView dataSource
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -125,10 +131,12 @@ class mainViewController: UICollectionViewController, UICollectionViewDelegateFl
             let SquareCell = collectionView.dequeueReusableCell(withReuseIdentifier: SquareCellId, for: indexPath) as! SquareCategoryCell
                 //?? as as!
             SquareCell.seeAll.addTarget(self, action: #selector(seeAll), for: .touchUpInside)
-                
+            
+            SquareCell.mainView = self
             return SquareCell
         }else{
             let BannerCell = collectionView.dequeueReusableCell(withReuseIdentifier: BannerCellId, for: indexPath) as! BannerCategoryCell
+            BannerCell.mainView = self
             return BannerCell
         }
     }
