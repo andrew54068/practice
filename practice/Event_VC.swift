@@ -87,12 +87,15 @@ class Event_VC: UITableViewController {
     
     func comfirmSelection(sender: UIBarButtonItem){
         dismissUnfocus(sender: sender)
-        selectionView.left.titleLabel?.text = selectedtext[0]
+        selectionView.left.setTitle(pickerView.result[0], for: .normal)
+        selectedtext = pickerView.result
+//        print("text = \(selectionView.left.titleLabel?.text)||")
     }
     
     func dismissUnfocus(sender: Any) {
         pickerView.removeFromSuperview()
         unfocus.removeFromSuperview()
+        tableView.isScrollEnabled = true
     }
 
     // MARK: - Table view data source

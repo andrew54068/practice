@@ -56,7 +56,6 @@ depends-top-level:
 - !private "UIImage"
 - !private "UINib"
 - !private "UIStoryboard"
-- !private "UnicodeScalarType"
 - "mainViewController"
 - !private "print"
 depends-member:

@@ -14,7 +14,7 @@ class TrailFactSheet_VC: UITableViewController {
     
     var selectedFilter: Int?
     var selectedtext: String?
-    var leftSelectedtext: [String] = ["All", "All"]
+    var leftSelectedtext: [String] = ["All"]
     var rightSelectedtext: [String] = ["All"]
     
     var selectionView: selectionView!
@@ -74,12 +74,12 @@ class TrailFactSheet_VC: UITableViewController {
             pickerView.selected = sender.tag
             showPickerView(PickerView: pickerView, selectionView: selectionView, type: sender.tag, lastSelected: leftSelectedtext)
             print("leftSelectedtext = \(leftSelectedtext)")
-            selectedFilter = 1
+            selectedFilter = kindOfPickerView.disease.rawValue
         }else if sender.tag == kindOfPickerView.stage.rawValue{
             pickerView.selected = sender.tag
             showPickerView(PickerView: pickerView, selectionView: selectionView, type: sender.tag, lastSelected: rightSelectedtext)
             print("rightSelectedtext = \(rightSelectedtext)")
-            selectedFilter = 2
+            selectedFilter = kindOfPickerView.stage.rawValue
         }
         
         let window = UIApplication.shared.keyWindow!
@@ -98,17 +98,17 @@ class TrailFactSheet_VC: UITableViewController {
     
     func comfirmSelection(sender: UIBarButtonItem){
         dismissUnfocus(sender: sender)
-        if selectedFilter == kindOfPickerView.congress.rawValue{
+        if selectedFilter == kindOfPickerView.disease.rawValue{
             print("leftSelectedtext = \(leftSelectedtext)")
-            selectionView.left.setTitle(pickerView.result[0] + " " + pickerView.result[1], for: .normal)
+            selectionView.left.setTitle(pickerView.result[0], for: .normal)
             leftSelectedtext = pickerView.result
             selectionView.left.titleLabel?.sizeToFit()
         }
         else{
             print("rightSelectedtext = \(rightSelectedtext)")
             selectionView.right.setTitle(pickerView.result[0], for: .normal)
-            selectionView.right.titleLabel?.sizeToFit()
             rightSelectedtext = pickerView.result
+            selectionView.right.titleLabel?.sizeToFit()
         }
     }
     

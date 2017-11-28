@@ -23,7 +23,6 @@ provides-dynamic-lookup:
 - "unfocus"
 - "viewDidLoad"
 depends-top-level:
-- !private "+"
 - !private "-"
 - !private "=="
 - !private "Array"
@@ -49,7 +48,6 @@ depends-top-level:
 - "UITableView"
 - "UITableViewCell"
 - "UITableViewController"
-- !private "UnicodeScalarType"
 - !private "kindOfPickerView"
 - "pickerView"
 - !private "print"
@@ -404,7 +402,6 @@ depends-member:
 - !private ["Ps9Equatable", "bounds"]
 - !private ["Ps9Equatable", "cellId"]
 - !private ["Ps9Equatable", "comfirmSelection"]
-- !private ["Ps9Equatable", "congress"]
 - !private ["Ps9Equatable", "contentInset"]
 - !private ["Ps9Equatable", "dequeueReusableCell"]
 - !private ["Ps9Equatable", "didReceiveMemoryWarning"]
@@ -494,7 +491,6 @@ depends-member:
 - !private ["Ps8Hashable", "bounds"]
 - !private ["Ps8Hashable", "cellId"]
 - !private ["Ps8Hashable", "comfirmSelection"]
-- !private ["Ps8Hashable", "congress"]
 - !private ["Ps8Hashable", "contentInset"]
 - !private ["Ps8Hashable", "dequeueReusableCell"]
 - !private ["Ps8Hashable", "didReceiveMemoryWarning"]
@@ -810,7 +806,6 @@ depends-member:
 - !private ["Ps22RandomAccessCollection", "subscript"]
 - !private ["Ps26RangeReplaceableCollection", "first"]
 - !private ["Ps26RangeReplaceableCollection", "subscript"]
-- !private ["Ps16RawRepresentable", "congress"]
 - !private ["Ps16RawRepresentable", "disease"]
 - !private ["Ps16RawRepresentable", "done"]
 - !private ["Ps16RawRepresentable", "fixedSpace"]
@@ -1719,7 +1714,6 @@ depends-member:
 - !private ["Ps9_Hashable", "bounds"]
 - !private ["Ps9_Hashable", "cellId"]
 - !private ["Ps9_Hashable", "comfirmSelection"]
-- !private ["Ps9_Hashable", "congress"]
 - !private ["Ps9_Hashable", "contentInset"]
 - !private ["Ps9_Hashable", "dequeueReusableCell"]
 - !private ["Ps9_Hashable", "didReceiveMemoryWarning"]
@@ -1800,7 +1794,6 @@ depends-member:
 - !private ["Ps22_RandomAccessIndexable", "subscript"]
 - !private ["Ps26_RangeReplaceableIndexable", "first"]
 - !private ["Ps26_RangeReplaceableIndexable", "subscript"]
-- !private ["O8practice16kindOfPickerView", "congress"]
 - !private ["O8practice16kindOfPickerView", "deinit"]
 - !private ["O8practice16kindOfPickerView", "disease"]
 - !private ["O8practice16kindOfPickerView", "rawValue"]
@@ -1941,4 +1934,4 @@ depends-external:
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "2b95460ad09942d691f24d7cb2ecfd77"
+interface-hash: "52a907feec75fb552bea76d2eab0b033"
