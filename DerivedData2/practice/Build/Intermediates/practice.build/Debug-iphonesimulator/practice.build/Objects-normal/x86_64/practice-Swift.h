@@ -409,6 +409,42 @@ SWIFT_CLASS("_TtC8practice16Reference_TVCell")
 @end
 
 
+SWIFT_CLASS("_TtC8practice18SearchTabBarCVCell")
+@interface SearchTabBarCVCell : UICollectionViewCell
+- (void)awakeFromNib;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC8practice16SearchTab_CVCell")
+@interface SearchTab_CVCell : UICollectionViewCell
+@property (nonatomic, strong) IBOutlet UIView * _Null_unspecified highlightView;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified tabName;
+- (void)awakeFromNib;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UISearchController;
+
+SWIFT_CLASS("_TtC8practice9Search_VC")
+@interface Search_VC : UIViewController
+@property (nonatomic, strong) IBOutlet UIView * _Null_unspecified searchView;
+@property (nonatomic, strong) IBOutlet UIView * _Null_unspecified tabBarView;
+@property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified tableView;
+@property (nonatomic, copy) NSArray<NSDictionary<NSString *, id> *> * _Null_unspecified articles;
+@property (nonatomic, copy) NSArray<NSDictionary<NSString *, id> *> * _Null_unspecified foundArticles;
+@property (nonatomic, copy) NSDictionary<NSString *, id> * _Null_unspecified selectedArticle;
+@property (nonatomic, strong) UITableViewController * _Null_unspecified resultController;
+@property (nonatomic, strong) UISearchController * _Null_unspecified searchController;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC8practice18SquareCategoryCell")
 @interface SquareCategoryCell : UICollectionViewCell <UICollectionViewDelegate, UIScrollViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
 @property (nonatomic, strong) mainViewController * _Nullable mainView;
@@ -537,6 +573,7 @@ SWIFT_CLASS("_TtC8practice18mainViewController")
 - (void)setUpNavigationBar;
 - (void)handleMenu;
 - (void)handleSearch;
+@property (nonatomic, readonly, strong) UIView * _Nonnull searchView;
 - (void)handleBookmark;
 - (void)seeAll;
 - (void)showArticle;

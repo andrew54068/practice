@@ -54,15 +54,26 @@ class mainViewController: UICollectionViewController, UICollectionViewDelegateFl
         //right NavItem
 //        let flexible = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
         //        fix.width = -3
-        let searchImage = UIImage(named: "icon_btn_search_default")?.withRenderingMode(.alwaysOriginal)
-        let search = UIBarButtonItem(image:  searchImage, style: .plain, target: self, action: #selector(handleSearch))
-        let bookmarkImage = UIImage(named: "icon_btn_bookmark_default")?.withRenderingMode(.alwaysOriginal)
-        let bookmark = UIBarButtonItem(image: bookmarkImage, style: .plain, target: self, action: #selector(handleBookmark))
-        let menuImage = UIImage(named: "icon_btn_menu_default")?.withRenderingMode(.alwaysOriginal)
-        let menu = UIBarButtonItem(image: menuImage, style: .plain, target: self, action: #selector(handleMenu))
-//        let fix = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.fixedSpace, target: nil, action: nil)
-//        fix.width = -3
-        navigationItem.rightBarButtonItems = [menu, bookmark, search]
+        let sr = UIButton.init(type: .custom)
+        sr.frame = CGRect(x: 0, y: 0, width: 26, height: 26)
+        sr.addTarget(self, action: #selector(handleSearch), for: .touchUpInside)
+        sr.setImage(UIImage(named: "icon_btn_search_default"), for: .normal)
+        let search = UIBarButtonItem(customView: sr)
+        
+        let bm = UIButton.init(type: .custom)
+        bm.frame = CGRect(x: 0, y: 0, width: 20, height: 26)
+        bm.addTarget(self, action: #selector(handleBookmark), for: .touchUpInside)
+        bm.setImage(UIImage(named: "icon_btn_bookmark_default"), for: .normal)
+        let bookmark = UIBarButtonItem(customView: bm)
+        
+        let mn = UIButton()
+        mn.frame = CGRect(x: 0, y: 0, width: 26, height: 26)
+        mn.addTarget(self, action: #selector(handleMenu), for: .touchUpInside)
+        mn.setImage(UIImage(named: "icon_btn_menu_default"), for: .normal)
+        let menu = UIBarButtonItem(customView: mn)
+        let fix = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.fixedSpace, target: nil, action: nil)
+        fix.width = -3
+        navigationItem.rightBarButtonItems = [fix, menu, bookmark, search]
     }
     //MARK: left navigation item action
     func handleMenu(){
@@ -71,8 +82,21 @@ class mainViewController: UICollectionViewController, UICollectionViewDelegateFl
     
     //MARK: right navigation item action
     func handleSearch(){
+//        navigationBar.addSubview(searchView)
+        let search_VC = storyboard?.instantiateViewController(withIdentifier: "search_VC") as! Search_VC
+        
+        //?? below not as expected!
+        search_VC.navigationController?.isNavigationBarHidden = true
+        navigationController?.pushViewController(search_VC, animated: false)
         print("search being called")
     }
+    
+    let searchView: UIView = {
+        let view = UIView()
+        view.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 44)
+        view.backgroundColor = UIColor.red
+        return view
+    }()
     
     func handleBookmark(){
         print("show bookmark")
@@ -116,7 +140,7 @@ class mainViewController: UICollectionViewController, UICollectionViewDelegateFl
         var Article = Article_TVC()
         
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        Article = storyBoard.instantiateViewController(withIdentifier: "Article_TVC") as! Article_TVC
+        Article = storyBoard.instantiateViewController(withIdentifier: "article_TVC") as! Article_TVC
         navigationController?.pushViewController(Article, animated: true)
     }
 
