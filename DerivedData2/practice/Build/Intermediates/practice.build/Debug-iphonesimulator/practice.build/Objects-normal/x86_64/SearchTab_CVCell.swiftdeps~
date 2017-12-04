@@ -7,9 +7,13 @@ provides-member:
 - ["C8practice16SearchTab_CVCell", ""]
 provides-dynamic-lookup:
 - "awakeFromNib"
+- "highlightView"
+- "tabName"
 depends-top-level:
 - "SearchTab_CVCell"
 - "UICollectionViewCell"
+- "UILabel"
+- "UIView"
 depends-member:
 - !private ["Ps9AnyObject", "awakeFromNib"]
 - !private ["Ps9AnyObject", "init"]
@@ -35,14 +39,22 @@ depends-member:
 - !private ["PSo8NSCoding", "awakeFromNib"]
 - !private ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", ""]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "UIView"]
 - ["CSo8NSObject", "awakeFromNib"]
+- ["CSo8NSObject", "highlightView"]
 - ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "tabName"]
 - !private ["PSo16NSObjectProtocol", "awakeFromNib"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", ""]
+- ["C8practice16SearchTab_CVCell", "UILabel"]
+- ["C8practice16SearchTab_CVCell", "UIView"]
 - ["C8practice16SearchTab_CVCell", "awakeFromNib"]
 - ["C8practice16SearchTab_CVCell", "deinit"]
+- ["C8practice16SearchTab_CVCell", "highlightView"]
 - ["C8practice16SearchTab_CVCell", "init"]
+- ["C8practice16SearchTab_CVCell", "tabName"]
 - !private ["PSo29UIAccessibilityIdentification", "awakeFromNib"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - ["PSo29UIAccessibilityIdentification", ""]
@@ -52,10 +64,18 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "awakeFromNib"]
 - !private ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", ""]
+- ["CSo24UICollectionReusableView", "UILabel"]
+- ["CSo24UICollectionReusableView", "UIView"]
 - ["CSo24UICollectionReusableView", "awakeFromNib"]
+- ["CSo24UICollectionReusableView", "highlightView"]
 - ["CSo24UICollectionReusableView", "init"]
+- ["CSo24UICollectionReusableView", "tabName"]
+- ["CSo20UICollectionViewCell", "UILabel"]
+- ["CSo20UICollectionViewCell", "UIView"]
 - ["CSo20UICollectionViewCell", "awakeFromNib"]
+- ["CSo20UICollectionViewCell", "highlightView"]
 - ["CSo20UICollectionViewCell", "init"]
+- ["CSo20UICollectionViewCell", "tabName"]
 - ["CSo20UICollectionViewCell", ""]
 - !private ["PSo17UICoordinateSpace", "awakeFromNib"]
 - !private ["PSo17UICoordinateSpace", "init"]
@@ -69,16 +89,24 @@ depends-member:
 - !private ["PSo11UIFocusItem", "awakeFromNib"]
 - !private ["PSo11UIFocusItem", "init"]
 - ["PSo11UIFocusItem", ""]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "UIView"]
 - ["CSo11UIResponder", "awakeFromNib"]
+- ["CSo11UIResponder", "highlightView"]
 - ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "tabName"]
 - !private ["PSo30UIResponderStandardEditActions", "awakeFromNib"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["PSo18UITraitEnvironment", "awakeFromNib"]
 - !private ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "UILabel"]
+- ["CSo6UIView", "UIView"]
 - ["CSo6UIView", "awakeFromNib"]
+- ["CSo6UIView", "highlightView"]
 - ["CSo6UIView", "init"]
+- ["CSo6UIView", "tabName"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "awakeFromNib"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
@@ -131,4 +159,4 @@ depends-external:
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "538855a711280bfca1b631f2e200f349"
+interface-hash: "e6678245c940665f23c7aaad5d52ade4"

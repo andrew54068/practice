@@ -12,13 +12,12 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+
+
+//    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+//        <#code#>
+//    }
     
-//    let statusBarBackgroundView: UIView = {
-//        let view = UIView()
-//        return view
-//    }()
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         

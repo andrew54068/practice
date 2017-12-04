@@ -14,7 +14,7 @@
         <!--Roche-->
         <scene sceneID="ybN-Vs-ddF">
             <objects>
-                <collectionViewController storyboardIdentifier="mainVC" title="Roche" id="Ljz-Nd-L2z" customClass="mainViewController" customModule="practice" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="mainVC" title="Roche" id="Ljz-Nd-L2z" customClass="Main_VC" customModule="practice" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="lP2-YI-J79">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,19 +57,23 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuu-cL-wvv" userLabel="searchBtn">
                                         <rect key="frame" x="8" y="8" width="315" height="28"/>
+                                        <color key="backgroundColor" red="0.61064738039999999" green="0.91595751049999996" blue="0.97109705209999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <inset key="imageEdgeInsets" minX="-400" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="搜尋" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sfz-CC-QCO">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="搜尋" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sfz-CC-QCO">
                                         <rect key="frame" x="34" y="8" width="289" height="28"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyr-3Y-HNA" userLabel="cancel">
                                         <rect key="frame" x="332" y="11" width="34" height="22"/>
                                         <state key="normal" title="取消"/>
+                                        <connections>
+                                            <action selector="cancel:" destination="XAO-Fw-pqK" eventType="touchUpInside" id="syL-TZ-O67"/>
+                                        </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q7j-r3-9YJ" userLabel="searchImage">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_btn_search_default" translatesAutoresizingMaskIntoConstraints="NO" id="Q7j-r3-9YJ" userLabel="searchImage">
                                         <rect key="frame" x="16" y="15.5" width="13" height="13"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Q7j-r3-9YJ" secondAttribute="height" multiplier="1:1" id="Ysn-gc-Gqo"/>
@@ -96,13 +100,20 @@
                                     <constraint firstAttribute="trailing" secondItem="zyr-3Y-HNA" secondAttribute="trailing" constant="9" id="zzr-3I-ijX"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g1E-H7-qGA" userLabel="tabBarVIew" customClass="SearchTabBar_CVCell" customModule="practice" customModuleProvider="target">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="x3K-LB-Vo2" userLabel="tabBarCollectionView">
                                 <rect key="frame" x="0.0" y="64" width="375" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="N4A-ti-zjH"/>
+                                    <constraint firstAttribute="height" constant="45" id="HUV-ol-GsK"/>
                                 </constraints>
-                            </view>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="J17-Gf-KhX">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5CH-Bj-wIH">
                                 <rect key="frame" x="0.0" y="109" width="375" height="558"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -110,28 +121,31 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="g1E-H7-qGA" firstAttribute="top" secondItem="zb7-Hi-hUE" secondAttribute="bottom" id="0dN-Ub-y4z"/>
-                            <constraint firstItem="zb7-Hi-hUE" firstAttribute="top" secondItem="Yea-zv-Jbf" secondAttribute="topMargin" constant="20" id="1MD-nh-Z2P"/>
+                            <constraint firstItem="5CH-Bj-wIH" firstAttribute="top" secondItem="x3K-LB-Vo2" secondAttribute="bottom" id="0cd-te-knF"/>
+                            <constraint firstItem="zb7-Hi-hUE" firstAttribute="top" secondItem="Yea-zv-Jbf" secondAttribute="top" constant="20" id="1MD-nh-Z2P"/>
                             <constraint firstItem="5CH-Bj-wIH" firstAttribute="leading" secondItem="Yea-zv-Jbf" secondAttribute="leading" id="HBf-R5-4rZ"/>
-                            <constraint firstItem="g1E-H7-qGA" firstAttribute="trailing" secondItem="zb7-Hi-hUE" secondAttribute="trailing" id="Lm8-V6-pTh"/>
-                            <constraint firstItem="5CH-Bj-wIH" firstAttribute="top" secondItem="g1E-H7-qGA" secondAttribute="bottom" id="SGv-BD-jcW"/>
-                            <constraint firstItem="zb7-Hi-hUE" firstAttribute="leading" secondItem="Yea-zv-Jbf" secondAttribute="leadingMargin" constant="-16" id="TIM-Ox-IlP"/>
-                            <constraint firstItem="g1E-H7-qGA" firstAttribute="leading" secondItem="zb7-Hi-hUE" secondAttribute="leading" id="X1R-wT-CjF"/>
-                            <constraint firstAttribute="trailing" secondItem="5CH-Bj-wIH" secondAttribute="trailing" id="hSh-Pk-enx"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="5CH-Bj-wIH" secondAttribute="bottom" id="kyX-on-SEa"/>
+                            <constraint firstItem="zb7-Hi-hUE" firstAttribute="leading" secondItem="Yea-zv-Jbf" secondAttribute="leading" id="TIM-Ox-IlP"/>
+                            <constraint firstItem="5CH-Bj-wIH" firstAttribute="trailing" secondItem="Yea-zv-Jbf" secondAttribute="trailing" id="hSh-Pk-enx"/>
+                            <constraint firstItem="5CH-Bj-wIH" firstAttribute="bottom" secondItem="Yea-zv-Jbf" secondAttribute="bottom" id="kyX-on-SEa"/>
+                            <constraint firstItem="x3K-LB-Vo2" firstAttribute="top" secondItem="zb7-Hi-hUE" secondAttribute="bottom" id="mst-CC-c8O"/>
+                            <constraint firstItem="x3K-LB-Vo2" firstAttribute="trailing" secondItem="Yea-zv-Jbf" secondAttribute="trailing" id="ul3-rv-6ju"/>
+                            <constraint firstItem="x3K-LB-Vo2" firstAttribute="leading" secondItem="Yea-zv-Jbf" secondAttribute="leading" id="vD1-sV-dSZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zb7-Hi-hUE" secondAttribute="trailing" constant="-16" id="x6x-kh-ozx"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="searchBtn" destination="xuu-cL-wvv" id="tAq-40-J2y"/>
+                        <outlet property="searchResultTableView" destination="5CH-Bj-wIH" id="npb-OT-Gnv"/>
+                        <outlet property="searchTextField" destination="sfz-CC-QCO" id="BLA-A7-JlV"/>
                         <outlet property="searchView" destination="zb7-Hi-hUE" id="qb9-v4-0kc"/>
-                        <outlet property="tabBarView" destination="g1E-H7-qGA" id="S0G-vv-BMo"/>
-                        <outlet property="tableView" destination="5CH-Bj-wIH" id="6XU-K0-FSq"/>
+                        <outlet property="tabBarCollectionView" destination="x3K-LB-Vo2" id="L3m-Pn-day"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EmY-xJ-yFX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3133.5999999999999" y="135.38230884557723"/>
+            <point key="canvasLocation" x="3170" y="-270"/>
         </scene>
         <!--Congress UpdateVC-->
         <scene sceneID="zh0-yS-9hu">
@@ -396,6 +410,7 @@
         <image name="icon_btn_addnotice_white" width="22" height="22"/>
         <image name="icon_btn_back_default" width="30" height="30"/>
         <image name="icon_btn_circle_default" width="30" height="30"/>
+        <image name="icon_btn_search_default" width="28" height="28"/>
         <image name="icon_indicate_clock" width="28" height="28"/>
         <image name="icon_indicate_tag" width="28" height="28"/>
         <image name="thumbnail_tab" width="738" height="423"/>

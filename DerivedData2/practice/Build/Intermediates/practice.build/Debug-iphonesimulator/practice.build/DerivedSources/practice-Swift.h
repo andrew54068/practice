@@ -135,6 +135,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import UIKit;
 @import Foundation;
 @import CoreGraphics;
+@import TabPageViewController;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -185,14 +186,14 @@ SWIFT_CLASS("_TtC8practice11Article_TVC")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class mainViewController;
+@class Main_VC;
 @class BannerCategoryCollectionView;
 @class UICollectionView;
 @class UICollectionViewLayout;
 
 SWIFT_CLASS("_TtC8practice18BannerCategoryCell")
 @interface BannerCategoryCell : UICollectionViewCell <UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UIScrollViewDelegate, UICollectionViewDataSource>
-@property (nonatomic, strong) mainViewController * _Nullable mainView;
+@property (nonatomic, strong) Main_VC * _Nullable mainView;
 @property (nonatomic, strong) IBOutlet BannerCategoryCollectionView * _Null_unspecified content;
 - (void)awakeFromNib;
 - (void)setUpViews;
@@ -361,6 +362,34 @@ SWIFT_CLASS("_TtC8practice19ExpertCommentary_VC")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NavigationBar;
+
+SWIFT_CLASS("_TtC8practice7Main_VC")
+@interface Main_VC : UICollectionViewController <UICollectionViewDelegateFlowLayout>
+@property (nonatomic, copy) NSString * _Nonnull titleContent;
+@property (nonatomic, copy) NSString * _Nonnull subtitleContent;
+@property (nonatomic) NSInteger count;
+@property (nonatomic) NSInteger numberOfRowBeforeSqueezedRectangle;
+@property (nonatomic, strong) IBOutlet NavigationBar * _Null_unspecified navigationBar;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidLoad;
+- (void)setUpNavigationBar;
+- (void)handleMenu;
+- (void)handleSearch;
+- (void)handleBookmark;
+- (void)seeAll;
+- (void)showArticle;
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (UIEdgeInsets)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout insetForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithCollectionViewLayout:(UICollectionViewLayout * _Nonnull)layout OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC8practice14MayLike_TVCell")
 @interface MayLike_TVCell : UITableViewCell <UIScrollViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
@@ -408,10 +437,48 @@ SWIFT_CLASS("_TtC8practice16Reference_TVCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UISearchBar;
 
-SWIFT_CLASS("_TtC8practice18SearchTabBarCVCell")
-@interface SearchTabBarCVCell : UICollectionViewCell
+SWIFT_CLASS("_TtC8practice13SearchBarView")
+@interface SearchBarView : UIView
+@property (nonatomic, strong) IBOutlet UISearchBar * _Null_unspecified searchBar;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified cancel;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC8practice24SearchResultHeaderTVCell")
+@interface SearchResultHeaderTVCell : UITableViewCell
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified title;
 - (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC8practice19SearchResult_TVCell")
+@interface SearchResult_TVCell : UITableViewCell
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified title;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified subtitle;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC8practice16SearchTabBarView")
+@interface SearchTabBarView : UIView <UICollectionViewDelegate, UIScrollViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull tabName;
+@property (nonatomic, copy) NSArray<NSValue *> * _Nullable widthForEachTab;
+@property (nonatomic, strong) IBOutlet UICollectionView * _Null_unspecified searchTabCollectionView;
+- (void)awakeFromNib;
+- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -426,20 +493,61 @@ SWIFT_CLASS("_TtC8practice16SearchTab_CVCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC8practice11Search_TPVC")
+@interface Search_TPVC : TabPageViewController
+@property (nonatomic, strong) SearchBarView * _Nullable searchBarView;
+- (nonnull instancetype)initWithTransitionStyle:(UIPageViewControllerTransitionStyle)style navigationOrientation:(UIPageViewControllerNavigationOrientation)navigationOrientation options:(NSDictionary<NSString *, id> * _Nullable)options OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)viewDidLoad;
+- (void)viewDidDisappear:(BOOL)animated;
+- (void)navigationBarSetup;
+- (void)backToPreviousVC;
+@end
+
+
+SWIFT_CLASS("_TtC8practice10Search_TVC")
+@interface Search_TVC : UITableViewController
+@property (nonatomic, copy) NSArray<NSArray<NSString *> *> * _Nullable result_title;
+@property (nonatomic, copy) NSArray<NSArray<NSString *> *> * _Nullable result_subtitle;
+- (void)viewDidLoad;
+- (void)setupTableView;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITextField;
 @class UISearchController;
 
 SWIFT_CLASS("_TtC8practice9Search_VC")
-@interface Search_VC : UIViewController
+@interface Search_VC : UIViewController <UIScrollViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UITableViewDelegate, UITableViewDataSource>
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull tabName;
+@property (nonatomic, copy) NSArray<NSNumber *> * _Nullable widthForEachTab;
+@property (nonatomic) NSInteger selectedRow;
+@property (nonatomic) CGPoint currentOffSet;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified searchBtn;
 @property (nonatomic, strong) IBOutlet UIView * _Null_unspecified searchView;
-@property (nonatomic, strong) IBOutlet UIView * _Null_unspecified tabBarView;
-@property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified tableView;
+@property (nonatomic, strong) IBOutlet UICollectionView * _Null_unspecified tabBarCollectionView;
+@property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified searchResultTableView;
+@property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified searchTextField;
+- (IBAction)cancel:(id _Nonnull)sender;
 @property (nonatomic, copy) NSArray<NSDictionary<NSString *, id> *> * _Null_unspecified articles;
 @property (nonatomic, copy) NSArray<NSDictionary<NSString *, id> *> * _Null_unspecified foundArticles;
 @property (nonatomic, copy) NSDictionary<NSString *, id> * _Null_unspecified selectedArticle;
 @property (nonatomic, strong) UITableViewController * _Null_unspecified resultController;
 @property (nonatomic, strong) UISearchController * _Null_unspecified searchController;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
+- (void)tableViewSetup;
+- (void)collectionViewSetup;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -447,7 +555,7 @@ SWIFT_CLASS("_TtC8practice9Search_VC")
 
 SWIFT_CLASS("_TtC8practice18SquareCategoryCell")
 @interface SquareCategoryCell : UICollectionViewCell <UICollectionViewDelegate, UIScrollViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
-@property (nonatomic, strong) mainViewController * _Nullable mainView;
+@property (nonatomic, strong) Main_VC * _Nullable mainView;
 @property (nonatomic, copy) NSString * _Nonnull titleContent;
 @property (nonatomic, copy) NSString * _Nonnull subtitleContent;
 @property (nonatomic, strong) NSMutableAttributedString * _Null_unspecified attributedString;
@@ -559,33 +667,6 @@ SWIFT_CLASS("_TtC8practice17TrailFactSheet_VC")
 
 @interface UITableViewController (SWIFT_EXTENSION(practice))
 - (void)showPickerViewWithPickerView:(pickerView * _Nonnull)PickerView selectionView:(selectionView * _Nonnull)selectionView type:(NSInteger)type lastSelected:(NSArray<NSString *> * _Nonnull)lastSelected;
-@end
-
-
-SWIFT_CLASS("_TtC8practice18mainViewController")
-@interface mainViewController : UICollectionViewController <UICollectionViewDelegateFlowLayout>
-@property (nonatomic, copy) NSString * _Nonnull titleContent;
-@property (nonatomic, copy) NSString * _Nonnull subtitleContent;
-@property (nonatomic) NSInteger count;
-@property (nonatomic) NSInteger numberOfRowBeforeSqueezedRectangle;
-@property (nonatomic, strong) IBOutlet NavigationBar * _Null_unspecified navigationBar;
-- (void)viewDidLoad;
-- (void)setUpNavigationBar;
-- (void)handleMenu;
-- (void)handleSearch;
-@property (nonatomic, readonly, strong) UIView * _Nonnull searchView;
-- (void)handleBookmark;
-- (void)seeAll;
-- (void)showArticle;
-- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (UIEdgeInsets)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout insetForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)initWithCollectionViewLayout:(UICollectionViewLayout * _Nonnull)layout OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class UIToolbar;

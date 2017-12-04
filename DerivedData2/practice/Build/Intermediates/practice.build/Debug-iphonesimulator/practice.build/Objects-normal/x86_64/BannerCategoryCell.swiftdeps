@@ -20,6 +20,7 @@ depends-top-level:
 - "CastingPrecedence"
 - "IndexPath"
 - "Int"
+- "Main_VC"
 - "StringLiteralType"
 - "UICollectionView"
 - "UICollectionViewCell"
@@ -30,7 +31,6 @@ depends-top-level:
 - "UIEdgeInsets"
 - !private "UIImage"
 - !private "UINib"
-- "mainViewController"
 - !private "print"
 depends-member:
 - !private ["Ps9AnyObject", "CGSize"]
@@ -81,6 +81,7 @@ depends-member:
 - ["C8practice18BannerCategoryCell", "CGSize"]
 - ["C8practice18BannerCategoryCell", "IndexPath"]
 - ["C8practice18BannerCategoryCell", "Int"]
+- ["C8practice18BannerCategoryCell", "Main_VC"]
 - ["C8practice18BannerCategoryCell", "UICollectionView"]
 - ["C8practice18BannerCategoryCell", "UICollectionViewCell"]
 - ["C8practice18BannerCategoryCell", "UICollectionViewLayout"]
@@ -98,7 +99,6 @@ depends-member:
 - ["C8practice18BannerCategoryCell", "indexTitlesForCollectionView"]
 - ["C8practice18BannerCategoryCell", "init"]
 - ["C8practice18BannerCategoryCell", "mainView"]
-- ["C8practice18BannerCategoryCell", "mainViewController"]
 - ["C8practice18BannerCategoryCell", "numberOfSections"]
 - ["C8practice18BannerCategoryCell", "numberOfSectionsInCollectionView"]
 - !private ["C8practice18BannerCategoryCell", "print"]
@@ -387,6 +387,7 @@ depends-member:
 - ["Ps8Hashable", "viewForZoomingInScrollView"]
 - ["Ps8Hashable", ""]
 - ["Ps25LosslessStringConvertible", "init"]
+- !private ["C8practice7Main_VC", "showArticle"]
 - ["Ps10MirrorPath", "init"]
 - !private ["PSo8NSCoding", "CGSize"]
 - !private ["PSo8NSCoding", "UIEdgeInsets"]
@@ -439,6 +440,7 @@ depends-member:
 - ["CSo8NSObject", "CGSize"]
 - ["CSo8NSObject", "IndexPath"]
 - ["CSo8NSObject", "Int"]
+- ["CSo8NSObject", "Main_VC"]
 - ["CSo8NSObject", "UICollectionView"]
 - ["CSo8NSObject", "UICollectionViewCell"]
 - ["CSo8NSObject", "UICollectionViewLayout"]
@@ -459,7 +461,6 @@ depends-member:
 - ["CSo8NSObject", "indexTitlesForCollectionView"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "mainView"]
-- ["CSo8NSObject", "mainViewController"]
 - ["CSo8NSObject", "numberOfSections"]
 - ["CSo8NSObject", "numberOfSectionsInCollectionView"]
 - !private ["CSo8NSObject", "print"]
@@ -664,6 +665,7 @@ depends-member:
 - ["CSo24UICollectionReusableView", "CGSize"]
 - ["CSo24UICollectionReusableView", "IndexPath"]
 - ["CSo24UICollectionReusableView", "Int"]
+- ["CSo24UICollectionReusableView", "Main_VC"]
 - ["CSo24UICollectionReusableView", "UICollectionView"]
 - ["CSo24UICollectionReusableView", "UICollectionViewCell"]
 - ["CSo24UICollectionReusableView", "UICollectionViewLayout"]
@@ -680,7 +682,6 @@ depends-member:
 - ["CSo24UICollectionReusableView", "indexTitlesForCollectionView"]
 - ["CSo24UICollectionReusableView", "init"]
 - ["CSo24UICollectionReusableView", "mainView"]
-- ["CSo24UICollectionReusableView", "mainViewController"]
 - ["CSo24UICollectionReusableView", "numberOfSections"]
 - ["CSo24UICollectionReusableView", "numberOfSectionsInCollectionView"]
 - !private ["CSo24UICollectionReusableView", "print"]
@@ -711,6 +712,7 @@ depends-member:
 - ["CSo20UICollectionViewCell", "CGSize"]
 - ["CSo20UICollectionViewCell", "IndexPath"]
 - ["CSo20UICollectionViewCell", "Int"]
+- ["CSo20UICollectionViewCell", "Main_VC"]
 - ["CSo20UICollectionViewCell", "UICollectionView"]
 - ["CSo20UICollectionViewCell", "UICollectionViewCell"]
 - ["CSo20UICollectionViewCell", "UICollectionViewLayout"]
@@ -727,7 +729,6 @@ depends-member:
 - ["CSo20UICollectionViewCell", "indexTitlesForCollectionView"]
 - ["CSo20UICollectionViewCell", "init"]
 - ["CSo20UICollectionViewCell", "mainView"]
-- ["CSo20UICollectionViewCell", "mainViewController"]
 - ["CSo20UICollectionViewCell", "numberOfSections"]
 - ["CSo20UICollectionViewCell", "numberOfSectionsInCollectionView"]
 - !private ["CSo20UICollectionViewCell", "print"]
@@ -1036,6 +1037,7 @@ depends-member:
 - ["CSo11UIResponder", "CGSize"]
 - ["CSo11UIResponder", "IndexPath"]
 - ["CSo11UIResponder", "Int"]
+- ["CSo11UIResponder", "Main_VC"]
 - ["CSo11UIResponder", "UICollectionView"]
 - ["CSo11UIResponder", "UICollectionViewCell"]
 - ["CSo11UIResponder", "UICollectionViewLayout"]
@@ -1056,7 +1058,6 @@ depends-member:
 - ["CSo11UIResponder", "indexTitlesForCollectionView"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "mainView"]
-- ["CSo11UIResponder", "mainViewController"]
 - ["CSo11UIResponder", "numberOfSections"]
 - ["CSo11UIResponder", "numberOfSectionsInCollectionView"]
 - !private ["CSo11UIResponder", "print"]
@@ -1213,6 +1214,7 @@ depends-member:
 - ["CSo6UIView", "CGSize"]
 - ["CSo6UIView", "IndexPath"]
 - ["CSo6UIView", "Int"]
+- ["CSo6UIView", "Main_VC"]
 - ["CSo6UIView", "UICollectionView"]
 - ["CSo6UIView", "UICollectionViewCell"]
 - ["CSo6UIView", "UICollectionViewLayout"]
@@ -1233,7 +1235,6 @@ depends-member:
 - ["CSo6UIView", "indexTitlesForCollectionView"]
 - ["CSo6UIView", "init"]
 - ["CSo6UIView", "mainView"]
-- ["CSo6UIView", "mainViewController"]
 - ["CSo6UIView", "numberOfSections"]
 - ["CSo6UIView", "numberOfSectionsInCollectionView"]
 - !private ["CSo6UIView", "print"]
@@ -1351,7 +1352,6 @@ depends-member:
 - ["Ps9_Hashable", "viewForZoomingInScrollView"]
 - ["Ps9_Hashable", ""]
 - ["Ps21_ObjectiveCBridgeable", "init"]
-- !private ["C8practice18mainViewController", "showArticle"]
 depends-nominal:
 - "Ps9AnyObject"
 - "C8practice18BannerCategoryCell"
@@ -1371,6 +1371,7 @@ depends-nominal:
 - "Ps33ExpressibleByUnicodeScalarLiteral"
 - "Ps8Hashable"
 - "Ps25LosslessStringConvertible"
+- !private "C8practice7Main_VC"
 - "Ps10MirrorPath"
 - "PSo8NSCoding"
 - "PSo9NSCopying"
@@ -1422,7 +1423,6 @@ depends-nominal:
 - "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - "Ps21_ObjectiveCBridgeable"
-- !private "C8practice18mainViewController"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.apinotesc"
@@ -1442,4 +1442,4 @@ depends-external:
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "9d2fe89ed543c89f3c9395d4481495ce"
+interface-hash: "adbf66acfa8172b6cba4dc26b4119405"

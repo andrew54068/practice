@@ -17,11 +17,14 @@ depends-top-level:
 - "AppDelegate"
 - "Bool"
 - !private "BooleanLiteralType"
+- "String"
+- !private "StringLiteralType"
 - "UIApplication"
 - "UIApplicationDelegate"
 - "UIApplicationLaunchOptionsKey"
 - "UIResponder"
 - "UIWindow"
+- "URL"
 depends-member:
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]
@@ -39,9 +42,11 @@ depends-member:
 - ["Ps9AnyObject", "window"]
 - ["Ps9AnyObject", ""]
 - ["C8practice11AppDelegate", "Bool"]
+- ["C8practice11AppDelegate", "String"]
 - ["C8practice11AppDelegate", "UIApplication"]
 - ["C8practice11AppDelegate", "UIApplicationLaunchOptionsKey"]
 - ["C8practice11AppDelegate", "UIWindow"]
+- ["C8practice11AppDelegate", "URL"]
 - ["C8practice11AppDelegate", "application"]
 - ["C8practice11AppDelegate", "applicationDidBecomeActive"]
 - ["C8practice11AppDelegate", "applicationDidEnterBackground"]
@@ -72,6 +77,7 @@ depends-member:
 - !private ["Ps7CVarArg", "init"]
 - ["Ps7CVarArg", "window"]
 - ["Ps7CVarArg", ""]
+- !private ["Ps10Comparable", "init"]
 - ["Ps28CustomDebugStringConvertible", "application"]
 - ["Ps28CustomDebugStringConvertible", "applicationDidBecomeActive"]
 - ["Ps28CustomDebugStringConvertible", "applicationDidEnterBackground"]
@@ -87,6 +93,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "window"]
 - ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "init"]
 - ["Ps23CustomStringConvertible", "application"]
 - ["Ps23CustomStringConvertible", "applicationDidBecomeActive"]
 - ["Ps23CustomStringConvertible", "applicationDidEnterBackground"]
@@ -117,6 +125,9 @@ depends-member:
 - !private ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "window"]
 - ["Ps9Equatable", ""]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - ["Ps8Hashable", "application"]
 - ["Ps8Hashable", "applicationDidBecomeActive"]
 - ["Ps8Hashable", "applicationDidEnterBackground"]
@@ -132,10 +143,17 @@ depends-member:
 - !private ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "window"]
 - ["Ps8Hashable", ""]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UIApplication"]
 - ["CSo8NSObject", "UIApplicationLaunchOptionsKey"]
 - ["CSo8NSObject", "UIWindow"]
+- ["CSo8NSObject", "URL"]
 - ["CSo8NSObject", "application"]
 - ["CSo8NSObject", "applicationDidBecomeActive"]
 - ["CSo8NSObject", "applicationDidEnterBackground"]
@@ -165,6 +183,12 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "window"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- !private ["Vs12StaticString", "init"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
 - ["PSo21UIApplicationDelegate", "application"]
 - ["PSo21UIApplicationDelegate", "applicationDidBecomeActive"]
 - ["PSo21UIApplicationDelegate", "applicationDidEnterBackground"]
@@ -180,9 +204,11 @@ depends-member:
 - ["PSo21UIApplicationDelegate", "window"]
 - ["PSo21UIApplicationDelegate", ""]
 - ["CSo11UIResponder", "Bool"]
+- ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UIApplication"]
 - ["CSo11UIResponder", "UIApplicationLaunchOptionsKey"]
 - ["CSo11UIResponder", "UIWindow"]
+- ["CSo11UIResponder", "URL"]
 - ["CSo11UIResponder", "application"]
 - ["CSo11UIResponder", "applicationDidBecomeActive"]
 - ["CSo11UIResponder", "applicationDidEnterBackground"]
@@ -213,6 +239,12 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "init"]
 - ["PSo30UIResponderStandardEditActions", "window"]
 - ["PSo30UIResponderStandardEditActions", ""]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - ["Ps9_Hashable", "application"]
 - ["Ps9_Hashable", "applicationDidBecomeActive"]
 - ["Ps9_Hashable", "applicationDidEnterBackground"]
@@ -228,20 +260,45 @@ depends-member:
 - !private ["Ps9_Hashable", "init"]
 - ["Ps9_Hashable", "window"]
 - ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
 depends-nominal:
 - "Ps9AnyObject"
 - "C8practice11AppDelegate"
 - "Ps7CVarArg"
+- !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - "Ps8Hashable"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "Vs12StaticString"
+- !private "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
 - "PSo21UIApplicationDelegate"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.apinotesc"
@@ -261,4 +318,4 @@ depends-external:
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "b306772a10463f7c5fce689aa6452f8e"
+interface-hash: "5d746da18a9d7430b6bd42b950442459"

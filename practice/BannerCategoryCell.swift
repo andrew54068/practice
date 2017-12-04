@@ -10,7 +10,7 @@ import UIKit
 
 class BannerCategoryCell: UICollectionViewCell, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    var mainView: mainViewController?
+    var mainView: Main_VC?
     
     private let cellId = "BCVCell"
     

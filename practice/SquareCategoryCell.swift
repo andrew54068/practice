@@ -13,7 +13,7 @@ import UIKit
 
 class SquareCategoryCell: UICollectionViewCell, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
-    var mainView: mainViewController?
+    var mainView: Main_VC?
     
 //    weak var delegate: buttonClicked?
     private let cellId = "SCVCell"
@@ -21,8 +21,6 @@ class SquareCategoryCell: UICollectionViewCell, UICollectionViewDelegate, UIColl
     var subtitleContent: String = ""
     var attributedString: NSMutableAttributedString!
     var count:Int = 0
-    
-    
     
     @IBOutlet var content: UICollectionView!
     @IBOutlet var title: UILabel!
@@ -42,11 +40,10 @@ class SquareCategoryCell: UICollectionViewCell, UICollectionViewDelegate, UIColl
     func setupViews(){
         
         let nib = UINib(nibName: "SquareCollectionViewCell", bundle: nil)
+        content.register(nib, forCellWithReuseIdentifier: cellId)
         
         content.delegate = self
         content.dataSource = self
-        
-        content.register(nib, forCellWithReuseIdentifier: cellId)
     }
     
     
@@ -96,7 +93,7 @@ class SquareCategoryCell: UICollectionViewCell, UICollectionViewDelegate, UIColl
         titleContent = " A future in mind - rising to the challenge in Alzheimer's"
         subtitleContent = "Doretha Burrell-nickname “Dee” by children at the school where she once worked as administrative, Doretha Burrell-nickname “Dee” by children at the school where she once worked as administrative"
         count += 1
-        performSelector(inBackground: #selector(mainViewController.seeAll), with: nil)
+        performSelector(inBackground: #selector(Main_VC.seeAll), with: nil)
         collectionView.reloadData()
         
         if count > 2{

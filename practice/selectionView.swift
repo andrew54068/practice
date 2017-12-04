@@ -26,7 +26,6 @@ class selectionView: UIView {
     
     
     @IBOutlet var left: UIButton!
-    
 
     @IBOutlet var right: UIButton!
     
