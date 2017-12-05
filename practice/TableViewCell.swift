@@ -19,6 +19,9 @@ class TableViewCell: UITableViewCell {
     @IBOutlet var topConstraint: NSLayoutConstraint!
     
     @IBAction func bookmarkClicked(_ sender: Any) {
+//        if let btn = sender as! UIButton{
+//            if btn.i
+//        }
         let Active = UIImage(named: "icon_btn_bookmark_active")
         bookmark.setImage(Active!, for: .normal)
     }

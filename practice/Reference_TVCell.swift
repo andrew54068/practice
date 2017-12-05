@@ -10,25 +10,46 @@ import UIKit
 
 class Reference_TVCell: UITableViewCell {
 
+    var isEvent:Bool = false{
+        didSet{
+            if isEvent == true{
+                schedule.isHidden = false
+                share.isHidden = true
+                bookmark.isHidden = true
+            }
+            else{
+                schedule.isHidden = true
+                share.isHidden = false
+                bookmark.isHidden = false
+            }
+        }
+    }
     
     @IBOutlet var ReferenceContent: UILabel!
     
+    @IBOutlet var bookmark: UIButton!
+    
+    @IBOutlet var share: UIButton!
+    
     @IBOutlet var schedule: UIButton!
-    
-    @IBOutlet var reminder: UIButton!
-    
+
     
     @IBAction func addToSchedule(_ sender: Any) {
     }
     
-    @IBAction func AddReminder(_ sender: Any) {
+    @IBAction func shareClicked(_ sender: Any) {
     }
+    
+    @IBAction func addToBookmark(_ sender: Any) {
+    }
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        schedule.isHidden = false
+        share.isHidden = true
+        bookmark.isHidden = true
         // Initialization code
-        
-        schedule.imageView?.contentMode = .scaleAspectFit
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

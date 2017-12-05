@@ -27,15 +27,19 @@ depends-top-level:
 - "UICollectionViewDelegate"
 - "UICollectionViewDelegateFlowLayout"
 - "UICollectionViewLayout"
+- !private "UIColor"
 - "UIEdgeInsets"
 - !private "UINib"
 - "UITableViewCell"
 - "UIView"
 depends-member:
 - !private ["Ps9AnyObject", "CGSize"]
+- !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UIEdgeInsets"]
 - !private ["Ps9AnyObject", "UINib"]
 - !private ["Ps9AnyObject", "awakeFromNib"]
+- !private ["Ps9AnyObject", "backgroundColor"]
+- !private ["Ps9AnyObject", "black"]
 - !private ["Ps9AnyObject", "cellId"]
 - ["Ps9AnyObject", "collectionView"]
 - !private ["Ps9AnyObject", "content"]
@@ -67,9 +71,11 @@ depends-member:
 - ["Ps9AnyObject", "viewForZoomingInScrollView"]
 - ["Ps9AnyObject", ""]
 - !private ["PSo15CALayerDelegate", "CGSize"]
+- !private ["PSo15CALayerDelegate", "UIColor"]
 - !private ["PSo15CALayerDelegate", "UIEdgeInsets"]
 - !private ["PSo15CALayerDelegate", "UINib"]
 - !private ["PSo15CALayerDelegate", "awakeFromNib"]
+- !private ["PSo15CALayerDelegate", "backgroundColor"]
 - !private ["PSo15CALayerDelegate", "cellId"]
 - ["PSo15CALayerDelegate", "collectionView"]
 - !private ["PSo15CALayerDelegate", "content"]
@@ -102,9 +108,12 @@ depends-member:
 - ["PSo15CALayerDelegate", ""]
 - !private ["VSC6CGSize", "init"]
 - !private ["Ps7CVarArg", "CGSize"]
+- !private ["Ps7CVarArg", "UIColor"]
 - !private ["Ps7CVarArg", "UIEdgeInsets"]
 - !private ["Ps7CVarArg", "UINib"]
 - !private ["Ps7CVarArg", "awakeFromNib"]
+- !private ["Ps7CVarArg", "backgroundColor"]
+- !private ["Ps7CVarArg", "black"]
 - !private ["Ps7CVarArg", "cellId"]
 - ["Ps7CVarArg", "collectionView"]
 - !private ["Ps7CVarArg", "content"]
@@ -137,9 +146,12 @@ depends-member:
 - ["Ps7CVarArg", ""]
 - ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "CGSize"]
+- !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - !private ["Ps28CustomDebugStringConvertible", "UIEdgeInsets"]
 - !private ["Ps28CustomDebugStringConvertible", "UINib"]
 - !private ["Ps28CustomDebugStringConvertible", "awakeFromNib"]
+- !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
+- !private ["Ps28CustomDebugStringConvertible", "black"]
 - !private ["Ps28CustomDebugStringConvertible", "cellId"]
 - ["Ps28CustomDebugStringConvertible", "collectionView"]
 - !private ["Ps28CustomDebugStringConvertible", "content"]
@@ -173,9 +185,12 @@ depends-member:
 - ["Ps29CustomPlaygroundQuickLookable", "init"]
 - ["Ps17CustomReflectable", "init"]
 - !private ["Ps23CustomStringConvertible", "CGSize"]
+- !private ["Ps23CustomStringConvertible", "UIColor"]
 - !private ["Ps23CustomStringConvertible", "UIEdgeInsets"]
 - !private ["Ps23CustomStringConvertible", "UINib"]
 - !private ["Ps23CustomStringConvertible", "awakeFromNib"]
+- !private ["Ps23CustomStringConvertible", "backgroundColor"]
+- !private ["Ps23CustomStringConvertible", "black"]
 - !private ["Ps23CustomStringConvertible", "cellId"]
 - ["Ps23CustomStringConvertible", "collectionView"]
 - !private ["Ps23CustomStringConvertible", "content"]
@@ -207,9 +222,12 @@ depends-member:
 - ["Ps23CustomStringConvertible", "viewForZoomingInScrollView"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Ps9Equatable", "CGSize"]
+- !private ["Ps9Equatable", "UIColor"]
 - !private ["Ps9Equatable", "UIEdgeInsets"]
 - !private ["Ps9Equatable", "UINib"]
 - !private ["Ps9Equatable", "awakeFromNib"]
+- !private ["Ps9Equatable", "backgroundColor"]
+- !private ["Ps9Equatable", "black"]
 - !private ["Ps9Equatable", "cellId"]
 - ["Ps9Equatable", "collectionView"]
 - !private ["Ps9Equatable", "content"]
@@ -244,9 +262,12 @@ depends-member:
 - ["Ps26ExpressibleByStringLiteral", "init"]
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Ps8Hashable", "CGSize"]
+- !private ["Ps8Hashable", "UIColor"]
 - !private ["Ps8Hashable", "UIEdgeInsets"]
 - !private ["Ps8Hashable", "UINib"]
 - !private ["Ps8Hashable", "awakeFromNib"]
+- !private ["Ps8Hashable", "backgroundColor"]
+- !private ["Ps8Hashable", "black"]
 - !private ["Ps8Hashable", "cellId"]
 - ["Ps8Hashable", "collectionView"]
 - !private ["Ps8Hashable", "content"]
@@ -286,6 +307,7 @@ depends-member:
 - ["C8practice14MayLike_TVCell", "UICollectionView"]
 - ["C8practice14MayLike_TVCell", "UICollectionViewCell"]
 - ["C8practice14MayLike_TVCell", "UICollectionViewLayout"]
+- !private ["C8practice14MayLike_TVCell", "UIColor"]
 - ["C8practice14MayLike_TVCell", "UIEdgeInsets"]
 - !private ["C8practice14MayLike_TVCell", "UINib"]
 - ["C8practice14MayLike_TVCell", "UIView"]
@@ -319,9 +341,12 @@ depends-member:
 - ["C8practice14MayLike_TVCell", "viewForZoomingInScrollView"]
 - ["Ps10MirrorPath", "init"]
 - !private ["PSo8NSCoding", "CGSize"]
+- !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIEdgeInsets"]
 - !private ["PSo8NSCoding", "UINib"]
 - !private ["PSo8NSCoding", "awakeFromNib"]
+- !private ["PSo8NSCoding", "backgroundColor"]
+- !private ["PSo8NSCoding", "black"]
 - !private ["PSo8NSCoding", "cellId"]
 - ["PSo8NSCoding", "collectionView"]
 - !private ["PSo8NSCoding", "content"]
@@ -352,6 +377,7 @@ depends-member:
 - ["PSo8NSCoding", "viewForZooming"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "black"]
 - ["PSo9NSCopying", "init"]
 - ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "Bool"]
@@ -362,11 +388,14 @@ depends-member:
 - ["CSo8NSObject", "UICollectionView"]
 - ["CSo8NSObject", "UICollectionViewCell"]
 - ["CSo8NSObject", "UICollectionViewLayout"]
+- !private ["CSo8NSObject", "UIColor"]
 - ["CSo8NSObject", "UIEdgeInsets"]
 - !private ["CSo8NSObject", "UINib"]
 - ["CSo8NSObject", "UIView"]
 - ["CSo8NSObject", "View"]
 - ["CSo8NSObject", "awakeFromNib"]
+- !private ["CSo8NSObject", "backgroundColor"]
+- !private ["CSo8NSObject", "black"]
 - ["CSo8NSObject", "cellId"]
 - ["CSo8NSObject", "collectionView"]
 - ["CSo8NSObject", "content"]
@@ -397,9 +426,12 @@ depends-member:
 - ["CSo8NSObject", "viewForZooming"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
 - !private ["PSo16NSObjectProtocol", "CGSize"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIEdgeInsets"]
 - !private ["PSo16NSObjectProtocol", "UINib"]
 - !private ["PSo16NSObjectProtocol", "awakeFromNib"]
+- !private ["PSo16NSObjectProtocol", "backgroundColor"]
+- !private ["PSo16NSObjectProtocol", "black"]
 - !private ["PSo16NSObjectProtocol", "cellId"]
 - ["PSo16NSObjectProtocol", "collectionView"]
 - !private ["PSo16NSObjectProtocol", "content"]
@@ -430,15 +462,19 @@ depends-member:
 - ["PSo16NSObjectProtocol", "viewForZooming"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "black"]
 - ["PSo14NSSecureCoding", "init"]
 - ["CSo8NSString", "init"]
+- !private ["C8practice24SquareCollectionViewCell", "backgroundColor"]
 - ["SS", "init"]
 - ["Ps16TextOutputStream", "init"]
 - ["Ps20TextOutputStreamable", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "CGSize"]
+- !private ["PSo29UIAccessibilityIdentification", "UIColor"]
 - !private ["PSo29UIAccessibilityIdentification", "UIEdgeInsets"]
 - !private ["PSo29UIAccessibilityIdentification", "UINib"]
 - !private ["PSo29UIAccessibilityIdentification", "awakeFromNib"]
+- !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
 - !private ["PSo29UIAccessibilityIdentification", "cellId"]
 - ["PSo29UIAccessibilityIdentification", "collectionView"]
 - !private ["PSo29UIAccessibilityIdentification", "content"]
@@ -470,9 +506,11 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "viewForZoomingInScrollView"]
 - ["PSo29UIAccessibilityIdentification", ""]
 - !private ["PSo12UIAppearance", "CGSize"]
+- !private ["PSo12UIAppearance", "UIColor"]
 - !private ["PSo12UIAppearance", "UIEdgeInsets"]
 - !private ["PSo12UIAppearance", "UINib"]
 - !private ["PSo12UIAppearance", "awakeFromNib"]
+- !private ["PSo12UIAppearance", "backgroundColor"]
 - !private ["PSo12UIAppearance", "cellId"]
 - ["PSo12UIAppearance", "collectionView"]
 - !private ["PSo12UIAppearance", "content"]
@@ -504,9 +542,11 @@ depends-member:
 - ["PSo12UIAppearance", "viewForZoomingInScrollView"]
 - ["PSo12UIAppearance", ""]
 - !private ["PSo21UIAppearanceContainer", "CGSize"]
+- !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIEdgeInsets"]
 - !private ["PSo21UIAppearanceContainer", "UINib"]
 - !private ["PSo21UIAppearanceContainer", "awakeFromNib"]
+- !private ["PSo21UIAppearanceContainer", "backgroundColor"]
 - !private ["PSo21UIAppearanceContainer", "cellId"]
 - ["PSo21UIAppearanceContainer", "collectionView"]
 - !private ["PSo21UIAppearanceContainer", "content"]
@@ -537,11 +577,14 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewForZooming"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo24UICollectionReusableView", "backgroundColor"]
 - !private ["CSo16UICollectionView", "dataSource"]
 - !private ["CSo16UICollectionView", "delegate"]
 - !private ["CSo16UICollectionView", "dequeueReusableCell"]
 - !private ["CSo16UICollectionView", "register"]
+- !private ["CSo20UICollectionViewCell", "backgroundColor"]
 - !private ["PSo26UICollectionViewDataSource", "CGSize"]
+- !private ["PSo26UICollectionViewDataSource", "UIColor"]
 - !private ["PSo26UICollectionViewDataSource", "UIEdgeInsets"]
 - !private ["PSo26UICollectionViewDataSource", "UINib"]
 - !private ["PSo26UICollectionViewDataSource", "cellId"]
@@ -569,6 +612,7 @@ depends-member:
 - ["PSo26UICollectionViewDataSource", "viewForZoomingInScrollView"]
 - ["PSo26UICollectionViewDataSource", ""]
 - !private ["PSo24UICollectionViewDelegate", "CGSize"]
+- !private ["PSo24UICollectionViewDelegate", "UIColor"]
 - !private ["PSo24UICollectionViewDelegate", "UIEdgeInsets"]
 - !private ["PSo24UICollectionViewDelegate", "UINib"]
 - !private ["PSo24UICollectionViewDelegate", "cellId"]
@@ -596,6 +640,7 @@ depends-member:
 - ["PSo24UICollectionViewDelegate", "viewForZoomingInScrollView"]
 - ["PSo24UICollectionViewDelegate", ""]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "CGSize"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "UIColor"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "UIEdgeInsets"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "UINib"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "cellId"]
@@ -622,10 +667,13 @@ depends-member:
 - ["PSo34UICollectionViewDelegateFlowLayout", "viewForZooming"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "viewForZoomingInScrollView"]
 - ["PSo34UICollectionViewDelegateFlowLayout", ""]
+- !private ["CSo7UIColor", "black"]
 - !private ["PSo17UICoordinateSpace", "CGSize"]
+- !private ["PSo17UICoordinateSpace", "UIColor"]
 - !private ["PSo17UICoordinateSpace", "UIEdgeInsets"]
 - !private ["PSo17UICoordinateSpace", "UINib"]
 - !private ["PSo17UICoordinateSpace", "awakeFromNib"]
+- !private ["PSo17UICoordinateSpace", "backgroundColor"]
 - !private ["PSo17UICoordinateSpace", "cellId"]
 - ["PSo17UICoordinateSpace", "collectionView"]
 - !private ["PSo17UICoordinateSpace", "content"]
@@ -657,9 +705,11 @@ depends-member:
 - ["PSo17UICoordinateSpace", "viewForZoomingInScrollView"]
 - ["PSo17UICoordinateSpace", ""]
 - !private ["PSo13UIDynamicItem", "CGSize"]
+- !private ["PSo13UIDynamicItem", "UIColor"]
 - !private ["PSo13UIDynamicItem", "UIEdgeInsets"]
 - !private ["PSo13UIDynamicItem", "UINib"]
 - !private ["PSo13UIDynamicItem", "awakeFromNib"]
+- !private ["PSo13UIDynamicItem", "backgroundColor"]
 - !private ["PSo13UIDynamicItem", "cellId"]
 - ["PSo13UIDynamicItem", "collectionView"]
 - !private ["PSo13UIDynamicItem", "content"]
@@ -692,9 +742,11 @@ depends-member:
 - ["PSo13UIDynamicItem", ""]
 - !private ["VSC12UIEdgeInsets", "init"]
 - !private ["PSo18UIFocusEnvironment", "CGSize"]
+- !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIEdgeInsets"]
 - !private ["PSo18UIFocusEnvironment", "UINib"]
 - !private ["PSo18UIFocusEnvironment", "awakeFromNib"]
+- !private ["PSo18UIFocusEnvironment", "backgroundColor"]
 - !private ["PSo18UIFocusEnvironment", "cellId"]
 - ["PSo18UIFocusEnvironment", "collectionView"]
 - !private ["PSo18UIFocusEnvironment", "content"]
@@ -726,9 +778,11 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "CGSize"]
+- !private ["PSo11UIFocusItem", "UIColor"]
 - !private ["PSo11UIFocusItem", "UIEdgeInsets"]
 - !private ["PSo11UIFocusItem", "UINib"]
 - !private ["PSo11UIFocusItem", "awakeFromNib"]
+- !private ["PSo11UIFocusItem", "backgroundColor"]
 - !private ["PSo11UIFocusItem", "cellId"]
 - ["PSo11UIFocusItem", "collectionView"]
 - !private ["PSo11UIFocusItem", "content"]
@@ -760,6 +814,7 @@ depends-member:
 - ["PSo11UIFocusItem", "viewForZoomingInScrollView"]
 - ["PSo11UIFocusItem", ""]
 - !private ["PSo27UIGestureRecognizerDelegate", "CGSize"]
+- !private ["PSo27UIGestureRecognizerDelegate", "UIColor"]
 - !private ["PSo27UIGestureRecognizerDelegate", "UIEdgeInsets"]
 - !private ["PSo27UIGestureRecognizerDelegate", "UINib"]
 - !private ["PSo27UIGestureRecognizerDelegate", "awakeFromNib"]
@@ -798,11 +853,13 @@ depends-member:
 - ["CSo11UIResponder", "UICollectionView"]
 - ["CSo11UIResponder", "UICollectionViewCell"]
 - ["CSo11UIResponder", "UICollectionViewLayout"]
+- !private ["CSo11UIResponder", "UIColor"]
 - ["CSo11UIResponder", "UIEdgeInsets"]
 - !private ["CSo11UIResponder", "UINib"]
 - ["CSo11UIResponder", "UIView"]
 - ["CSo11UIResponder", "View"]
 - ["CSo11UIResponder", "awakeFromNib"]
+- !private ["CSo11UIResponder", "backgroundColor"]
 - ["CSo11UIResponder", "cellId"]
 - ["CSo11UIResponder", "collectionView"]
 - ["CSo11UIResponder", "content"]
@@ -833,9 +890,11 @@ depends-member:
 - ["CSo11UIResponder", "viewForZooming"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
 - !private ["PSo30UIResponderStandardEditActions", "CGSize"]
+- !private ["PSo30UIResponderStandardEditActions", "UIColor"]
 - !private ["PSo30UIResponderStandardEditActions", "UIEdgeInsets"]
 - !private ["PSo30UIResponderStandardEditActions", "UINib"]
 - !private ["PSo30UIResponderStandardEditActions", "awakeFromNib"]
+- !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
 - !private ["PSo30UIResponderStandardEditActions", "cellId"]
 - ["PSo30UIResponderStandardEditActions", "collectionView"]
 - !private ["PSo30UIResponderStandardEditActions", "content"]
@@ -871,6 +930,7 @@ depends-member:
 - !private ["CSo12UIScrollView", "dequeueReusableCell"]
 - !private ["CSo12UIScrollView", "register"]
 - !private ["PSo20UIScrollViewDelegate", "CGSize"]
+- !private ["PSo20UIScrollViewDelegate", "UIColor"]
 - !private ["PSo20UIScrollViewDelegate", "UIEdgeInsets"]
 - !private ["PSo20UIScrollViewDelegate", "UINib"]
 - !private ["PSo20UIScrollViewDelegate", "cellId"]
@@ -905,6 +965,7 @@ depends-member:
 - ["CSo15UITableViewCell", "UICollectionView"]
 - ["CSo15UITableViewCell", "UICollectionViewCell"]
 - ["CSo15UITableViewCell", "UICollectionViewLayout"]
+- !private ["CSo15UITableViewCell", "UIColor"]
 - ["CSo15UITableViewCell", "UIEdgeInsets"]
 - !private ["CSo15UITableViewCell", "UINib"]
 - ["CSo15UITableViewCell", "UIView"]
@@ -937,9 +998,11 @@ depends-member:
 - ["CSo15UITableViewCell", "viewForZoomingInScrollView"]
 - ["CSo15UITableViewCell", ""]
 - !private ["PSo18UITraitEnvironment", "CGSize"]
+- !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIEdgeInsets"]
 - !private ["PSo18UITraitEnvironment", "UINib"]
 - !private ["PSo18UITraitEnvironment", "awakeFromNib"]
+- !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - !private ["PSo18UITraitEnvironment", "cellId"]
 - ["PSo18UITraitEnvironment", "collectionView"]
 - !private ["PSo18UITraitEnvironment", "content"]
@@ -978,11 +1041,13 @@ depends-member:
 - ["CSo6UIView", "UICollectionView"]
 - ["CSo6UIView", "UICollectionViewCell"]
 - ["CSo6UIView", "UICollectionViewLayout"]
+- !private ["CSo6UIView", "UIColor"]
 - ["CSo6UIView", "UIEdgeInsets"]
 - !private ["CSo6UIView", "UINib"]
 - ["CSo6UIView", "UIView"]
 - ["CSo6UIView", "View"]
 - ["CSo6UIView", "awakeFromNib"]
+- !private ["CSo6UIView", "backgroundColor"]
 - ["CSo6UIView", "cellId"]
 - ["CSo6UIView", "collectionView"]
 - ["CSo6UIView", "content"]
@@ -1013,9 +1078,11 @@ depends-member:
 - ["CSo6UIView", "viewForZooming"]
 - ["CSo6UIView", "viewForZoomingInScrollView"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "CGSize"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIColor"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIEdgeInsets"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UINib"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "awakeFromNib"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "backgroundColor"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "cellId"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "collectionView"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "content"]
@@ -1050,12 +1117,16 @@ depends-member:
 - ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps26_ExpressibleByColorLiteral", "black"]
 - ["Ps33_ExpressibleByStringInterpolation", "init"]
 - ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "CGSize"]
+- !private ["Ps9_Hashable", "UIColor"]
 - !private ["Ps9_Hashable", "UIEdgeInsets"]
 - !private ["Ps9_Hashable", "UINib"]
 - !private ["Ps9_Hashable", "awakeFromNib"]
+- !private ["Ps9_Hashable", "backgroundColor"]
+- !private ["Ps9_Hashable", "black"]
 - !private ["Ps9_Hashable", "cellId"]
 - ["Ps9_Hashable", "collectionView"]
 - !private ["Ps9_Hashable", "content"]
@@ -1112,16 +1183,20 @@ depends-nominal:
 - "PSo16NSObjectProtocol"
 - "PSo14NSSecureCoding"
 - "CSo8NSString"
+- !private "C8practice24SquareCollectionViewCell"
 - "SS"
 - "Ps16TextOutputStream"
 - "Ps20TextOutputStreamable"
 - "PSo29UIAccessibilityIdentification"
 - "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
+- !private "CSo24UICollectionReusableView"
 - !private "CSo16UICollectionView"
+- !private "CSo20UICollectionViewCell"
 - "PSo26UICollectionViewDataSource"
 - "PSo24UICollectionViewDelegate"
 - "PSo34UICollectionViewDelegateFlowLayout"
+- !private "CSo7UIColor"
 - "PSo17UICoordinateSpace"
 - "PSo13UIDynamicItem"
 - !private "VSC12UIEdgeInsets"
@@ -1141,6 +1216,7 @@ depends-nominal:
 - "Ps34_ExpressibleByBuiltinStringLiteral"
 - "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps26_ExpressibleByColorLiteral"
 - "Ps33_ExpressibleByStringInterpolation"
 - "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
@@ -1164,4 +1240,29 @@ depends-external:
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRCoreSwiftNameSupport.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 interface-hash: "3362b6ff3e25f17c1011ac868bf1c921"

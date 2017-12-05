@@ -6,249 +6,318 @@ provides-nominal:
 provides-member:
 - ["C8practice16Reference_TVCell", ""]
 provides-dynamic-lookup:
-- "AddReminder"
 - "ReferenceContent"
+- "addToBookmark"
 - "addToSchedule"
 - "awakeFromNib"
-- "reminder"
+- "bookmark"
+- "isEvent"
 - "schedule"
 - "setSelected"
+- "share"
+- "shareClicked"
 depends-top-level:
+- !private "=="
 - "AssignmentPrecedence"
 - "Bool"
+- "BooleanLiteralType"
 - "Reference_TVCell"
 - "UIButton"
 - "UILabel"
 - "UITableViewCell"
 depends-member:
 - !private ["Ps9AnyObject", "awakeFromNib"]
-- !private ["Ps9AnyObject", "contentMode"]
-- !private ["Ps9AnyObject", "imageView"]
+- !private ["Ps9AnyObject", "bookmark"]
 - !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "isEvent"]
+- !private ["Ps9AnyObject", "isHidden"]
 - !private ["Ps9AnyObject", "schedule"]
 - !private ["Ps9AnyObject", "setSelected"]
+- !private ["Ps9AnyObject", "share"]
 - ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["PSo15CALayerDelegate", "awakeFromNib"]
-- !private ["PSo15CALayerDelegate", "contentMode"]
-- !private ["PSo15CALayerDelegate", "imageView"]
+- !private ["PSo15CALayerDelegate", "bookmark"]
 - !private ["PSo15CALayerDelegate", "init"]
+- !private ["PSo15CALayerDelegate", "isEvent"]
+- !private ["PSo15CALayerDelegate", "isHidden"]
 - !private ["PSo15CALayerDelegate", "schedule"]
 - !private ["PSo15CALayerDelegate", "setSelected"]
+- !private ["PSo15CALayerDelegate", "share"]
 - ["PSo15CALayerDelegate", ""]
 - !private ["Ps7CVarArg", "awakeFromNib"]
-- !private ["Ps7CVarArg", "contentMode"]
-- !private ["Ps7CVarArg", "imageView"]
+- !private ["Ps7CVarArg", "bookmark"]
 - !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "isEvent"]
+- !private ["Ps7CVarArg", "isHidden"]
 - !private ["Ps7CVarArg", "schedule"]
 - !private ["Ps7CVarArg", "setSelected"]
+- !private ["Ps7CVarArg", "share"]
 - ["Ps7CVarArg", ""]
 - !private ["Ps28CustomDebugStringConvertible", "awakeFromNib"]
-- !private ["Ps28CustomDebugStringConvertible", "contentMode"]
-- !private ["Ps28CustomDebugStringConvertible", "imageView"]
+- !private ["Ps28CustomDebugStringConvertible", "bookmark"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "isEvent"]
+- !private ["Ps28CustomDebugStringConvertible", "isHidden"]
 - !private ["Ps28CustomDebugStringConvertible", "schedule"]
 - !private ["Ps28CustomDebugStringConvertible", "setSelected"]
+- !private ["Ps28CustomDebugStringConvertible", "share"]
 - ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "awakeFromNib"]
-- !private ["Ps23CustomStringConvertible", "contentMode"]
-- !private ["Ps23CustomStringConvertible", "imageView"]
+- !private ["Ps23CustomStringConvertible", "bookmark"]
 - !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "isEvent"]
+- !private ["Ps23CustomStringConvertible", "isHidden"]
 - !private ["Ps23CustomStringConvertible", "schedule"]
 - !private ["Ps23CustomStringConvertible", "setSelected"]
+- !private ["Ps23CustomStringConvertible", "share"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "awakeFromNib"]
-- !private ["Ps9Equatable", "contentMode"]
-- !private ["Ps9Equatable", "imageView"]
+- !private ["Ps9Equatable", "bookmark"]
 - !private ["Ps9Equatable", "init"]
-- !private ["Ps9Equatable", "scaleAspectFit"]
+- !private ["Ps9Equatable", "isEvent"]
+- !private ["Ps9Equatable", "isHidden"]
 - !private ["Ps9Equatable", "schedule"]
 - !private ["Ps9Equatable", "setSelected"]
+- !private ["Ps9Equatable", "share"]
 - ["Ps9Equatable", ""]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "awakeFromNib"]
-- !private ["Ps8Hashable", "contentMode"]
-- !private ["Ps8Hashable", "imageView"]
+- !private ["Ps8Hashable", "bookmark"]
 - !private ["Ps8Hashable", "init"]
-- !private ["Ps8Hashable", "scaleAspectFit"]
+- !private ["Ps8Hashable", "isEvent"]
+- !private ["Ps8Hashable", "isHidden"]
 - !private ["Ps8Hashable", "schedule"]
 - !private ["Ps8Hashable", "setSelected"]
+- !private ["Ps8Hashable", "share"]
 - ["Ps8Hashable", ""]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["PSo8NSCoding", "awakeFromNib"]
-- !private ["PSo8NSCoding", "contentMode"]
-- !private ["PSo8NSCoding", "imageView"]
+- !private ["PSo8NSCoding", "bookmark"]
 - !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "isEvent"]
+- !private ["PSo8NSCoding", "isHidden"]
 - !private ["PSo8NSCoding", "schedule"]
 - !private ["PSo8NSCoding", "setSelected"]
+- !private ["PSo8NSCoding", "share"]
 - ["PSo8NSCoding", ""]
-- ["CSo8NSObject", "AddReminder"]
 - ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "ReferenceContent"]
 - ["CSo8NSObject", "UIButton"]
 - ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "addToBookmark"]
 - ["CSo8NSObject", "addToSchedule"]
 - ["CSo8NSObject", "awakeFromNib"]
-- !private ["CSo8NSObject", "contentMode"]
-- !private ["CSo8NSObject", "imageView"]
+- ["CSo8NSObject", "bookmark"]
 - ["CSo8NSObject", "init"]
-- ["CSo8NSObject", "reminder"]
+- ["CSo8NSObject", "isEvent"]
+- !private ["CSo8NSObject", "isHidden"]
 - ["CSo8NSObject", "schedule"]
 - ["CSo8NSObject", "setSelected"]
+- ["CSo8NSObject", "share"]
+- ["CSo8NSObject", "shareClicked"]
 - !private ["PSo16NSObjectProtocol", "awakeFromNib"]
-- !private ["PSo16NSObjectProtocol", "contentMode"]
-- !private ["PSo16NSObjectProtocol", "imageView"]
+- !private ["PSo16NSObjectProtocol", "bookmark"]
 - !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "isEvent"]
+- !private ["PSo16NSObjectProtocol", "isHidden"]
 - !private ["PSo16NSObjectProtocol", "schedule"]
 - !private ["PSo16NSObjectProtocol", "setSelected"]
+- !private ["PSo16NSObjectProtocol", "share"]
 - ["PSo16NSObjectProtocol", ""]
-- !private ["Ps16RawRepresentable", "scaleAspectFit"]
-- ["C8practice16Reference_TVCell", "AddReminder"]
 - ["C8practice16Reference_TVCell", "Bool"]
 - ["C8practice16Reference_TVCell", "ReferenceContent"]
 - ["C8practice16Reference_TVCell", "UIButton"]
 - ["C8practice16Reference_TVCell", "UILabel"]
+- ["C8practice16Reference_TVCell", "addToBookmark"]
 - ["C8practice16Reference_TVCell", "addToSchedule"]
 - ["C8practice16Reference_TVCell", "awakeFromNib"]
+- ["C8practice16Reference_TVCell", "bookmark"]
 - ["C8practice16Reference_TVCell", "deinit"]
 - ["C8practice16Reference_TVCell", "init"]
-- ["C8practice16Reference_TVCell", "reminder"]
+- ["C8practice16Reference_TVCell", "isEvent"]
 - ["C8practice16Reference_TVCell", "schedule"]
 - ["C8practice16Reference_TVCell", "setSelected"]
+- ["C8practice16Reference_TVCell", "share"]
+- ["C8practice16Reference_TVCell", "shareClicked"]
 - !private ["PSo29UIAccessibilityIdentification", "awakeFromNib"]
-- !private ["PSo29UIAccessibilityIdentification", "contentMode"]
-- !private ["PSo29UIAccessibilityIdentification", "imageView"]
+- !private ["PSo29UIAccessibilityIdentification", "bookmark"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "isEvent"]
+- !private ["PSo29UIAccessibilityIdentification", "isHidden"]
 - !private ["PSo29UIAccessibilityIdentification", "schedule"]
 - !private ["PSo29UIAccessibilityIdentification", "setSelected"]
+- !private ["PSo29UIAccessibilityIdentification", "share"]
 - ["PSo29UIAccessibilityIdentification", ""]
 - !private ["PSo12UIAppearance", "awakeFromNib"]
-- !private ["PSo12UIAppearance", "contentMode"]
-- !private ["PSo12UIAppearance", "imageView"]
+- !private ["PSo12UIAppearance", "bookmark"]
 - !private ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "isEvent"]
+- !private ["PSo12UIAppearance", "isHidden"]
 - !private ["PSo12UIAppearance", "schedule"]
 - !private ["PSo12UIAppearance", "setSelected"]
+- !private ["PSo12UIAppearance", "share"]
 - ["PSo12UIAppearance", ""]
 - !private ["PSo21UIAppearanceContainer", "awakeFromNib"]
-- !private ["PSo21UIAppearanceContainer", "contentMode"]
-- !private ["PSo21UIAppearanceContainer", "imageView"]
+- !private ["PSo21UIAppearanceContainer", "bookmark"]
 - !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "isEvent"]
+- !private ["PSo21UIAppearanceContainer", "isHidden"]
 - !private ["PSo21UIAppearanceContainer", "schedule"]
 - !private ["PSo21UIAppearanceContainer", "setSelected"]
+- !private ["PSo21UIAppearanceContainer", "share"]
 - ["PSo21UIAppearanceContainer", ""]
-- !private ["CSo8UIButton", "imageView"]
-- !private ["CSo9UIControl", "imageView"]
+- !private ["CSo8UIButton", "isHidden"]
+- !private ["CSo9UIControl", "isHidden"]
 - !private ["PSo17UICoordinateSpace", "awakeFromNib"]
-- !private ["PSo17UICoordinateSpace", "contentMode"]
-- !private ["PSo17UICoordinateSpace", "imageView"]
+- !private ["PSo17UICoordinateSpace", "bookmark"]
 - !private ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "isEvent"]
+- !private ["PSo17UICoordinateSpace", "isHidden"]
 - !private ["PSo17UICoordinateSpace", "schedule"]
 - !private ["PSo17UICoordinateSpace", "setSelected"]
+- !private ["PSo17UICoordinateSpace", "share"]
 - ["PSo17UICoordinateSpace", ""]
 - !private ["PSo13UIDynamicItem", "awakeFromNib"]
-- !private ["PSo13UIDynamicItem", "contentMode"]
-- !private ["PSo13UIDynamicItem", "imageView"]
+- !private ["PSo13UIDynamicItem", "bookmark"]
 - !private ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "isEvent"]
+- !private ["PSo13UIDynamicItem", "isHidden"]
 - !private ["PSo13UIDynamicItem", "schedule"]
 - !private ["PSo13UIDynamicItem", "setSelected"]
+- !private ["PSo13UIDynamicItem", "share"]
 - ["PSo13UIDynamicItem", ""]
 - !private ["PSo18UIFocusEnvironment", "awakeFromNib"]
-- !private ["PSo18UIFocusEnvironment", "contentMode"]
-- !private ["PSo18UIFocusEnvironment", "imageView"]
+- !private ["PSo18UIFocusEnvironment", "bookmark"]
 - !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "isEvent"]
+- !private ["PSo18UIFocusEnvironment", "isHidden"]
 - !private ["PSo18UIFocusEnvironment", "schedule"]
 - !private ["PSo18UIFocusEnvironment", "setSelected"]
+- !private ["PSo18UIFocusEnvironment", "share"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "awakeFromNib"]
-- !private ["PSo11UIFocusItem", "contentMode"]
-- !private ["PSo11UIFocusItem", "imageView"]
+- !private ["PSo11UIFocusItem", "bookmark"]
 - !private ["PSo11UIFocusItem", "init"]
+- !private ["PSo11UIFocusItem", "isEvent"]
+- !private ["PSo11UIFocusItem", "isHidden"]
 - !private ["PSo11UIFocusItem", "schedule"]
 - !private ["PSo11UIFocusItem", "setSelected"]
+- !private ["PSo11UIFocusItem", "share"]
 - ["PSo11UIFocusItem", ""]
 - !private ["PSo27UIGestureRecognizerDelegate", "awakeFromNib"]
+- !private ["PSo27UIGestureRecognizerDelegate", "bookmark"]
 - !private ["PSo27UIGestureRecognizerDelegate", "init"]
+- !private ["PSo27UIGestureRecognizerDelegate", "isEvent"]
 - !private ["PSo27UIGestureRecognizerDelegate", "schedule"]
 - !private ["PSo27UIGestureRecognizerDelegate", "setSelected"]
+- !private ["PSo27UIGestureRecognizerDelegate", "share"]
 - ["PSo27UIGestureRecognizerDelegate", ""]
-- !private ["CSo11UIImageView", "contentMode"]
-- ["CSo11UIResponder", "AddReminder"]
 - ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "ReferenceContent"]
 - ["CSo11UIResponder", "UIButton"]
 - ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "addToBookmark"]
 - ["CSo11UIResponder", "addToSchedule"]
 - ["CSo11UIResponder", "awakeFromNib"]
-- !private ["CSo11UIResponder", "contentMode"]
-- !private ["CSo11UIResponder", "imageView"]
+- ["CSo11UIResponder", "bookmark"]
 - ["CSo11UIResponder", "init"]
-- ["CSo11UIResponder", "reminder"]
+- ["CSo11UIResponder", "isEvent"]
+- !private ["CSo11UIResponder", "isHidden"]
 - ["CSo11UIResponder", "schedule"]
 - ["CSo11UIResponder", "setSelected"]
+- ["CSo11UIResponder", "share"]
+- ["CSo11UIResponder", "shareClicked"]
 - !private ["PSo30UIResponderStandardEditActions", "awakeFromNib"]
-- !private ["PSo30UIResponderStandardEditActions", "contentMode"]
-- !private ["PSo30UIResponderStandardEditActions", "imageView"]
+- !private ["PSo30UIResponderStandardEditActions", "bookmark"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "isEvent"]
+- !private ["PSo30UIResponderStandardEditActions", "isHidden"]
 - !private ["PSo30UIResponderStandardEditActions", "schedule"]
 - !private ["PSo30UIResponderStandardEditActions", "setSelected"]
+- !private ["PSo30UIResponderStandardEditActions", "share"]
 - ["PSo30UIResponderStandardEditActions", ""]
-- ["CSo15UITableViewCell", "AddReminder"]
 - ["CSo15UITableViewCell", "Bool"]
 - ["CSo15UITableViewCell", "ReferenceContent"]
 - ["CSo15UITableViewCell", "UIButton"]
 - ["CSo15UITableViewCell", "UILabel"]
+- ["CSo15UITableViewCell", "addToBookmark"]
 - ["CSo15UITableViewCell", "addToSchedule"]
 - ["CSo15UITableViewCell", "awakeFromNib"]
+- ["CSo15UITableViewCell", "bookmark"]
 - ["CSo15UITableViewCell", "init"]
-- ["CSo15UITableViewCell", "reminder"]
+- ["CSo15UITableViewCell", "isEvent"]
 - ["CSo15UITableViewCell", "schedule"]
 - ["CSo15UITableViewCell", "setSelected"]
+- ["CSo15UITableViewCell", "share"]
+- ["CSo15UITableViewCell", "shareClicked"]
 - ["CSo15UITableViewCell", ""]
 - !private ["PSo18UITraitEnvironment", "awakeFromNib"]
-- !private ["PSo18UITraitEnvironment", "contentMode"]
-- !private ["PSo18UITraitEnvironment", "imageView"]
+- !private ["PSo18UITraitEnvironment", "bookmark"]
 - !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "isEvent"]
+- !private ["PSo18UITraitEnvironment", "isHidden"]
 - !private ["PSo18UITraitEnvironment", "schedule"]
 - !private ["PSo18UITraitEnvironment", "setSelected"]
+- !private ["PSo18UITraitEnvironment", "share"]
 - ["PSo18UITraitEnvironment", ""]
-- ["CSo6UIView", "AddReminder"]
 - ["CSo6UIView", "Bool"]
 - ["CSo6UIView", "ReferenceContent"]
 - ["CSo6UIView", "UIButton"]
 - ["CSo6UIView", "UILabel"]
+- ["CSo6UIView", "addToBookmark"]
 - ["CSo6UIView", "addToSchedule"]
 - ["CSo6UIView", "awakeFromNib"]
-- !private ["CSo6UIView", "contentMode"]
-- !private ["CSo6UIView", "imageView"]
+- ["CSo6UIView", "bookmark"]
 - ["CSo6UIView", "init"]
-- ["CSo6UIView", "reminder"]
+- ["CSo6UIView", "isEvent"]
+- !private ["CSo6UIView", "isHidden"]
 - ["CSo6UIView", "schedule"]
 - ["CSo6UIView", "setSelected"]
-- !private ["OSC17UIViewContentMode", "scaleAspectFit"]
+- ["CSo6UIView", "share"]
+- ["CSo6UIView", "shareClicked"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "awakeFromNib"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "contentMode"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "imageView"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "bookmark"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isEvent"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isHidden"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "schedule"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setSelected"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "share"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "awakeFromNib"]
-- !private ["Ps9_Hashable", "contentMode"]
-- !private ["Ps9_Hashable", "imageView"]
+- !private ["Ps9_Hashable", "bookmark"]
 - !private ["Ps9_Hashable", "init"]
-- !private ["Ps9_Hashable", "scaleAspectFit"]
+- !private ["Ps9_Hashable", "isEvent"]
+- !private ["Ps9_Hashable", "isHidden"]
 - !private ["Ps9_Hashable", "schedule"]
 - !private ["Ps9_Hashable", "setSelected"]
+- !private ["Ps9_Hashable", "share"]
 - ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 depends-nominal:
 - "Ps9AnyObject"
+- !private "Sb"
 - "PSo15CALayerDelegate"
 - "Ps7CVarArg"
 - "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
 - "Ps8Hashable"
+- !private "Ps25LosslessStringConvertible"
 - "PSo8NSCoding"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
-- !private "Ps16RawRepresentable"
 - "C8practice16Reference_TVCell"
 - "PSo29UIAccessibilityIdentification"
 - "PSo12UIAppearance"
@@ -260,15 +329,15 @@ depends-nominal:
 - "PSo18UIFocusEnvironment"
 - "PSo11UIFocusItem"
 - "PSo27UIGestureRecognizerDelegate"
-- !private "CSo11UIImageView"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - "CSo15UITableViewCell"
 - "PSo18UITraitEnvironment"
 - "CSo6UIView"
-- !private "OSC17UIViewContentMode"
 - "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.apinotesc"
@@ -288,4 +357,29 @@ depends-external:
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "846b2840fa4461612c6270972c04d4cf"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRCoreSwiftNameSupport.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+interface-hash: "48f8625126a34f982ec53fab9396b569"

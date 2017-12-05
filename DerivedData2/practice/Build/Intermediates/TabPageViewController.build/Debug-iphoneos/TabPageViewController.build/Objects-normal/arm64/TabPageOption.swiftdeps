@@ -1,0 +1,258 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "HidesTopContentsOnSwipeType"
+- "TabPageOption"
+- "=="
+provides-nominal:
+- "O21TabPageViewController27HidesTopContentsOnSwipeType"
+- "V21TabPageViewController13TabPageOption"
+provides-member:
+- ["O21TabPageViewController27HidesTopContentsOnSwipeType", ""]
+- ["V21TabPageViewController13TabPageOption", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "/"
+- "=="
+- "Bool"
+- "BooleanLiteralType"
+- !private "CGContext"
+- "CGFloat"
+- !private "CGRect"
+- "HidesTopContentsOnSwipeType"
+- "TabPageOption"
+- "TernaryPrecedence"
+- "UIColor"
+- !private "UIGraphicsBeginImageContext"
+- !private "UIGraphicsEndImageContext"
+- !private "UIGraphicsGetCurrentContext"
+- !private "UIGraphicsGetImageFromCurrentImageContext"
+- "UIImage"
+depends-member:
+- ["Ps16AbsoluteValuable", "init"]
+- !private ["Ps9AnyObject", "cgColor"]
+- !private ["Ps9AnyObject", "fill"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "setFillColor"]
+- ["Ps9AnyObject", "white"]
+- !private ["Ps9AnyObject", "withAlphaComponent"]
+- ["Ps19BinaryFloatingPoint", "init"]
+- !private ["Ps17BitwiseOperations", "hashValue"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["CSo9CGContext", "fill"]
+- !private ["CSo9CGContext", "setFillColor"]
+- ["V12CoreGraphics7CGFloat", "init"]
+- !private ["VSC6CGRect", "init"]
+- !private ["VSC6CGRect", "size"]
+- !private ["Ps7CVarArg", "cgColor"]
+- !private ["Ps7CVarArg", "hashValue"]
+- ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "white"]
+- !private ["Ps7CVarArg", "withAlphaComponent"]
+- !private ["Ps10Comparable", "hashValue"]
+- ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "cgColor"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "size"]
+- ["Ps28CustomDebugStringConvertible", "white"]
+- !private ["Ps28CustomDebugStringConvertible", "withAlphaComponent"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "hashValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "size"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "hashValue"]
+- ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "size"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "cgColor"]
+- !private ["Ps23CustomStringConvertible", "hashValue"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "white"]
+- !private ["Ps23CustomStringConvertible", "withAlphaComponent"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "_toAnyHashable"]
+- !private ["Ps9Equatable", "cgColor"]
+- ["Ps9Equatable", "hashValue"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "none"]
+- !private ["Ps9Equatable", "size"]
+- ["Ps9Equatable", "white"]
+- !private ["Ps9Equatable", "withAlphaComponent"]
+- ["Ps9Equatable", ""]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps25ExpressibleByFloatLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
+- ["Ps27ExpressibleByIntegerLiteral", "init"]
+- ["Ps13FloatingPoint", "init"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "_toAnyHashable"]
+- !private ["Ps8Hashable", "cgColor"]
+- ["Ps8Hashable", "hashValue"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "none"]
+- ["Ps8Hashable", "white"]
+- !private ["Ps8Hashable", "withAlphaComponent"]
+- ["Ps8Hashable", ""]
+- ["O21TabPageViewController27HidesTopContentsOnSwipeType", "=="]
+- ["O21TabPageViewController27HidesTopContentsOnSwipeType", "_toAnyHashable"]
+- ["O21TabPageViewController27HidesTopContentsOnSwipeType", "all"]
+- ["O21TabPageViewController27HidesTopContentsOnSwipeType", "deinit"]
+- ["O21TabPageViewController27HidesTopContentsOnSwipeType", "hashValue"]
+- ["O21TabPageViewController27HidesTopContentsOnSwipeType", "navigationBar"]
+- ["O21TabPageViewController27HidesTopContentsOnSwipeType", "none"]
+- ["O21TabPageViewController27HidesTopContentsOnSwipeType", "tabBar"]
+- !private ["Si", "hashValue"]
+- !private ["Ps7Integer", "hashValue"]
+- !private ["Ps17IntegerArithmetic", "hashValue"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps10MirrorPath", "hashValue"]
+- !private ["PSo8NSCoding", "cgColor"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "white"]
+- !private ["PSo8NSCoding", "withAlphaComponent"]
+- !private ["PSo9NSCopying", "cgColor"]
+- ["PSo9NSCopying", "init"]
+- ["PSo9NSCopying", "white"]
+- !private ["PSo9NSCopying", "withAlphaComponent"]
+- !private ["CSo8NSObject", "cgColor"]
+- ["CSo8NSObject", "white"]
+- !private ["CSo8NSObject", "withAlphaComponent"]
+- !private ["PSo16NSObjectProtocol", "cgColor"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "white"]
+- !private ["PSo16NSObjectProtocol", "withAlphaComponent"]
+- !private ["PSo14NSSecureCoding", "cgColor"]
+- ["PSo14NSSecureCoding", "init"]
+- ["PSo14NSSecureCoding", "white"]
+- !private ["PSo14NSSecureCoding", "withAlphaComponent"]
+- !private ["Ps13SignedInteger", "hashValue"]
+- !private ["Ps12SignedNumber", "hashValue"]
+- ["Ps12SignedNumber", "init"]
+- !private ["Ps10Strideable", "hashValue"]
+- ["Ps10Strideable", "init"]
+- ["V21TabPageViewController13TabPageOption", "Bool"]
+- !private ["V21TabPageViewController13TabPageOption", "CGContext"]
+- ["V21TabPageViewController13TabPageOption", "CGFloat"]
+- !private ["V21TabPageViewController13TabPageOption", "CGRect"]
+- ["V21TabPageViewController13TabPageOption", "HidesTopContentsOnSwipeType"]
+- ["V21TabPageViewController13TabPageOption", "UIColor"]
+- !private ["V21TabPageViewController13TabPageOption", "UIGraphicsBeginImageContext"]
+- !private ["V21TabPageViewController13TabPageOption", "UIGraphicsEndImageContext"]
+- !private ["V21TabPageViewController13TabPageOption", "UIGraphicsGetCurrentContext"]
+- !private ["V21TabPageViewController13TabPageOption", "UIGraphicsGetImageFromCurrentImageContext"]
+- ["V21TabPageViewController13TabPageOption", "UIImage"]
+- !private ["V21TabPageViewController13TabPageOption", "convertImage"]
+- ["V21TabPageViewController13TabPageOption", "currentBarHeight"]
+- ["V21TabPageViewController13TabPageOption", "currentColor"]
+- ["V21TabPageViewController13TabPageOption", "defaultColor"]
+- ["V21TabPageViewController13TabPageOption", "fontSize"]
+- ["V21TabPageViewController13TabPageOption", "hidesTopViewOnSwipeType"]
+- ["V21TabPageViewController13TabPageOption", "init"]
+- ["V21TabPageViewController13TabPageOption", "isTranslucent"]
+- ["V21TabPageViewController13TabPageOption", "pageBackgoundColor"]
+- ["V21TabPageViewController13TabPageOption", "tabBackgroundColor"]
+- ["V21TabPageViewController13TabPageOption", "tabBackgroundImage"]
+- ["V21TabPageViewController13TabPageOption", "tabBarAlpha"]
+- ["V21TabPageViewController13TabPageOption", "tabHeight"]
+- ["V21TabPageViewController13TabPageOption", "tabMargin"]
+- ["V21TabPageViewController13TabPageOption", "tabWidth"]
+- !private ["CSo7UIColor", "cgColor"]
+- ["CSo7UIColor", "init"]
+- ["CSo7UIColor", "white"]
+- !private ["CSo7UIColor", "withAlphaComponent"]
+- ["Ps15_CVarArgAligned", "init"]
+- ["Ps22_CVarArgPassedAsDouble", "init"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "hashValue"]
+- !private ["Ps26_ExpressibleByColorLiteral", "cgColor"]
+- ["Ps26_ExpressibleByColorLiteral", "init"]
+- ["Ps26_ExpressibleByColorLiteral", "white"]
+- !private ["Ps26_ExpressibleByColorLiteral", "withAlphaComponent"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "_toAnyHashable"]
+- !private ["Ps9_Hashable", "cgColor"]
+- ["Ps9_Hashable", "hashValue"]
+- ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "none"]
+- ["Ps9_Hashable", "white"]
+- !private ["Ps9_Hashable", "withAlphaComponent"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps14_Incrementable", "hashValue"]
+- !private ["Ps8_Integer", "hashValue"]
+- !private ["Ps18_IntegerArithmetic", "hashValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "size"]
+- !private ["Ps14_SignedInteger", "hashValue"]
+- !private ["Ps11_Strideable", "hashValue"]
+- ["Ps11_Strideable", "init"]
+depends-nominal:
+- "Ps16AbsoluteValuable"
+- "Ps9AnyObject"
+- "Ps19BinaryFloatingPoint"
+- !private "Ps17BitwiseOperations"
+- !private "Sb"
+- !private "CSo9CGContext"
+- "V12CoreGraphics7CGFloat"
+- !private "VSC6CGRect"
+- "Ps7CVarArg"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- "Ps25ExpressibleByFloatLiteral"
+- "Ps27ExpressibleByIntegerLiteral"
+- "Ps13FloatingPoint"
+- "Ps8Hashable"
+- "O21TabPageViewController27HidesTopContentsOnSwipeType"
+- !private "Si"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- !private "Ps13SignedInteger"
+- "Ps12SignedNumber"
+- "Ps10Strideable"
+- "V21TabPageViewController13TabPageOption"
+- "CSo7UIColor"
+- "Ps15_CVarArgAligned"
+- "Ps22_CVarArgPassedAsDouble"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- "Ps26_ExpressibleByColorLiteral"
+- "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- "Ps21_ObjectiveCBridgeable"
+- !private "Ps14_SignedInteger"
+- "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.apinotesc"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.apinotesc"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.apinotesc"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.apinotesc"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.apinotesc"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreText.apinotesc"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "fea5c18c8bdd030990c0081bfc420b58"

@@ -9,8 +9,8 @@ provides-dynamic-lookup:
 - "CategoryPicked"
 - "attributedString"
 - "comfirmSelection"
-- "count"
 - "dismissUnfocus"
+- "hadRead"
 - "leftSelectedtext"
 - "navigationBarSetup"
 - "numberOfSections"
@@ -28,17 +28,15 @@ provides-dynamic-lookup:
 - "unreadIndication"
 - "viewDidLoad"
 depends-top-level:
-- !private "!"
 - !private "!="
 - !private "+"
-- !private "+="
 - !private "-"
 - !private "=="
-- !private ">"
 - !private "Array"
 - !private "Article_TVC"
 - "AssignmentPrecedence"
-- !private "BooleanLiteralType"
+- "Bool"
+- "BooleanLiteralType"
 - "CGFloat"
 - !private "CGRect"
 - "CastingPrecedence"
@@ -103,7 +101,6 @@ depends-member:
 - !private ["Ps9AnyObject", "cellId"]
 - !private ["Ps9AnyObject", "comfirmSelection"]
 - !private ["Ps9AnyObject", "contentInset"]
-- !private ["Ps9AnyObject", "count"]
 - !private ["Ps9AnyObject", "dequeueReusableCell"]
 - !private ["Ps9AnyObject", "dismissUnfocus"]
 - !private ["Ps9AnyObject", "frame"]
@@ -169,6 +166,7 @@ depends-member:
 - !private ["Sa", "subscript"]
 - !private ["C8practice11Article_TVC", "init"]
 - !private ["Ps23BidirectionalCollection", "first"]
+- !private ["Ps23BidirectionalCollection", "item"]
 - !private ["Ps23BidirectionalCollection", "row"]
 - !private ["Ps23BidirectionalCollection", "subscript"]
 - !private ["Sb", "_getBuiltinLogicValue"]
@@ -242,7 +240,6 @@ depends-member:
 - !private ["Ps7CVarArg", "cellId"]
 - !private ["Ps7CVarArg", "comfirmSelection"]
 - !private ["Ps7CVarArg", "contentInset"]
-- !private ["Ps7CVarArg", "count"]
 - !private ["Ps7CVarArg", "dequeueReusableCell"]
 - !private ["Ps7CVarArg", "dismissUnfocus"]
 - !private ["Ps7CVarArg", "first"]
@@ -307,11 +304,14 @@ depends-member:
 - ["Ps7CVarArg", "withAlphaComponent"]
 - ["Ps7CVarArg", ""]
 - !private ["Ps10Collection", "first"]
+- !private ["Ps10Collection", "item"]
 - !private ["Ps10Collection", "row"]
 - !private ["Ps10Collection", "subscript"]
 - ["Ps10Comparable", "init"]
+- !private ["Ps10Comparable", "item"]
 - !private ["Ps10Comparable", "row"]
 - !private ["C8practice17CongressUpdate_VC", "Article_TVC"]
+- ["C8practice17CongressUpdate_VC", "Bool"]
 - ["C8practice17CongressUpdate_VC", "CGFloat"]
 - !private ["C8practice17CongressUpdate_VC", "CGRect"]
 - ["C8practice17CongressUpdate_VC", "CategoryPicked"]
@@ -339,9 +339,9 @@ depends-member:
 - ["C8practice17CongressUpdate_VC", "attributedString"]
 - !private ["C8practice17CongressUpdate_VC", "cellId"]
 - ["C8practice17CongressUpdate_VC", "comfirmSelection"]
-- ["C8practice17CongressUpdate_VC", "count"]
 - ["C8practice17CongressUpdate_VC", "deinit"]
 - ["C8practice17CongressUpdate_VC", "dismissUnfocus"]
+- ["C8practice17CongressUpdate_VC", "hadRead"]
 - ["C8practice17CongressUpdate_VC", "init"]
 - !private ["C8practice17CongressUpdate_VC", "kindOfPickerView"]
 - ["C8practice17CongressUpdate_VC", "leftSelectedtext"]
@@ -397,7 +397,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "cellId"]
 - !private ["Ps28CustomDebugStringConvertible", "comfirmSelection"]
 - !private ["Ps28CustomDebugStringConvertible", "contentInset"]
-- !private ["Ps28CustomDebugStringConvertible", "count"]
 - !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCell"]
 - !private ["Ps28CustomDebugStringConvertible", "dismissUnfocus"]
 - !private ["Ps28CustomDebugStringConvertible", "first"]
@@ -411,6 +410,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "instantiateViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "isActive"]
 - !private ["Ps28CustomDebugStringConvertible", "isScrollEnabled"]
+- !private ["Ps28CustomDebugStringConvertible", "item"]
 - !private ["Ps28CustomDebugStringConvertible", "keyWindow"]
 - !private ["Ps28CustomDebugStringConvertible", "kindOfPickerView"]
 - !private ["Ps28CustomDebugStringConvertible", "left"]
@@ -473,6 +473,7 @@ depends-member:
 - !private ["Ps17CustomReflectable", "first"]
 - !private ["Ps17CustomReflectable", "height"]
 - ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "item"]
 - !private ["Ps17CustomReflectable", "maxY"]
 - !private ["Ps17CustomReflectable", "row"]
 - !private ["Ps17CustomReflectable", "subscript"]
@@ -508,7 +509,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "cellId"]
 - !private ["Ps23CustomStringConvertible", "comfirmSelection"]
 - !private ["Ps23CustomStringConvertible", "contentInset"]
-- !private ["Ps23CustomStringConvertible", "count"]
 - !private ["Ps23CustomStringConvertible", "dequeueReusableCell"]
 - !private ["Ps23CustomStringConvertible", "dismissUnfocus"]
 - !private ["Ps23CustomStringConvertible", "first"]
@@ -521,6 +521,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "instantiateViewController"]
 - !private ["Ps23CustomStringConvertible", "isActive"]
 - !private ["Ps23CustomStringConvertible", "isScrollEnabled"]
+- !private ["Ps23CustomStringConvertible", "item"]
 - !private ["Ps23CustomStringConvertible", "keyWindow"]
 - !private ["Ps23CustomStringConvertible", "kindOfPickerView"]
 - !private ["Ps23CustomStringConvertible", "left"]
@@ -606,7 +607,6 @@ depends-member:
 - !private ["Ps9Equatable", "comfirmSelection"]
 - !private ["Ps9Equatable", "congress"]
 - !private ["Ps9Equatable", "contentInset"]
-- !private ["Ps9Equatable", "count"]
 - !private ["Ps9Equatable", "dequeueReusableCell"]
 - !private ["Ps9Equatable", "disease"]
 - !private ["Ps9Equatable", "dismissUnfocus"]
@@ -623,6 +623,7 @@ depends-member:
 - !private ["Ps9Equatable", "instantiateViewController"]
 - !private ["Ps9Equatable", "isActive"]
 - !private ["Ps9Equatable", "isScrollEnabled"]
+- !private ["Ps9Equatable", "item"]
 - !private ["Ps9Equatable", "keyWindow"]
 - !private ["Ps9Equatable", "kindOfPickerView"]
 - !private ["Ps9Equatable", "left"]
@@ -681,6 +682,7 @@ depends-member:
 - !private ["Ps9Equatable", "zero"]
 - ["Ps9Equatable", ""]
 - !private ["Ps25ExpressibleByArrayLiteral", "first"]
+- !private ["Ps25ExpressibleByArrayLiteral", "item"]
 - !private ["Ps25ExpressibleByArrayLiteral", "normal"]
 - !private ["Ps25ExpressibleByArrayLiteral", "row"]
 - !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
@@ -722,7 +724,6 @@ depends-member:
 - !private ["Ps8Hashable", "comfirmSelection"]
 - !private ["Ps8Hashable", "congress"]
 - !private ["Ps8Hashable", "contentInset"]
-- !private ["Ps8Hashable", "count"]
 - !private ["Ps8Hashable", "dequeueReusableCell"]
 - !private ["Ps8Hashable", "disease"]
 - !private ["Ps8Hashable", "dismissUnfocus"]
@@ -738,6 +739,7 @@ depends-member:
 - !private ["Ps8Hashable", "instantiateViewController"]
 - !private ["Ps8Hashable", "isActive"]
 - !private ["Ps8Hashable", "isScrollEnabled"]
+- !private ["Ps8Hashable", "item"]
 - !private ["Ps8Hashable", "keyWindow"]
 - !private ["Ps8Hashable", "kindOfPickerView"]
 - !private ["Ps8Hashable", "left"]
@@ -791,11 +793,13 @@ depends-member:
 - !private ["Ps8Hashable", "width"]
 - ["Ps8Hashable", "withAlphaComponent"]
 - ["Ps8Hashable", ""]
+- !private ["V10Foundation9IndexPath", "item"]
 - !private ["V10Foundation9IndexPath", "row"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - ["Ps25LosslessStringConvertible", "init"]
 - ["Ps10MirrorPath", "init"]
 - !private ["Ps17MutableCollection", "first"]
+- !private ["Ps17MutableCollection", "item"]
 - !private ["Ps17MutableCollection", "row"]
 - !private ["Ps17MutableCollection", "subscript"]
 - !private ["CSo18NSAttributedString", "append"]
@@ -830,7 +834,6 @@ depends-member:
 - !private ["PSo8NSCoding", "cellId"]
 - !private ["PSo8NSCoding", "comfirmSelection"]
 - !private ["PSo8NSCoding", "contentInset"]
-- !private ["PSo8NSCoding", "count"]
 - !private ["PSo8NSCoding", "dequeueReusableCell"]
 - !private ["PSo8NSCoding", "dismissUnfocus"]
 - !private ["PSo8NSCoding", "frame"]
@@ -913,8 +916,8 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIStoryboard"]
 - !private ["PSo26NSExtensionRequestHandling", "cellId"]
 - !private ["PSo26NSExtensionRequestHandling", "comfirmSelection"]
-- !private ["PSo26NSExtensionRequestHandling", "count"]
 - !private ["PSo26NSExtensionRequestHandling", "dismissUnfocus"]
+- !private ["PSo26NSExtensionRequestHandling", "hadRead"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "kindOfPickerView"]
 - !private ["PSo26NSExtensionRequestHandling", "leftSelectedtext"]
@@ -945,6 +948,7 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "append"]
 - ["PSo16NSMutableCopying", "init"]
 - !private ["CSo8NSObject", "Article_TVC"]
+- ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "CGFloat"]
 - !private ["CSo8NSObject", "CGRect"]
 - ["CSo8NSObject", "CategoryPicked"]
@@ -981,12 +985,11 @@ depends-member:
 - ["CSo8NSObject", "cellId"]
 - ["CSo8NSObject", "comfirmSelection"]
 - !private ["CSo8NSObject", "contentInset"]
-- ["CSo8NSObject", "count"]
 - !private ["CSo8NSObject", "dequeueReusableCell"]
 - ["CSo8NSObject", "dismissUnfocus"]
 - !private ["CSo8NSObject", "frame"]
 - ["CSo8NSObject", "gray"]
-- !private ["CSo8NSObject", "hadRead"]
+- ["CSo8NSObject", "hadRead"]
 - !private ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "instantiate"]
@@ -1076,7 +1079,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "cellId"]
 - !private ["PSo16NSObjectProtocol", "comfirmSelection"]
 - !private ["PSo16NSObjectProtocol", "contentInset"]
-- !private ["PSo16NSObjectProtocol", "count"]
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCell"]
 - !private ["PSo16NSObjectProtocol", "dismissUnfocus"]
 - !private ["PSo16NSObjectProtocol", "frame"]
@@ -1148,6 +1150,7 @@ depends-member:
 - !private ["Ps9OptionSet", "normal"]
 - !private ["Ps9OptionSet", "touchUpInside"]
 - !private ["Ps22RandomAccessCollection", "first"]
+- !private ["Ps22RandomAccessCollection", "item"]
 - !private ["Ps22RandomAccessCollection", "row"]
 - !private ["Ps22RandomAccessCollection", "subscript"]
 - !private ["Ps26RangeReplaceableCollection", "first"]
@@ -1162,8 +1165,10 @@ depends-member:
 - !private ["Ps16RawRepresentable", "normal"]
 - !private ["Ps16RawRepresentable", "rawValue"]
 - !private ["Ps16RawRepresentable", "touchUpInside"]
+- !private ["P10Foundation20ReferenceConvertible", "item"]
 - !private ["P10Foundation20ReferenceConvertible", "row"]
 - !private ["Ps8Sequence", "first"]
+- !private ["Ps8Sequence", "item"]
 - !private ["Ps8Sequence", "row"]
 - !private ["Ps8Sequence", "subscript"]
 - !private ["Ps10SetAlgebra", "normal"]
@@ -1279,7 +1284,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "cellId"]
 - !private ["PSo21UIAppearanceContainer", "comfirmSelection"]
 - !private ["PSo21UIAppearanceContainer", "contentInset"]
-- !private ["PSo21UIAppearanceContainer", "count"]
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCell"]
 - !private ["PSo21UIAppearanceContainer", "dismissUnfocus"]
 - !private ["PSo21UIAppearanceContainer", "frame"]
@@ -1374,8 +1378,8 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UIStoryboard"]
 - !private ["PSo18UIContentContainer", "cellId"]
 - !private ["PSo18UIContentContainer", "comfirmSelection"]
-- !private ["PSo18UIContentContainer", "count"]
 - !private ["PSo18UIContentContainer", "dismissUnfocus"]
+- !private ["PSo18UIContentContainer", "hadRead"]
 - !private ["PSo18UIContentContainer", "init"]
 - !private ["PSo18UIContentContainer", "kindOfPickerView"]
 - !private ["PSo18UIContentContainer", "leftSelectedtext"]
@@ -1516,7 +1520,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "cellId"]
 - !private ["PSo18UIFocusEnvironment", "comfirmSelection"]
 - !private ["PSo18UIFocusEnvironment", "contentInset"]
-- !private ["PSo18UIFocusEnvironment", "count"]
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCell"]
 - !private ["PSo18UIFocusEnvironment", "dismissUnfocus"]
 - !private ["PSo18UIFocusEnvironment", "frame"]
@@ -1631,6 +1634,7 @@ depends-member:
 - !private ["PSo20UIPickerViewDelegate", "selected"]
 - !private ["PSo20UIPickerViewDelegate", "toolbar"]
 - !private ["CSo11UIResponder", "Article_TVC"]
+- ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "CGFloat"]
 - !private ["CSo11UIResponder", "CGRect"]
 - ["CSo11UIResponder", "CategoryPicked"]
@@ -1665,11 +1669,10 @@ depends-member:
 - ["CSo11UIResponder", "cellId"]
 - ["CSo11UIResponder", "comfirmSelection"]
 - !private ["CSo11UIResponder", "contentInset"]
-- ["CSo11UIResponder", "count"]
 - !private ["CSo11UIResponder", "dequeueReusableCell"]
 - ["CSo11UIResponder", "dismissUnfocus"]
 - !private ["CSo11UIResponder", "frame"]
-- !private ["CSo11UIResponder", "hadRead"]
+- ["CSo11UIResponder", "hadRead"]
 - !private ["CSo11UIResponder", "image"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "isScrollEnabled"]
@@ -1750,7 +1753,6 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "cellId"]
 - !private ["PSo30UIResponderStandardEditActions", "comfirmSelection"]
 - !private ["PSo30UIResponderStandardEditActions", "contentInset"]
-- !private ["PSo30UIResponderStandardEditActions", "count"]
 - !private ["PSo30UIResponderStandardEditActions", "dequeueReusableCell"]
 - !private ["PSo30UIResponderStandardEditActions", "dismissUnfocus"]
 - !private ["PSo30UIResponderStandardEditActions", "frame"]
@@ -1833,8 +1835,8 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "UIStoryboard"]
 - !private ["PSo20UIScrollViewDelegate", "cellId"]
 - !private ["PSo20UIScrollViewDelegate", "comfirmSelection"]
-- !private ["PSo20UIScrollViewDelegate", "count"]
 - !private ["PSo20UIScrollViewDelegate", "dismissUnfocus"]
+- !private ["PSo20UIScrollViewDelegate", "hadRead"]
 - !private ["PSo20UIScrollViewDelegate", "init"]
 - !private ["PSo20UIScrollViewDelegate", "kindOfPickerView"]
 - !private ["PSo20UIScrollViewDelegate", "leftSelectedtext"]
@@ -1877,8 +1879,8 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIStoryboard"]
 - !private ["PSo16UIStateRestoring", "cellId"]
 - !private ["PSo16UIStateRestoring", "comfirmSelection"]
-- !private ["PSo16UIStateRestoring", "count"]
 - !private ["PSo16UIStateRestoring", "dismissUnfocus"]
+- !private ["PSo16UIStateRestoring", "hadRead"]
 - !private ["PSo16UIStateRestoring", "init"]
 - !private ["PSo16UIStateRestoring", "kindOfPickerView"]
 - !private ["PSo16UIStateRestoring", "leftSelectedtext"]
@@ -1921,6 +1923,7 @@ depends-member:
 - !private ["CSo15UITableViewCell", "topConstraint"]
 - !private ["OSC29UITableViewCellSelectionStyle", "none"]
 - !private ["CSo21UITableViewController", "Article_TVC"]
+- ["CSo21UITableViewController", "Bool"]
 - ["CSo21UITableViewController", "CGFloat"]
 - !private ["CSo21UITableViewController", "CGRect"]
 - ["CSo21UITableViewController", "CategoryPicked"]
@@ -1948,8 +1951,8 @@ depends-member:
 - ["CSo21UITableViewController", "attributedString"]
 - ["CSo21UITableViewController", "cellId"]
 - ["CSo21UITableViewController", "comfirmSelection"]
-- ["CSo21UITableViewController", "count"]
 - ["CSo21UITableViewController", "dismissUnfocus"]
+- ["CSo21UITableViewController", "hadRead"]
 - ["CSo21UITableViewController", "init"]
 - !private ["CSo21UITableViewController", "kindOfPickerView"]
 - ["CSo21UITableViewController", "leftSelectedtext"]
@@ -1996,8 +1999,8 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "UIStoryboard"]
 - !private ["PSo21UITableViewDataSource", "cellId"]
 - !private ["PSo21UITableViewDataSource", "comfirmSelection"]
-- !private ["PSo21UITableViewDataSource", "count"]
 - !private ["PSo21UITableViewDataSource", "dismissUnfocus"]
+- !private ["PSo21UITableViewDataSource", "hadRead"]
 - !private ["PSo21UITableViewDataSource", "init"]
 - !private ["PSo21UITableViewDataSource", "kindOfPickerView"]
 - !private ["PSo21UITableViewDataSource", "leftSelectedtext"]
@@ -2040,8 +2043,8 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "UIStoryboard"]
 - !private ["PSo19UITableViewDelegate", "cellId"]
 - !private ["PSo19UITableViewDelegate", "comfirmSelection"]
-- !private ["PSo19UITableViewDelegate", "count"]
 - !private ["PSo19UITableViewDelegate", "dismissUnfocus"]
+- !private ["PSo19UITableViewDelegate", "hadRead"]
 - !private ["PSo19UITableViewDelegate", "init"]
 - !private ["PSo19UITableViewDelegate", "kindOfPickerView"]
 - !private ["PSo19UITableViewDelegate", "leftSelectedtext"]
@@ -2093,7 +2096,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "cellId"]
 - !private ["PSo18UITraitEnvironment", "comfirmSelection"]
 - !private ["PSo18UITraitEnvironment", "contentInset"]
-- !private ["PSo18UITraitEnvironment", "count"]
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCell"]
 - !private ["PSo18UITraitEnvironment", "dismissUnfocus"]
 - !private ["PSo18UITraitEnvironment", "frame"]
@@ -2182,6 +2184,7 @@ depends-member:
 - !private ["CSo6UIView", "toolbar"]
 - !private ["CSo6UIView", "topConstraint"]
 - !private ["CSo16UIViewController", "Article_TVC"]
+- ["CSo16UIViewController", "Bool"]
 - ["CSo16UIViewController", "CGFloat"]
 - !private ["CSo16UIViewController", "CGRect"]
 - ["CSo16UIViewController", "CategoryPicked"]
@@ -2209,8 +2212,8 @@ depends-member:
 - ["CSo16UIViewController", "attributedString"]
 - ["CSo16UIViewController", "cellId"]
 - ["CSo16UIViewController", "comfirmSelection"]
-- ["CSo16UIViewController", "count"]
 - ["CSo16UIViewController", "dismissUnfocus"]
+- ["CSo16UIViewController", "hadRead"]
 - ["CSo16UIViewController", "init"]
 - !private ["CSo16UIViewController", "kindOfPickerView"]
 - ["CSo16UIViewController", "leftSelectedtext"]
@@ -2243,6 +2246,7 @@ depends-member:
 - !private ["Ps14_ArrayProtocol", "first"]
 - !private ["Ps14_ArrayProtocol", "subscript"]
 - !private ["Ps23_BidirectionalIndexable", "first"]
+- !private ["Ps23_BidirectionalIndexable", "item"]
 - !private ["Ps23_BidirectionalIndexable", "row"]
 - !private ["Ps23_BidirectionalIndexable", "subscript"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addSubview"]
@@ -2328,7 +2332,6 @@ depends-member:
 - !private ["Ps9_Hashable", "comfirmSelection"]
 - !private ["Ps9_Hashable", "congress"]
 - !private ["Ps9_Hashable", "contentInset"]
-- !private ["Ps9_Hashable", "count"]
 - !private ["Ps9_Hashable", "dequeueReusableCell"]
 - !private ["Ps9_Hashable", "disease"]
 - !private ["Ps9_Hashable", "dismissUnfocus"]
@@ -2344,6 +2347,7 @@ depends-member:
 - !private ["Ps9_Hashable", "instantiateViewController"]
 - !private ["Ps9_Hashable", "isActive"]
 - !private ["Ps9_Hashable", "isScrollEnabled"]
+- !private ["Ps9_Hashable", "item"]
 - !private ["Ps9_Hashable", "keyWindow"]
 - !private ["Ps9_Hashable", "kindOfPickerView"]
 - !private ["Ps9_Hashable", "left"]
@@ -2398,24 +2402,29 @@ depends-member:
 - ["Ps9_Hashable", "withAlphaComponent"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps10_Indexable", "first"]
+- !private ["Ps10_Indexable", "item"]
 - !private ["Ps10_Indexable", "row"]
 - !private ["Ps10_Indexable", "subscript"]
 - !private ["Ps14_IndexableBase", "first"]
+- !private ["Ps14_IndexableBase", "item"]
 - !private ["Ps14_IndexableBase", "row"]
 - !private ["Ps14_IndexableBase", "subscript"]
 - !private ["Ps17_MutableIndexable", "first"]
+- !private ["Ps17_MutableIndexable", "item"]
 - !private ["Ps17_MutableIndexable", "row"]
 - !private ["Ps17_MutableIndexable", "subscript"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "first"]
 - !private ["Ps21_ObjectiveCBridgeable", "height"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "item"]
 - !private ["Ps21_ObjectiveCBridgeable", "maxY"]
 - !private ["Ps21_ObjectiveCBridgeable", "row"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 - !private ["Ps21_ObjectiveCBridgeable", "width"]
 - !private ["Ps21_ObjectiveCBridgeable", "zero"]
 - !private ["Ps22_RandomAccessIndexable", "first"]
+- !private ["Ps22_RandomAccessIndexable", "item"]
 - !private ["Ps22_RandomAccessIndexable", "row"]
 - !private ["Ps22_RandomAccessIndexable", "subscript"]
 - !private ["Ps26_RangeReplaceableIndexable", "first"]
@@ -2571,4 +2580,29 @@ depends-external:
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "3fdf2a65d8a8e34f7548357dfb359307"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRCoreSwiftNameSupport.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+interface-hash: "2de9816686d300d9bca07dfba76efb66"

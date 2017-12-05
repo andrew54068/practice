@@ -9,8 +9,8 @@ provides-dynamic-lookup:
 - "backToPreviousVC"
 - "navigationBarSetup"
 - "searchBarView"
-- "viewDidDisappear"
 - "viewDidLoad"
+- "viewWillDisappear"
 depends-top-level:
 - "AssignmentPrecedence"
 - "Bool"
@@ -50,8 +50,8 @@ depends-member:
 - !private ["Ps9AnyObject", "removeFromSuperview"]
 - !private ["Ps9AnyObject", "searchBarView"]
 - !private ["Ps9AnyObject", "shared"]
-- !private ["Ps9AnyObject", "viewDidDisappear"]
 - !private ["Ps9AnyObject", "viewDidLoad"]
+- !private ["Ps9AnyObject", "viewWillAppear"]
 - ["Ps9AnyObject", ""]
 - !private ["Sa", "first"]
 - !private ["Ps23BidirectionalCollection", "first"]
@@ -84,8 +84,8 @@ depends-member:
 - !private ["Ps7CVarArg", "removeFromSuperview"]
 - !private ["Ps7CVarArg", "searchBarView"]
 - !private ["Ps7CVarArg", "shared"]
-- !private ["Ps7CVarArg", "viewDidDisappear"]
 - !private ["Ps7CVarArg", "viewDidLoad"]
+- !private ["Ps7CVarArg", "viewWillAppear"]
 - ["Ps7CVarArg", ""]
 - !private ["Ps10Collection", "first"]
 - !private ["Ps10Comparable", "init"]
@@ -111,8 +111,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "removeFromSuperview"]
 - !private ["Ps28CustomDebugStringConvertible", "searchBarView"]
 - !private ["Ps28CustomDebugStringConvertible", "shared"]
-- !private ["Ps28CustomDebugStringConvertible", "viewDidDisappear"]
 - !private ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- !private ["Ps28CustomDebugStringConvertible", "viewWillAppear"]
 - !private ["Ps28CustomDebugStringConvertible", "width"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
@@ -142,8 +142,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "removeFromSuperview"]
 - !private ["Ps23CustomStringConvertible", "searchBarView"]
 - !private ["Ps23CustomStringConvertible", "shared"]
-- !private ["Ps23CustomStringConvertible", "viewDidDisappear"]
 - !private ["Ps23CustomStringConvertible", "viewDidLoad"]
+- !private ["Ps23CustomStringConvertible", "viewWillAppear"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Ps9Equatable", "CGRect"]
 - !private ["Ps9Equatable", "UIApplication"]
@@ -170,8 +170,8 @@ depends-member:
 - !private ["Ps9Equatable", "searchBarView"]
 - !private ["Ps9Equatable", "shared"]
 - !private ["Ps9Equatable", "touchUpInside"]
-- !private ["Ps9Equatable", "viewDidDisappear"]
 - !private ["Ps9Equatable", "viewDidLoad"]
+- !private ["Ps9Equatable", "viewWillAppear"]
 - !private ["Ps9Equatable", "width"]
 - ["Ps9Equatable", ""]
 - !private ["Ps25ExpressibleByArrayLiteral", "first"]
@@ -203,8 +203,8 @@ depends-member:
 - !private ["Ps8Hashable", "scroll"]
 - !private ["Ps8Hashable", "searchBarView"]
 - !private ["Ps8Hashable", "shared"]
-- !private ["Ps8Hashable", "viewDidDisappear"]
 - !private ["Ps8Hashable", "viewDidLoad"]
+- !private ["Ps8Hashable", "viewWillAppear"]
 - ["Ps8Hashable", ""]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "init"]
@@ -225,8 +225,8 @@ depends-member:
 - !private ["PSo8NSCoding", "popViewController"]
 - !private ["PSo8NSCoding", "removeFromSuperview"]
 - !private ["PSo8NSCoding", "searchBarView"]
-- !private ["PSo8NSCoding", "viewDidDisappear"]
 - !private ["PSo8NSCoding", "viewDidLoad"]
+- !private ["PSo8NSCoding", "viewWillAppear"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "CGRect"]
@@ -240,8 +240,8 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "navigationController"]
 - !private ["PSo26NSExtensionRequestHandling", "popViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "searchBarView"]
-- !private ["PSo26NSExtensionRequestHandling", "viewDidDisappear"]
 - !private ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- !private ["PSo26NSExtensionRequestHandling", "viewWillAppear"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "Bool"]
@@ -271,8 +271,9 @@ depends-member:
 - !private ["CSo8NSObject", "removeFromSuperview"]
 - ["CSo8NSObject", "searchBarView"]
 - !private ["CSo8NSObject", "shared"]
-- ["CSo8NSObject", "viewDidDisappear"]
 - ["CSo8NSObject", "viewDidLoad"]
+- !private ["CSo8NSObject", "viewWillAppear"]
+- ["CSo8NSObject", "viewWillDisappear"]
 - !private ["PSo16NSObjectProtocol", "CGRect"]
 - !private ["PSo16NSObjectProtocol", "UIApplication"]
 - !private ["PSo16NSObjectProtocol", "UINib"]
@@ -294,8 +295,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "removeFromSuperview"]
 - !private ["PSo16NSObjectProtocol", "searchBarView"]
 - !private ["PSo16NSObjectProtocol", "shared"]
-- !private ["PSo16NSObjectProtocol", "viewDidDisappear"]
 - !private ["PSo16NSObjectProtocol", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "viewWillAppear"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "init"]
@@ -326,8 +327,8 @@ depends-member:
 - ["C8practice11Search_TPVC", "navigationBarSetup"]
 - !private ["C8practice11Search_TPVC", "navigationController"]
 - ["C8practice11Search_TPVC", "searchBarView"]
-- ["C8practice11Search_TPVC", "viewDidDisappear"]
 - ["C8practice11Search_TPVC", "viewDidLoad"]
+- ["C8practice11Search_TPVC", "viewWillDisappear"]
 - !private ["Ps8Sequence", "first"]
 - !private ["Ps10SetAlgebra", "touchUpInside"]
 - !private ["SS", "init"]
@@ -347,8 +348,9 @@ depends-member:
 - ["C21TabPageViewController21TabPageViewController", "navigationBarSetup"]
 - !private ["C21TabPageViewController21TabPageViewController", "navigationController"]
 - ["C21TabPageViewController21TabPageViewController", "searchBarView"]
-- ["C21TabPageViewController21TabPageViewController", "viewDidDisappear"]
 - ["C21TabPageViewController21TabPageViewController", "viewDidLoad"]
+- !private ["C21TabPageViewController21TabPageViewController", "viewWillAppear"]
+- ["C21TabPageViewController21TabPageViewController", "viewWillDisappear"]
 - ["C21TabPageViewController21TabPageViewController", ""]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
@@ -378,8 +380,8 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "popViewController"]
 - !private ["PSo21UIAppearanceContainer", "removeFromSuperview"]
 - !private ["PSo21UIAppearanceContainer", "searchBarView"]
-- !private ["PSo21UIAppearanceContainer", "viewDidDisappear"]
 - !private ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- !private ["PSo21UIAppearanceContainer", "viewWillAppear"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo13UIApplication", "keyWindow"]
 - !private ["CSo13UIApplication", "shared"]
@@ -395,8 +397,8 @@ depends-member:
 - !private ["PSo18UIContentContainer", "navigationController"]
 - !private ["PSo18UIContentContainer", "popViewController"]
 - !private ["PSo18UIContentContainer", "searchBarView"]
-- !private ["PSo18UIContentContainer", "viewDidDisappear"]
 - !private ["PSo18UIContentContainer", "viewDidLoad"]
+- !private ["PSo18UIContentContainer", "viewWillAppear"]
 - ["PSo18UIContentContainer", ""]
 - !private ["CSo9UIControl", "addTarget"]
 - !private ["VSC15UIControlEvents", "touchUpInside"]
@@ -426,8 +428,8 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "popViewController"]
 - !private ["PSo18UIFocusEnvironment", "removeFromSuperview"]
 - !private ["PSo18UIFocusEnvironment", "searchBarView"]
-- !private ["PSo18UIFocusEnvironment", "viewDidDisappear"]
 - !private ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- !private ["PSo18UIFocusEnvironment", "viewWillAppear"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "addSubview"]
 - !private ["PSo11UIFocusItem", "addTarget"]
@@ -454,8 +456,9 @@ depends-member:
 - ["CSo20UIPageViewController", "navigationBarSetup"]
 - !private ["CSo20UIPageViewController", "navigationController"]
 - ["CSo20UIPageViewController", "searchBarView"]
-- ["CSo20UIPageViewController", "viewDidDisappear"]
 - ["CSo20UIPageViewController", "viewDidLoad"]
+- !private ["CSo20UIPageViewController", "viewWillAppear"]
+- ["CSo20UIPageViewController", "viewWillDisappear"]
 - !private ["PSo30UIPageViewControllerDataSource", "CGRect"]
 - !private ["PSo30UIPageViewControllerDataSource", "UIApplication"]
 - !private ["PSo30UIPageViewControllerDataSource", "UINib"]
@@ -466,8 +469,8 @@ depends-member:
 - !private ["PSo30UIPageViewControllerDataSource", "navigationBarSetup"]
 - !private ["PSo30UIPageViewControllerDataSource", "navigationController"]
 - !private ["PSo30UIPageViewControllerDataSource", "searchBarView"]
-- !private ["PSo30UIPageViewControllerDataSource", "viewDidDisappear"]
 - !private ["PSo30UIPageViewControllerDataSource", "viewDidLoad"]
+- !private ["PSo30UIPageViewControllerDataSource", "viewWillAppear"]
 - ["PSo30UIPageViewControllerDataSource", ""]
 - !private ["PSo28UIPageViewControllerDelegate", "CGRect"]
 - !private ["PSo28UIPageViewControllerDelegate", "UIApplication"]
@@ -479,8 +482,8 @@ depends-member:
 - !private ["PSo28UIPageViewControllerDelegate", "navigationBarSetup"]
 - !private ["PSo28UIPageViewControllerDelegate", "navigationController"]
 - !private ["PSo28UIPageViewControllerDelegate", "searchBarView"]
-- !private ["PSo28UIPageViewControllerDelegate", "viewDidDisappear"]
 - !private ["PSo28UIPageViewControllerDelegate", "viewDidLoad"]
+- !private ["PSo28UIPageViewControllerDelegate", "viewWillAppear"]
 - ["PSo28UIPageViewControllerDelegate", ""]
 - !private ["OSC41UIPageViewControllerNavigationOrientation", "horizontal"]
 - !private ["OSC35UIPageViewControllerTransitionStyle", "scroll"]
@@ -508,8 +511,9 @@ depends-member:
 - !private ["CSo11UIResponder", "removeFromSuperview"]
 - ["CSo11UIResponder", "searchBarView"]
 - !private ["CSo11UIResponder", "shared"]
-- ["CSo11UIResponder", "viewDidDisappear"]
 - ["CSo11UIResponder", "viewDidLoad"]
+- !private ["CSo11UIResponder", "viewWillAppear"]
+- ["CSo11UIResponder", "viewWillDisappear"]
 - !private ["PSo30UIResponderStandardEditActions", "CGRect"]
 - !private ["PSo30UIResponderStandardEditActions", "UIApplication"]
 - !private ["PSo30UIResponderStandardEditActions", "UINib"]
@@ -528,8 +532,8 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "removeFromSuperview"]
 - !private ["PSo30UIResponderStandardEditActions", "searchBarView"]
 - !private ["PSo30UIResponderStandardEditActions", "shared"]
-- !private ["PSo30UIResponderStandardEditActions", "viewDidDisappear"]
 - !private ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- !private ["PSo30UIResponderStandardEditActions", "viewWillAppear"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["CSo8UIScreen", "bounds"]
 - !private ["CSo8UIScreen", "main"]
@@ -543,8 +547,8 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "navigationBarSetup"]
 - !private ["PSo20UIScrollViewDelegate", "navigationController"]
 - !private ["PSo20UIScrollViewDelegate", "searchBarView"]
-- !private ["PSo20UIScrollViewDelegate", "viewDidDisappear"]
 - !private ["PSo20UIScrollViewDelegate", "viewDidLoad"]
+- !private ["PSo20UIScrollViewDelegate", "viewWillAppear"]
 - ["PSo20UIScrollViewDelegate", ""]
 - !private ["PSo16UIStateRestoring", "CGRect"]
 - !private ["PSo16UIStateRestoring", "UIApplication"]
@@ -557,8 +561,8 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "navigationController"]
 - !private ["PSo16UIStateRestoring", "popViewController"]
 - !private ["PSo16UIStateRestoring", "searchBarView"]
-- !private ["PSo16UIStateRestoring", "viewDidDisappear"]
 - !private ["PSo16UIStateRestoring", "viewDidLoad"]
+- !private ["PSo16UIStateRestoring", "viewWillAppear"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["PSo18UITraitEnvironment", "CGRect"]
 - !private ["PSo18UITraitEnvironment", "UIApplication"]
@@ -578,8 +582,8 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "popViewController"]
 - !private ["PSo18UITraitEnvironment", "removeFromSuperview"]
 - !private ["PSo18UITraitEnvironment", "searchBarView"]
-- !private ["PSo18UITraitEnvironment", "viewDidDisappear"]
 - !private ["PSo18UITraitEnvironment", "viewDidLoad"]
+- !private ["PSo18UITraitEnvironment", "viewWillAppear"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "addSubview"]
 - !private ["CSo6UIView", "addTarget"]
@@ -603,8 +607,9 @@ depends-member:
 - !private ["CSo16UIViewController", "navigationController"]
 - !private ["CSo16UIViewController", "popViewController"]
 - ["CSo16UIViewController", "searchBarView"]
-- ["CSo16UIViewController", "viewDidDisappear"]
 - ["CSo16UIViewController", "viewDidLoad"]
+- !private ["CSo16UIViewController", "viewWillAppear"]
+- ["CSo16UIViewController", "viewWillDisappear"]
 - !private ["CSo8UIWindow", "addSubview"]
 - !private ["Ps14_ArrayProtocol", "first"]
 - !private ["Ps23_BidirectionalIndexable", "first"]
@@ -644,8 +649,8 @@ depends-member:
 - !private ["Ps9_Hashable", "scroll"]
 - !private ["Ps9_Hashable", "searchBarView"]
 - !private ["Ps9_Hashable", "shared"]
-- !private ["Ps9_Hashable", "viewDidDisappear"]
 - !private ["Ps9_Hashable", "viewDidLoad"]
+- !private ["Ps9_Hashable", "viewWillAppear"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps10_Indexable", "first"]
 - !private ["Ps14_IndexableBase", "first"]
@@ -762,4 +767,29 @@ depends-external:
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "1578404f7cab0f9f57131328e009cc29"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRCoreSwiftNameSupport.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+interface-hash: "83b978fcf52b44d526fd45035ad8ae74"

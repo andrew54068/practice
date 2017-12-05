@@ -22,6 +22,8 @@ class MayLike_TVCell: UITableViewCell, UICollectionViewDelegateFlowLayout, UICol
         
         let nib = UINib(nibName: "SquareCollectionViewCell", bundle: nil)
         content.register(nib, forCellWithReuseIdentifier: cellId)
+        self.translatesAutoresizingMaskIntoConstraints = false
+        
         content.delegate = self
         content.dataSource = self
         
@@ -36,6 +38,7 @@ class MayLike_TVCell: UITableViewCell, UICollectionViewDelegateFlowLayout, UICol
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! SquareCollectionViewCell
+        cell.backgroundColor = UIColor.black
         return cell
     }
     
@@ -44,12 +47,13 @@ class MayLike_TVCell: UITableViewCell, UICollectionViewDelegateFlowLayout, UICol
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 15, bottom: 42, right: 15)
+        return UIEdgeInsets(top: 0, left: 15, bottom: 28, right: 15)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 165, height: 193)
     }
+    
 }
 
 

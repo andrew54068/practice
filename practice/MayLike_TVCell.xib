@@ -19,7 +19,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You may also like" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zN-BE-DSP">
-                        <rect key="frame" x="0.0" y="0.0" width="130.5" height="32"/>
+                        <rect key="frame" x="15" y="0.0" width="130.5" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="Kaq-dp-eok"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
@@ -27,9 +30,6 @@
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="SCVCell" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="o9p-lo-DTW">
                         <rect key="frame" x="0.0" y="32" width="375" height="233"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="233" id="NKN-ob-moc"/>
-                        </constraints>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TzV-LP-a2c">
                             <size key="itemSize" width="50" height="50"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -43,7 +43,7 @@
                     <constraint firstItem="o9p-lo-DTW" firstAttribute="top" secondItem="Zqn-yy-thJ" secondAttribute="top" constant="32" id="Iv5-g8-Pdx"/>
                     <constraint firstItem="8zN-BE-DSP" firstAttribute="top" secondItem="Zqn-yy-thJ" secondAttribute="top" id="Oyc-Nt-eQs"/>
                     <constraint firstItem="8zN-BE-DSP" firstAttribute="bottom" secondItem="o9p-lo-DTW" secondAttribute="top" id="ZDH-mh-J91"/>
-                    <constraint firstItem="8zN-BE-DSP" firstAttribute="leading" secondItem="Zqn-yy-thJ" secondAttribute="leading" id="kFl-a7-WkB"/>
+                    <constraint firstItem="8zN-BE-DSP" firstAttribute="leading" secondItem="Zqn-yy-thJ" secondAttribute="leading" constant="15" id="kFl-a7-WkB"/>
                     <constraint firstItem="o9p-lo-DTW" firstAttribute="leading" secondItem="Zqn-yy-thJ" secondAttribute="leading" id="o9t-tq-dq9"/>
                     <constraint firstItem="o9p-lo-DTW" firstAttribute="bottom" secondItem="Zqn-yy-thJ" secondAttribute="bottom" id="xIh-13-Wb3"/>
                 </constraints>

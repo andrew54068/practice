@@ -217,7 +217,8 @@ class Main_VC: UICollectionViewController, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if indexPath.item < numberOfRowBeforeSqueezedRectangle{
             return CGSize(width: self.view.frame.width, height: 253)
-        }else{
+        }
+        else{
             return CGSize(width: self.view.frame.width, height: 135)
         }
         

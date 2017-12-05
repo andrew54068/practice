@@ -168,6 +168,7 @@ SWIFT_CLASS("_TtC8practice11Article_TVC")
 @property (nonatomic, readonly, copy) NSString * _Nonnull titleContent;
 @property (nonatomic, readonly, copy) NSString * _Nonnull timeContent;
 @property (nonatomic, readonly, copy) NSString * _Nonnull catagoryContent;
+@property (nonatomic) BOOL isEvent;
 @property (nonatomic, strong) IBOutlet UIView * _Null_unspecified ThumbnailHeaderView;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified articleTitle;
 @property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified time;
@@ -275,9 +276,9 @@ SWIFT_CLASS("_TtC8practice17CongressUpdate_VC")
 @property (nonatomic, copy) NSString * _Nonnull subtitleContent;
 @property (nonatomic, strong) NSMutableAttributedString * _Null_unspecified attributedString;
 @property (nonatomic, strong) UIImage * _Nullable unreadIndication;
-@property (nonatomic) NSInteger count;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull leftSelectedtext;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull rightSelectedtext;
+@property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull hadRead;
 @property (nonatomic, strong) selectionView * _Null_unspecified selectionView;
 @property (nonatomic, strong) pickerView * _Null_unspecified pickerView;
 - (void)viewDidLoad;
@@ -328,6 +329,7 @@ SWIFT_CLASS("_TtC8practice8Event_VC")
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -426,11 +428,14 @@ SWIFT_CLASS("_TtC8practice11Quiz_TVCell")
 
 SWIFT_CLASS("_TtC8practice16Reference_TVCell")
 @interface Reference_TVCell : UITableViewCell
+@property (nonatomic) BOOL isEvent;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified ReferenceContent;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified bookmark;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified share;
 @property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified schedule;
-@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified reminder;
 - (IBAction)addToSchedule:(id _Nonnull)sender;
-- (IBAction)AddReminder:(id _Nonnull)sender;
+- (IBAction)shareClicked:(id _Nonnull)sender;
+- (IBAction)addToBookmark:(id _Nonnull)sender;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
@@ -500,7 +505,7 @@ SWIFT_CLASS("_TtC8practice11Search_TPVC")
 - (nonnull instancetype)initWithTransitionStyle:(UIPageViewControllerTransitionStyle)style navigationOrientation:(UIPageViewControllerNavigationOrientation)navigationOrientation options:(NSDictionary<NSString *, id> * _Nullable)options OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)viewDidLoad;
-- (void)viewDidDisappear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
 - (void)navigationBarSetup;
 - (void)backToPreviousVC;
 @end

@@ -136,6 +136,14 @@ class Event_VC: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var article = Article_TVC()
+        
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        article = storyBoard.instantiateViewController(withIdentifier: "article_TVC") as! Article_TVC
+        article.isEvent = true
+        navigationController?.pushViewController(article, animated: true)
+    }
 
     /*
     // Override to support conditional editing of the table view.

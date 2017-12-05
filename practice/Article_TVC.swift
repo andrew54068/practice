@@ -15,6 +15,7 @@ class Article_TVC: UITableViewController {
     let titleContent = "A future in mind - rising to the challenge of Alzheimer's"
     let timeContent = "2017.11.21"
     let catagoryContent = "Event/Alzheimer's"
+    var isEvent:Bool = false
 
     private let ThumbnailHeaderCellId = "ThumbnailHeaderCell"
     private let ContentCellId = "ContentCell"
@@ -124,6 +125,7 @@ class Article_TVC: UITableViewController {
         else if indexPath.item == 2{
             let cell = tableView.dequeueReusableCell(withIdentifier: ReferenceCellId, for: indexPath) as! Reference_TVCell
             cell.selectionStyle = .none
+            cell.isEvent = self.isEvent
             return cell
         }
         else{
@@ -138,7 +140,8 @@ class Article_TVC: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.item == 3{
             //!@#$
-            return 330
+            tableView.estimatedRowHeight = 400
+            return tableView.estimatedRowHeight
         }else {
             tableView.estimatedRowHeight = 400
             return tableView.estimatedRowHeight

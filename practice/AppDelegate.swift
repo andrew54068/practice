@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,28 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //    }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
-        
-//        let layout = TabPageViewController
-//        window = UIWindow(frame: UIScreen.main.bounds)
-//        window?.makeKeyAndVisible()
-//        let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mainVC")
-//        window?.rootViewController = UINavigationController(rootViewController: mainVC)
-//        let bounds = window?.rootViewController?.navigationController?.navigationBar.bounds
-//        window?.rootViewController?.navigationController?.navigationBar.frame = CGRect(x: 0, y: 0, width: (bounds?.width)!, height: 64)
-
-
-//        let bar = NavigationBar()
-//        UINavigationBar.setItems(bar)
-//        let logo = UIImage(named: "Roche_logo")
-//        let imageView = UIImageView(image:logo)
-//        window?.rootViewController?.navigationItem.titleView = imageView
-//        let logo = UIImage(named: "Roche_logo")
-//        let logoView = UIImageView(image: logo)
-//        statusBarBackgroundView.frame = CGRect(x: 0, y: 0, width: (window?.frame.width)!, height: 20)
-//        statusBarBackgroundView.backgroundColor = UIColor.white
-//        window?.addSubview(statusBarBackgroundView)
-        
+        FirebaseApp.configure()
         return true
     }
 

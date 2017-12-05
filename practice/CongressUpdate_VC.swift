@@ -18,15 +18,15 @@ class CongressUpdate_VC: UITableViewController {
     private let selectionId = "selection"
     private let pickerId = "pick"
     
-    var thumbnailImage: UIImage?
-    var titleContent: String = ""
-    var subtitleContent: String = ""
+    var thumbnailImage = UIImage(named: "thumbnail_tab")
+    var titleContent: String = " A future in mind - rising to the challenge in Alzheimer's"
+    var subtitleContent: String = "Doretha Burrell-nickname “Dee” by children at the school where she once worked as administrative, Doretha Burrell-nickname “Dee” by children at the school where she once worked as administrative"
     var attributedString: NSMutableAttributedString!
     var unreadIndication: UIImage? = UIImage(named: "unread")
-    var count:Int = 0
     var selectedFilter: Int?
     var leftSelectedtext: [String] = ["All", "All"]
     var rightSelectedtext: [String] = ["All"]
+    var hadRead: [Bool] = [false, false, false, false, false]
     
     var selectionView: selectionView!
     
@@ -156,9 +156,7 @@ class CongressUpdate_VC: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! TableViewCell
         
-        if count > 1{
-            cell.hadRead = true
-        }
+        cell.hadRead = self.hadRead[indexPath.item]
         
         if indexPath.row == 0{
             cell.topConstraint.isActive = false
@@ -194,15 +192,10 @@ class CongressUpdate_VC: UITableViewController {
         cell.title.attributedText = cell.attributedString!
         cell.title.numberOfLines = 4
         cell.title.lineBreakMode = .byTruncatingTail
-        
-        if thumbnailImage != nil{
-            cell.thumbnail.image = thumbnailImage!
-        }
+        cell.thumbnail.image = thumbnailImage!
         
         cell.selectionStyle = .none
 
-
-//        print("123")
         return cell
     }
     
@@ -216,74 +209,20 @@ class CongressUpdate_VC: UITableViewController {
         return 318
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if !tableView.isScrollEnabled{
-            pickerView.removeFromSuperview()
-            tableView.isScrollEnabled = true
-        }
-        titleContent = " A future in mind - rising to the challenge in Alzheimer's"
-        subtitleContent = "Doretha Burrell-nickname “Dee” by children at the school where she once worked as administrative, Doretha Burrell-nickname “Dee” by children at the school where she once worked as administrative"
-        thumbnailImage = UIImage(named: "thumbnail_tab")
+//        if !tableView.isScrollEnabled{
+//            pickerView.removeFromSuperview()
+//            tableView.isScrollEnabled = true
+//        }
         
-        count += 1
+//        tableView.reloadData()
+        
+        var Article = Article_TVC()
+        
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        Article = storyBoard.instantiateViewController(withIdentifier: "article_TVC") as! Article_TVC
+        navigationController?.pushViewController(Article, animated: true)
+        self.hadRead[indexPath.item] = true
         tableView.reloadData()
-        
-        if count > 2{
-            var Article = Article_TVC()
-            
-            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-            Article = storyBoard.instantiateViewController(withIdentifier: "Article_TVC") as! Article_TVC
-            navigationController?.pushViewController(Article, animated: true)
-            
-        }
     }
-    
-    
-    
-    
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
