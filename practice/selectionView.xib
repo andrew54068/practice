@@ -20,7 +20,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="34" id="zNM-oS-lX3"/>
                     </constraints>
-                    <state key="normal" title="@#$%^&amp;"/>
+                    <state key="normal" title="All congress"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koj-j0-eXQ">
                     <rect key="frame" x="198.5" y="12" width="161.5" height="34"/>

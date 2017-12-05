@@ -187,15 +187,15 @@ SWIFT_CLASS("_TtC8practice11Article_TVC")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class Main_VC;
 @class BannerCategoryCollectionView;
+@class Main_VC;
 @class UICollectionView;
 @class UICollectionViewLayout;
 
 SWIFT_CLASS("_TtC8practice18BannerCategoryCell")
 @interface BannerCategoryCell : UICollectionViewCell <UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UIScrollViewDelegate, UICollectionViewDataSource>
-@property (nonatomic, strong) Main_VC * _Nullable mainView;
 @property (nonatomic, strong) IBOutlet BannerCategoryCollectionView * _Null_unspecified content;
+@property (nonatomic, strong) Main_VC * _Nullable mainView;
 - (void)awakeFromNib;
 - (void)setUpViews;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
@@ -370,7 +370,6 @@ SWIFT_CLASS("_TtC8practice7Main_VC")
 @interface Main_VC : UICollectionViewController <UICollectionViewDelegateFlowLayout>
 @property (nonatomic, copy) NSString * _Nonnull titleContent;
 @property (nonatomic, copy) NSString * _Nonnull subtitleContent;
-@property (nonatomic) NSInteger count;
 @property (nonatomic) NSInteger numberOfRowBeforeSqueezedRectangle;
 @property (nonatomic, strong) IBOutlet NavigationBar * _Null_unspecified navigationBar;
 - (void)viewWillAppear:(BOOL)animated;
@@ -555,6 +554,14 @@ SWIFT_CLASS("_TtC8practice9Search_VC")
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC8practice20SeeAllViewController")
+@interface SeeAllViewController : TabPageViewController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithTransitionStyle:(UIPageViewControllerTransitionStyle)style navigationOrientation:(UIPageViewControllerNavigationOrientation)navigationOrientation options:(NSDictionary<NSString *, id> * _Nullable)options OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 

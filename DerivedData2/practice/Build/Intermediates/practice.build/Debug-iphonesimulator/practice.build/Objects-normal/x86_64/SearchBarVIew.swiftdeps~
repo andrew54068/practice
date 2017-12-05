@@ -1,0 +1,284 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SearchBarView"
+provides-nominal:
+- "C8practice13SearchBarView"
+provides-member:
+- ["C8practice13SearchBarView", ""]
+provides-dynamic-lookup:
+- "cancel"
+- "searchBar"
+depends-top-level:
+- "AssignmentPrecedence"
+- "CGRect"
+- "NSCoder"
+- "SearchBarView"
+- "UIButton"
+- !private "UIColor"
+- "UISearchBar"
+- "UIView"
+depends-member:
+- !private ["Ps9AnyObject", "UIColor"]
+- !private ["Ps9AnyObject", "barTintColor"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "red"]
+- !private ["Ps9AnyObject", "searchBar"]
+- !private ["Ps9AnyObject", "searchBarStyle"]
+- ["Ps9AnyObject", ""]
+- !private ["PSo15CALayerDelegate", "UIColor"]
+- !private ["PSo15CALayerDelegate", "barTintColor"]
+- !private ["PSo15CALayerDelegate", "init"]
+- !private ["PSo15CALayerDelegate", "searchBar"]
+- !private ["PSo15CALayerDelegate", "searchBarStyle"]
+- ["PSo15CALayerDelegate", ""]
+- !private ["Ps7CVarArg", "UIColor"]
+- !private ["Ps7CVarArg", "barTintColor"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "red"]
+- !private ["Ps7CVarArg", "searchBar"]
+- !private ["Ps7CVarArg", "searchBarStyle"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps28CustomDebugStringConvertible", "UIColor"]
+- !private ["Ps28CustomDebugStringConvertible", "barTintColor"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "red"]
+- !private ["Ps28CustomDebugStringConvertible", "searchBar"]
+- !private ["Ps28CustomDebugStringConvertible", "searchBarStyle"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "UIColor"]
+- !private ["Ps23CustomStringConvertible", "barTintColor"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "red"]
+- !private ["Ps23CustomStringConvertible", "searchBar"]
+- !private ["Ps23CustomStringConvertible", "searchBarStyle"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "UIColor"]
+- !private ["Ps9Equatable", "barTintColor"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "prominent"]
+- !private ["Ps9Equatable", "red"]
+- !private ["Ps9Equatable", "searchBar"]
+- !private ["Ps9Equatable", "searchBarStyle"]
+- ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "UIColor"]
+- !private ["Ps8Hashable", "barTintColor"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "prominent"]
+- !private ["Ps8Hashable", "red"]
+- !private ["Ps8Hashable", "searchBar"]
+- !private ["Ps8Hashable", "searchBarStyle"]
+- ["Ps8Hashable", ""]
+- !private ["PSo8NSCoding", "UIColor"]
+- !private ["PSo8NSCoding", "barTintColor"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "red"]
+- !private ["PSo8NSCoding", "searchBar"]
+- !private ["PSo8NSCoding", "searchBarStyle"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "red"]
+- ["CSo8NSObject", "CGRect"]
+- ["CSo8NSObject", "NSCoder"]
+- ["CSo8NSObject", "UIButton"]
+- !private ["CSo8NSObject", "UIColor"]
+- ["CSo8NSObject", "UISearchBar"]
+- !private ["CSo8NSObject", "barTintColor"]
+- ["CSo8NSObject", "cancel"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "red"]
+- ["CSo8NSObject", "searchBar"]
+- !private ["CSo8NSObject", "searchBarStyle"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
+- !private ["PSo16NSObjectProtocol", "barTintColor"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "red"]
+- !private ["PSo16NSObjectProtocol", "searchBar"]
+- !private ["PSo16NSObjectProtocol", "searchBarStyle"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "red"]
+- !private ["Ps16RawRepresentable", "prominent"]
+- ["C8practice13SearchBarView", "CGRect"]
+- ["C8practice13SearchBarView", "NSCoder"]
+- ["C8practice13SearchBarView", "UIButton"]
+- !private ["C8practice13SearchBarView", "UIColor"]
+- ["C8practice13SearchBarView", "UISearchBar"]
+- ["C8practice13SearchBarView", "cancel"]
+- ["C8practice13SearchBarView", "deinit"]
+- ["C8practice13SearchBarView", "init"]
+- ["C8practice13SearchBarView", "searchBar"]
+- !private ["PSo29UIAccessibilityIdentification", "UIColor"]
+- !private ["PSo29UIAccessibilityIdentification", "barTintColor"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "searchBar"]
+- !private ["PSo29UIAccessibilityIdentification", "searchBarStyle"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- !private ["PSo12UIAppearance", "UIColor"]
+- !private ["PSo12UIAppearance", "barTintColor"]
+- !private ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "searchBar"]
+- !private ["PSo12UIAppearance", "searchBarStyle"]
+- ["PSo12UIAppearance", ""]
+- !private ["PSo21UIAppearanceContainer", "UIColor"]
+- !private ["PSo21UIAppearanceContainer", "barTintColor"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "searchBar"]
+- !private ["PSo21UIAppearanceContainer", "searchBarStyle"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo16UIBarPositioning", "barTintColor"]
+- !private ["PSo16UIBarPositioning", "searchBarStyle"]
+- !private ["CSo7UIColor", "red"]
+- !private ["PSo17UICoordinateSpace", "UIColor"]
+- !private ["PSo17UICoordinateSpace", "barTintColor"]
+- !private ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "searchBar"]
+- !private ["PSo17UICoordinateSpace", "searchBarStyle"]
+- ["PSo17UICoordinateSpace", ""]
+- !private ["PSo13UIDynamicItem", "UIColor"]
+- !private ["PSo13UIDynamicItem", "barTintColor"]
+- !private ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "searchBar"]
+- !private ["PSo13UIDynamicItem", "searchBarStyle"]
+- ["PSo13UIDynamicItem", ""]
+- !private ["PSo18UIFocusEnvironment", "UIColor"]
+- !private ["PSo18UIFocusEnvironment", "barTintColor"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "searchBar"]
+- !private ["PSo18UIFocusEnvironment", "searchBarStyle"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "UIColor"]
+- !private ["PSo11UIFocusItem", "barTintColor"]
+- !private ["PSo11UIFocusItem", "init"]
+- !private ["PSo11UIFocusItem", "searchBar"]
+- !private ["PSo11UIFocusItem", "searchBarStyle"]
+- ["PSo11UIFocusItem", ""]
+- ["CSo11UIResponder", "CGRect"]
+- ["CSo11UIResponder", "NSCoder"]
+- ["CSo11UIResponder", "UIButton"]
+- !private ["CSo11UIResponder", "UIColor"]
+- ["CSo11UIResponder", "UISearchBar"]
+- !private ["CSo11UIResponder", "barTintColor"]
+- ["CSo11UIResponder", "cancel"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "searchBar"]
+- !private ["CSo11UIResponder", "searchBarStyle"]
+- !private ["PSo30UIResponderStandardEditActions", "UIColor"]
+- !private ["PSo30UIResponderStandardEditActions", "barTintColor"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "searchBar"]
+- !private ["PSo30UIResponderStandardEditActions", "searchBarStyle"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["CSo11UISearchBar", "barTintColor"]
+- !private ["CSo11UISearchBar", "searchBarStyle"]
+- !private ["OSC16UISearchBarStyle", "prominent"]
+- !private ["PSo17UITextInputTraits", "barTintColor"]
+- !private ["PSo17UITextInputTraits", "searchBarStyle"]
+- !private ["PSo18UITraitEnvironment", "UIColor"]
+- !private ["PSo18UITraitEnvironment", "barTintColor"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "searchBar"]
+- !private ["PSo18UITraitEnvironment", "searchBarStyle"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "CGRect"]
+- ["CSo6UIView", "NSCoder"]
+- ["CSo6UIView", "UIButton"]
+- !private ["CSo6UIView", "UIColor"]
+- ["CSo6UIView", "UISearchBar"]
+- !private ["CSo6UIView", "barTintColor"]
+- ["CSo6UIView", "cancel"]
+- ["CSo6UIView", "init"]
+- ["CSo6UIView", "searchBar"]
+- !private ["CSo6UIView", "searchBarStyle"]
+- ["CSo6UIView", ""]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIColor"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "barTintColor"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "searchBar"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "searchBarStyle"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
+- !private ["Ps26_ExpressibleByColorLiteral", "red"]
+- !private ["Ps9_Hashable", "UIColor"]
+- !private ["Ps9_Hashable", "barTintColor"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "prominent"]
+- !private ["Ps9_Hashable", "red"]
+- !private ["Ps9_Hashable", "searchBar"]
+- !private ["Ps9_Hashable", "searchBarStyle"]
+- ["Ps9_Hashable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- "PSo15CALayerDelegate"
+- "Ps7CVarArg"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "Ps16RawRepresentable"
+- "C8practice13SearchBarView"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- !private "PSo16UIBarPositioning"
+- !private "CSo7UIColor"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "PSo11UIFocusItem"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- !private "CSo11UISearchBar"
+- !private "OSC16UISearchBarStyle"
+- !private "PSo17UITextInputTraits"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps26_ExpressibleByColorLiteral"
+- "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.apinotesc"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreText.apinotesc"
+- "/Users/kidnapper/Documents/25sprout/practice/DerivedData2/practice/Build/Products/Debug-iphonesimulator/TabPageViewController.framework/Modules/TabPageViewController.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRCoreSwiftNameSupport.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+interface-hash: "e1c3fa478d0b9c036fc02f0e71d6cb8e"

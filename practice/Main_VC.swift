@@ -10,7 +10,12 @@
 import UIKit
 import TabPageViewController
 
+protocol openArticle: class {
+    func showArticle()
+}
+
 class Main_VC: UICollectionViewController, UICollectionViewDelegateFlowLayout{
+    
     
     private let SquareCellId = "SquareCategoryCell"
     private let BannerCellId = "BannerCategoryCell"
@@ -18,8 +23,8 @@ class Main_VC: UICollectionViewController, UICollectionViewDelegateFlowLayout{
     var titleContent: String = ""
     var subtitleContent: String = ""
 //    var attributedString: NSMutableAttributedString!
-    var count:Int = 0
     var numberOfRowBeforeSqueezedRectangle:Int = 2
+    weak var delegate: openArticle?
     
     @IBOutlet var navigationBar: NavigationBar!
     
@@ -138,7 +143,7 @@ class Main_VC: UICollectionViewController, UICollectionViewDelegateFlowLayout{
     }
     
     func seeAll(){
-        let tc = TabPageViewController.create()
+        let tc = SeeAllViewController.create()
         let CongressUpdate = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CongressUpdate_VC")
         let ExpertCommentary = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ExpertCommentary_VC")
         let Event = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Event_VC")

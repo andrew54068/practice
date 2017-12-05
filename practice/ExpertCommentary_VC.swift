@@ -52,6 +52,7 @@ class ExpertCommentary_VC: UITableViewController {
     func selectionSetup(){
         let selectionNib = UINib(nibName: "selectionView", bundle: nil)
         selectionView = selectionNib.instantiate(withOwner: self, options: nil).first as! selectionView
+        selectionView.left.setTitle("All disease", for: .normal)
         selectionView.left.backgroundColor = UIColor.lightGray.withAlphaComponent(0.3)
         selectionView.updateConstraint()
         selectionView.right.isEnabled = false

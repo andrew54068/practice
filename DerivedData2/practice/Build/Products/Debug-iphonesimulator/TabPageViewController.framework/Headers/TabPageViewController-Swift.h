@@ -178,6 +178,9 @@ SWIFT_CLASS("_TtC21TabPageViewController21TabPageViewController")
 
 
 @interface TabPageViewController (SWIFT_EXTENSION(TabPageViewController))
+- (void)handleMenu;
+- (void)handleSearch;
+- (void)handleBookmark;
 - (void)updateNavigationBarHidden:(BOOL)hidden animated:(BOOL)animated;
 - (void)showNavigationBar;
 @end

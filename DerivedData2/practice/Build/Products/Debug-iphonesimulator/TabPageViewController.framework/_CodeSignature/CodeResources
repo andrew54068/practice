@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/TabPageViewController-Swift.h</key>
 		<data>
-		n3wXrdBMZtktuugrMom9i4W7RTQ=
+		nIoBcQTvhnqEKy8InFAY/5s7+Wo=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/TabPageViewController.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		qz+JScQrrZJHu7jgNybewKo8rzw=
+		yR6zxtZeR9ZYHZkB09uT+ewT3Y8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,11 +47,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			n3wXrdBMZtktuugrMom9i4W7RTQ=
+			nIoBcQTvhnqEKy8InFAY/5s7+Wo=
 			</data>
 			<key>hash2</key>
 			<data>
-			GwQ8ug1qAXi6KpeC4avjSA+WRWPXBAX4Hiqpu2PZoBI=
+			rRF+FS3Ov3OR4XvPB8U2VHXK0hLA0KmeXSvtzBLAJp0=
 			</data>
 		</dict>
 		<key>Modules/TabPageViewController.swiftmodule/x86_64.swiftdoc</key>
@@ -69,11 +69,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qz+JScQrrZJHu7jgNybewKo8rzw=
+			yR6zxtZeR9ZYHZkB09uT+ewT3Y8=
 			</data>
 			<key>hash2</key>
 			<data>
-			J+bnO8kD+UgN3OYVHygPX5ENffUFsk9/Q2Rvncf0jFU=
+			9qm+OYTsk4TEy3qWUd3gofTd157x+EGYKzNUGypVXCw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

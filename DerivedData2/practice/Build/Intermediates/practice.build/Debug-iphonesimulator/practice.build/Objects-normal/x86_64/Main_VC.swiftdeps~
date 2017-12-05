@@ -1,13 +1,15 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "openArticle"
 - "Main_VC"
 provides-nominal:
+- "P8practice11openArticle"
 - "C8practice7Main_VC"
 provides-member:
+- ["P8practice11openArticle", ""]
 - ["C8practice7Main_VC", ""]
 provides-dynamic-lookup:
 - "collectionView"
-- "count"
 - "handleBookmark"
 - "handleMenu"
 - "handleSearch"
@@ -45,10 +47,10 @@ depends-top-level:
 - "NavigationBar"
 - !private "Search_TPVC"
 - !private "Search_TVC"
+- !private "SeeAllViewController"
 - !private "SquareCategoryCell"
 - "String"
 - "StringLiteralType"
-- !private "TabPageViewController"
 - !private "UIBarButtonItem"
 - !private "UIBarButtonSystemItem"
 - !private "UIButton"
@@ -64,6 +66,7 @@ depends-top-level:
 - !private "UINib"
 - !private "UIStoryboard"
 - !private "UnicodeScalarType"
+- "openArticle"
 - !private "print"
 depends-member:
 - !private ["Ps9AnyObject", "Article_TVC"]
@@ -77,8 +80,8 @@ depends-member:
 - !private ["Ps9AnyObject", "NSTextAttachment"]
 - !private ["Ps9AnyObject", "Search_TPVC"]
 - !private ["Ps9AnyObject", "Search_TVC"]
+- !private ["Ps9AnyObject", "SeeAllViewController"]
 - !private ["Ps9AnyObject", "SquareCellId"]
-- !private ["Ps9AnyObject", "TabPageViewController"]
 - !private ["Ps9AnyObject", "UIBarButtonItem"]
 - !private ["Ps9AnyObject", "UIBarButtonSystemItem"]
 - !private ["Ps9AnyObject", "UIButton"]
@@ -151,8 +154,8 @@ depends-member:
 - !private ["Ps7CVarArg", "NSTextAttachment"]
 - !private ["Ps7CVarArg", "Search_TPVC"]
 - !private ["Ps7CVarArg", "Search_TVC"]
+- !private ["Ps7CVarArg", "SeeAllViewController"]
 - !private ["Ps7CVarArg", "SquareCellId"]
-- !private ["Ps7CVarArg", "TabPageViewController"]
 - !private ["Ps7CVarArg", "UIBarButtonItem"]
 - !private ["Ps7CVarArg", "UIBarButtonSystemItem"]
 - !private ["Ps7CVarArg", "UIButton"]
@@ -211,8 +214,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "NSTextAttachment"]
 - !private ["Ps28CustomDebugStringConvertible", "Search_TPVC"]
 - !private ["Ps28CustomDebugStringConvertible", "Search_TVC"]
+- !private ["Ps28CustomDebugStringConvertible", "SeeAllViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "SquareCellId"]
-- !private ["Ps28CustomDebugStringConvertible", "TabPageViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "UIBarButtonItem"]
 - !private ["Ps28CustomDebugStringConvertible", "UIBarButtonSystemItem"]
 - !private ["Ps28CustomDebugStringConvertible", "UIButton"]
@@ -276,8 +279,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "NSTextAttachment"]
 - !private ["Ps23CustomStringConvertible", "Search_TPVC"]
 - !private ["Ps23CustomStringConvertible", "Search_TVC"]
+- !private ["Ps23CustomStringConvertible", "SeeAllViewController"]
 - !private ["Ps23CustomStringConvertible", "SquareCellId"]
-- !private ["Ps23CustomStringConvertible", "TabPageViewController"]
 - !private ["Ps23CustomStringConvertible", "UIBarButtonItem"]
 - !private ["Ps23CustomStringConvertible", "UIBarButtonSystemItem"]
 - !private ["Ps23CustomStringConvertible", "UIButton"]
@@ -335,8 +338,8 @@ depends-member:
 - !private ["Ps9Equatable", "NSTextAttachment"]
 - !private ["Ps9Equatable", "Search_TPVC"]
 - !private ["Ps9Equatable", "Search_TVC"]
+- !private ["Ps9Equatable", "SeeAllViewController"]
 - !private ["Ps9Equatable", "SquareCellId"]
-- !private ["Ps9Equatable", "TabPageViewController"]
 - !private ["Ps9Equatable", "UIBarButtonItem"]
 - !private ["Ps9Equatable", "UIBarButtonSystemItem"]
 - !private ["Ps9Equatable", "UIButton"]
@@ -407,8 +410,8 @@ depends-member:
 - !private ["Ps8Hashable", "NSTextAttachment"]
 - !private ["Ps8Hashable", "Search_TPVC"]
 - !private ["Ps8Hashable", "Search_TVC"]
+- !private ["Ps8Hashable", "SeeAllViewController"]
 - !private ["Ps8Hashable", "SquareCellId"]
-- !private ["Ps8Hashable", "TabPageViewController"]
 - !private ["Ps8Hashable", "UIBarButtonItem"]
 - !private ["Ps8Hashable", "UIBarButtonSystemItem"]
 - !private ["Ps8Hashable", "UIButton"]
@@ -479,10 +482,10 @@ depends-member:
 - ["C8practice7Main_VC", "NavigationBar"]
 - !private ["C8practice7Main_VC", "Search_TPVC"]
 - !private ["C8practice7Main_VC", "Search_TVC"]
+- !private ["C8practice7Main_VC", "SeeAllViewController"]
 - !private ["C8practice7Main_VC", "SquareCategoryCell"]
 - !private ["C8practice7Main_VC", "SquareCellId"]
 - ["C8practice7Main_VC", "String"]
-- !private ["C8practice7Main_VC", "TabPageViewController"]
 - !private ["C8practice7Main_VC", "UIBarButtonItem"]
 - !private ["C8practice7Main_VC", "UIBarButtonSystemItem"]
 - !private ["C8practice7Main_VC", "UIButton"]
@@ -496,8 +499,8 @@ depends-member:
 - !private ["C8practice7Main_VC", "UINib"]
 - !private ["C8practice7Main_VC", "UIStoryboard"]
 - ["C8practice7Main_VC", "collectionView"]
-- ["C8practice7Main_VC", "count"]
 - ["C8practice7Main_VC", "deinit"]
+- ["C8practice7Main_VC", "delegate"]
 - ["C8practice7Main_VC", "handleBookmark"]
 - ["C8practice7Main_VC", "handleMenu"]
 - ["C8practice7Main_VC", "handleSearch"]
@@ -506,6 +509,7 @@ depends-member:
 - !private ["C8practice7Main_VC", "navigationController"]
 - !private ["C8practice7Main_VC", "navigationItem"]
 - ["C8practice7Main_VC", "numberOfRowBeforeSqueezedRectangle"]
+- ["C8practice7Main_VC", "openArticle"]
 - !private ["C8practice7Main_VC", "print"]
 - ["C8practice7Main_VC", "seeAll"]
 - !private ["C8practice7Main_VC", "segueId"]
@@ -531,8 +535,8 @@ depends-member:
 - !private ["PSo8NSCoding", "NSTextAttachment"]
 - !private ["PSo8NSCoding", "Search_TPVC"]
 - !private ["PSo8NSCoding", "Search_TVC"]
+- !private ["PSo8NSCoding", "SeeAllViewController"]
 - !private ["PSo8NSCoding", "SquareCellId"]
-- !private ["PSo8NSCoding", "TabPageViewController"]
 - !private ["PSo8NSCoding", "UIBarButtonItem"]
 - !private ["PSo8NSCoding", "UIBarButtonSystemItem"]
 - !private ["PSo8NSCoding", "UIButton"]
@@ -589,8 +593,8 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "NSTextAttachment"]
 - !private ["PSo26NSExtensionRequestHandling", "Search_TPVC"]
 - !private ["PSo26NSExtensionRequestHandling", "Search_TVC"]
+- !private ["PSo26NSExtensionRequestHandling", "SeeAllViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "SquareCellId"]
-- !private ["PSo26NSExtensionRequestHandling", "TabPageViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "UIBarButtonItem"]
 - !private ["PSo26NSExtensionRequestHandling", "UIBarButtonSystemItem"]
 - !private ["PSo26NSExtensionRequestHandling", "UIButton"]
@@ -639,10 +643,10 @@ depends-member:
 - ["CSo8NSObject", "NavigationBar"]
 - !private ["CSo8NSObject", "Search_TPVC"]
 - !private ["CSo8NSObject", "Search_TVC"]
+- !private ["CSo8NSObject", "SeeAllViewController"]
 - !private ["CSo8NSObject", "SquareCategoryCell"]
 - ["CSo8NSObject", "SquareCellId"]
 - ["CSo8NSObject", "String"]
-- !private ["CSo8NSObject", "TabPageViewController"]
 - !private ["CSo8NSObject", "UIBarButtonItem"]
 - !private ["CSo8NSObject", "UIBarButtonSystemItem"]
 - !private ["CSo8NSObject", "UIButton"]
@@ -660,10 +664,9 @@ depends-member:
 - !private ["CSo8NSObject", "backBarButtonItem"]
 - !private ["CSo8NSObject", "bounds"]
 - ["CSo8NSObject", "collectionView"]
-- ["CSo8NSObject", "count"]
 - !private ["CSo8NSObject", "create"]
 - !private ["CSo8NSObject", "dataSource"]
-- !private ["CSo8NSObject", "delegate"]
+- ["CSo8NSObject", "delegate"]
 - !private ["CSo8NSObject", "dequeueReusableCell"]
 - !private ["CSo8NSObject", "frame"]
 - ["CSo8NSObject", "handleBookmark"]
@@ -678,6 +681,7 @@ depends-member:
 - !private ["CSo8NSObject", "navigationController"]
 - !private ["CSo8NSObject", "navigationItem"]
 - ["CSo8NSObject", "numberOfRowBeforeSqueezedRectangle"]
+- ["CSo8NSObject", "openArticle"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "pushViewController"]
 - !private ["CSo8NSObject", "register"]
@@ -707,8 +711,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "NSTextAttachment"]
 - !private ["PSo16NSObjectProtocol", "Search_TPVC"]
 - !private ["PSo16NSObjectProtocol", "Search_TVC"]
+- !private ["PSo16NSObjectProtocol", "SeeAllViewController"]
 - !private ["PSo16NSObjectProtocol", "SquareCellId"]
-- !private ["PSo16NSObjectProtocol", "TabPageViewController"]
 - !private ["PSo16NSObjectProtocol", "UIBarButtonItem"]
 - !private ["PSo16NSObjectProtocol", "UIBarButtonSystemItem"]
 - !private ["PSo16NSObjectProtocol", "UIButton"]
@@ -776,6 +780,7 @@ depends-member:
 - !private ["C8practice11Search_TPVC", "init"]
 - !private ["C8practice11Search_TPVC", "tabItems"]
 - !private ["C8practice10Search_TVC", "init"]
+- !private ["C8practice20SeeAllViewController", "create"]
 - !private ["Ps8Sequence", "item"]
 - !private ["Ps10SetAlgebra", "normal"]
 - !private ["Ps10SetAlgebra", "touchUpInside"]
@@ -821,8 +826,8 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "NSTextAttachment"]
 - !private ["PSo21UIAppearanceContainer", "Search_TPVC"]
 - !private ["PSo21UIAppearanceContainer", "Search_TVC"]
+- !private ["PSo21UIAppearanceContainer", "SeeAllViewController"]
 - !private ["PSo21UIAppearanceContainer", "SquareCellId"]
-- !private ["PSo21UIAppearanceContainer", "TabPageViewController"]
 - !private ["PSo21UIAppearanceContainer", "UIBarButtonItem"]
 - !private ["PSo21UIAppearanceContainer", "UIBarButtonSystemItem"]
 - !private ["PSo21UIAppearanceContainer", "UIButton"]
@@ -894,10 +899,10 @@ depends-member:
 - ["CSo26UICollectionViewController", "NavigationBar"]
 - !private ["CSo26UICollectionViewController", "Search_TPVC"]
 - !private ["CSo26UICollectionViewController", "Search_TVC"]
+- !private ["CSo26UICollectionViewController", "SeeAllViewController"]
 - !private ["CSo26UICollectionViewController", "SquareCategoryCell"]
 - ["CSo26UICollectionViewController", "SquareCellId"]
 - ["CSo26UICollectionViewController", "String"]
-- !private ["CSo26UICollectionViewController", "TabPageViewController"]
 - !private ["CSo26UICollectionViewController", "UIBarButtonItem"]
 - !private ["CSo26UICollectionViewController", "UIBarButtonSystemItem"]
 - !private ["CSo26UICollectionViewController", "UIButton"]
@@ -911,7 +916,7 @@ depends-member:
 - !private ["CSo26UICollectionViewController", "UINib"]
 - !private ["CSo26UICollectionViewController", "UIStoryboard"]
 - ["CSo26UICollectionViewController", "collectionView"]
-- ["CSo26UICollectionViewController", "count"]
+- ["CSo26UICollectionViewController", "delegate"]
 - ["CSo26UICollectionViewController", "handleBookmark"]
 - ["CSo26UICollectionViewController", "handleMenu"]
 - ["CSo26UICollectionViewController", "handleSearch"]
@@ -920,6 +925,7 @@ depends-member:
 - !private ["CSo26UICollectionViewController", "navigationController"]
 - !private ["CSo26UICollectionViewController", "navigationItem"]
 - ["CSo26UICollectionViewController", "numberOfRowBeforeSqueezedRectangle"]
+- ["CSo26UICollectionViewController", "openArticle"]
 - !private ["CSo26UICollectionViewController", "print"]
 - ["CSo26UICollectionViewController", "seeAll"]
 - ["CSo26UICollectionViewController", "segueId"]
@@ -942,8 +948,8 @@ depends-member:
 - !private ["PSo26UICollectionViewDataSource", "NSTextAttachment"]
 - !private ["PSo26UICollectionViewDataSource", "Search_TPVC"]
 - !private ["PSo26UICollectionViewDataSource", "Search_TVC"]
+- !private ["PSo26UICollectionViewDataSource", "SeeAllViewController"]
 - !private ["PSo26UICollectionViewDataSource", "SquareCellId"]
-- !private ["PSo26UICollectionViewDataSource", "TabPageViewController"]
 - !private ["PSo26UICollectionViewDataSource", "UIBarButtonItem"]
 - !private ["PSo26UICollectionViewDataSource", "UIBarButtonSystemItem"]
 - !private ["PSo26UICollectionViewDataSource", "UIButton"]
@@ -979,8 +985,8 @@ depends-member:
 - !private ["PSo24UICollectionViewDelegate", "NSTextAttachment"]
 - !private ["PSo24UICollectionViewDelegate", "Search_TPVC"]
 - !private ["PSo24UICollectionViewDelegate", "Search_TVC"]
+- !private ["PSo24UICollectionViewDelegate", "SeeAllViewController"]
 - !private ["PSo24UICollectionViewDelegate", "SquareCellId"]
-- !private ["PSo24UICollectionViewDelegate", "TabPageViewController"]
 - !private ["PSo24UICollectionViewDelegate", "UIBarButtonItem"]
 - !private ["PSo24UICollectionViewDelegate", "UIBarButtonSystemItem"]
 - !private ["PSo24UICollectionViewDelegate", "UIButton"]
@@ -1016,8 +1022,8 @@ depends-member:
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "NSTextAttachment"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "Search_TPVC"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "Search_TVC"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "SeeAllViewController"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "SquareCellId"]
-- !private ["PSo34UICollectionViewDelegateFlowLayout", "TabPageViewController"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "UIBarButtonItem"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "UIBarButtonSystemItem"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "UIButton"]
@@ -1052,8 +1058,8 @@ depends-member:
 - !private ["PSo18UIContentContainer", "NSTextAttachment"]
 - !private ["PSo18UIContentContainer", "Search_TPVC"]
 - !private ["PSo18UIContentContainer", "Search_TVC"]
+- !private ["PSo18UIContentContainer", "SeeAllViewController"]
 - !private ["PSo18UIContentContainer", "SquareCellId"]
-- !private ["PSo18UIContentContainer", "TabPageViewController"]
 - !private ["PSo18UIContentContainer", "UIBarButtonItem"]
 - !private ["PSo18UIContentContainer", "UIBarButtonSystemItem"]
 - !private ["PSo18UIContentContainer", "UIButton"]
@@ -1119,8 +1125,8 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "NSTextAttachment"]
 - !private ["PSo18UIFocusEnvironment", "Search_TPVC"]
 - !private ["PSo18UIFocusEnvironment", "Search_TVC"]
+- !private ["PSo18UIFocusEnvironment", "SeeAllViewController"]
 - !private ["PSo18UIFocusEnvironment", "SquareCellId"]
-- !private ["PSo18UIFocusEnvironment", "TabPageViewController"]
 - !private ["PSo18UIFocusEnvironment", "UIBarButtonItem"]
 - !private ["PSo18UIFocusEnvironment", "UIBarButtonSystemItem"]
 - !private ["PSo18UIFocusEnvironment", "UIButton"]
@@ -1201,10 +1207,10 @@ depends-member:
 - ["CSo11UIResponder", "NavigationBar"]
 - !private ["CSo11UIResponder", "Search_TPVC"]
 - !private ["CSo11UIResponder", "Search_TVC"]
+- !private ["CSo11UIResponder", "SeeAllViewController"]
 - !private ["CSo11UIResponder", "SquareCategoryCell"]
 - ["CSo11UIResponder", "SquareCellId"]
 - ["CSo11UIResponder", "String"]
-- !private ["CSo11UIResponder", "TabPageViewController"]
 - !private ["CSo11UIResponder", "UIBarButtonItem"]
 - !private ["CSo11UIResponder", "UIBarButtonSystemItem"]
 - !private ["CSo11UIResponder", "UIButton"]
@@ -1219,10 +1225,9 @@ depends-member:
 - !private ["CSo11UIResponder", "UIStoryboard"]
 - !private ["CSo11UIResponder", "addTarget"]
 - ["CSo11UIResponder", "collectionView"]
-- ["CSo11UIResponder", "count"]
 - !private ["CSo11UIResponder", "create"]
 - !private ["CSo11UIResponder", "dataSource"]
-- !private ["CSo11UIResponder", "delegate"]
+- ["CSo11UIResponder", "delegate"]
 - !private ["CSo11UIResponder", "dequeueReusableCell"]
 - !private ["CSo11UIResponder", "frame"]
 - ["CSo11UIResponder", "handleBookmark"]
@@ -1235,6 +1240,7 @@ depends-member:
 - !private ["CSo11UIResponder", "navigationController"]
 - !private ["CSo11UIResponder", "navigationItem"]
 - ["CSo11UIResponder", "numberOfRowBeforeSqueezedRectangle"]
+- ["CSo11UIResponder", "openArticle"]
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "pushViewController"]
 - !private ["CSo11UIResponder", "register"]
@@ -1260,8 +1266,8 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "NSTextAttachment"]
 - !private ["PSo30UIResponderStandardEditActions", "Search_TPVC"]
 - !private ["PSo30UIResponderStandardEditActions", "Search_TVC"]
+- !private ["PSo30UIResponderStandardEditActions", "SeeAllViewController"]
 - !private ["PSo30UIResponderStandardEditActions", "SquareCellId"]
-- !private ["PSo30UIResponderStandardEditActions", "TabPageViewController"]
 - !private ["PSo30UIResponderStandardEditActions", "UIBarButtonItem"]
 - !private ["PSo30UIResponderStandardEditActions", "UIBarButtonSystemItem"]
 - !private ["PSo30UIResponderStandardEditActions", "UIButton"]
@@ -1312,8 +1318,8 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "NSTextAttachment"]
 - !private ["PSo20UIScrollViewDelegate", "Search_TPVC"]
 - !private ["PSo20UIScrollViewDelegate", "Search_TVC"]
+- !private ["PSo20UIScrollViewDelegate", "SeeAllViewController"]
 - !private ["PSo20UIScrollViewDelegate", "SquareCellId"]
-- !private ["PSo20UIScrollViewDelegate", "TabPageViewController"]
 - !private ["PSo20UIScrollViewDelegate", "UIBarButtonItem"]
 - !private ["PSo20UIScrollViewDelegate", "UIBarButtonSystemItem"]
 - !private ["PSo20UIScrollViewDelegate", "UIButton"]
@@ -1351,8 +1357,8 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "NSTextAttachment"]
 - !private ["PSo16UIStateRestoring", "Search_TPVC"]
 - !private ["PSo16UIStateRestoring", "Search_TVC"]
+- !private ["PSo16UIStateRestoring", "SeeAllViewController"]
 - !private ["PSo16UIStateRestoring", "SquareCellId"]
-- !private ["PSo16UIStateRestoring", "TabPageViewController"]
 - !private ["PSo16UIStateRestoring", "UIBarButtonItem"]
 - !private ["PSo16UIStateRestoring", "UIBarButtonSystemItem"]
 - !private ["PSo16UIStateRestoring", "UIButton"]
@@ -1396,8 +1402,8 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "NSTextAttachment"]
 - !private ["PSo18UITraitEnvironment", "Search_TPVC"]
 - !private ["PSo18UITraitEnvironment", "Search_TVC"]
+- !private ["PSo18UITraitEnvironment", "SeeAllViewController"]
 - !private ["PSo18UITraitEnvironment", "SquareCellId"]
-- !private ["PSo18UITraitEnvironment", "TabPageViewController"]
 - !private ["PSo18UITraitEnvironment", "UIBarButtonItem"]
 - !private ["PSo18UITraitEnvironment", "UIBarButtonSystemItem"]
 - !private ["PSo18UITraitEnvironment", "UIButton"]
@@ -1460,10 +1466,10 @@ depends-member:
 - ["CSo16UIViewController", "NavigationBar"]
 - !private ["CSo16UIViewController", "Search_TPVC"]
 - !private ["CSo16UIViewController", "Search_TVC"]
+- !private ["CSo16UIViewController", "SeeAllViewController"]
 - !private ["CSo16UIViewController", "SquareCategoryCell"]
 - ["CSo16UIViewController", "SquareCellId"]
 - ["CSo16UIViewController", "String"]
-- !private ["CSo16UIViewController", "TabPageViewController"]
 - !private ["CSo16UIViewController", "UIBarButtonItem"]
 - !private ["CSo16UIViewController", "UIBarButtonSystemItem"]
 - !private ["CSo16UIViewController", "UIButton"]
@@ -1477,8 +1483,8 @@ depends-member:
 - !private ["CSo16UIViewController", "UINib"]
 - !private ["CSo16UIViewController", "UIStoryboard"]
 - ["CSo16UIViewController", "collectionView"]
-- ["CSo16UIViewController", "count"]
 - !private ["CSo16UIViewController", "create"]
+- ["CSo16UIViewController", "delegate"]
 - ["CSo16UIViewController", "handleBookmark"]
 - ["CSo16UIViewController", "handleMenu"]
 - ["CSo16UIViewController", "handleSearch"]
@@ -1488,6 +1494,7 @@ depends-member:
 - !private ["CSo16UIViewController", "navigationController"]
 - !private ["CSo16UIViewController", "navigationItem"]
 - ["CSo16UIViewController", "numberOfRowBeforeSqueezedRectangle"]
+- ["CSo16UIViewController", "openArticle"]
 - !private ["CSo16UIViewController", "print"]
 - !private ["CSo16UIViewController", "pushViewController"]
 - ["CSo16UIViewController", "seeAll"]
@@ -1532,8 +1539,8 @@ depends-member:
 - !private ["Ps9_Hashable", "NSTextAttachment"]
 - !private ["Ps9_Hashable", "Search_TPVC"]
 - !private ["Ps9_Hashable", "Search_TVC"]
+- !private ["Ps9_Hashable", "SeeAllViewController"]
 - !private ["Ps9_Hashable", "SquareCellId"]
-- !private ["Ps9_Hashable", "TabPageViewController"]
 - !private ["Ps9_Hashable", "UIBarButtonItem"]
 - !private ["Ps9_Hashable", "UIBarButtonSystemItem"]
 - !private ["Ps9_Hashable", "UIButton"]
@@ -1592,6 +1599,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "item"]
 - !private ["Ps21_ObjectiveCBridgeable", "width"]
 - !private ["Ps22_RandomAccessIndexable", "item"]
+- ["P8practice11openArticle", "showArticle"]
 depends-nominal:
 - "Ps9AnyObject"
 - !private "C8practice11Article_TVC"
@@ -1638,6 +1646,7 @@ depends-nominal:
 - !private "P10Foundation20ReferenceConvertible"
 - !private "C8practice11Search_TPVC"
 - !private "C8practice10Search_TVC"
+- !private "C8practice20SeeAllViewController"
 - !private "Ps8Sequence"
 - !private "Ps10SetAlgebra"
 - !private "C8practice18SquareCategoryCell"
@@ -1709,6 +1718,7 @@ depends-nominal:
 - !private "Ps17_MutableIndexable"
 - "Ps21_ObjectiveCBridgeable"
 - !private "Ps22_RandomAccessIndexable"
+- "P8practice11openArticle"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.apinotesc"
@@ -1753,4 +1763,4 @@ depends-external:
 - "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
 - "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-interface-hash: "79ccb7975e197fc114370f345fb4350c"
+interface-hash: "b5bb15875daa78c5016eed016d79e8fa"

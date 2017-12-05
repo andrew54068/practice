@@ -1956,4 +1956,4 @@ depends-external:
 - "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
 - "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-interface-hash: "9a4cdd5f1e6505ce5bca97c34c357e6c"
+interface-hash: "7e256df710b796943de9d7e557b213e2"

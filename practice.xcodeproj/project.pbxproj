@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1B8B8B87B8232B0CAE54F005 /* Pods_practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51959F7A951EEAC0E6C5AFF7 /* Pods_practice.framework */; };
 		6D03AA4D1FD54EFA00655774 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D03AA4C1FD54EFA00655774 /* GoogleService-Info.plist */; };
+		6D03AA581FD688AA00655774 /* SeeAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D03AA571FD688AA00655774 /* SeeAllViewController.swift */; };
 		6D0AE38D1FB0731400D56D08 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0AE38B1FB0731400D56D08 /* TableViewCell.swift */; };
 		6D0AE38E1FB0731400D56D08 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D0AE38C1FB0731400D56D08 /* TableViewCell.xib */; };
 		6D0AE39C1FB1484300D56D08 /* TabPageViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0AE39B1FB1484300D56D08 /* TabPageViewController.framework */; };
@@ -115,6 +116,7 @@
 		51959F7A951EEAC0E6C5AFF7 /* Pods_practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_practice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60561801F80D0BBBE03113B7 /* Pods-practice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-practice.release.xcconfig"; path = "Pods/Target Support Files/Pods-practice/Pods-practice.release.xcconfig"; sourceTree = "<group>"; };
 		6D03AA4C1FD54EFA00655774 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6D03AA571FD688AA00655774 /* SeeAllViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeeAllViewController.swift; sourceTree = "<group>"; };
 		6D0AE38B1FB0731400D56D08 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		6D0AE38C1FB0731400D56D08 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		6D0AE38F1FB1432A00D56D08 /* TabPageViewController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TabPageViewController.xcodeproj; path = ../../TabPageViewController/TabPageViewController.xcodeproj; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 			children = (
 				6D16BE911FC437CF00FA8530 /* TVC_extension.swift */,
 				6D28C28E1FB40EDB00E6E80E /* Main_VC.swift */,
+				6D03AA571FD688AA00655774 /* SeeAllViewController.swift */,
 				6D0BCCA71FB157E700702643 /* CongressUpdate_VC.swift */,
 				6D1727981FBC035500B3A2EE /* ExpertCommentary_VC.swift */,
 				6D0BCCAC1FB1581200702643 /* Event_VC.swift */,
@@ -558,6 +561,7 @@
 				6DE701D41FBAD0F40053D315 /* SquareCategoryCollectionView.swift in Sources */,
 				6DC4BA391FD539EE0047E084 /* SearchBarVIew.swift in Sources */,
 				6D97A0DE1FCEAD1C00EB1DB6 /* SearchTabBarView.swift in Sources */,
+				6D03AA581FD688AA00655774 /* SeeAllViewController.swift in Sources */,
 				6D3A61091FC66FE500F1D7C0 /* TrailFactSheet_TVCell.swift in Sources */,
 				6D0BCCA81FB157E700702643 /* CongressUpdate_VC.swift in Sources */,
 			);

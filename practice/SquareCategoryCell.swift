@@ -17,8 +17,8 @@ class SquareCategoryCell: UICollectionViewCell, UICollectionViewDelegate, UIColl
     
 //    weak var delegate: buttonClicked?
     private let cellId = "SCVCell"
-    var titleContent: String = ""
-    var subtitleContent: String = ""
+    var titleContent: String = " A future in mind - rising to the challenge in Alzheimer's"
+    var subtitleContent: String = "Doretha Burrell-nickname “Dee” by children at the school where she once worked as administrative, Doretha Burrell-nickname “Dee” by children at the school where she once worked as administrative"
     var attributedString: NSMutableAttributedString!
     var count:Int = 0
     
@@ -41,7 +41,6 @@ class SquareCategoryCell: UICollectionViewCell, UICollectionViewDelegate, UIColl
         
         let nib = UINib(nibName: "SquareCollectionViewCell", bundle: nil)
         content.register(nib, forCellWithReuseIdentifier: cellId)
-        
         content.delegate = self
         content.dataSource = self
     }
@@ -89,16 +88,10 @@ class SquareCategoryCell: UICollectionViewCell, UICollectionViewDelegate, UIColl
     
     //MARK: CollectionView delegate
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("actually here and indexPath = \(indexPath.item)")
-        titleContent = " A future in mind - rising to the challenge in Alzheimer's"
-        subtitleContent = "Doretha Burrell-nickname “Dee” by children at the school where she once worked as administrative, Doretha Burrell-nickname “Dee” by children at the school where she once worked as administrative"
-        count += 1
         performSelector(inBackground: #selector(Main_VC.seeAll), with: nil)
         collectionView.reloadData()
         
-        if count > 2{
-            mainView?.showArticle()
-        }
+        mainView?.showArticle()
     }
     
     //MARK: CollectionView delegateFlowLayout

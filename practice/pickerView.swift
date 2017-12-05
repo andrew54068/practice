@@ -24,9 +24,9 @@ class pickerView: UIView, UIPickerViewDataSource, UIPickerViewDelegate {
     
     
     
-    var selectionForCongress = [["All", "one", "two", "three"],["All", "ㄅ", "ㄆ", "ㄇ"]]
-    var selectionForDisease = ["All", "a", "b", "c", "d"]
-    var selectionForStage = ["All", "1", "2", "3", "4"]
+    var selectionForCongress = [["All years", "2017", "2016", "2015", "2014", "2013"],["All congress", "ASOGU", "ASCO", "ESMO", "WCLC"]]
+    var selectionForDisease = ["All disease", "disease 1", "disease 2", "disease 3", "disease 4"]
+    var selectionForStage = ["All stage", "stage 1", "stage 2", "stage 3", "stage 4"]
     
     @IBOutlet var toolbar: UIToolbar!
     

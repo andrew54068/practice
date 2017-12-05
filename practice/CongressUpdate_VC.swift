@@ -69,6 +69,8 @@ class CongressUpdate_VC: UITableViewController {
     func selectionViewSetup(){
         let selectionNib = UINib(nibName: "selectionView", bundle: nil)
         selectionView = selectionNib.instantiate(withOwner: self, options: nil).first as! selectionView
+        selectionView.left.setTitle("All congress", for: .normal)
+        selectionView.right.setTitle("All disease", for: .normal)
         selectionView.frame = CGRect(x: 0, y: 50, width: tableView.frame.width, height: 57)
         selectionView.left.backgroundColor = UIColor.lightGray.withAlphaComponent(0.3)
         selectionView.right.backgroundColor = UIColor.lightGray.withAlphaComponent(0.3)

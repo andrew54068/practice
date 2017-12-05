@@ -8,14 +8,13 @@
 
 import UIKit
 
-class BannerCategoryCell: UICollectionViewCell, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UICollectionViewDataSource {
-    
-    var mainView: Main_VC?
+class BannerCategoryCell: UICollectionViewCell, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UICollectionViewDataSource{
     
     private let cellId = "BCVCell"
     
     @IBOutlet var content: BannerCategoryCollectionView!
     
+    var mainView: Main_VC?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,6 +24,7 @@ class BannerCategoryCell: UICollectionViewCell, UICollectionViewDelegateFlowLayo
     func setUpViews(){
         content.delegate = self
         content.dataSource = self
+        
         
         let nib = UINib(nibName: "BannerCollectionViewCell", bundle: nil)
         content.register(nib, forCellWithReuseIdentifier: cellId)
