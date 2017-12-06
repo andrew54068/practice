@@ -10,6 +10,25 @@
 		1B8B8B87B8232B0CAE54F005 /* Pods_practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51959F7A951EEAC0E6C5AFF7 /* Pods_practice.framework */; };
 		6D03AA4D1FD54EFA00655774 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D03AA4C1FD54EFA00655774 /* GoogleService-Info.plist */; };
 		6D03AA581FD688AA00655774 /* SeeAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D03AA571FD688AA00655774 /* SeeAllViewController.swift */; };
+		6D03AA851FD69E1600655774 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D03AA701FD69E1600655774 /* ArticleViewController.swift */; };
+		6D03AA861FD69E1600655774 /* ArticleContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D03AA711FD69E1600655774 /* ArticleContentViewController.swift */; };
+		6D03AA871FD69E1600655774 /* PHMustLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D03AA721FD69E1600655774 /* PHMustLabel.swift */; };
+		6D03AA881FD69E1600655774 /* BulletPointLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D03AA731FD69E1600655774 /* BulletPointLabel.swift */; };
+		6D03AA891FD69E1600655774 /* PHCheckableTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D03AA741FD69E1600655774 /* PHCheckableTextfield.swift */; };
+		6D03AA8A1FD69E1600655774 /* LoginInvitationCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D03AA761FD69E1600655774 /* LoginInvitationCodeViewController.swift */; };
+		6D03AA8B1FD69E1600655774 /* FirstMeetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D03AA771FD69E1600655774 /* FirstMeetViewController.swift */; };
+		6D03AA8C1FD69E1600655774 /* ConfirmUserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D03AA781FD69E1600655774 /* ConfirmUserDetailViewController.swift */; };
+		6D03AA8D1FD69E1600655774 /* RequestInvitationCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D03AA791FD69E1600655774 /* RequestInvitationCodeViewController.swift */; };
+		6D03AA8E1FD69E1600655774 /* RequestDidSendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D03AA7A1FD69E1600655774 /* RequestDidSendViewController.swift */; };
+		6D03AA8F1FD69E1600655774 /* EmailLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D03AA7B1FD69E1600655774 /* EmailLoginViewController.swift */; };
+		6D03AA901FD69E1600655774 /* ArticleIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D03AA7D1FD69E1600655774 /* ArticleIntroView.swift */; };
+		6D03AA911FD69E1600655774 /* ArticleIntroView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D03AA7E1FD69E1600655774 /* ArticleIntroView.xib */; };
+		6D03AA921FD69E1600655774 /* ArticleQuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D03AA7F1FD69E1600655774 /* ArticleQuoteView.swift */; };
+		6D03AA931FD69E1600655774 /* ArticleQuoteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D03AA801FD69E1600655774 /* ArticleQuoteView.xib */; };
+		6D03AA941FD69E1600655774 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D03AA821FD69E1600655774 /* Extensions.swift */; };
+		6D03AA951FD69E1600655774 /* AppUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D03AA831FD69E1600655774 /* AppUtilities.swift */; };
+		6D03AA961FD69E1600655774 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D03AA841FD69E1600655774 /* NetworkManager.swift */; };
+		6D03AA981FD69EC400655774 /* PaulMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D03AA971FD69EC400655774 /* PaulMain.storyboard */; };
 		6D0AE38D1FB0731400D56D08 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0AE38B1FB0731400D56D08 /* TableViewCell.swift */; };
 		6D0AE38E1FB0731400D56D08 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D0AE38C1FB0731400D56D08 /* TableViewCell.xib */; };
 		6D0AE39C1FB1484300D56D08 /* TabPageViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0AE39B1FB1484300D56D08 /* TabPageViewController.framework */; };
@@ -55,6 +74,7 @@
 		6D43A2571FB052E800C6B0B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D43A2551FB052E800C6B0B8 /* Main.storyboard */; };
 		6D43A2591FB052E800C6B0B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D43A2581FB052E800C6B0B8 /* Assets.xcassets */; };
 		6D43A25C1FB052E800C6B0B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D43A25A1FB052E800C6B0B8 /* LaunchScreen.storyboard */; };
+		6D784EFA1FD7A2310072E991 /* ReferenceLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D784EF91FD7A2310072E991 /* ReferenceLabel.swift */; };
 		6D8783E01FBA054800891525 /* SquareCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8783DF1FBA054800891525 /* SquareCategoryCell.swift */; };
 		6D97A0D11FCE74D600EB1DB6 /* Search_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D97A0D01FCE74D600EB1DB6 /* Search_VC.swift */; };
 		6D97A0D81FCEA11500EB1DB6 /* SearchTabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D97A0D61FCEA11500EB1DB6 /* SearchTabBarView.xib */; };
@@ -117,6 +137,25 @@
 		60561801F80D0BBBE03113B7 /* Pods-practice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-practice.release.xcconfig"; path = "Pods/Target Support Files/Pods-practice/Pods-practice.release.xcconfig"; sourceTree = "<group>"; };
 		6D03AA4C1FD54EFA00655774 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6D03AA571FD688AA00655774 /* SeeAllViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeeAllViewController.swift; sourceTree = "<group>"; };
+		6D03AA701FD69E1600655774 /* ArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArticleViewController.swift; path = ../../../../Downloads/RocheCIT_iOS/RocheCIT_iOS/ArticleViewController.swift; sourceTree = "<group>"; };
+		6D03AA711FD69E1600655774 /* ArticleContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleContentViewController.swift; sourceTree = "<group>"; };
+		6D03AA721FD69E1600655774 /* PHMustLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHMustLabel.swift; sourceTree = "<group>"; };
+		6D03AA731FD69E1600655774 /* BulletPointLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BulletPointLabel.swift; sourceTree = "<group>"; };
+		6D03AA741FD69E1600655774 /* PHCheckableTextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHCheckableTextfield.swift; sourceTree = "<group>"; };
+		6D03AA761FD69E1600655774 /* LoginInvitationCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInvitationCodeViewController.swift; sourceTree = "<group>"; };
+		6D03AA771FD69E1600655774 /* FirstMeetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstMeetViewController.swift; sourceTree = "<group>"; };
+		6D03AA781FD69E1600655774 /* ConfirmUserDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmUserDetailViewController.swift; sourceTree = "<group>"; };
+		6D03AA791FD69E1600655774 /* RequestInvitationCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestInvitationCodeViewController.swift; sourceTree = "<group>"; };
+		6D03AA7A1FD69E1600655774 /* RequestDidSendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestDidSendViewController.swift; sourceTree = "<group>"; };
+		6D03AA7B1FD69E1600655774 /* EmailLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailLoginViewController.swift; sourceTree = "<group>"; };
+		6D03AA7D1FD69E1600655774 /* ArticleIntroView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleIntroView.swift; sourceTree = "<group>"; };
+		6D03AA7E1FD69E1600655774 /* ArticleIntroView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleIntroView.xib; sourceTree = "<group>"; };
+		6D03AA7F1FD69E1600655774 /* ArticleQuoteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleQuoteView.swift; sourceTree = "<group>"; };
+		6D03AA801FD69E1600655774 /* ArticleQuoteView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleQuoteView.xib; sourceTree = "<group>"; };
+		6D03AA821FD69E1600655774 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = ../../../../Downloads/RocheCIT_iOS/RocheCIT_iOS/Extensions.swift; sourceTree = "<group>"; };
+		6D03AA831FD69E1600655774 /* AppUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppUtilities.swift; path = ../../../../Downloads/RocheCIT_iOS/RocheCIT_iOS/AppUtilities.swift; sourceTree = "<group>"; };
+		6D03AA841FD69E1600655774 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = ../../../../Downloads/RocheCIT_iOS/RocheCIT_iOS/NetworkManager.swift; sourceTree = "<group>"; };
+		6D03AA971FD69EC400655774 /* PaulMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PaulMain.storyboard; sourceTree = "<group>"; };
 		6D0AE38B1FB0731400D56D08 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		6D0AE38C1FB0731400D56D08 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		6D0AE38F1FB1432A00D56D08 /* TabPageViewController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TabPageViewController.xcodeproj; path = ../../TabPageViewController/TabPageViewController.xcodeproj; sourceTree = "<group>"; };
@@ -164,6 +203,7 @@
 		6D43A2581FB052E800C6B0B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D43A25B1FB052E800C6B0B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D43A25D1FB052E800C6B0B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D784EF91FD7A2310072E991 /* ReferenceLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceLabel.swift; sourceTree = "<group>"; };
 		6D8783DF1FBA054800891525 /* SquareCategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareCategoryCell.swift; sourceTree = "<group>"; };
 		6D97A0D01FCE74D600EB1DB6 /* Search_VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search_VC.swift; sourceTree = "<group>"; };
 		6D97A0D61FCEA11500EB1DB6 /* SearchTabBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchTabBarView.xib; sourceTree = "<group>"; };
@@ -195,6 +235,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D03AA6C1FD69DF200655774 /* Paul */ = {
+			isa = PBXGroup;
+			children = (
+				6D03AA701FD69E1600655774 /* ArticleViewController.swift */,
+				6D03AA751FD69E1600655774 /* CustomOject */,
+				6D03AA7C1FD69E1600655774 /* LoginFlow */,
+				6D03AA811FD69E1600655774 /* ArticleContentView */,
+				6D03AA821FD69E1600655774 /* Extensions.swift */,
+				6D03AA831FD69E1600655774 /* AppUtilities.swift */,
+				6D03AA841FD69E1600655774 /* NetworkManager.swift */,
+				6D03AA971FD69EC400655774 /* PaulMain.storyboard */,
+			);
+			name = Paul;
+			path = practice;
+			sourceTree = "<group>";
+		};
+		6D03AA751FD69E1600655774 /* CustomOject */ = {
+			isa = PBXGroup;
+			children = (
+				6D03AA721FD69E1600655774 /* PHMustLabel.swift */,
+				6D03AA731FD69E1600655774 /* BulletPointLabel.swift */,
+				6D784EF91FD7A2310072E991 /* ReferenceLabel.swift */,
+				6D03AA741FD69E1600655774 /* PHCheckableTextfield.swift */,
+			);
+			name = CustomOject;
+			path = ../../../../Downloads/RocheCIT_iOS/RocheCIT_iOS;
+			sourceTree = "<group>";
+		};
+		6D03AA7C1FD69E1600655774 /* LoginFlow */ = {
+			isa = PBXGroup;
+			children = (
+				6D03AA761FD69E1600655774 /* LoginInvitationCodeViewController.swift */,
+				6D03AA771FD69E1600655774 /* FirstMeetViewController.swift */,
+				6D03AA781FD69E1600655774 /* ConfirmUserDetailViewController.swift */,
+				6D03AA791FD69E1600655774 /* RequestInvitationCodeViewController.swift */,
+				6D03AA7A1FD69E1600655774 /* RequestDidSendViewController.swift */,
+				6D03AA7B1FD69E1600655774 /* EmailLoginViewController.swift */,
+			);
+			name = LoginFlow;
+			path = ../../../../Downloads/RocheCIT_iOS/RocheCIT_iOS;
+			sourceTree = "<group>";
+		};
+		6D03AA811FD69E1600655774 /* ArticleContentView */ = {
+			isa = PBXGroup;
+			children = (
+				6D03AA711FD69E1600655774 /* ArticleContentViewController.swift */,
+				6D03AA7D1FD69E1600655774 /* ArticleIntroView.swift */,
+				6D03AA7E1FD69E1600655774 /* ArticleIntroView.xib */,
+				6D03AA7F1FD69E1600655774 /* ArticleQuoteView.swift */,
+				6D03AA801FD69E1600655774 /* ArticleQuoteView.xib */,
+			);
+			name = ArticleContentView;
+			path = ../../../../Downloads/RocheCIT_iOS/RocheCIT_iOS;
+			sourceTree = "<group>";
+		};
 		6D0AE3901FB1432A00D56D08 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -279,6 +374,7 @@
 			children = (
 				6D0AE39B1FB1484300D56D08 /* TabPageViewController.framework */,
 				6D0AE38F1FB1432A00D56D08 /* TabPageViewController.xcodeproj */,
+				6D03AA6C1FD69DF200655774 /* Paul */,
 				6D43A2501FB052E800C6B0B8 /* practice */,
 				6D43A24F1FB052E800C6B0B8 /* Products */,
 				9D30ABC7F081A0F6B5DC2F2E /* Pods */,
@@ -443,6 +539,7 @@
 				6D22B34D1FC3D859001312EA /* ThumbnailHeader_TVCell.xib in Resources */,
 				6D97A0D81FCEA11500EB1DB6 /* SearchTabBarView.xib in Resources */,
 				6D43A2591FB052E800C6B0B8 /* Assets.xcassets in Resources */,
+				6D03AA981FD69EC400655774 /* PaulMain.storyboard in Resources */,
 				6D3A610A1FC66FE500F1D7C0 /* TrailFactSheet_TVCell.xib in Resources */,
 				6D22B3291FC28866001312EA /* Quiz_TVCell.xib in Resources */,
 				6D22B3541FC3DB49001312EA /* ThumbnailHeader_CRV.xib in Resources */,
@@ -454,6 +551,8 @@
 				6D16BE901FC42D1800FA8530 /* selectionView.xib in Resources */,
 				6D28C2981FB40F4300E6E80E /* SquareCollectionViewCell.xib in Resources */,
 				6D17278F1FBBEA1100B3A2EE /* BannerCategoryCell.xib in Resources */,
+				6D03AA911FD69E1600655774 /* ArticleIntroView.xib in Resources */,
+				6D03AA931FD69E1600655774 /* ArticleQuoteView.xib in Resources */,
 				6D03AA4D1FD54EFA00655774 /* GoogleService-Info.plist in Resources */,
 				6D0CA4BC1FBF3BCD0081B03D /* NavigationBar.xib in Resources */,
 				6D0AE38E1FB0731400D56D08 /* TableViewCell.xib in Resources */,
@@ -527,29 +626,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D03AA861FD69E1600655774 /* ArticleContentViewController.swift in Sources */,
+				6D03AA8C1FD69E1600655774 /* ConfirmUserDetailViewController.swift in Sources */,
 				6D22B3201FC2804D001312EA /* ThumbnailHeader_TVCell.swift in Sources */,
 				6D28C28F1FB40EDB00E6E80E /* Main_VC.swift in Sources */,
 				6DC4BA2E1FD50B7D0047E084 /* Search_TVC.swift in Sources */,
 				6D8783E01FBA054800891525 /* SquareCategoryCell.swift in Sources */,
 				6D22B3191FC2736F001312EA /* Article_TVC.swift in Sources */,
+				6D03AA901FD69E1600655774 /* ArticleIntroView.swift in Sources */,
 				6D1727911FBBF7F000B3A2EE /* BannerCategoryCell.swift in Sources */,
 				6D28C2971FB40F4300E6E80E /* SquareCollectionViewCell.swift in Sources */,
 				6D0BCCAD1FB1581200702643 /* Event_VC.swift in Sources */,
 				6D43A2541FB052E800C6B0B8 /* TabPage_VC.swift in Sources */,
+				6D03AA8A1FD69E1600655774 /* LoginInvitationCodeViewController.swift in Sources */,
 				6D22B32C1FC28893001312EA /* Reference_TVCell.swift in Sources */,
 				6D22B3241FC28819001312EA /* Content_TVCell.swift in Sources */,
 				6D97A0D11FCE74D600EB1DB6 /* Search_VC.swift in Sources */,
+				6D03AA871FD69E1600655774 /* PHMustLabel.swift in Sources */,
 				6D16BE851FC410BA00FA8530 /* TabPage2_VC.swift in Sources */,
+				6D03AA881FD69E1600655774 /* BulletPointLabel.swift in Sources */,
 				6D1727941FBBFBF700B3A2EE /* BannerCollectionViewCell.swift in Sources */,
+				6D03AA8B1FD69E1600655774 /* FirstMeetViewController.swift in Sources */,
 				6D1727991FBC035500B3A2EE /* ExpertCommentary_VC.swift in Sources */,
 				6D22B3531FC3DB49001312EA /* ThumbnailHeader_CRV.swift in Sources */,
 				6D22B3311FC288E3001312EA /* MayLike_TVCell.swift in Sources */,
 				6D16BE8E1FC42D0C00FA8530 /* selectionView.swift in Sources */,
+				6D03AA8D1FD69E1600655774 /* RequestInvitationCodeViewController.swift in Sources */,
+				6D03AA8F1FD69E1600655774 /* EmailLoginViewController.swift in Sources */,
+				6D03AA8E1FD69E1600655774 /* RequestDidSendViewController.swift in Sources */,
 				6D1727971FBC034900B3A2EE /* TrailFactSheet_VC.swift in Sources */,
 				6D97A0E51FCFCDDF00EB1DB6 /* SearchResult_TVCell.swift in Sources */,
 				6D0CA4BB1FBF3BCD0081B03D /* NavigationBar.swift in Sources */,
+				6D03AA941FD69E1600655774 /* Extensions.swift in Sources */,
 				6D43A2521FB052E800C6B0B8 /* AppDelegate.swift in Sources */,
 				6D97A0E91FCFCE8E00EB1DB6 /* SearchResultHeader_TVCell.swift in Sources */,
+				6D03AA961FD69E1600655774 /* NetworkManager.swift in Sources */,
+				6D03AA951FD69E1600655774 /* AppUtilities.swift in Sources */,
 				6DC4BA2B1FD507A50047E084 /* Search_TPVC.swift in Sources */,
 				6D16BE8A1FC42BF600FA8530 /* pickerView.swift in Sources */,
 				6D22B3281FC28866001312EA /* Quiz_TVCell.swift in Sources */,
@@ -557,10 +669,14 @@
 				6D0AE38D1FB0731400D56D08 /* TableViewCell.swift in Sources */,
 				6DCC91C21FBC2942006E4D4C /* BannerCategoryCollectionView.swift in Sources */,
 				6D17279B1FBC036200B3A2EE /* Bookmark_VC.swift in Sources */,
+				6D03AA921FD69E1600655774 /* ArticleQuoteView.swift in Sources */,
 				6D97A0DB1FCEA3CF00EB1DB6 /* SearchTab_CVCell.swift in Sources */,
 				6DE701D41FBAD0F40053D315 /* SquareCategoryCollectionView.swift in Sources */,
 				6DC4BA391FD539EE0047E084 /* SearchBarVIew.swift in Sources */,
+				6D03AA851FD69E1600655774 /* ArticleViewController.swift in Sources */,
 				6D97A0DE1FCEAD1C00EB1DB6 /* SearchTabBarView.swift in Sources */,
+				6D03AA891FD69E1600655774 /* PHCheckableTextfield.swift in Sources */,
+				6D784EFA1FD7A2310072E991 /* ReferenceLabel.swift in Sources */,
 				6D03AA581FD688AA00655774 /* SeeAllViewController.swift in Sources */,
 				6D3A61091FC66FE500F1D7C0 /* TrailFactSheet_TVCell.swift in Sources */,
 				6D0BCCA81FB157E700702643 /* CongressUpdate_VC.swift in Sources */,

@@ -16,5 +16,9 @@ class SeeAllViewController:TabPageViewController {
 
     }
     
+    override func handleSearch() {
+        let search_TPVC = Search_TPVC()
+        navigationController?.pushViewController(search_TPVC, animated: true)
+    }
    
 }

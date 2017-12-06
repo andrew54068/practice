@@ -12,6 +12,12 @@ class MayLike_TVCell: UITableViewCell, UICollectionViewDelegateFlowLayout, UICol
     
     private let cellId = "SCVCell"
     
+    var article = Article_TVC()
+    
+    var thumbnailImage = UIImage(named: "thumbnail_tab")
+    var titleContent: String = " A future in mind - rising to the challenge in Alzheimer's"
+    var subtitleContent: String = "Doretha Burrell-nickname “Dee” by children at the school where she once worked as administrative, Doretha Burrell-nickname “Dee” by children at the school where she once worked as administrative"
+    
     @IBOutlet var View: UIView!
     
     @IBOutlet var content: UICollectionView!
@@ -38,7 +44,29 @@ class MayLike_TVCell: UITableViewCell, UICollectionViewDelegateFlowLayout, UICol
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! SquareCollectionViewCell
-        cell.backgroundColor = UIColor.black
+        
+        let attrs1 = [NSFontAttributeName: UIFont.systemFont(ofSize: 15, weight: UIFontWeightBold), NSForegroundColorAttributeName: UIColor.black]
+        let attrs2 = [NSFontAttributeName: UIFont.systemFont(ofSize: 13), NSForegroundColorAttributeName: UIColor.gray]
+        let attributedString1 = NSMutableAttributedString(string: "\(titleContent)", attributes: attrs1)
+        let attributedString2 = NSMutableAttributedString(string: "\(subtitleContent)", attributes: attrs2)
+        let line_feed = NSMutableAttributedString(string: "\n")
+        if subtitleContent != ""{
+            attributedString1.append(line_feed)
+        }
+        attributedString1.append(attributedString2)
+        
+        cell.thumbnail.image = UIImage(named: "img_smallcard")
+        cell.patient.text = "Patients"
+        cell.time.text = "2 hours ago"
+        cell.title.numberOfLines = 4
+        cell.title.lineBreakMode = .byTruncatingTail
+        if cell.hadRead{
+            cell.attributedString = attributedString1
+        }else{
+            cell.attributedString.append(attributedString1)
+        }
+        cell.title.attributedText = cell.attributedString!
+        
         return cell
     }
     
@@ -52,6 +80,11 @@ class MayLike_TVCell: UITableViewCell, UICollectionViewDelegateFlowLayout, UICol
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 165, height: 193)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        article.showArticle()
+        print("123")
     }
     
 }

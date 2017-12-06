@@ -56,6 +56,11 @@ class Main_VC: UICollectionViewController, UICollectionViewDelegateFlowLayout{
         
         setUpNavigationBar()
         
+        // -Paul
+        
+        let storyboard = UIStoryboard(name: "PaulMain", bundle: nil)
+        let login = storyboard.instantiateInitialViewController() as! UINavigationController
+        self.present(login, animated: false, completion: nil)
     }
     
     func setUpNavigationBar(){
@@ -131,13 +136,6 @@ class Main_VC: UICollectionViewController, UICollectionViewDelegateFlowLayout{
         print("search being called")
     }
     
-//    let searchView: UIView = {
-//        let view = UIView()
-//        view.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 44)
-//        view.backgroundColor = UIColor.red
-//        return view
-//    }()
-    
     func handleBookmark(){
         print("show bookmark")
     }
@@ -190,14 +188,25 @@ class Main_VC: UICollectionViewController, UICollectionViewDelegateFlowLayout{
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if indexPath.item < numberOfRowBeforeSqueezedRectangle{
-            let SquareCell = collectionView.dequeueReusableCell(withReuseIdentifier: SquareCellId, for: indexPath) as! SquareCategoryCell
+        if indexPath.item == 0{
+            let congressCell = collectionView.dequeueReusableCell(withReuseIdentifier: SquareCellId, for: indexPath) as! SquareCategoryCell
                 //?? as as!
-            SquareCell.seeAll.addTarget(self, action: #selector(seeAll), for: .touchUpInside)
+            congressCell.seeAll.addTarget(self, action: #selector(seeAll), for: .touchUpInside)
+            congressCell.title.text = "CONGRESS UPDATE"
             
-            SquareCell.mainView = self
-            return SquareCell
-        }else{
+            congressCell.mainView = self
+            return congressCell
+        }
+        else if indexPath.item == 1{
+            let expertCell = collectionView.dequeueReusableCell(withReuseIdentifier: SquareCellId, for: indexPath) as! SquareCategoryCell
+            //?? as as!
+            expertCell.seeAll.addTarget(self, action: #selector(seeAll), for: .touchUpInside)
+            expertCell.title.text = "EXPERT COMMENTARY"
+            
+            expertCell.mainView = self
+            return expertCell
+        }
+        else{
             let BannerCell = collectionView.dequeueReusableCell(withReuseIdentifier: BannerCellId, for: indexPath) as! BannerCategoryCell
             BannerCell.mainView = self
             return BannerCell

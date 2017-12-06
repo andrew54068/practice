@@ -25,7 +25,7 @@ class Reference_TVCell: UITableViewCell {
         }
     }
     
-    @IBOutlet var ReferenceContent: UILabel!
+    @IBOutlet var ReferenceContent: ReferenceLabel!
     
     @IBOutlet var bookmark: UIButton!
     

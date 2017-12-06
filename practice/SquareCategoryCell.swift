@@ -20,7 +20,8 @@ class SquareCategoryCell: UICollectionViewCell, UICollectionViewDelegate, UIColl
     var titleContent: String = " A future in mind - rising to the challenge in Alzheimer's"
     var subtitleContent: String = "Doretha Burrell-nickname “Dee” by children at the school where she once worked as administrative, Doretha Burrell-nickname “Dee” by children at the school where she once worked as administrative"
     var attributedString: NSMutableAttributedString!
-    var count:Int = 0
+    
+    var hadRead: [Bool] = [false, false, false, false, false, false]
     
     @IBOutlet var content: UICollectionView!
     @IBOutlet var title: UILabel!
@@ -54,6 +55,8 @@ class SquareCategoryCell: UICollectionViewCell, UICollectionViewDelegate, UIColl
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! SquareCollectionViewCell
         
+        cell.hadRead = self.hadRead[indexPath.item]
+        
         let attrs1 = [NSFontAttributeName: UIFont.systemFont(ofSize: 15, weight: UIFontWeightBold), NSForegroundColorAttributeName: UIColor.black]
         let attrs2 = [NSFontAttributeName: UIFont.systemFont(ofSize: 13), NSForegroundColorAttributeName: UIColor.gray]
         let attributedString1 = NSMutableAttributedString(string: "\(titleContent)", attributes: attrs1)
@@ -63,9 +66,6 @@ class SquareCategoryCell: UICollectionViewCell, UICollectionViewDelegate, UIColl
             attributedString1.append(line_feed)
         }
         attributedString1.append(attributedString2)
-        if count > 1{
-            cell.hadRead = true
-        }
         
         cell.thumbnail.image = UIImage(named: "img_smallcard")
         cell.patient.text = "Patients"
@@ -89,6 +89,7 @@ class SquareCategoryCell: UICollectionViewCell, UICollectionViewDelegate, UIColl
     //MARK: CollectionView delegate
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         performSelector(inBackground: #selector(Main_VC.seeAll), with: nil)
+        self.hadRead[indexPath.item] = true
         collectionView.reloadData()
         
         mainView?.showArticle()

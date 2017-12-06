@@ -10,7 +10,7 @@ provides-dynamic-lookup:
 - "awakeFromNib"
 - "collectionView"
 - "content"
-- "count"
+- "hadRead"
 - "mainView"
 - "seeAll"
 - "setupViews"
@@ -19,9 +19,9 @@ provides-dynamic-lookup:
 - "titleContent"
 depends-top-level:
 - !private "!="
-- !private ">"
 - "AssignmentPrecedence"
-- !private "BooleanLiteralType"
+- "Bool"
+- "BooleanLiteralType"
 - "CGSize"
 - "CastingPrecedence"
 - !private "Dictionary"
@@ -70,7 +70,6 @@ depends-member:
 - !private ["Ps9AnyObject", "cellId"]
 - ["Ps9AnyObject", "collectionView"]
 - !private ["Ps9AnyObject", "content"]
-- !private ["Ps9AnyObject", "count"]
 - !private ["Ps9AnyObject", "dataSource"]
 - !private ["Ps9AnyObject", "delegate"]
 - !private ["Ps9AnyObject", "dequeueReusableCell"]
@@ -116,6 +115,9 @@ depends-member:
 - ["Ps9AnyObject", "viewForZooming"]
 - ["Ps9AnyObject", "viewForZoomingInScrollView"]
 - ["Ps9AnyObject", ""]
+- !private ["Sa", "subscript"]
+- !private ["Ps23BidirectionalCollection", "item"]
+- !private ["Ps23BidirectionalCollection", "subscript"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["PSo15CALayerDelegate", "CGSize"]
 - !private ["PSo15CALayerDelegate", "Main_VC"]
@@ -134,7 +136,6 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "cellId"]
 - ["PSo15CALayerDelegate", "collectionView"]
 - !private ["PSo15CALayerDelegate", "content"]
-- !private ["PSo15CALayerDelegate", "count"]
 - !private ["PSo15CALayerDelegate", "dataSource"]
 - !private ["PSo15CALayerDelegate", "delegate"]
 - !private ["PSo15CALayerDelegate", "dequeueReusableCell"]
@@ -196,7 +197,6 @@ depends-member:
 - !private ["Ps7CVarArg", "cellId"]
 - ["Ps7CVarArg", "collectionView"]
 - !private ["Ps7CVarArg", "content"]
-- !private ["Ps7CVarArg", "count"]
 - !private ["Ps7CVarArg", "dataSource"]
 - !private ["Ps7CVarArg", "delegate"]
 - !private ["Ps7CVarArg", "dequeueReusableCell"]
@@ -232,6 +232,7 @@ depends-member:
 - !private ["Ps7CVarArg", "seeAll"]
 - !private ["Ps7CVarArg", "setupViews"]
 - !private ["Ps7CVarArg", "showArticle"]
+- !private ["Ps7CVarArg", "subscript"]
 - !private ["Ps7CVarArg", "subtitleContent"]
 - !private ["Ps7CVarArg", "systemFont"]
 - !private ["Ps7CVarArg", "text"]
@@ -242,7 +243,10 @@ depends-member:
 - ["Ps7CVarArg", "viewForZooming"]
 - ["Ps7CVarArg", "viewForZoomingInScrollView"]
 - ["Ps7CVarArg", ""]
+- !private ["Ps10Collection", "item"]
+- !private ["Ps10Collection", "subscript"]
 - ["Ps10Comparable", "init"]
+- !private ["Ps10Comparable", "item"]
 - !private ["Ps28CustomDebugStringConvertible", "CGSize"]
 - !private ["Ps28CustomDebugStringConvertible", "Main_VC"]
 - !private ["Ps28CustomDebugStringConvertible", "NSFontAttributeName"]
@@ -262,7 +266,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "cellId"]
 - ["Ps28CustomDebugStringConvertible", "collectionView"]
 - !private ["Ps28CustomDebugStringConvertible", "content"]
-- !private ["Ps28CustomDebugStringConvertible", "count"]
 - !private ["Ps28CustomDebugStringConvertible", "dataSource"]
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
 - !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCell"]
@@ -274,6 +277,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "indexTitles"]
 - ["Ps28CustomDebugStringConvertible", "indexTitlesForCollectionView"]
 - ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "item"]
 - !private ["Ps28CustomDebugStringConvertible", "lineBreakMode"]
 - !private ["Ps28CustomDebugStringConvertible", "mainView"]
 - !private ["Ps28CustomDebugStringConvertible", "numberOfLines"]
@@ -298,6 +302,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "seeAll"]
 - !private ["Ps28CustomDebugStringConvertible", "setupViews"]
 - !private ["Ps28CustomDebugStringConvertible", "showArticle"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "subtitleContent"]
 - !private ["Ps28CustomDebugStringConvertible", "systemFont"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
@@ -312,6 +317,8 @@ depends-member:
 - ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "item"]
+- !private ["Ps17CustomReflectable", "subscript"]
 - !private ["Ps23CustomStringConvertible", "CGSize"]
 - !private ["Ps23CustomStringConvertible", "Main_VC"]
 - !private ["Ps23CustomStringConvertible", "NSFontAttributeName"]
@@ -332,7 +339,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "cellId"]
 - ["Ps23CustomStringConvertible", "collectionView"]
 - !private ["Ps23CustomStringConvertible", "content"]
-- !private ["Ps23CustomStringConvertible", "count"]
 - !private ["Ps23CustomStringConvertible", "dataSource"]
 - !private ["Ps23CustomStringConvertible", "delegate"]
 - !private ["Ps23CustomStringConvertible", "dequeueReusableCell"]
@@ -344,6 +350,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "indexTitles"]
 - ["Ps23CustomStringConvertible", "indexTitlesForCollectionView"]
 - ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "item"]
 - !private ["Ps23CustomStringConvertible", "lineBreakMode"]
 - !private ["Ps23CustomStringConvertible", "mainView"]
 - !private ["Ps23CustomStringConvertible", "numberOfLines"]
@@ -368,6 +375,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "seeAll"]
 - !private ["Ps23CustomStringConvertible", "setupViews"]
 - !private ["Ps23CustomStringConvertible", "showArticle"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
 - !private ["Ps23CustomStringConvertible", "subtitleContent"]
 - !private ["Ps23CustomStringConvertible", "systemFont"]
 - !private ["Ps23CustomStringConvertible", "text"]
@@ -399,7 +407,6 @@ depends-member:
 - !private ["Ps9Equatable", "cellId"]
 - ["Ps9Equatable", "collectionView"]
 - !private ["Ps9Equatable", "content"]
-- !private ["Ps9Equatable", "count"]
 - !private ["Ps9Equatable", "dataSource"]
 - !private ["Ps9Equatable", "delegate"]
 - !private ["Ps9Equatable", "dequeueReusableCell"]
@@ -411,6 +418,7 @@ depends-member:
 - ["Ps9Equatable", "indexTitles"]
 - ["Ps9Equatable", "indexTitlesForCollectionView"]
 - ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "item"]
 - !private ["Ps9Equatable", "lineBreakMode"]
 - !private ["Ps9Equatable", "mainView"]
 - !private ["Ps9Equatable", "numberOfLines"]
@@ -445,6 +453,8 @@ depends-member:
 - ["Ps9Equatable", "viewForZooming"]
 - ["Ps9Equatable", "viewForZoomingInScrollView"]
 - ["Ps9Equatable", ""]
+- !private ["Ps25ExpressibleByArrayLiteral", "item"]
+- !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - ["Ps26ExpressibleByStringLiteral", "init"]
@@ -470,7 +480,6 @@ depends-member:
 - !private ["Ps8Hashable", "cellId"]
 - ["Ps8Hashable", "collectionView"]
 - !private ["Ps8Hashable", "content"]
-- !private ["Ps8Hashable", "count"]
 - !private ["Ps8Hashable", "dataSource"]
 - !private ["Ps8Hashable", "delegate"]
 - !private ["Ps8Hashable", "dequeueReusableCell"]
@@ -482,6 +491,7 @@ depends-member:
 - ["Ps8Hashable", "indexTitles"]
 - ["Ps8Hashable", "indexTitlesForCollectionView"]
 - ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "item"]
 - !private ["Ps8Hashable", "lineBreakMode"]
 - !private ["Ps8Hashable", "mainView"]
 - !private ["Ps8Hashable", "numberOfLines"]
@@ -516,11 +526,14 @@ depends-member:
 - ["Ps8Hashable", "viewForZooming"]
 - ["Ps8Hashable", "viewForZoomingInScrollView"]
 - ["Ps8Hashable", ""]
+- !private ["V10Foundation9IndexPath", "item"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - ["Ps25LosslessStringConvertible", "init"]
 - !private ["C8practice7Main_VC", "seeAll"]
 - !private ["C8practice7Main_VC", "showArticle"]
 - ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "item"]
+- !private ["Ps17MutableCollection", "subscript"]
 - !private ["CSo18NSAttributedString", "append"]
 - !private ["CSo18NSAttributedString", "init"]
 - !private ["PSo8NSCoding", "CGSize"]
@@ -542,7 +555,6 @@ depends-member:
 - !private ["PSo8NSCoding", "cellId"]
 - ["PSo8NSCoding", "collectionView"]
 - !private ["PSo8NSCoding", "content"]
-- !private ["PSo8NSCoding", "count"]
 - !private ["PSo8NSCoding", "dataSource"]
 - !private ["PSo8NSCoding", "delegate"]
 - !private ["PSo8NSCoding", "dequeueReusableCell"]
@@ -599,6 +611,7 @@ depends-member:
 - !private ["CSo25NSMutableAttributedString", "init"]
 - !private ["PSo16NSMutableCopying", "append"]
 - ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "CGSize"]
 - ["CSo8NSObject", "IndexPath"]
 - ["CSo8NSObject", "Int"]
@@ -627,12 +640,11 @@ depends-member:
 - ["CSo8NSObject", "cellId"]
 - ["CSo8NSObject", "collectionView"]
 - ["CSo8NSObject", "content"]
-- ["CSo8NSObject", "count"]
 - !private ["CSo8NSObject", "dataSource"]
 - !private ["CSo8NSObject", "delegate"]
 - !private ["CSo8NSObject", "dequeueReusableCell"]
 - !private ["CSo8NSObject", "gray"]
-- !private ["CSo8NSObject", "hadRead"]
+- ["CSo8NSObject", "hadRead"]
 - !private ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "indexPathForPreferredFocusedView"]
 - ["CSo8NSObject", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -691,7 +703,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "cellId"]
 - ["PSo16NSObjectProtocol", "collectionView"]
 - !private ["PSo16NSObjectProtocol", "content"]
-- !private ["PSo16NSObjectProtocol", "count"]
 - !private ["PSo16NSObjectProtocol", "dataSource"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCell"]
@@ -742,7 +753,14 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "gray"]
 - ["PSo14NSSecureCoding", "init"]
 - ["CSo8NSString", "init"]
+- !private ["Ps22RandomAccessCollection", "item"]
+- !private ["Ps22RandomAccessCollection", "subscript"]
+- !private ["Ps26RangeReplaceableCollection", "subscript"]
 - !private ["Ps16RawRepresentable", "byTruncatingTail"]
+- !private ["P10Foundation20ReferenceConvertible", "item"]
+- !private ["Ps8Sequence", "item"]
+- !private ["Ps8Sequence", "subscript"]
+- ["C8practice18SquareCategoryCell", "Bool"]
 - ["C8practice18SquareCategoryCell", "CGSize"]
 - ["C8practice18SquareCategoryCell", "IndexPath"]
 - ["C8practice18SquareCategoryCell", "Int"]
@@ -768,8 +786,8 @@ depends-member:
 - !private ["C8practice18SquareCategoryCell", "cellId"]
 - ["C8practice18SquareCategoryCell", "collectionView"]
 - ["C8practice18SquareCategoryCell", "content"]
-- ["C8practice18SquareCategoryCell", "count"]
 - ["C8practice18SquareCategoryCell", "deinit"]
+- ["C8practice18SquareCategoryCell", "hadRead"]
 - ["C8practice18SquareCategoryCell", "indexPathForPreferredFocusedView"]
 - ["C8practice18SquareCategoryCell", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["C8practice18SquareCategoryCell", "indexTitles"]
@@ -824,7 +842,6 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "cellId"]
 - ["PSo29UIAccessibilityIdentification", "collectionView"]
 - !private ["PSo29UIAccessibilityIdentification", "content"]
-- !private ["PSo29UIAccessibilityIdentification", "count"]
 - !private ["PSo29UIAccessibilityIdentification", "dataSource"]
 - !private ["PSo29UIAccessibilityIdentification", "delegate"]
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCell"]
@@ -883,7 +900,6 @@ depends-member:
 - !private ["PSo12UIAppearance", "cellId"]
 - ["PSo12UIAppearance", "collectionView"]
 - !private ["PSo12UIAppearance", "content"]
-- !private ["PSo12UIAppearance", "count"]
 - !private ["PSo12UIAppearance", "dataSource"]
 - !private ["PSo12UIAppearance", "delegate"]
 - !private ["PSo12UIAppearance", "dequeueReusableCell"]
@@ -942,7 +958,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "cellId"]
 - ["PSo21UIAppearanceContainer", "collectionView"]
 - !private ["PSo21UIAppearanceContainer", "content"]
-- !private ["PSo21UIAppearanceContainer", "count"]
 - !private ["PSo21UIAppearanceContainer", "dataSource"]
 - !private ["PSo21UIAppearanceContainer", "delegate"]
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCell"]
@@ -986,6 +1001,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewForZooming"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
 - ["PSo21UIAppearanceContainer", ""]
+- ["CSo24UICollectionReusableView", "Bool"]
 - ["CSo24UICollectionReusableView", "CGSize"]
 - ["CSo24UICollectionReusableView", "IndexPath"]
 - ["CSo24UICollectionReusableView", "Int"]
@@ -1011,8 +1027,7 @@ depends-member:
 - ["CSo24UICollectionReusableView", "cellId"]
 - ["CSo24UICollectionReusableView", "collectionView"]
 - ["CSo24UICollectionReusableView", "content"]
-- ["CSo24UICollectionReusableView", "count"]
-- !private ["CSo24UICollectionReusableView", "hadRead"]
+- ["CSo24UICollectionReusableView", "hadRead"]
 - ["CSo24UICollectionReusableView", "indexPathForPreferredFocusedView"]
 - ["CSo24UICollectionReusableView", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["CSo24UICollectionReusableView", "indexTitles"]
@@ -1049,6 +1064,7 @@ depends-member:
 - !private ["CSo16UICollectionView", "dequeueReusableCell"]
 - !private ["CSo16UICollectionView", "register"]
 - !private ["CSo16UICollectionView", "reloadData"]
+- ["CSo20UICollectionViewCell", "Bool"]
 - ["CSo20UICollectionViewCell", "CGSize"]
 - ["CSo20UICollectionViewCell", "IndexPath"]
 - ["CSo20UICollectionViewCell", "Int"]
@@ -1074,8 +1090,7 @@ depends-member:
 - ["CSo20UICollectionViewCell", "cellId"]
 - ["CSo20UICollectionViewCell", "collectionView"]
 - ["CSo20UICollectionViewCell", "content"]
-- ["CSo20UICollectionViewCell", "count"]
-- !private ["CSo20UICollectionViewCell", "hadRead"]
+- ["CSo20UICollectionViewCell", "hadRead"]
 - ["CSo20UICollectionViewCell", "indexPathForPreferredFocusedView"]
 - ["CSo20UICollectionViewCell", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["CSo20UICollectionViewCell", "indexTitles"]
@@ -1124,7 +1139,7 @@ depends-member:
 - !private ["PSo26UICollectionViewDataSource", "cellId"]
 - ["PSo26UICollectionViewDataSource", "collectionView"]
 - !private ["PSo26UICollectionViewDataSource", "content"]
-- !private ["PSo26UICollectionViewDataSource", "count"]
+- !private ["PSo26UICollectionViewDataSource", "hadRead"]
 - ["PSo26UICollectionViewDataSource", "indexPathForPreferredFocusedView"]
 - ["PSo26UICollectionViewDataSource", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["PSo26UICollectionViewDataSource", "indexTitles"]
@@ -1167,7 +1182,7 @@ depends-member:
 - !private ["PSo24UICollectionViewDelegate", "cellId"]
 - ["PSo24UICollectionViewDelegate", "collectionView"]
 - !private ["PSo24UICollectionViewDelegate", "content"]
-- !private ["PSo24UICollectionViewDelegate", "count"]
+- !private ["PSo24UICollectionViewDelegate", "hadRead"]
 - ["PSo24UICollectionViewDelegate", "indexPathForPreferredFocusedView"]
 - ["PSo24UICollectionViewDelegate", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["PSo24UICollectionViewDelegate", "indexTitles"]
@@ -1210,7 +1225,7 @@ depends-member:
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "cellId"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "collectionView"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "content"]
-- !private ["PSo34UICollectionViewDelegateFlowLayout", "count"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "hadRead"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "indexPathForPreferredFocusedView"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "indexTitles"]
@@ -1264,7 +1279,6 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "cellId"]
 - ["PSo17UICoordinateSpace", "collectionView"]
 - !private ["PSo17UICoordinateSpace", "content"]
-- !private ["PSo17UICoordinateSpace", "count"]
 - !private ["PSo17UICoordinateSpace", "dataSource"]
 - !private ["PSo17UICoordinateSpace", "delegate"]
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCell"]
@@ -1323,7 +1337,6 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "cellId"]
 - ["PSo13UIDynamicItem", "collectionView"]
 - !private ["PSo13UIDynamicItem", "content"]
-- !private ["PSo13UIDynamicItem", "count"]
 - !private ["PSo13UIDynamicItem", "dataSource"]
 - !private ["PSo13UIDynamicItem", "delegate"]
 - !private ["PSo13UIDynamicItem", "dequeueReusableCell"]
@@ -1383,7 +1396,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "cellId"]
 - ["PSo18UIFocusEnvironment", "collectionView"]
 - !private ["PSo18UIFocusEnvironment", "content"]
-- !private ["PSo18UIFocusEnvironment", "count"]
 - !private ["PSo18UIFocusEnvironment", "dataSource"]
 - !private ["PSo18UIFocusEnvironment", "delegate"]
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCell"]
@@ -1444,7 +1456,6 @@ depends-member:
 - !private ["PSo11UIFocusItem", "cellId"]
 - ["PSo11UIFocusItem", "collectionView"]
 - !private ["PSo11UIFocusItem", "content"]
-- !private ["PSo11UIFocusItem", "count"]
 - !private ["PSo11UIFocusItem", "dataSource"]
 - !private ["PSo11UIFocusItem", "delegate"]
 - !private ["PSo11UIFocusItem", "dequeueReusableCell"]
@@ -1494,6 +1505,7 @@ depends-member:
 - !private ["CSo7UILabel", "numberOfLines"]
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo5UINib", "init"]
+- ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "CGSize"]
 - ["CSo11UIResponder", "IndexPath"]
 - ["CSo11UIResponder", "Int"]
@@ -1520,11 +1532,10 @@ depends-member:
 - ["CSo11UIResponder", "cellId"]
 - ["CSo11UIResponder", "collectionView"]
 - ["CSo11UIResponder", "content"]
-- ["CSo11UIResponder", "count"]
 - !private ["CSo11UIResponder", "dataSource"]
 - !private ["CSo11UIResponder", "delegate"]
 - !private ["CSo11UIResponder", "dequeueReusableCell"]
-- !private ["CSo11UIResponder", "hadRead"]
+- ["CSo11UIResponder", "hadRead"]
 - !private ["CSo11UIResponder", "image"]
 - ["CSo11UIResponder", "indexPathForPreferredFocusedView"]
 - ["CSo11UIResponder", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -1580,7 +1591,6 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "cellId"]
 - ["PSo30UIResponderStandardEditActions", "collectionView"]
 - !private ["PSo30UIResponderStandardEditActions", "content"]
-- !private ["PSo30UIResponderStandardEditActions", "count"]
 - !private ["PSo30UIResponderStandardEditActions", "dataSource"]
 - !private ["PSo30UIResponderStandardEditActions", "delegate"]
 - !private ["PSo30UIResponderStandardEditActions", "dequeueReusableCell"]
@@ -1643,7 +1653,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "cellId"]
 - ["PSo20UIScrollViewDelegate", "collectionView"]
 - !private ["PSo20UIScrollViewDelegate", "content"]
-- !private ["PSo20UIScrollViewDelegate", "count"]
+- !private ["PSo20UIScrollViewDelegate", "hadRead"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedView"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["PSo20UIScrollViewDelegate", "indexTitles"]
@@ -1691,7 +1701,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "cellId"]
 - ["PSo18UITraitEnvironment", "collectionView"]
 - !private ["PSo18UITraitEnvironment", "content"]
-- !private ["PSo18UITraitEnvironment", "count"]
 - !private ["PSo18UITraitEnvironment", "dataSource"]
 - !private ["PSo18UITraitEnvironment", "delegate"]
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCell"]
@@ -1735,6 +1744,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewForZooming"]
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "Bool"]
 - ["CSo6UIView", "CGSize"]
 - ["CSo6UIView", "IndexPath"]
 - ["CSo6UIView", "Int"]
@@ -1761,11 +1771,10 @@ depends-member:
 - ["CSo6UIView", "cellId"]
 - ["CSo6UIView", "collectionView"]
 - ["CSo6UIView", "content"]
-- ["CSo6UIView", "count"]
 - !private ["CSo6UIView", "dataSource"]
 - !private ["CSo6UIView", "delegate"]
 - !private ["CSo6UIView", "dequeueReusableCell"]
-- !private ["CSo6UIView", "hadRead"]
+- ["CSo6UIView", "hadRead"]
 - !private ["CSo6UIView", "image"]
 - ["CSo6UIView", "indexPathForPreferredFocusedView"]
 - ["CSo6UIView", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -1805,6 +1814,9 @@ depends-member:
 - ["CSo6UIView", "viewForZoomingInScrollView"]
 - !private ["CSo16UIViewController", "seeAll"]
 - !private ["CSo16UIViewController", "showArticle"]
+- !private ["Ps14_ArrayProtocol", "subscript"]
+- !private ["Ps23_BidirectionalIndexable", "item"]
+- !private ["Ps23_BidirectionalIndexable", "subscript"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "CGSize"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "Main_VC"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "NSFontAttributeName"]
@@ -1822,7 +1834,6 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "cellId"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "collectionView"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "content"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "count"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "dataSource"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "delegate"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "dequeueReusableCell"]
@@ -1864,6 +1875,7 @@ depends-member:
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "viewForZooming"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "viewForZoomingInScrollView"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
+- !private ["Ps24_DestructorSafeContainer", "subscript"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
@@ -1895,7 +1907,6 @@ depends-member:
 - !private ["Ps9_Hashable", "cellId"]
 - ["Ps9_Hashable", "collectionView"]
 - !private ["Ps9_Hashable", "content"]
-- !private ["Ps9_Hashable", "count"]
 - !private ["Ps9_Hashable", "dataSource"]
 - !private ["Ps9_Hashable", "delegate"]
 - !private ["Ps9_Hashable", "dequeueReusableCell"]
@@ -1907,6 +1918,7 @@ depends-member:
 - ["Ps9_Hashable", "indexTitles"]
 - ["Ps9_Hashable", "indexTitlesForCollectionView"]
 - ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "item"]
 - !private ["Ps9_Hashable", "lineBreakMode"]
 - !private ["Ps9_Hashable", "mainView"]
 - !private ["Ps9_Hashable", "numberOfLines"]
@@ -1941,28 +1953,45 @@ depends-member:
 - ["Ps9_Hashable", "viewForZooming"]
 - ["Ps9_Hashable", "viewForZoomingInScrollView"]
 - ["Ps9_Hashable", ""]
+- !private ["Ps10_Indexable", "item"]
+- !private ["Ps10_Indexable", "subscript"]
+- !private ["Ps14_IndexableBase", "item"]
+- !private ["Ps14_IndexableBase", "subscript"]
+- !private ["Ps17_MutableIndexable", "item"]
+- !private ["Ps17_MutableIndexable", "subscript"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "item"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Ps22_RandomAccessIndexable", "item"]
+- !private ["Ps22_RandomAccessIndexable", "subscript"]
+- !private ["Ps26_RangeReplaceableIndexable", "subscript"]
 depends-nominal:
 - "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23BidirectionalCollection"
 - !private "Sb"
 - "PSo15CALayerDelegate"
 - !private "VSC6CGSize"
 - "Ps7CVarArg"
+- !private "Ps10Collection"
 - "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps29CustomPlaygroundQuickLookable"
 - "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"
 - "Ps8Hashable"
+- !private "V10Foundation9IndexPath"
 - "Ps25LosslessStringConvertible"
 - !private "C8practice7Main_VC"
 - "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
 - !private "CSo18NSAttributedString"
 - "PSo8NSCoding"
 - "PSo9NSCopying"
@@ -1974,7 +2003,11 @@ depends-nominal:
 - "PSo16NSObjectProtocol"
 - "PSo14NSSecureCoding"
 - "CSo8NSString"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps26RangeReplaceableCollection"
 - !private "Ps16RawRepresentable"
+- !private "P10Foundation20ReferenceConvertible"
+- !private "Ps8Sequence"
 - "C8practice18SquareCategoryCell"
 - !private "C8practice24SquareCollectionViewCell"
 - "SS"
@@ -2011,7 +2044,10 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - "CSo6UIView"
 - !private "CSo16UIViewController"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps23_BidirectionalIndexable"
 - "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps24_DestructorSafeContainer"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - "Ps34_ExpressibleByBuiltinStringLiteral"
@@ -2022,7 +2058,12 @@ depends-nominal:
 - "Ps33_ExpressibleByStringInterpolation"
 - "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
+- !private "Ps10_Indexable"
+- !private "Ps14_IndexableBase"
+- !private "Ps17_MutableIndexable"
 - "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessIndexable"
+- !private "Ps26_RangeReplaceableIndexable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode_8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.apinotesc"
@@ -2067,4 +2108,4 @@ depends-external:
 - "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
 - "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-interface-hash: "c09c4c330841e043757352c8536b3b83"
+interface-hash: "586e1612ca6bc192fe7b0732ea2d992c"

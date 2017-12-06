@@ -133,8 +133,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
-@import Foundation;
 @import CoreGraphics;
+@import Foundation;
+@import QuartzCore;
 @import TabPageViewController;
 #endif
 
@@ -156,12 +157,78 @@ SWIFT_CLASS("_TtC8practice11AppDelegate")
 @end
 
 @class UIView;
+@class NSCoder;
+@class NSBundle;
+
+SWIFT_CLASS("_TtC8practice28ArticleContentViewController")
+@interface ArticleContentViewController : UIViewController
+@property (nonatomic, copy) NSArray<NSDictionary<NSString *, id> *> * _Nonnull _sourceArray;
+@property (nonatomic, strong) UIView * _Nullable lastAnchorView;
+@property (nonatomic) BOOL isLastObject;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithContentArray:(NSArray<NSDictionary<NSString *, id> *> * _Nonnull)contentArray OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)parseSourceArray;
+- (void)setBulletPointWithObj:(NSDictionary<NSString *, id> * _Nonnull)obj;
+- (void)setupIntroWithObj:(NSDictionary<NSString *, id> * _Nonnull)obj;
+- (void)setupContentDefaultWithObj:(NSDictionary<NSString *, id> * _Nonnull)obj;
+- (void)setupContentSmallWithObj:(NSDictionary<NSString *, id> * _Nonnull)obj;
+- (void)setupParagraphTitleWithObj:(NSDictionary<NSString *, id> * _Nonnull)obj;
+- (void)setupParagraphSubtitleWithObj:(NSDictionary<NSString *, id> * _Nonnull)obj;
+- (void)setupImageCaptionWithObj:(NSDictionary<NSString *, id> * _Nonnull)obj;
+- (void)setupDescriptionWithObj:(NSDictionary<NSString *, id> * _Nonnull)obj;
+- (void)setupQuoteWithObj:(NSDictionary<NSString *, id> * _Nonnull)obj;
+- (void)setupImageWithObj:(NSDictionary<NSString *, id> * _Nonnull)obj;
+- (void)setupConstraintsWithConstraintView:(UIView * _Nonnull)constraintView;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
+
 @class UILabel;
+
+SWIFT_CLASS("_TtC8practice16ArticleIntroView")
+@interface ArticleIntroView : UIView
+@property (nonatomic, strong) IBOutlet UIView * _Null_unspecified view;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified introTitleLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified timeLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified fieldLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified viewsLabel;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithTitle:(NSString * _Nullable)title time:(NSString * _Nullable)time field:(NSString * _Nullable)field views:(NSString * _Nullable)views;
+@end
+
+@class UIFont;
+@class UIColor;
+
+SWIFT_CLASS("_TtC8practice16ArticleQuoteView")
+@interface ArticleQuoteView : UIView
+@property (nonatomic, strong) IBOutlet UIView * _Null_unspecified view;
+@property (nonatomic, strong) UIFont * _Nullable font;
+@property (nonatomic, strong) UIColor * _Nonnull textColor;
+@property (nonatomic, copy) NSString * _Nullable text;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)setQuoteContentWithContentString:(NSString * _Nonnull)contentString;
+@end
+
+@class UIScrollView;
+
+SWIFT_CLASS("_TtC8practice21ArticleViewController")
+@interface ArticleViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIScrollView * _Null_unspecified backgroundScrollView;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (NSArray<NSDictionary<NSString *, id> *> * _Nonnull)fakeData SWIFT_WARN_UNUSED_RESULT;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidAppear:(BOOL)animated;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIButton;
 @class UITableView;
 @class UITableViewCell;
-@class NSBundle;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC8practice11Article_TVC")
 @interface Article_TVC : UITableViewController
@@ -177,7 +244,7 @@ SWIFT_CLASS("_TtC8practice11Article_TVC")
 - (void)viewDidLoad;
 - (void)contentSetup;
 @property (nonatomic, readonly, strong) UIView * _Nonnull statusBarBackgroundView;
-- (void)didReceiveMemoryWarning;
+- (void)showArticle;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
@@ -268,6 +335,36 @@ SWIFT_CLASS("_TtC8practice11Bookmark_VC")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSParagraphStyle;
+
+SWIFT_CLASS("_TtC8practice16BulletPointLabel")
+@interface BulletPointLabel : UILabel
+@property (nonatomic, copy) NSString * _Nullable text;
+- (void)setBullet;
+- (NSParagraphStyle * _Nonnull)createParagraphAttribute SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface CALayer (SWIFT_EXTENSION(practice))
+@property (nonatomic, strong) UIColor * _Nonnull borderUIColor;
+@end
+
+@class PHCheckableTextfield;
+
+SWIFT_CLASS("_TtC8practice31ConfirmUserDetailViewController")
+@interface ConfirmUserDetailViewController : UIViewController
+@property (nonatomic, strong) IBOutlet PHCheckableTextfield * _Null_unspecified textfield1;
+@property (nonatomic, strong) IBOutlet PHCheckableTextfield * _Null_unspecified textfield2;
+@property (nonatomic, strong) IBOutlet PHCheckableTextfield * _Null_unspecified textfield3;
+- (IBAction)onClickLogin:(id _Nonnull)sender;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC8practice17CongressUpdate_VC")
 @interface CongressUpdate_VC : UITableViewController
@@ -303,17 +400,31 @@ SWIFT_CLASS("_TtC8practice17CongressUpdate_VC")
 
 SWIFT_CLASS("_TtC8practice14Content_TVCell")
 @interface Content_TVCell : UITableViewCell
+@property (nonatomic, readonly, copy) NSArray<NSDictionary<NSString *, NSString *> *> * _Nonnull fakeData;
+@property (nonatomic, strong) ArticleContentViewController * _Nullable vc;
 @property (nonatomic, readonly, copy) NSString * _Nonnull test;
-@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified contentLabel;
+@property (nonatomic, strong) UIView * _Null_unspecified displayView;
 - (void)awakeFromNib;
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC8practice24EmailLoginViewController")
+@interface EmailLoginViewController : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
 SWIFT_CLASS("_TtC8practice8Event_VC")
 @interface Event_VC : UITableViewController
+@property (nonatomic, strong) UIImage * _Nullable thumbnailImage;
+@property (nonatomic, copy) NSString * _Nonnull titleContent;
+@property (nonatomic, copy) NSString * _Nonnull subtitleContent;
+@property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull hadRead;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull selectedtext;
 @property (nonatomic, strong) selectionView * _Null_unspecified selectionView;
 @property (nonatomic, strong) pickerView * _Null_unspecified pickerView;
@@ -338,6 +449,7 @@ SWIFT_CLASS("_TtC8practice8Event_VC")
 
 SWIFT_CLASS("_TtC8practice19ExpertCommentary_VC")
 @interface ExpertCommentary_VC : UITableViewController
+@property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull hadRead;
 @property (nonatomic, strong) UIImage * _Nullable thumbnailImage;
 @property (nonatomic, copy) NSString * _Nonnull titleContent;
 @property (nonatomic, copy) NSString * _Nonnull subtitleContent;
@@ -359,7 +471,40 @@ SWIFT_CLASS("_TtC8practice19ExpertCommentary_VC")
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC8practice23FirstMeetViewController")
+@interface FirstMeetViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITextField;
+@class UITouch;
+@class UIEvent;
+
+SWIFT_CLASS("_TtC8practice33LoginInvitationCodeViewController")
+@interface LoginInvitationCodeViewController : UIViewController <UITextFieldDelegate>
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified invitationFirstDigitTextField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified invitationSecondDigitTextField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified invitationThirdDigitTextField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified invitationFourthDigitTextField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified invitationFifthDigitTextField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified invitationSixthDigitTextField;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (IBAction)onClickRequestInvitationCode:(id _Nonnull)sender;
+- (IBAction)onClickLoginWithEmail:(id _Nonnull)sender;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (BOOL)textField:(UITextField * _Nonnull)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -394,6 +539,10 @@ SWIFT_CLASS("_TtC8practice7Main_VC")
 
 SWIFT_CLASS("_TtC8practice14MayLike_TVCell")
 @interface MayLike_TVCell : UITableViewCell <UIScrollViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
+@property (nonatomic, strong) Article_TVC * _Nonnull article;
+@property (nonatomic, strong) UIImage * _Nullable thumbnailImage;
+@property (nonatomic, copy) NSString * _Nonnull titleContent;
+@property (nonatomic, copy) NSString * _Nonnull subtitleContent;
 @property (nonatomic, strong) IBOutlet UIView * _Null_unspecified View;
 @property (nonatomic, strong) IBOutlet UICollectionView * _Null_unspecified content;
 - (void)awakeFromNib;
@@ -402,14 +551,44 @@ SWIFT_CLASS("_TtC8practice14MayLike_TVCell")
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UIEdgeInsets)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout insetForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface NSAttributedString (SWIFT_EXTENSION(practice))
+- (NSRange)nsRangeOfSubString:(NSString * _Nonnull)subString SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
 SWIFT_CLASS("_TtC8practice13NavigationBar")
 @interface NavigationBar : UINavigationBar
 - (void)awakeFromNib;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC8practice20PHCheckableTextfield")
+@interface PHCheckableTextfield : UITextField
+@property (nonatomic, strong) UIImage * _Nullable warningImage;
+@property (nonatomic, strong) UIImage * _Nullable correctImage;
+@property (nonatomic) CGFloat rightPadding;
+- (void)awakeFromNib;
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (CGRect)rightViewRectForBounds:(CGRect)bounds SWIFT_WARN_UNUSED_RESULT;
+- (void)updateView;
+@end
+
+
+SWIFT_CLASS("_TtC8practice11PHMustLabel")
+@interface PHMustLabel : UILabel
+@property (nonatomic, copy) NSString * _Nullable text;
+- (void)awakeFromNib;
+- (void)setImportantMarkWithText:(NSString * _Nullable)text;
+- (NSParagraphStyle * _Nonnull)createParagraphAttribute SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -425,10 +604,21 @@ SWIFT_CLASS("_TtC8practice11Quiz_TVCell")
 @end
 
 
+SWIFT_CLASS("_TtC8practice14ReferenceLabel")
+@interface ReferenceLabel : UILabel
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull textArray;
+@property (nonatomic, copy) NSString * _Nullable text;
+- (void)setBullet;
+- (NSParagraphStyle * _Nonnull)createParagraphAttribute SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC8practice16Reference_TVCell")
 @interface Reference_TVCell : UITableViewCell
 @property (nonatomic) BOOL isEvent;
-@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified ReferenceContent;
+@property (nonatomic, strong) IBOutlet ReferenceLabel * _Null_unspecified ReferenceContent;
 @property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified bookmark;
 @property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified share;
 @property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified schedule;
@@ -438,6 +628,25 @@ SWIFT_CLASS("_TtC8practice16Reference_TVCell")
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC8practice28RequestDidSendViewController")
+@interface RequestDidSendViewController : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (IBAction)onClickBackToLogin:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC8practice35RequestInvitationCodeViewController")
+@interface RequestInvitationCodeViewController : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -523,7 +732,6 @@ SWIFT_CLASS("_TtC8practice10Search_TVC")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITextField;
 @class UISearchController;
 
 SWIFT_CLASS("_TtC8practice9Search_VC")
@@ -560,6 +768,7 @@ SWIFT_CLASS("_TtC8practice9Search_VC")
 SWIFT_CLASS("_TtC8practice20SeeAllViewController")
 @interface SeeAllViewController : TabPageViewController
 - (void)viewDidLoad;
+- (void)handleSearch;
 - (nonnull instancetype)initWithTransitionStyle:(UIPageViewControllerTransitionStyle)style navigationOrientation:(UIPageViewControllerNavigationOrientation)navigationOrientation options:(NSDictionary<NSString *, id> * _Nullable)options OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -571,7 +780,7 @@ SWIFT_CLASS("_TtC8practice18SquareCategoryCell")
 @property (nonatomic, copy) NSString * _Nonnull titleContent;
 @property (nonatomic, copy) NSString * _Nonnull subtitleContent;
 @property (nonatomic, strong) NSMutableAttributedString * _Null_unspecified attributedString;
-@property (nonatomic) NSInteger count;
+@property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull hadRead;
 @property (nonatomic, strong) IBOutlet UICollectionView * _Null_unspecified content;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified title;
 @property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified seeAll;
@@ -674,6 +883,16 @@ SWIFT_CLASS("_TtC8practice17TrailFactSheet_VC")
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface UIColor (SWIFT_EXTENSION(practice))
++ (UIColor * _Nonnull)colorWithRed:(float)red Green:(float)green Blue:(float)blue Alpha:(float)alpha SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)wordingGray SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)wordingBlack SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)rocheBlue SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)rocheRed SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)textfieldBackgroundGray SWIFT_WARN_UNUSED_RESULT;
 @end
 
 

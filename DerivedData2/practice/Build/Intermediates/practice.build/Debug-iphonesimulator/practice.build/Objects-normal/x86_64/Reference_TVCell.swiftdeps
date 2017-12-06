@@ -21,9 +21,9 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "Bool"
 - "BooleanLiteralType"
+- "ReferenceLabel"
 - "Reference_TVCell"
 - "UIButton"
-- "UILabel"
 - "UITableViewCell"
 depends-member:
 - !private ["Ps9AnyObject", "awakeFromNib"]
@@ -108,8 +108,8 @@ depends-member:
 - ["PSo8NSCoding", ""]
 - ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "ReferenceContent"]
+- ["CSo8NSObject", "ReferenceLabel"]
 - ["CSo8NSObject", "UIButton"]
-- ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "addToBookmark"]
 - ["CSo8NSObject", "addToSchedule"]
 - ["CSo8NSObject", "awakeFromNib"]
@@ -132,8 +132,8 @@ depends-member:
 - ["PSo16NSObjectProtocol", ""]
 - ["C8practice16Reference_TVCell", "Bool"]
 - ["C8practice16Reference_TVCell", "ReferenceContent"]
+- ["C8practice16Reference_TVCell", "ReferenceLabel"]
 - ["C8practice16Reference_TVCell", "UIButton"]
-- ["C8practice16Reference_TVCell", "UILabel"]
 - ["C8practice16Reference_TVCell", "addToBookmark"]
 - ["C8practice16Reference_TVCell", "addToSchedule"]
 - ["C8practice16Reference_TVCell", "awakeFromNib"]
@@ -220,8 +220,8 @@ depends-member:
 - ["PSo27UIGestureRecognizerDelegate", ""]
 - ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "ReferenceContent"]
+- ["CSo11UIResponder", "ReferenceLabel"]
 - ["CSo11UIResponder", "UIButton"]
-- ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "addToBookmark"]
 - ["CSo11UIResponder", "addToSchedule"]
 - ["CSo11UIResponder", "awakeFromNib"]
@@ -244,8 +244,8 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", ""]
 - ["CSo15UITableViewCell", "Bool"]
 - ["CSo15UITableViewCell", "ReferenceContent"]
+- ["CSo15UITableViewCell", "ReferenceLabel"]
 - ["CSo15UITableViewCell", "UIButton"]
-- ["CSo15UITableViewCell", "UILabel"]
 - ["CSo15UITableViewCell", "addToBookmark"]
 - ["CSo15UITableViewCell", "addToSchedule"]
 - ["CSo15UITableViewCell", "awakeFromNib"]
@@ -268,8 +268,8 @@ depends-member:
 - ["PSo18UITraitEnvironment", ""]
 - ["CSo6UIView", "Bool"]
 - ["CSo6UIView", "ReferenceContent"]
+- ["CSo6UIView", "ReferenceLabel"]
 - ["CSo6UIView", "UIButton"]
-- ["CSo6UIView", "UILabel"]
 - ["CSo6UIView", "addToBookmark"]
 - ["CSo6UIView", "addToSchedule"]
 - ["CSo6UIView", "awakeFromNib"]
@@ -382,4 +382,4 @@ depends-external:
 - "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
 - "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/kidnapper/Documents/25sprout/practice/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-interface-hash: "48f8625126a34f982ec53fab9396b569"
+interface-hash: "40483f995a0f3bd56ec832847c95766e"

@@ -20,6 +20,12 @@ class Event_VC: UITableViewController {
 //        tableView
 //    }
     
+    var thumbnailImage = UIImage(named: "thumbnail_tab")
+    var titleContent: String = " A future in mind - rising to the challenge in Alzheimer's"
+    var subtitleContent: String = "Doretha Burrell-nickname “Dee” by children at the school where she once worked as administrative, Doretha Burrell-nickname “Dee” by children at the school where she once worked as administrative"
+    
+    var hadRead: [Bool] = [false, false, false, false, false]
+    
     var selectedFilter: Int?
     var selectedtext: [String] = ["All"]
     
@@ -115,7 +121,7 @@ class Event_VC: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+        return 5
     }
 
     
@@ -123,11 +129,35 @@ class Event_VC: UITableViewController {
     
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! TableViewCell
         
+        cell.hadRead = self.hadRead[indexPath.item]
+        
         if indexPath.row == 0{
             cell.topConstraint.isActive = false
         }else{
             cell.topConstraint.isActive = true
         }
+        
+        let attrs1 = [NSFontAttributeName: UIFont.systemFont(ofSize: 15, weight: UIFontWeightBold), NSForegroundColorAttributeName: UIColor.black]
+        let attrs2 = [NSFontAttributeName: UIFont.systemFont(ofSize: 13), NSForegroundColorAttributeName: UIColor.gray]
+        let attributedString1 = NSMutableAttributedString(string: "\(titleContent)", attributes: attrs1)
+        let attributedString2 = NSMutableAttributedString(string: "\(subtitleContent)", attributes: attrs2)
+        let line_feed = NSMutableAttributedString(string: "\n")
+        if subtitleContent != ""{
+            attributedString1.append(line_feed)
+        }
+        attributedString1.append(attributedString2)
+        
+        cell.thumbnail.image = UIImage(named: "img_smallcard")
+        cell.author.text = "DISEASE / Alzheimer’s"
+        cell.date.text = "2 hours ago"
+        cell.title.numberOfLines = 4
+        cell.title.lineBreakMode = .byTruncatingTail
+        if cell.hadRead{
+            cell.attributedString = attributedString1
+        }else{
+            cell.attributedString.append(attributedString1)
+        }
+        cell.title.attributedText = cell.attributedString!
         
         cell.selectionStyle = .none
         
@@ -143,52 +173,8 @@ class Event_VC: UITableViewController {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         article = storyBoard.instantiateViewController(withIdentifier: "article_TVC") as! Article_TVC
         article.isEvent = true
+        self.hadRead[indexPath.item] = true
         navigationController?.pushViewController(article, animated: true)
+        tableView.reloadData()
     }
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
